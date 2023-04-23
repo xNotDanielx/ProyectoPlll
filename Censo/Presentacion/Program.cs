@@ -7,8 +7,8 @@ namespace Presentacion
     {
         static void Main(string[] args)
         {
-            MenuPrincipal vermenu = new MenuPrincipal();
-            vermenu.VerMenuPrincipal();
+            LoginGUI vermenu = new LoginGUI();
+            vermenu.Munu_Login();
         }
     }
 }

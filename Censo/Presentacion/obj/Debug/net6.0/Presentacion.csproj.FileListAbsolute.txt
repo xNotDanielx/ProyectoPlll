@@ -20,3 +20,25 @@ C:\Users\victo\Documents\c# codes\Censo\Presentacion\obj\Debug\net6.0\refint\Pre
 C:\Users\victo\Documents\c# codes\Censo\Presentacion\obj\Debug\net6.0\Presentacion.pdb
 C:\Users\victo\Documents\c# codes\Censo\Presentacion\obj\Debug\net6.0\Presentacion.genruntimeconfig.cache
 C:\Users\victo\Documents\c# codes\Censo\Presentacion\obj\Debug\net6.0\ref\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.AssemblyInfoInputs.cache
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.AssemblyInfo.cs
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\refint\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.pdb
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Presentacion.exe
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Presentacion.deps.json
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Presentacion.runtimeconfig.json
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Presentacion.pdb
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Datos.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Entidades.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Logica.dll
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Entidades.pdb
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Logica.pdb
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\bin\Debug\net6.0\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.csproj.CopyComplete
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\Presentacion.genruntimeconfig.cache
+C:\Users\Angel Barrueto\Downloads\proyecto (4)\Censo\Presentacion\obj\Debug\net6.0\ref\Presentacion.dll

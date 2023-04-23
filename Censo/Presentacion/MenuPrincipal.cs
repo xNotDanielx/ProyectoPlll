@@ -32,10 +32,10 @@ namespace Presentacion
                 }
             } while(op!=0);
         }
-
+        int op;
         public void VerMenuSectorEconomico()
         {
-            int op;
+            
             do
             {
                 Console.Clear();

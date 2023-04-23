@@ -10,13 +10,22 @@ namespace Datos
     public class Archivo
     {
         String ruta = "Personas.txt";
+        String ruta_Resultados = "Resultados_Censo.txt";
 
-        public String guardar(Persona persona)
+        public String guardar_Cuentas(Persona persona)
         {
             StreamWriter sw = new StreamWriter(ruta, true);
             sw.WriteLine(persona.ToString());
             sw.Close();
-            return "se guardo... waos";
+            return "se guardo Correctamente... ";
+        }
+
+        public String guardar_Resultados(Persona persona)
+        {
+            StreamWriter sw = new StreamWriter(ruta_Resultados, true);
+            sw.WriteLine(persona.ToString());
+            sw.Close();
+            return "se guardo Correctamente...";
         }
 
         public Persona Mapeador(String linea)
@@ -24,14 +33,14 @@ namespace Datos
             var persona = new Persona();
             string[] aux = linea.Split(';');
             persona.Nombre = aux[0];
-            persona.CC = aux[1];
-            persona.Sexo = Char.Parse(aux[2]);
-            persona.Edad = int.Parse(aux[3]);
-            persona.Telefono = aux[4];
-            persona.FechaNacimiento = DateTime.Parse(aux[5]);
-            persona.Correo = aux[6];
-            persona.Estrato = int.Parse(aux[7]);
-            persona.Etnia = aux[8];
+            persona.Tipo_Documento = aux[1];
+            persona.Numero_Documento = aux[2];
+            persona.Contraseña = aux[3];
+            persona.Sexo = aux[4];
+            persona.Edad = aux[5];
+            persona.Telefono = aux[6];
+            persona.FechaNacimiento = DateTime.Parse(aux[7]);
+            persona.Correo = aux[8];
             return persona;
         }
 

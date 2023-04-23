@@ -8,12 +8,13 @@ namespace Logica
 {
     public interface IPersona<T>
     {
-        String add(T persona);
-        List<T> GetAll();
-        bool DeletePersona(T persona);
-        bool UpdatePersona(T persona);
+        void Añadir_Cuenta(T persona);
+        bool Eliminar_Cuenta(T persona);
+        bool Bucar_Cuenta(T persona);
+        List<T> Obtener_Cuentas();
         void GetByCc(T cedula);
         List<T> GetByName(String name);
-        bool Exist (T persona);
+        bool UpdatePersona(T persona);
+
     }
 }
