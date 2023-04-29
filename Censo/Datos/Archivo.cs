@@ -9,44 +9,44 @@ namespace Datos
 {
     public class Archivo
     {
-        String ruta = "Personas.txt";
-        String Resultado_sectorE = "Resultados(Sector Economico)_Censo.txt";
-        String Resultado_sectorH = "Resultados(Sector Hogar)_Censo.txt";
-        String Resultado_sectorS = "Resultados(Sector Social)_Censo.txt";
+        String rutaPersona = "Personas.txt";
+        String Ruta_sectorE = "Resultados(Sector Economico)_Censo.txt";
+        String Ruta_sectorH = "Resultados(Sector Hogar)_Censo.txt";
+        String Ruta_sectorS = "Resultados(Sector Social)_Censo.txt";
 
         public String guardar_Cuentas(Persona persona)
         {
-            StreamWriter sw = new StreamWriter(ruta, true);
+            StreamWriter sw = new StreamWriter(rutaPersona, true);
             sw.WriteLine(persona.ToString());
             sw.Close();
             return "se guardo Correctamente... ";
         }
 
-        public String Sector_Economico(Sector_Economico sectorE)
+        public String GuardarSector_Economico(Sector_Economico sectorE)
         {
-            StreamWriter sw = new StreamWriter(Resultado_sectorE, true);
+            StreamWriter sw = new StreamWriter(Ruta_sectorE, true);
             sw.WriteLine(sectorE.ToString());
             sw.Close();
             return "se guardo Correctamente...";
         }
 
-        public String Sector_Hogar(Sector_Hogar sectorH)
+        public String GuardarSector_Hogar(Sector_Hogar sectorH)
         {
-            StreamWriter sw = new StreamWriter(Resultado_sectorH, true);
+            StreamWriter sw = new StreamWriter(Ruta_sectorH, true);
             sw.WriteLine(sectorH.ToString());
             sw.Close();
             return "se guardo Correctamente...";
         }
 
-        public String Sector_Social(Sector_Social sectorS) 
+        public String GuardarSector_Social(Sector_Social sectorS)
         {
-            StreamWriter sw = new StreamWriter(Resultado_sectorS, true);
+            StreamWriter sw = new StreamWriter(Ruta_sectorS, true);
             sw.WriteLine(sectorS.ToString());
             sw.Close();
             return "se guardo Correctamente...";
         }
 
-        public Persona Mapeador(String linea)
+        public Persona MapeadorPersona(String linea)
         {
             var persona = new Persona();
             string[] aux = linea.Split(';');
@@ -62,17 +62,79 @@ namespace Datos
             return persona;
         }
 
+        public Sector_Economico Mapeador_SE(string linea)
+        {
+            var options = new Sector_Economico();
+            string[] aux = linea.Split(';');
+            options.Empleado = int.Parse(aux[0]);
+            options.Propietario_Negocio = int.Parse(aux[1]);
+            options.Trabajador_Privado = int.Parse(aux[2]);
+            options.Contratista_Independiente = int.Parse(aux[3]);
+            options.Pensionado = int.Parse(aux[4]);
+            options.Subsidiado = int.Parse(aux[5]);
+            options.Accionistas = int.Parse(aux[6]);
+            options.Trabajador_Publico = int.Parse(aux[7]);
+            options.Ingreso_Actividades = int.Parse(aux[8]);
+            options.Desempleado = int.Parse(aux[9]);
+            return options;
+        }
+
+        public Sector_Hogar Mapeador_SH(string linea)
+        {
+            var options = new Sector_Hogar();
+            string[] aux = linea.Split(';');
+            options.Rural = int.Parse(aux[0]);
+            options.Urbana = int.Parse(aux[1]);
+            options.Propietario = int.Parse(aux[2]);
+            options.Servicio_Agua = int.Parse(aux[3]);
+            options.No_servicio_Agua = int.Parse(aux[4]);
+            options.Servicio_Luz = int.Parse(aux[5]);
+            options.No_servicio_Luz = int.Parse(aux[6]);
+            options.Sericio_Gas = int.Parse(aux[7]);
+            options.No_sericio_Gas = int.Parse(aux[8]);
+            options.Saneamiento = int.Parse(aux[9]);
+            options.No_Saneamiento = int.Parse(aux[10]);
+            options.Ingreso_Alto = int.Parse(aux[11]);
+            options.Ingreso_Medio = int.Parse(aux[12]);
+            options.Ingreso_Bajo = int.Parse(aux[13]);
+            options.Estrato = int.Parse(aux[14]);
+            return options;
+        }
+
+        public Sector_Social Mapeador_SS(string linea)
+        {
+            var options = new Sector_Social();
+            string[] aux = linea.Split(';');
+            options.Afliado = int.Parse(aux[0]);
+            options.Victima_Conflicto = int.Parse(aux[1]);
+            options.Ninguno = int.Parse(aux[2]);
+            options.Arhuaco = int.Parse(aux[3]);
+            options.Kogui = int.Parse(aux[4]);
+            options.Kankuamo = int.Parse(aux[5]);
+            options.Wiwa = int.Parse(aux[6]);
+            options.Yucpa = int.Parse(aux[7]);
+            options.Chimila = int.Parse(aux[8]);
+            options.Acceso_Estudio = int.Parse(aux[9]);
+            options.Servicio_Transporte = int.Parse(aux[10]);
+            options.Estado_Civil = int.Parse(aux[11]);
+            options.Sin_Educacion = int.Parse(aux[12]);
+            options.Educacio_Primaria = int.Parse(aux[13]);
+            options.Educacio_Tecnica = int.Parse(aux[14]);
+            options.Educacion_universitaria = int.Parse(aux[15]);
+            return options;
+        }
+
         public List<Persona> consultar()
         {
             var lista = new List<Persona>();
             try
             {
-                var sr = new StreamReader(ruta);
+                var sr = new StreamReader(rutaPersona);
                 //var linea = string.Empty;
                 while (!sr.EndOfStream)
                 {
                     //  linea = sr.ReadLine();
-                    lista.Add(Mapeador(sr.ReadLine()));
+                    lista.Add(MapeadorPersona(sr.ReadLine()));
                 }
                 sr.Close();
                 return lista;
@@ -83,6 +145,94 @@ namespace Datos
                 return null;
             }
 
+        }
+
+        public string Actualizar_Persona(List<Persona> listaActualizada)
+        {
+            string rutaTemp = "Temp.txt";
+            try
+            {
+                StreamWriter sr = new StreamWriter(rutaTemp, true);
+                foreach (var item in listaActualizada)
+                {
+                    sr.WriteLine(item.ToString());
+                }
+                sr.Close();
+
+                File.Delete(rutaPersona);
+                File.Move(rutaTemp, rutaPersona);
+                return "Contacto eliminado...";
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar";
+            }
+        }
+
+        public string Actualizar_SectorSE(List<Persona> listaActualizada)
+        {
+            string rutaTemp = "Temp.txt";
+            try
+            {
+                StreamWriter sr = new StreamWriter(rutaTemp, true);
+                foreach (var item in listaActualizada)
+                {
+                    sr.WriteLine(item.ToString());
+                }
+                sr.Close();
+
+                File.Delete(Ruta_sectorE);
+                File.Move(rutaTemp, Ruta_sectorE);
+                return "Contacto eliminado...";
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar";
+            }
+        }
+
+        public string Actualizar_SectorSH(List<Persona> listaActualizada)
+        {
+            string rutaTemp = "Temp.txt";
+            try
+            {
+                StreamWriter sr = new StreamWriter(rutaTemp, true);
+                foreach (var item in listaActualizada)
+                {
+                    sr.WriteLine(item.ToString());
+                }
+                sr.Close();
+
+                File.Delete(Ruta_sectorH);
+                File.Move(rutaTemp, Ruta_sectorH);
+                return "Contacto eliminado...";
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar";
+            }
+        }
+
+        public string Actualizar_SectorSS(List<Persona> listaActualizada)
+        {
+            string rutaTemp = "Temp.txt";
+            try
+            {
+                StreamWriter sr = new StreamWriter(rutaTemp, true);
+                foreach (var item in listaActualizada)
+                {
+                    sr.WriteLine(item.ToString());
+                }
+                sr.Close();
+
+                File.Delete(Ruta_sectorS);
+                File.Move(rutaTemp, Ruta_sectorS);
+                return "Contacto eliminado...";
+            }
+            catch (Exception)
+            {
+                return "Error al eliminar";
+            }
         }
     }
 }

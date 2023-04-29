@@ -10,6 +10,7 @@ namespace Entidades
     {
         public int Afliado { get; set; }
         public int Victima_Conflicto { get; set; }
+        public int Ninguno { get; set; }
         public int Arhuaco{ get; set; }
         public int Kogui { get; set; }
         public int Kankuamo { get; set; }
@@ -23,12 +24,17 @@ namespace Entidades
         public int Educacio_Primaria { get; set; }
         public int Educacio_Tecnica { get; set; }
         public int Educacion_universitaria { get; set; }
-        public String Etnia { get; set; }
 
-        public Sector_Social(int afliado, int victima_Conflicto, int arhuaco, int kogui, int kankuamo, int wiwa, int yucpa, int chimila, int acceso_Estudio, int servicio_Transporte, int estado_Civil, int sin_Educacion, int educacio_Primaria, int educacio_Tecnica, int educacion_universitaria,string etnia )
+        public Sector_Social()
+        {
+            
+        }
+
+        public Sector_Social(int afliado, int victima_Conflicto, int ninguno, int arhuaco, int kogui, int kankuamo, int wiwa, int yucpa, int chimila, int acceso_Estudio, int servicio_Transporte, int estado_Civil, int sin_Educacion, int educacio_Primaria, int educacio_Tecnica, int educacion_universitaria,string etnia )
         {
             Afliado = afliado;
             Victima_Conflicto = victima_Conflicto;
+            Ninguno = ninguno;
             Arhuaco = arhuaco;
             Kogui = kogui;
             Kankuamo = kankuamo;
@@ -42,8 +48,12 @@ namespace Entidades
             Educacio_Primaria = educacio_Primaria;
             Educacio_Tecnica = educacio_Tecnica;
             Educacion_universitaria = educacion_universitaria;
-            Etnia = etnia;
         }
-        
+
+        public override string ToString()
+        {
+            return $"{Afliado};{Victima_Conflicto};{Ninguno};{Arhuaco};{Kogui};{Kankuamo};{Wiwa};{Yucpa};{Chimila};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{Sin_Educacion};{Educacio_Primaria};{Educacio_Tecnica};{Educacion_universitaria}";
+        }
+
     }
 }

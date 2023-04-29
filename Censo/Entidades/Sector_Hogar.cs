@@ -24,6 +24,10 @@ namespace Entidades
         public int Ingreso_Bajo { get; set; }
         public int Estrato { get; set; }
 
+        public Sector_Hogar()
+        {
+            
+        }
         public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato)
         {
             Rural = rural;

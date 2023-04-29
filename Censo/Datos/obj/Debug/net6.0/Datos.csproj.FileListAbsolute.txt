@@ -43,3 +43,18 @@ C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\Censo\Datos\obj\Debug\ne
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\refint\Datos.dll
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.pdb
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\ref\Datos.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\bin\Debug\net6.0\Datos.deps.json
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\bin\Debug\net6.0\Datos.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\bin\Debug\net6.0\Datos.pdb
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\bin\Debug\net6.0\Entidades.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\bin\Debug\net6.0\Entidades.pdb
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.csproj.AssemblyReference.cache
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.AssemblyInfoInputs.cache
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.AssemblyInfo.cs
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.csproj.CopyComplete
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\refint\Datos.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Datos\obj\Debug\net6.0\ref\Datos.dll

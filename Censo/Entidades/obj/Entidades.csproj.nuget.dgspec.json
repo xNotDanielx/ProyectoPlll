@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

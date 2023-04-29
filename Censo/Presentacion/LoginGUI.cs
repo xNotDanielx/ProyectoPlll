@@ -62,9 +62,10 @@ namespace Presentacion
             int dia=0, mes=0, año=0;
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Nombre: ");
-            persona.Nombre = Console.ReadLine();
+            Console.SetCursorPosition(58, 6); persona.Nombre = Console.ReadLine();
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite el Sexo al que pertenece: ");
-            persona.Sexo = Console.ReadLine();
+            Console.SetCursorPosition(72, 6); persona.Sexo = Console.ReadLine();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Edad: ");
             persona.Edad = Console.ReadLine();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Telefono: ");
@@ -137,7 +138,7 @@ namespace Presentacion
                 Console.SetCursorPosition(45, 10); Console.WriteLine("|______________________________________________|");
                 Console.SetCursorPosition(45, 11); Console.WriteLine("|                TIPO DE DOCUMENTO             |");
                 Console.SetCursorPosition(45, 12); Console.WriteLine("| 1) CEDULA CIUDADANA                          |");
-                Console.SetCursorPosition(45, 13); Console.WriteLine("| 1) TARGETA DE IDENTIDAD                      |");
+                Console.SetCursorPosition(45, 13); Console.WriteLine("| 2) TARJETA DE IDENTIDAD                      |");
                 Console.SetCursorPosition(45, 14); Console.WriteLine("| -                                            |");
                 Console.SetCursorPosition(45, 15); Console.WriteLine("|______________________________________________|");
                 Console.SetCursorPosition(48, 14); Tipo_documento = Console.ReadLine();
@@ -230,7 +231,7 @@ namespace Presentacion
                     Console.SetCursorPosition(45, 8); Console.WriteLine( " _______________________________________________________________________");
                     Console.SetCursorPosition(45, 9); Console.WriteLine( "|                              MENSJE ERROR                             |");
                     Console.SetCursorPosition(45, 10); Console.WriteLine("|_______________________________________________________________________|");
-                    Console.SetCursorPosition(45, 11); Console.WriteLine("| Elija un documento valido (Targeta de Identidad o Cdula Ciudadana)    |");
+                    Console.SetCursorPosition(45, 11); Console.WriteLine("| Elija un documento valido (TarJeta de Identidad Ó Cedula Ciudadana)    |");
                     Console.SetCursorPosition(45, 12); Console.WriteLine("|_______________________________________________________________________|");
                     Thread.Sleep(2000);
                     Verificado_documento = "No Verificado";

@@ -8,7 +8,6 @@ namespace Entidades
 {
     public class Persona
     {
-        public Persona() { }
         public String Nombre { get; set; }
         public String Tipo_Documento { get; set; }
         public String Numero_Documento { get; set; }
@@ -21,6 +20,8 @@ namespace Entidades
         public int Sector { get; set; }
         public bool Completado { get; set; }
         public bool Sectores_Completados { get; set; }
+        public Persona() { }
+
         public Persona(string nombre, string tipo_documento, string numero_documento, string contraseña, string sexo, string edad, string telefono, DateTime fechaNacimiento, string correo,int sector,bool completado, bool sectores_completados)
         {
             Nombre = nombre;
