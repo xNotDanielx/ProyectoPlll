@@ -15,23 +15,25 @@ namespace Presentacion
     {
         ServicioPersona serviciopersonas = new ServicioPersona();
         Persona persona = new Persona();
-        List<Persona> listpersona;
-
-
+        List<Persona> personas;
         public void Munu_Login()
         {
             int op;
             do
             {
                 Console.Clear();
-                Console.SetCursorPosition(40, 8); Console.WriteLine("___________________________________________-");
-                Console.SetCursorPosition(40, 9); Console.WriteLine("|  ***********LOGIN***********             |");
-                Console.SetCursorPosition(40, 10); Console.WriteLine("|  1 - Inciar Sesion                       ");
-                Console.SetCursorPosition(40, 11); Console.WriteLine("|  2 - Registrarse                        |");
-                Console.SetCursorPosition(40, 12); Console.WriteLine("|  0 - Salir                              |");
-                Console.SetCursorPosition(40, 13); Console.WriteLine("|  Que quieres hacer:                     |");
-                Console.SetCursorPosition(40, 14); Console.WriteLine("___________________________________________");
-                Console.SetCursorPosition(62, 15); op = int.Parse(Console.ReadLine());
+                Console.SetCursorPosition(45, 8); Console.WriteLine( " _________________________________ ");
+                Console.SetCursorPosition(45, 9); Console.WriteLine( "|  ***********LOGIN***********    |");
+                Console.SetCursorPosition(45, 10); Console.WriteLine("|_________________________________|");
+                Console.SetCursorPosition(45, 11); Console.WriteLine("|  1 - Inciar Sesion              |");
+                Console.SetCursorPosition(45, 12); Console.WriteLine("|_________________________________|");
+                Console.SetCursorPosition(45, 13); Console.WriteLine("|  2 - Registrarse                |");
+                Console.SetCursorPosition(45, 14); Console.WriteLine("|_________________________________|");
+                Console.SetCursorPosition(45, 15); Console.WriteLine("|  0 - Salir                      |");
+                Console.SetCursorPosition(45, 16); Console.WriteLine("|_________________________________|");
+                Console.SetCursorPosition(45, 17); Console.WriteLine("|  Que quieres hacer:             |");
+                Console.SetCursorPosition(45, 18); Console.WriteLine("|_________________________________|");
+                Console.SetCursorPosition(66, 17); op = int.Parse(Console.ReadLine());
                 switch (op)
                 {
                     case 1:
@@ -40,6 +42,17 @@ namespace Presentacion
                     case 2:
                         Registrarse();
                         break;
+                    default:
+                        Console.Clear();
+                        Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________ ");
+                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|             MENSJE ERROR            |");
+                        Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________|");
+                        Console.SetCursorPosition(45, 11); Console.WriteLine("| Por favor elija una opcion valida   |");
+                        Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________|");
+                        Thread.Sleep(2000);
+                        break;
+                        
+
                 }
             } while (op != 0);
             
@@ -62,35 +75,52 @@ namespace Presentacion
             {
                 persona.Correo = "Sin informacion";
             }
-            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento: DIA: MES: AÑO: ");
+            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento DIA: ");
             dia = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento MES: ");
             mes = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento AÑO: ");
             año = int.Parse(Console.ReadLine());
             persona.FechaNacimiento = new DateTime(año, mes, dia);
+            serviciopersonas.Añadir_Cuenta(persona);
+
         }
         public void Inciar_Sesion()
-        {
+        {         
             var menu = new MenuPrincipal();
             string Documento_Verificar;
             string Contraseña_Verificar;
             Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite Numero de Documento: ");
-            Documento_Verificar = Console.ReadLine();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("Digite Contraseña: ");
-            Contraseña_Verificar = Console.ReadLine();
-            foreach(var item in listpersona)
-            if (Documento_Verificar.Equals(item.Numero_Documento) & (Contraseña_Verificar.Equals(item.Contraseña)))
-                {
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("Iniciando Sesion... ");
-                    Thread.Sleep(3000);
-                    menu.VerMenuPrincipal();
-                }
-                else
-                {
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("CC o Contraseña incorrecta, por favor intente nuevamente... ");
-                    Thread.Sleep(3000);
-                }
-        }
+            Console.SetCursorPosition(45, 8); Console.WriteLine( " ______________________________________________ ");
+            Console.SetCursorPosition(45, 9); Console.WriteLine( "|               INICIO DE SESION               |");
+            Console.SetCursorPosition(45, 10); Console.WriteLine("|______________________________________________|");
+            Console.SetCursorPosition(45, 11); Console.WriteLine("| NUMERO DE DOCUMENTO:                         |");
+            Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
+            Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
+            Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
+            Console.SetCursorPosition(67, 11); persona.Numero_Documento = Console.ReadLine();
+            Console.SetCursorPosition(58, 13); persona.Contraseña = Console.ReadLine();      
+            if (serviciopersonas.Bucar_Cuenta(persona) == true)
+            {
+                Console.Clear();
+                 Console.SetCursorPosition(45, 11); Console.WriteLine("Iniciando Sesion... ");
+                 Thread.Sleep(2000);
+                 menu.VerMenuPrincipal();
+            }
+            else
+            {
+                Console.Clear();
+                Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________________ ");
+                Console.SetCursorPosition(45, 9); Console.WriteLine( "|                        MENSJE ERROR                         |");
+                Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________________|");
+                Console.SetCursorPosition(45, 11); Console.WriteLine("| CC o Contraseña incorrecta, por favor intente nuevamente    |");
+                Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________________|");
+                Thread.Sleep(2000);
+                Inciar_Sesion();
+                
+            }
+        }           
+    
 
         public void Registrarse()
         {
@@ -102,27 +132,47 @@ namespace Presentacion
                 bool Verificar_Numeros;
                 int num;
                 Console.Clear();
-                Console.SetCursorPosition(40, 6); Console.WriteLine("Elija el tipo de documento con el que desea regisrarse: ");
-                Console.SetCursorPosition(40, 7); Console.WriteLine("1) Cedula Ciudadana ");
-                Console.SetCursorPosition(40, 8); Console.WriteLine("2) Targeta de identidad ");
-                Tipo_documento = Console.ReadLine();
+                Console.SetCursorPosition(45, 8); Console.WriteLine( " ______________________________________________ ");
+                Console.SetCursorPosition(45, 9); Console.WriteLine( "|                   REGISTRO                   |");
+                Console.SetCursorPosition(45, 10); Console.WriteLine("|______________________________________________|");
+                Console.SetCursorPosition(45, 11); Console.WriteLine("|                TIPO DE DOCUMENTO             |");
+                Console.SetCursorPosition(45, 12); Console.WriteLine("| 1) CEDULA CIUDADANA                          |");
+                Console.SetCursorPosition(45, 13); Console.WriteLine("| 1) TARGETA DE IDENTIDAD                      |");
+                Console.SetCursorPosition(45, 14); Console.WriteLine("| -                                            |");
+                Console.SetCursorPosition(45, 15); Console.WriteLine("|______________________________________________|");
+                Console.SetCursorPosition(48, 14); Tipo_documento = Console.ReadLine();
             
                 if (Tipo_documento == "1")
                 {
                     Console.Clear();
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("Digite el numero del documento: ");
-                    Documento_verificar = Console.ReadLine();
+                    Console.SetCursorPosition(45, 8); Console.WriteLine (" ______________________________________________ ");
+                    Console.SetCursorPosition(45, 9); Console.WriteLine( "|                   REGISTRO                   |");
+                    Console.SetCursorPosition(45, 10); Console.WriteLine("|______________________________________________|");
+                    Console.SetCursorPosition(45, 11); Console.WriteLine("| NUMERO DE DOCUMENTO:                         |");
+                    Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
+                    Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
+                    Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
+                    Console.SetCursorPosition(67, 11); Documento_verificar = Console.ReadLine();
                     Verificar_Numeros = int.TryParse(Documento_verificar, out num);
-                    if (Documento_verificar.Length <= 7 || Documento_verificar.Length >= 10)
+                    if (Documento_verificar.Length <= 1 || Documento_verificar.Length >= 11)
                     {
-                        Console.SetCursorPosition(40, 6); Console.WriteLine("Numero digitado no valido...");
-                        Console.SetCursorPosition(40, 6); Console.WriteLine("La cantidad de numeros del documento no es valida..");
-                        Thread.Sleep(3000);
+                        Console.Clear();
+                        Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________________ ");
+                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|                        MENSJE ERROR                         |");
+                        Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________________|");
+                        Console.SetCursorPosition(45, 11); Console.WriteLine("| La cantidad de numeros del documento no es valida           |");
+                        Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________________|");
+                        Thread.Sleep(2000);
                         Verificado_documento = "No Verificado";
                     }
                     else if (Verificar_Numeros = false)
                     {
-                        Console.SetCursorPosition(40, 6); Console.WriteLine("El numero de documento no puede tener Letras o Simbolos..");
+                        Console.Clear();
+                        Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________________ ");
+                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|                        MENSJE ERROR                         |");
+                        Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________________|");
+                        Console.SetCursorPosition(45, 11); Console.WriteLine("| El numero de documento no puede tener Letras o Simbolos     |");
+                        Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________________|");
                         Thread.Sleep(3000);
                         Verificado_documento = "No Verificado";
                     }
@@ -136,20 +186,35 @@ namespace Presentacion
                 else if (Tipo_documento == "2")
                 {
                         Console.Clear();
-                        Console.SetCursorPosition(40, 6); Console.WriteLine("Digite el numero del documento: ");
-                        Documento_verificar = Console.ReadLine();
+                        Console.SetCursorPosition(45, 8); Console.WriteLine( " ______________________________________________ ");
+                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|                   REGISTRO                   |");
+                        Console.SetCursorPosition(45, 10); Console.WriteLine("|______________________________________________|");
+                        Console.SetCursorPosition(45, 11); Console.WriteLine("| NUMERO DE DOCUMENTO:                         |");
+                        Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
+                        Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
+                        Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
+                        Console.SetCursorPosition(67, 11); Documento_verificar = Console.ReadLine();
                         Verificar_Numeros = int.TryParse(Documento_verificar, out num);
-                        if (Documento_verificar.Length <= 7 || Documento_verificar.Length >= 10)
+                        if (Documento_verificar.Length <= 6 || Documento_verificar.Length >= 11)
                         {
-                            Console.SetCursorPosition(40, 6); Console.WriteLine("Numero digitado no valido...");
-                            Console.SetCursorPosition(40, 6); Console.WriteLine("La cantidad de numeros del documento no es valida..");
-                            Thread.Sleep(3000);
+                            Console.Clear();
+                            Console.SetCursorPosition(45, 8); Console.WriteLine(" _____________________________________________________________ ");
+                            Console.SetCursorPosition(45, 9); Console.WriteLine(" |                        MENSJE ERROR                         |");
+                            Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________________|");
+                            Console.SetCursorPosition(45, 11); Console.WriteLine("| La cantidad de numeros del documento no es valida           |");
+                            Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________________|");
+                            Thread.Sleep(2000);
                             Verificado_documento = "No Verificado";
                         }
                         else if (Verificar_Numeros = false)
                         {
-                            Console.SetCursorPosition(40, 6); Console.WriteLine("El numero de documento no puede tener Letras o Simbolos..");
-                            Thread.Sleep(3000);
+                            Console.Clear();
+                            Console.SetCursorPosition(45, 8); Console.WriteLine(" _____________________________________________________________ ");
+                            Console.SetCursorPosition(45, 9); Console.WriteLine("|                        MENSJE ERROR                         |");
+                            Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________________|");
+                            Console.SetCursorPosition(45, 11); Console.WriteLine("| El numero de documento no puede tener Letras o Simbolos     |");
+                            Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________________|");
+                            Thread.Sleep(2000);
                             Verificado_documento = "No Verificado";
                         }
                         else
@@ -162,7 +227,12 @@ namespace Presentacion
                 else
                 {
                     Console.Clear();
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("Elija un documento valido (Targeta de Identidad o Cdula Ciudadana)");
+                    Console.SetCursorPosition(45, 8); Console.WriteLine( " _______________________________________________________________________");
+                    Console.SetCursorPosition(45, 9); Console.WriteLine( "|                              MENSJE ERROR                             |");
+                    Console.SetCursorPosition(45, 10); Console.WriteLine("|_______________________________________________________________________|");
+                    Console.SetCursorPosition(45, 11); Console.WriteLine("| Elija un documento valido (Targeta de Identidad o Cdula Ciudadana)    |");
+                    Console.SetCursorPosition(45, 12); Console.WriteLine("|_______________________________________________________________________|");
+                    Thread.Sleep(2000);
                     Verificado_documento = "No Verificado";
                 }
             } while(Verificado_documento != "Verificado");
@@ -171,21 +241,30 @@ namespace Presentacion
             do
             {
                 string Contraseña_Verificar;
-                Console.SetCursorPosition(40, 6); Console.WriteLine("Digite una costraseña: ");
-                Contraseña_Verificar = Console.ReadLine();
+                Console.SetCursorPosition(58, 13); Contraseña_Verificar = Console.ReadLine();
                 if (Contraseña_Verificar == "")
                 {
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("Casilla Vacia, por favor digite una contraseña..");
+                    Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________");
+                    Console.SetCursorPosition(45, 9); Console.WriteLine( "|                    MENSJE ERROR                     |");
+                    Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________|");
+                    Console.SetCursorPosition(45, 11); Console.WriteLine("| Casilla Vacia, por favor digite una contraseña      |");
+                    Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________|");
+                    Thread.Sleep(2000);
                     Verificado_Contraseña = "No Verificado";
                 }
                 else if(Contraseña_Verificar.Length <=8)
                 {
-                    Console.SetCursorPosition(40, 6); Console.WriteLine("La contraseña debe tener al menos 8 caracteres...");
+                    Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________");
+                    Console.SetCursorPosition(45, 9); Console.WriteLine( "|                     MENSJE ERROR                    |");
+                    Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________|");
+                    Console.SetCursorPosition(45, 11); Console.WriteLine("| La contraseña debe tener al menos 8 caracteres      |");
+                    Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________________________|");
                     Verificado_Contraseña = "No Verificado";
                 }
                 else
                 {
                     persona.Contraseña = Contraseña_Verificar;
+                    Capturar_Datos();
                     Verificado_Contraseña = "Verificado";
                 }
             }while (Verificado_Contraseña != "Verificado");

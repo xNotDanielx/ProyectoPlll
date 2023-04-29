@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Angel Barrueto\\Downloads\\proyecto (4)\\Censo\\Datos\\Datos.csproj",
+      "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\proyecto (4)\\Censo\\Datos\\Datos.csproj",
+      "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Angel Barrueto\\Downloads\\proyecto (4)\\Censo\\Datos\\obj\\",
+      "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Angel Barrueto\\Downloads\\proyecto (4)\\Censo\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\proyecto (4)\\Censo\\Entidades\\Entidades.csproj"
+            "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
             }
           }
         }

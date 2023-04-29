@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Sector_Social
+    public class Sector_Social
     {
         public int Afliado { get; set; }
         public int Victima_Conflicto { get; set; }

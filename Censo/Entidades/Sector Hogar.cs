@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Sector_Hogar
+    public class Sector_Hogar
     {
         public int Rural { get; set; }
         public int Urbana { get; set; }
-        public int propietario { get; set; }
+        public int Propietario { get; set; }
         public int Servicio_Agua { get; set; }
         public int No_servicio_Agua { get; set; }
         public int Servicio_Luz { get; set; }
@@ -28,7 +28,7 @@ namespace Entidades
         {
             Rural = rural;
             Urbana = urbana;
-            this.propietario = propietario;
+            this.Propietario = propietario;
             Servicio_Agua = servicio_Agua;
             No_servicio_Agua = no_servicio_Agua;
             Servicio_Luz = servicio_Luz;
@@ -41,6 +41,10 @@ namespace Entidades
             Ingreso_Medio = ingreso_Medio;
             Ingreso_Bajo = ingreso_Bajo;
             Estrato = estrato;
+        }
+        public override string ToString()
+        {
+            return $"{Rural};{Urbana};{Propietario};{Servicio_Agua};{No_servicio_Agua};{No_servicio_Luz};{Sericio_Gas};{No_sericio_Gas};{Saneamiento};{No_Saneamiento};{Ingreso_Alto};{Ingreso_Medio};{Ingreso_Bajo};{Estrato}";
         }
     }
 }

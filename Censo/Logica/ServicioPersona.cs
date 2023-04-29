@@ -6,6 +6,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Logica
 {
@@ -28,6 +29,17 @@ namespace Logica
             }
         }
 
+        void Refrescar()
+        {
+            try
+            {
+                personas = archivo.consultar();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
         public bool Eliminar_Cuenta(Persona persona)
         {
             throw new NotImplementedException();
@@ -35,7 +47,16 @@ namespace Logica
 
         public bool Bucar_Cuenta(Persona persona)
         {
-            throw new NotImplementedException();
+            Refrescar();
+            bool Verificar = false;       
+            foreach(var item  in personas)
+            {
+                if (item.Numero_Documento.Equals(persona.Numero_Documento) & item.Contraseña.Equals(persona.Contraseña))
+                {
+                    Verificar = true;
+                }
+            }
+            return Verificar;         
         }
 
         public List<Persona> Obtener_Cuentas()
@@ -43,9 +64,15 @@ namespace Logica
             throw new NotImplementedException();
         }
 
-        public void GetByCc(Persona cedula)
+        public bool Exist(Persona persona)
         {
-            throw new NotImplementedException();
+            bool exist = false;
+            foreach (var item in personas)
+            {
+                if (item.Equals(persona)) { exist = true; }
+            }
+
+            return exist;
         }
 
         public List<Persona> GetByName(string name)

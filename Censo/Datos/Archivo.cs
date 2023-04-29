@@ -10,7 +10,9 @@ namespace Datos
     public class Archivo
     {
         String ruta = "Personas.txt";
-        String ruta_Resultados = "Resultados_Censo.txt";
+        String Resultado_sectorE = "Resultados(Sector Economico)_Censo.txt";
+        String Resultado_sectorH = "Resultados(Sector Hogar)_Censo.txt";
+        String Resultado_sectorS = "Resultados(Sector Social)_Censo.txt";
 
         public String guardar_Cuentas(Persona persona)
         {
@@ -20,10 +22,26 @@ namespace Datos
             return "se guardo Correctamente... ";
         }
 
-        public String guardar_Resultados(Persona persona)
+        public String Sector_Economico(Sector_Economico sectorE)
         {
-            StreamWriter sw = new StreamWriter(ruta_Resultados, true);
-            sw.WriteLine(persona.ToString());
+            StreamWriter sw = new StreamWriter(Resultado_sectorE, true);
+            sw.WriteLine(sectorE.ToString());
+            sw.Close();
+            return "se guardo Correctamente...";
+        }
+
+        public String Sector_Hogar(Sector_Hogar sectorH)
+        {
+            StreamWriter sw = new StreamWriter(Resultado_sectorH, true);
+            sw.WriteLine(sectorH.ToString());
+            sw.Close();
+            return "se guardo Correctamente...";
+        }
+
+        public String Sector_Social(Sector_Social sectorS) 
+        {
+            StreamWriter sw = new StreamWriter(Resultado_sectorS, true);
+            sw.WriteLine(sectorS.ToString());
             sw.Close();
             return "se guardo Correctamente...";
         }

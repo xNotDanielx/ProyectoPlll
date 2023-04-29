@@ -12,7 +12,6 @@ namespace Logica
         bool Eliminar_Cuenta(T persona);
         bool Bucar_Cuenta(T persona);
         List<T> Obtener_Cuentas();
-        void GetByCc(T cedula);
         List<T> GetByName(String name);
         bool UpdatePersona(T persona);
 
