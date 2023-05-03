@@ -14,7 +14,7 @@ namespace Datos
         String Ruta_sectorH = "Resultados(Sector Hogar)_Censo.txt";
         String Ruta_sectorS = "Resultados(Sector Social)_Censo.txt";
 
-        public String guardar_Cuentas(Persona persona)
+        public String Guardar_Persona(Persona persona)
         {
             StreamWriter sw = new StreamWriter(rutaPersona, true);
             sw.WriteLine(persona.ToString());
@@ -124,17 +124,78 @@ namespace Datos
             return options;
         }
 
-        public List<Persona> consultar()
+        public List<Persona> consultarPersona()
         {
             var lista = new List<Persona>();
             try
             {
                 var sr = new StreamReader(rutaPersona);
-                //var linea = string.Empty;
                 while (!sr.EndOfStream)
                 {
-                    //  linea = sr.ReadLine();
                     lista.Add(MapeadorPersona(sr.ReadLine()));
+                }
+                sr.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+        }
+
+        public List<Sector_Economico> consultarSE()
+        {
+            var lista = new List<Sector_Economico>();
+            try
+            {
+                var sr = new StreamReader(Ruta_sectorE);
+                while (!sr.EndOfStream)
+                {
+                    lista.Add(Mapeador_SE(sr.ReadLine()));
+                }
+                sr.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+        }
+
+        public List<Sector_Hogar> consultarSH()
+        {
+            var lista = new List<Sector_Hogar>();
+            try
+            {
+                var sr = new StreamReader(Ruta_sectorH);
+                while (!sr.EndOfStream)
+                {
+                    lista.Add(Mapeador_SH(sr.ReadLine()));
+                }
+                sr.Close();
+                return lista;
+            }
+            catch (Exception)
+            {
+
+                return null;
+            }
+
+        }
+
+        public List<Sector_Social> consultarSS()
+        {
+            var lista = new List<Sector_Social>();
+            try
+            {
+                var sr = new StreamReader(Ruta_sectorS);
+                while (!sr.EndOfStream)
+                {
+                    lista.Add(Mapeador_SS(sr.ReadLine()));
                 }
                 sr.Close();
                 return lista;

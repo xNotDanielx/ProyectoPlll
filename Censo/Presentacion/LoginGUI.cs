@@ -15,7 +15,6 @@ namespace Presentacion
     {
         ServicioPersona serviciopersonas = new ServicioPersona();
         Persona persona = new Persona();
-        List<Persona> personas;
         public void Munu_Login()
         {
             int op;
@@ -45,7 +44,7 @@ namespace Presentacion
                     default:
                         Console.Clear();
                         Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________ ");
-                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|             MENSJE ERROR            |");
+                        Console.SetCursorPosition(45, 9); Console.WriteLine( "|             MENSAJE ERROR            |");
                         Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________|");
                         Console.SetCursorPosition(45, 11); Console.WriteLine("| Por favor elija una opcion valida   |");
                         Console.SetCursorPosition(45, 12); Console.WriteLine("|_____________________________________|");
@@ -65,25 +64,31 @@ namespace Presentacion
             Console.SetCursorPosition(58, 6); persona.Nombre = Console.ReadLine();
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite el Sexo al que pertenece: ");
-            Console.SetCursorPosition(72, 6); persona.Sexo = Console.ReadLine();
+            Console.SetCursorPosition(73, 6); persona.Sexo = Console.ReadLine();
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Edad: ");
-            persona.Edad = Console.ReadLine();
+            Console.SetCursorPosition(56, 6); persona.Edad = Console.ReadLine();
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Telefono: ");
-            persona.Telefono = Console.ReadLine();
+            Console.SetCursorPosition(60, 6); persona.Telefono = Console.ReadLine();
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su correo electronico (Opcional): ");
-            persona.Correo = Console.ReadLine();
+            Console.SetCursorPosition(81, 6); persona.Correo = Console.ReadLine();
             if (persona.Correo == "")
             {
                 persona.Correo = "Sin informacion";
             }
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento DIA: ");
-            dia = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(75, 6); dia = int.Parse(Console.ReadLine());
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento MES: ");
-            mes = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(75, 6); mes = int.Parse(Console.ReadLine());
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento AÑO: ");
-            año = int.Parse(Console.ReadLine());
+            Console.SetCursorPosition(75, 6); año = int.Parse(Console.ReadLine());
             persona.FechaNacimiento = new DateTime(año, mes, dia);
-            serviciopersonas.Añadir_Cuenta(persona);
+            serviciopersonas.Añadir_Persona(persona);
 
         }
         public void Inciar_Sesion()
@@ -101,7 +106,7 @@ namespace Presentacion
             Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
             Console.SetCursorPosition(67, 11); persona.Numero_Documento = Console.ReadLine();
             Console.SetCursorPosition(58, 13); persona.Contraseña = Console.ReadLine();      
-            if (serviciopersonas.Bucar_Cuenta(persona) == true)
+            if (serviciopersonas.Buscar_Cuenta(persona) == true)
             {
                 Console.Clear();
                  Console.SetCursorPosition(45, 11); Console.WriteLine("Iniciando Sesion... ");
@@ -245,6 +250,7 @@ namespace Presentacion
                 Console.SetCursorPosition(58, 13); Contraseña_Verificar = Console.ReadLine();
                 if (Contraseña_Verificar == "")
                 {
+                    Console.Clear();
                     Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________");
                     Console.SetCursorPosition(45, 9); Console.WriteLine( "|                    MENSJE ERROR                     |");
                     Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________|");
@@ -255,6 +261,7 @@ namespace Presentacion
                 }
                 else if(Contraseña_Verificar.Length <=8)
                 {
+                    Console.Clear();
                     Console.SetCursorPosition(45, 8); Console.WriteLine( " _____________________________________________________");
                     Console.SetCursorPosition(45, 9); Console.WriteLine( "|                     MENSJE ERROR                    |");
                     Console.SetCursorPosition(45, 10); Console.WriteLine("|_____________________________________________________|");

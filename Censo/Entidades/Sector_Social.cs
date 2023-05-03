@@ -10,49 +10,31 @@ namespace Entidades
     {
         public int Afliado { get; set; }
         public int Victima_Conflicto { get; set; }
-        public int Ninguno { get; set; }
-        public int Arhuaco{ get; set; }
-        public int Kogui { get; set; }
-        public int Kankuamo { get; set; }
-        public int Wiwa { get; set; }
-        public int Yucpa { get; set; }
-        public int Chimila { get; set; }
+        public string Etnia { get; set; }
         public int Acceso_Estudio { get; set; }
         public int Servicio_Transporte { get; set; }
-        public int Estado_Civil { get; set; }
-        public int Sin_Educacion { get; set; }
-        public int Educacio_Primaria { get; set; }
-        public int Educacio_Tecnica { get; set; }
-        public int Educacion_universitaria { get; set; }
+        public string Estado_Civil { get; set; }
+        public string NivelEducacion { get; set; }
 
         public Sector_Social()
         {
             
         }
 
-        public Sector_Social(int afliado, int victima_Conflicto, int ninguno, int arhuaco, int kogui, int kankuamo, int wiwa, int yucpa, int chimila, int acceso_Estudio, int servicio_Transporte, int estado_Civil, int sin_Educacion, int educacio_Primaria, int educacio_Tecnica, int educacion_universitaria,string etnia )
+        public Sector_Social(int afliado, int victima_Conflicto, string etnia, int acceso_Estudio, int servicio_Transporte, string estado_Civil, string nivel)
         {
             Afliado = afliado;
             Victima_Conflicto = victima_Conflicto;
-            Ninguno = ninguno;
-            Arhuaco = arhuaco;
-            Kogui = kogui;
-            Kankuamo = kankuamo;
-            Wiwa = wiwa;
-            Yucpa = yucpa;
-            Chimila = chimila;
+            Etnia = etnia;
             Acceso_Estudio = acceso_Estudio;
             Servicio_Transporte = servicio_Transporte;
             Estado_Civil = estado_Civil;
-            Sin_Educacion = sin_Educacion;
-            Educacio_Primaria = educacio_Primaria;
-            Educacio_Tecnica = educacio_Tecnica;
-            Educacion_universitaria = educacion_universitaria;
+            NivelEducacion = nivel;
         }
 
         public override string ToString()
         {
-            return $"{Afliado};{Victima_Conflicto};{Ninguno};{Arhuaco};{Kogui};{Kankuamo};{Wiwa};{Yucpa};{Chimila};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{Sin_Educacion};{Educacio_Primaria};{Educacio_Tecnica};{Educacion_universitaria}";
+            return $"{Afliado};{Victima_Conflicto};{Etnia};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{NivelEducacion}";
         }
 
     }

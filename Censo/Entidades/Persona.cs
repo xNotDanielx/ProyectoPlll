@@ -33,10 +33,6 @@ namespace Entidades
             Telefono = telefono;
             FechaNacimiento = fechaNacimiento;
             Correo = correo;
-            Sector = sector;
-            Completado = completado;
-            Sectores_Completados = sectores_completados;
-            
         }
         public override string ToString()
         {

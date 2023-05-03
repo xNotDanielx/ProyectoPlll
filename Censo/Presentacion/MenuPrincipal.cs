@@ -11,7 +11,7 @@ namespace Presentacion
     {
         ServicioPersona sericiopersona = new ServicioPersona();
         LoginGUI loginGUI = new LoginGUI();
-        Sectores sector = new Sectores();
+        SectoresGUI sector = new SectoresGUI();
         public void VerMenuPrincipal()
         {
             int op;
