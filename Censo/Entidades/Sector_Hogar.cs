@@ -24,16 +24,11 @@ namespace Entidades
         public int Ingreso_Bajo { get; set; }
         public int Estrato { get; set; }
         public string Sector_Completado { get; set; }
-
         public Sector_Hogar()
         {
             
         }
-<<<<<<< HEAD
-        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato,string sector_completado)
-=======
-        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato)
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
+        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato, string sector_Completado)
         {
             Rural = rural;
             Urbana = urbana;
@@ -50,7 +45,7 @@ namespace Entidades
             Ingreso_Medio = ingreso_Medio;
             Ingreso_Bajo = ingreso_Bajo;
             Estrato = estrato;
-            Sector_Completado = sector_completado;
+            Sector_Completado = sector_Completado;  
         }
         public override string ToString()
         {

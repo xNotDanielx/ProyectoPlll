@@ -66,3 +66,11 @@ C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\obj\Debug\net6.0\Log
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\obj\Debug\net6.0\refint\Logica.dll
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\obj\Debug\net6.0\Logica.pdb
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\obj\Debug\net6.0\ref\Logica.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.AssemblyInfo.cs
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\refint\Logica.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.pdb

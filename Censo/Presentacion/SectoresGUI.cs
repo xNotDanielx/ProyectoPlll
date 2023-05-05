@@ -10,20 +10,15 @@ namespace Presentacion
 {
     public class SectoresGUI
     {
-<<<<<<< HEAD
         Persona persona = new Persona();
-=======
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         Sector_Economico SE = new Sector_Economico();
         Sector_Social SS = new Sector_Social();
         Sector_Hogar SH = new Sector_Hogar();
         ServicioPersona logica = new ServicioPersona();
         public bool Completado = false;
-<<<<<<< HEAD
         public int Sector = 0;
         public Sector_Economico VerMenuSectorEconomico()
         {
-
             Console.SetCursorPosition(40, 6); Console.WriteLine("SECTOR ECONOMICO");
             Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
             Thread.Sleep(4000);
@@ -41,7 +36,7 @@ namespace Presentacion
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Es usted propietario de un negocio?");
             Respuesta();
-            if (Respuesta()== true)
+            if (Respuesta() == true)
             {
                 SE.Propietario_Negocio = 1;
 
@@ -134,7 +129,7 @@ namespace Presentacion
             {
                 SE.Ingreso_Actividades = 0;
             }
-            Console.Clear();       
+            Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Ha tenido algún tipo de desempleo o inactividad económica en el último año?");
             Respuesta();
             if (Respuesta() == true)
@@ -150,10 +145,10 @@ namespace Presentacion
             return SE;
             VerMenuSectorSocial();
         }
-        
+
+        int opcion = 0;
         public Sector_Social VerMenuSectorSocial()
         {
-            int opcion;
             Console.Clear();
             Console.SetCursorPosition(40, 9); Console.WriteLine("SECTOR SOCIAL");
             Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
@@ -176,67 +171,12 @@ namespace Presentacion
             if (Respuesta() == true)
             {
                 SS.Victima_Conflicto = 1;
-
             }
             else
             {
                 SS.Victima_Conflicto = 0;
             }
-=======
-        public Sector_Economico VerMenuSectorEconomico()
-        {
-            Console.SetCursorPosition(40, 6); Console.WriteLine("SECTOR ECONOMICO");
-            Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
-            Console.SetCursorPosition(40, 7); Console.WriteLine("             [1(SI)/2(NO)]");
-            Thread.Sleep(5000);
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tiene empleo remunerado actualmente?");            
-            SE.Empleado = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Es usted propietario de un negocio?");
-            SE.Propietario_Negocio = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Recibe ingresos por alquileres de bienes raíces?");
-            SE.Trabajador_Privado = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Trabaja como Trabajador Independiente?");
-            SE.Contratista_Independiente = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Es trabajador Público?");
-            SE.Trabajador_Publico = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Es pensionado o jubilado y recibe ingresos por ello?");
-            SE.Pensionado = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Recibe algún tipo de subsidio o asistencia social?");
-            SE.Subsidiado = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Ha obtenido ingresos de inversiones financieras en el último año?");
-            SE.Accionistas= int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Recibe ingresos por actividades agrícolas, ganaderas o pesqueras?");
-            SE.Ingreso_Actividades = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Ha tenido algún tipo de desempleo o inactividad económica en el último año?");
-            SE.Desempleado = int.Parse(Console.ReadKey().ToString());
-            VerMenuSectorSocial();
-            return SE;
-        }
-        int opcion = 0;
-        public Sector_Social VerMenuSectorSocial()
-        {
-            Console.Clear();
-            Console.SetCursorPosition(40, 9); Console.WriteLine("SECTOR SOCIAL");
-            Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
-            Console.SetCursorPosition(40, 7); Console.WriteLine("             [1(SI)/2(NO)]");
-            Thread.Sleep(5000);
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Está afiliado/a a algún programa de seguridad social, como seguro médico o jubilación?");
-            SS.Afliado = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Ha sido víctima de algún tipo de discriminación o violencia basada en su género, raza, religión, orientación sexual, discapacidad o cualquier otra característica protegida?");
-            SS.Victima_Conflicto = int.Parse(Console.ReadKey().ToString());
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
+            opcion = 0;
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Pertenece a alguno de estos grupos etnicos?");
             Console.SetCursorPosition(40, 7); Console.WriteLine("1-Arhuaco");
@@ -271,44 +211,31 @@ namespace Presentacion
             }else if(opcion < 0 &&  opcion > 6) 
             {
                 SS.Etnia = "Ninguno";
-            }
-            opcion = 0;               
+            }          
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tiene acceso a servicios educativos, como escuelas, universidades o programas de capacitación?");
-<<<<<<< HEAD
             Respuesta();
             if (Respuesta() == true)
             {
                 SS.Acceso_Estudio = 1;
-
             }
             else
             {
                 SS.Acceso_Estudio = 0;
             }
-           
             Console.Clear();
-            opcion = 0;
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tiene acceso a servicios de transporte público o privado en su área local?");
             Respuesta();
             if (Respuesta() == true)
             {
                 SS.Servicio_Transporte = 1;
-
             }
             else
             {
                 SS.Servicio_Transporte = 0;
             }
-            Console.Clear();
             opcion = 0;
-=======
-            SS.Acceso_Estudio = int.Parse(Console.ReadKey().ToString());
             Console.Clear();
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tiene acceso a servicios de transporte público o privado en su área local?");
-            SS.Servicio_Transporte = int.Parse(Console.ReadKey().ToString());
-            Console.Clear();
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuál es su estado civil actual?");
             Console.SetCursorPosition(40, 7); Console.WriteLine("1-Soltero");
             Console.SetCursorPosition(40, 8); Console.WriteLine("2-Casado");
@@ -335,6 +262,7 @@ namespace Presentacion
             {
                 SS.Estado_Civil = "otro";
             }
+            opcion = 0;
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuál es su nivel educativo más alto alcanzado?");
             Console.SetCursorPosition(40, 7); Console.WriteLine("1-Sin educacion Formal");
@@ -346,29 +274,6 @@ namespace Presentacion
             opcion = int.Parse(Console.ReadKey().ToString());
             if (opcion == 1)
             {
-<<<<<<< HEAD
-                SS.NivelEducacion = "No tiene";
-            }
-            else if (opcion == 2)
-            {
-                SS.NivelEducacion = "Primaria";
-            }
-            else if (opcion == 3)
-            {
-                SS.NivelEducacion = "Secundaria";
-            }
-            else if (opcion == 4)
-            {
-                SS.NivelEducacion = "Tecnica";
-            }
-            else if (opcion == 5)
-            {
-                SS.NivelEducacion = "Universitaria";
-            }
-            else if (opcion == 6)
-            {
-                SS.NivelEducacion = "Otro";
-=======
                 SS.Etnia = "No tiene";
             }
             else if (opcion == 2)
@@ -390,47 +295,20 @@ namespace Presentacion
             else if (opcion == 6)
             {
                 SS.Etnia = "Otro";
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             }
 
             else if (opcion < 1 && opcion > 6)
             {
-<<<<<<< HEAD
-                SS.NivelEducacion = "Otro";
-            }
-            SS.Sector_Completado = "Si";
-=======
                 SS.Etnia = "Otro";
             }
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             VerMenuSectorHogar();
             return SS;
         }
         public Sector_Hogar VerMenuSectorHogar()
         {
-<<<<<<< HEAD
-            int opcion = 0;
-            Console.Clear();
-            Console.SetCursorPosition(40, 9); Console.WriteLine("CENSO SECTOR HOGAR");
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Vive en una zona urbana o rural?");
-            Console.SetCursorPosition(40, 7); Console.WriteLine("1-Urbana");
-            Console.SetCursorPosition(40, 8); Console.WriteLine("2-Rural");
-            opcion = int.Parse(Console.ReadKey().ToString());     
-            if (opcion == 1)
-            {
-                SH.Urbana = 1;
-            }
-            else
-            {
-                SH.Rural = 1;
-            }
-            //AQUI METERAS LAS PREGUMTAS DEL CENSO
-            SH.Sector_Completado = "Si";
-=======
 
             Console.SetCursorPosition(40, 9); Console.WriteLine("CENSO SECTOR HOGAR");
             //AQUI METERAS LAS PREGUMTAS DEL CENSO
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             return SH;
         }
         public void Sectores_Completados()
@@ -447,7 +325,6 @@ namespace Presentacion
             Thread.Sleep(2000);
             
         }
-<<<<<<< HEAD
 
         public bool Respuesta()
         {
@@ -465,8 +342,5 @@ namespace Presentacion
             }
         }
 
-=======
-       
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
     }
 }

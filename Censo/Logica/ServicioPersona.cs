@@ -3,7 +3,6 @@ using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,14 +10,11 @@ using System.Xml.Linq;
 
 namespace Logica
 {
-<<<<<<< HEAD
-    public class ServicioPersona 
-=======
     public class ServicioPersona
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
     {
         Archivo archivo = new Archivo();
         List<Persona> personas;
+        List<Login> logins;
         List<Sector_Economico> sectorE;
         List<Sector_Hogar> sectorH;
         List<Sector_Social> sectorS;
@@ -88,47 +84,19 @@ namespace Logica
             throw new NotImplementedException();
         }
 
-<<<<<<< HEAD
-=======
-        public bool Buscar_Cuenta(Persona persona)
+        public bool Buscar_Cuenta(Login login)
         {
             Refresh();
             bool Verificar = false;       
-            foreach(var item  in personas)
+            foreach(var item  in logins)
             {
-                if (item.Numero_Documento.Equals(persona.Numero_Documento) & item.Contraseña.Equals(persona.Contraseña))
+                if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
                 {
                     Verificar = true;
                 }
             }
             return Verificar;         
         }
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
-
-        public List<Persona> Obtener_Cuentas()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Exist(Persona persona)
-        {
-            bool exist = false;
-            foreach (var item in personas)
-            {
-                if (item.Equals(persona)) { exist = true; }
-            }
-
-            return exist;
-        }
-
-        public List<Persona> GetByName(string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool UpdatePersona(Persona persona)
-        {
-            throw new NotImplementedException();
-        }
+         
     }
 }

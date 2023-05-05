@@ -21,11 +21,7 @@ namespace Entidades
         public string Sector_Completado { get; set; }
 
         public Sector_Economico() { }
-<<<<<<< HEAD
-        public Sector_Economico(int empleado, int propietario_Negocio, int trabajador_Privado, int contratista_Independiente, int pensionado, int subsidiado, int accionistas, int trabajador_Publico, int ingreso_Actividades, int desempleado,string sector_completado)
-=======
-        public Sector_Economico(int empleado, int propietario_Negocio, int trabajador_Privado, int contratista_Independiente, int pensionado, int subsidiado, int accionistas, int trabajador_Publico, int ingreso_Actividades, int desempleado)
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
+        public Sector_Economico(int empleado, int propietario_Negocio, int trabajador_Privado, int contratista_Independiente, int pensionado, int subsidiado, int accionistas, int trabajador_Publico, int ingreso_Actividades, int desempleado, string sector_Completado)
         {
             Empleado = empleado;
             Propietario_Negocio = propietario_Negocio;
@@ -37,16 +33,12 @@ namespace Entidades
             Trabajador_Publico = trabajador_Publico;
             Ingreso_Actividades = ingreso_Actividades;
             Desempleado = desempleado;
-            Sector_Completado = sector_completado;
+            Sector_Completado = sector_Completado;  
         }
 
         public override string ToString()
         {
-<<<<<<< HEAD
             return $"{Empleado};{Propietario_Negocio};{Trabajador_Privado};{Contratista_Independiente};{Pensionado};{Subsidiado};{Accionistas};{Trabajador_Publico};{Ingreso_Actividades};{Desempleado};{Sector_Completado}";
-=======
-            return $"{Empleado};{Propietario_Negocio};{Trabajador_Privado};{Contratista_Independiente};{Pensionado};{Subsidiado};{Accionistas};{Trabajador_Publico};{Ingreso_Actividades};{Desempleado}";
->>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         }
     }
 }

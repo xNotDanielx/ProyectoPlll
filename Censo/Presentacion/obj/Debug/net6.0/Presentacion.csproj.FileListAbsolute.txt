@@ -86,3 +86,11 @@ C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Presentacion\obj\Debug\net6
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Presentacion\obj\Debug\net6.0\Presentacion.pdb
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Presentacion\obj\Debug\net6.0\Presentacion.genruntimeconfig.cache
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Presentacion\obj\Debug\net6.0\ref\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.AssemblyInfoInputs.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.AssemblyInfo.cs
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\refint\Presentacion.dll
+C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Presentacion\obj\Debug\net6.0\Presentacion.pdb
