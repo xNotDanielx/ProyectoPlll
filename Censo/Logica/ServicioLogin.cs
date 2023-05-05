@@ -61,7 +61,7 @@ namespace Logica
         {
             Refresh(); 
             bool Verificar = false;
-            foreach (var item in logins)
+            foreach (var item in GetAll())
             {
                 if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
                 {

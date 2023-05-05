@@ -106,14 +106,15 @@ namespace Presentacion
             Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
             Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
             Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
-            Console.SetCursorPosition(67, 11); login.Numero_Documento = Console.ReadLine();          
+            Console.SetCursorPosition(67, 11); login.Numero_Documento = Console.ReadLine();
+            persona.Documento = login.Numero_Documento;
             Console.SetCursorPosition(58, 13); login.Contraseña = Console.ReadLine();
             if (servicioLogin.Buscar_Cuenta(login) == true)
             {
                 Console.Clear();
                  Console.SetCursorPosition(45, 11); Console.WriteLine("Iniciando Sesion... ");
                  Thread.Sleep(2000);
-                 menu.VerMenuPrincipal(login);
+                 menu.VerMenuPrincipal(persona);
             }
             else
             {
@@ -187,6 +188,7 @@ namespace Presentacion
                     else
                     {
                         login.Tipo_Documento = "CC";
+                        persona.Documento = Documento_verificar;
                         login.Numero_Documento = Documento_verificar;
                         Verificado_documento = "Verificado";
                     }
