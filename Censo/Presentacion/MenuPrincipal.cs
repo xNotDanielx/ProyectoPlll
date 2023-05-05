@@ -14,7 +14,11 @@ namespace Presentacion
         LoginGUI loginGUI = new LoginGUI();
         presentacionGUI mostrar = new presentacionGUI();
         SectoresGUI sector = new SectoresGUI();
+<<<<<<< HEAD
         public void VerMenuPrincipal(Login login)
+=======
+        public void VerMenuPrincipal(Login loguin)
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
         {
             int op;
             do
@@ -42,7 +46,11 @@ namespace Presentacion
                         //TIENES QUE HACER QUE LOS RESULTADOS DEL CENSO SE GUARDEN EN ARCHIVOS TODO CON NUMEROS
                         //EMPLEADO=1 (SI DIJO QUE SI = 1), NO EMPLEADO=0(SI DIJO QUE NO = 0), CON CARRO = 1, SIN CARRO= 0.
                         //AL FINAL TODO SE SUMA Y SE SCA EL RESULTADO DEL CENSO EN GENERAL
+<<<<<<< HEAD
                         mostrar.MostrarInformacion(login);
+=======
+                        mostrar.MostrarInformacion(loguin);
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
                         break;
                     case 2:
                         sector.VerMenuSectorEconomico();

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "EB1495LfEaxLzRw0l2P7oMnzsxg2hUvVNW7l0qJlUjLgMicTTsSI4UFmdUqlJbAVg8wW9W1wzcOMy3qqZDfNZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Presentacion\\Presentacion.csproj",
+=======
+  "dgSpecHash": "G+zDN+T8xSu2s7KhGFCksdDDms+IZ+unrCivW9bk1dU4U4LWBBArhs94VdRPmYbU+1wyNaQ1WBzHHP2pwzJlDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Presentacion\\Presentacion.csproj",
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
   "expectedPackageFiles": [],
   "logs": []
 }

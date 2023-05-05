@@ -46,19 +46,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Angel Barrueto\\.nuget\\packages\\": {}
+    "C:\\Users\\victo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
       "projectName": "Logica",
       "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
+      "projectName": "Logica",
+      "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\obj\\",
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,17 +79,26 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
               "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj"
             },
             "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
               "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
+=======
+            "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj"
+            },
+            "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
             }
           }
         }
@@ -106,7 +128,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

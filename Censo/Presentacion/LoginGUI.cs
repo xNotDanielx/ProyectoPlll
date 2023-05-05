@@ -95,6 +95,11 @@ namespace Presentacion
         }
         public void Inciar_Sesion()
         {
+<<<<<<< HEAD
+=======
+            string doc;
+            string contra;
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
             var menu = new MenuPrincipal();
             string Documento_Verificar;
             string Contraseña_Verificar;
@@ -106,9 +111,15 @@ namespace Presentacion
             Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
             Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
             Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
+<<<<<<< HEAD
             Console.SetCursorPosition(67, 11); login.Numero_Documento = Console.ReadLine();          
             Console.SetCursorPosition(58, 13); login.Contraseña = Console.ReadLine();
             if (servicioLogin.Buscar_Cuenta(login) == true)
+=======
+            Console.SetCursorPosition(67, 11); doc = Console.ReadLine();          
+            Console.SetCursorPosition(58, 13); contra = Console.ReadLine();      
+            if (servicioLogin.Buscar_Cuenta(doc, contra) == true)
+>>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
             {
                 Console.Clear();
                  Console.SetCursorPosition(45, 11); Console.WriteLine("Iniciando Sesion... ");
