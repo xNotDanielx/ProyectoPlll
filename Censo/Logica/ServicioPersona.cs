@@ -3,6 +3,7 @@ using Entidades;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,54 +11,79 @@ using System.Xml.Linq;
 
 namespace Logica
 {
-    public class ServicioPersona : IPersona<Persona>
+    public class ServicioPersona 
     {
         Archivo archivo = new Archivo();
         List<Persona> personas;
+        List<Sector_Economico> sectorE;
+        List<Sector_Hogar> sectorH;
+        List<Sector_Social> sectorS;
 
-        public void Añadir_Cuenta(Persona persona)
+        public ServicioPersona()
+        {
+            Refresh(); 
+        }
+
+        public string Añadir_Persona(Persona persona)
         {
             try
             {
-                if (persona == null) { return; }
-                archivo.guardar_Cuentas(persona);
-                //return $"contacto {contacto.Nombre} guardado...";
+                if (persona == null) 
+                { 
+                    return "No se puede guardar una persona con valor NULL";
+                }
+                else
+                {
+                    archivo.Guardar_Persona(persona);
+                    return "Guardado...";
+                }                
             }
             catch (Exception)
             {
-                return;
+                return "Error al guardar";
             }
         }
 
-        void Refrescar()
+        public string Añadir_Sectores(Sector_Economico SE, Sector_Social SS, Sector_Hogar SH) { 
+            try
+            {
+                if (SE == null || SH == null || SS == null)
+                {
+                    return "No se puede guardar un valor NULL";
+                }
+                else
+                {
+                    archivo.GuardarSector_Economico(SE);
+                    archivo.GuardarSector_Hogar(SH);
+                    archivo.GuardarSector_Social(SS);
+                    return "Guardado...";
+                }
+            }
+            catch (Exception)
+            {
+                return "Error al guardar";
+            }
+        }
+
+        void Refresh()
         {
             try
             {
-                personas = archivo.consultar();
+                personas = archivo.consultarPersona();
+                sectorE = archivo.consultarSE();
+                sectorH = archivo.consultarSH();
+                sectorS = archivo.consultarSS();
             }
             catch (Exception)
             {
 
             }
         }
-        public bool Eliminar_Cuenta(Persona persona)
+        public bool Eliminar(Persona persona)
         {
             throw new NotImplementedException();
         }
 
-        public bool Bucar_Cuenta(Persona persona)
-        {
-            Refrescar();
-            bool Verificar = false;       
-            foreach(var item  in personas)
-            {
-                if (item.Numero_Documento.Equals(persona.Numero_Documento) & item.Contraseña.Equals(persona.Contraseña))
-                {
-                    Verificar = true;
-                }
-            }
-            return Verificar;         
-        }
 
         public List<Persona> Obtener_Cuentas()
         {

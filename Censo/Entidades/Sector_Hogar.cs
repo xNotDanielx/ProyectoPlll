@@ -23,8 +23,13 @@ namespace Entidades
         public int Ingreso_Medio { get; set; }
         public int Ingreso_Bajo { get; set; }
         public int Estrato { get; set; }
+        public string Sector_Completado { get; set; }
 
-        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato)
+        public Sector_Hogar()
+        {
+            
+        }
+        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato,string sector_completado)
         {
             Rural = rural;
             Urbana = urbana;
@@ -41,10 +46,11 @@ namespace Entidades
             Ingreso_Medio = ingreso_Medio;
             Ingreso_Bajo = ingreso_Bajo;
             Estrato = estrato;
+            Sector_Completado = sector_completado;
         }
         public override string ToString()
         {
-            return $"{Rural};{Urbana};{Propietario};{Servicio_Agua};{No_servicio_Agua};{No_servicio_Luz};{Sericio_Gas};{No_sericio_Gas};{Saneamiento};{No_Saneamiento};{Ingreso_Alto};{Ingreso_Medio};{Ingreso_Bajo};{Estrato}";
+            return $"{Rural};{Urbana};{Propietario};{Servicio_Agua};{No_servicio_Agua};{No_servicio_Luz};{Sericio_Gas};{No_sericio_Gas};{Saneamiento};{No_Saneamiento};{Ingreso_Alto};{Ingreso_Medio};{Ingreso_Bajo};{Estrato};{Sector_Completado}";
         }
     }
 }

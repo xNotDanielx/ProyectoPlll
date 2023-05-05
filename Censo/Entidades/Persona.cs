@@ -8,38 +8,24 @@ namespace Entidades
 {
     public class Persona
     {
-        public Persona() { }
         public String Nombre { get; set; }
-        public String Tipo_Documento { get; set; }
-        public String Numero_Documento { get; set; }
-        public String Contraseña { get;set; }
         public String Sexo { get; set; }
         public String Edad { get; set; }
         public String Telefono { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public String Correo { get; set; }
-        public int Sector { get; set; }
-        public bool Completado { get; set; }
-        public bool Sectores_Completados { get; set; }
-        public Persona(string nombre, string tipo_documento, string numero_documento, string contraseña, string sexo, string edad, string telefono, DateTime fechaNacimiento, string correo,int sector,bool completado, bool sectores_completados)
+        public Persona() { }
+
+        public Persona(string nombre, string sexo, string edad, string telefono, DateTime fechaNacimiento)
         {
             Nombre = nombre;
-            Tipo_Documento = tipo_documento;
-            Numero_Documento = numero_documento;
-            Contraseña = contraseña;
             Sexo = sexo;
             Edad = edad;
             Telefono = telefono;
             FechaNacimiento = fechaNacimiento;
-            Correo = correo;
-            Sector = sector;
-            Completado = completado;
-            Sectores_Completados = sectores_completados;
-            
         }
         public override string ToString()
         {
-            return $"{Nombre};{Tipo_Documento};{Numero_Documento};{Contraseña};{Sexo};{Edad};{Telefono};{FechaNacimiento.ToShortDateString()};{Correo};{Sector};{Completado};{Sectores_Completados}";
+            return $"{Nombre};{Sexo};{Edad};{Telefono};{FechaNacimiento.ToShortDateString()}";
         }
     }
 }
