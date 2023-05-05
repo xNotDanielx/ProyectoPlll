@@ -19,11 +19,7 @@ namespace Presentacion
                 if (login.Numero_Documento == item.Documento)
                 {
                     Console.SetCursorPosition(34, 3); Console.WriteLine("____________________________________________________");
-<<<<<<< HEAD
                     Console.SetCursorPosition(34, 4); Console.WriteLine("|Nombre: " + item.Nombre);
-=======
-                    Console.SetCursorPosition(34, 4); Console.WriteLine("| Nombre: " + item.Nombre);
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
                     Console.SetCursorPosition(34, 5); Console.WriteLine("|Documento: " + item.Documento);
                     Console.SetCursorPosition(34, 6); Console.WriteLine("|Sexo: " + item.Sexo);
                     Console.SetCursorPosition(34, 7); Console.WriteLine("|Edad: " + item.Edad);

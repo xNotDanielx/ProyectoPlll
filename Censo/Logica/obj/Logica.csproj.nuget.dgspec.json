@@ -1,38 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj": {}
+    "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\Logica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
+    "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
+        "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\obj\\",
-=======
-    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
-        "projectName": "Datos",
-        "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\obj\\",
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+        "outputPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,20 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
-=======
-              "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+              "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -83,36 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\obj\\",
-=======
-    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
-        "projectName": "Entidades",
-        "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\obj\\",
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+        "outputPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +81,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -154,36 +114,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-<<<<<<< HEAD
-    "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj": {
+    "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\Logica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
+        "projectUniqueName": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\Logica.csproj",
         "projectName": "Logica",
-        "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
+        "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\Logica.csproj",
         "packagesPath": "C:\\Users\\Angel Barrueto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\obj\\",
-=======
-    "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
-        "projectName": "Logica",
-        "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\obj\\",
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+        "outputPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Angel Barrueto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -191,26 +136,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj"
+              "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\Datos.csproj": {
+                "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Datos\\Datos.csproj"
               },
-              "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
-=======
-              "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Datos\\Datos.csproj"
-              },
-              "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Entidades\\Entidades.csproj"
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+              "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -240,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

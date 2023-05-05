@@ -74,15 +74,9 @@ namespace Datos
         {
             var login = new Login();
             string[] aux = linea.Split(';');
-<<<<<<< HEAD
             login.Numero_Documento = aux[0];
             login.Contraseña = aux[1];
             login.Tipo_Documento = aux[2];
-=======
-            login.Tipo_Documento = aux[0];
-            login.Numero_Documento = aux[1];
-            login.Contraseña = aux[2];
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
             return login;
         }
 

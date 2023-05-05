@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "GpjrazHG0Jwnx3oV5vnK9gfncIGurFdshk4BeZCjdFK9f+AlHlrz4aN25XEdPFt9guseTl2fDXHwbpCsyy4kFQ==",
+  "dgSpecHash": "24SW6wUvKdmoOYp37DS4tEdA5RatFBxF2T7IX3xulVHn7hqDf9oiGYE6oetiZMURu9lQWs1fHB0s8isSrUd8jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Angel Barrueto\\Documents\\Proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
-=======
-  "dgSpecHash": "1vCuZgvI3/QXZQXus89hIyh77uX3SdeVeX2HqjS+X1cfW+FGntdb9odWTyYwjH2zuCCXwQ4fHfauvna3G3xRsQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Documents\\proyecto\\ProyectoPlll\\Censo\\Logica\\Logica.csproj",
->>>>>>> c235ee3e7ee132f0b7b40900495f30b8bd7f9081
+  "projectFilePath": "C:\\Users\\Angel Barrueto\\Downloads\\ProyectoPlll-main (3)\\ProyectoPlll-main\\Censo\\Logica\\Logica.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

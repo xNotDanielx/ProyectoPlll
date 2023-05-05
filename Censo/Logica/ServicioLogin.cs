@@ -57,19 +57,15 @@ namespace Logica
                 return "Error al guardar";
             }
         }
-        public bool Buscar_Cuenta(string doc, string contra)
+        public bool Buscar_Cuenta(Login login)
         {
             Refresh(); 
             bool Verificar = false;
-            foreach (var item in GetAll())
+            foreach (var item in logins)
             {
-                if (item.Numero_Documento.Equals(doc) & item.Contraseña.Equals(contra))
+                if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
                 {
                     Verificar = true;
-                }
-                else
-                {
-                    Verificar = false;
                 }
             }
             return Verificar;
