@@ -13,6 +13,11 @@ namespace Logica
         Archivo archivo = new Archivo();
         List<Login> logins;
 
+        public ServicioLogin()
+        {
+            Refresh();
+        }
+
         void Refresh()
         {
             try
@@ -23,6 +28,14 @@ namespace Logica
             {
 
             }
+        }
+
+        public List<Login> GetAll()
+        {
+            Refresh();
+            if (logins.Count == 0) return null;
+
+            return logins;
         }
 
         public string Añadir_Cuentas(Login login)
@@ -46,7 +59,7 @@ namespace Logica
         }
         public bool Buscar_Cuenta(Login login)
         {
-            Refresh();
+            Refresh(); 
             bool Verificar = false;
             foreach (var item in logins)
             {

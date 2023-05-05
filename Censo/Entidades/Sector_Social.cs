@@ -15,13 +15,12 @@ namespace Entidades
         public int Servicio_Transporte { get; set; }
         public string Estado_Civil { get; set; }
         public string NivelEducacion { get; set; }
-        public string Sector_Completado { get; set; }
         public Sector_Social()
         {
             
         }
 
-        public Sector_Social(int afliado, int victima_Conflicto, string etnia, int acceso_Estudio, int servicio_Transporte, string estado_Civil, string nivel, string sector_Completado)
+        public Sector_Social(int afliado, int victima_Conflicto, string etnia, int acceso_Estudio, int servicio_Transporte, string estado_Civil, string nivel)
         {
             Afliado = afliado;
             Victima_Conflicto = victima_Conflicto;
@@ -30,12 +29,11 @@ namespace Entidades
             Servicio_Transporte = servicio_Transporte;
             Estado_Civil = estado_Civil;
             NivelEducacion = nivel;
-            Sector_Completado = sector_Completado;  
         }
 
         public override string ToString()
         {
-            return $"{Afliado};{Victima_Conflicto};{Etnia};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{NivelEducacion};{Sector_Completado}";
+            return $"{Afliado};{Victima_Conflicto};{Etnia};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{NivelEducacion}";
         }
 
     }

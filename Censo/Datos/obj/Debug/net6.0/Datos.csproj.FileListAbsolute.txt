@@ -66,3 +66,18 @@ C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Datos\
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Datos\obj\Debug\net6.0\Datos.dll
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Datos\obj\Debug\net6.0\refint\Datos.dll
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\bin\Debug\net6.0\Datos.deps.json
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\bin\Debug\net6.0\Datos.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\bin\Debug\net6.0\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\bin\Debug\net6.0\Entidades.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\bin\Debug\net6.0\Entidades.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.AssemblyInfo.cs
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.csproj.CopyComplete
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\refint\Datos.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Datos\obj\Debug\net6.0\ref\Datos.dll

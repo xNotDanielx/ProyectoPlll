@@ -74,3 +74,20 @@ C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.dll
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\refint\Logica.dll
 C:\Users\Angel Barrueto\Downloads\Nuevo Archivo WinRAR ZIP\Censo anterior\Logica\obj\Debug\net6.0\Logica.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Logica.deps.json
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Logica.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Logica.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Datos.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Entidades.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\bin\Debug\net6.0\Entidades.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.AssemblyInfoInputs.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.AssemblyInfo.cs
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.csproj.CopyComplete
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\refint\Logica.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\Logica.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (3)\ProyectoPlll-main\Censo\Logica\obj\Debug\net6.0\ref\Logica.dll

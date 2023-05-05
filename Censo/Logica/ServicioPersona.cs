@@ -10,21 +10,17 @@ using System.Xml.Linq;
 
 namespace Logica
 {
-    public class ServicioPersona
-    {
-        Archivo archivo = new Archivo();
+    public class ServicioPersona : ICenso<Persona>
+    {        
         List<Persona> personas;
-        List<Login> logins;
-        List<Sector_Economico> sectorE;
-        List<Sector_Hogar> sectorH;
-        List<Sector_Social> sectorS;
+        Archivo archivo = new Archivo();
 
         public ServicioPersona()
         {
-            Refresh(); 
+            Refresh();
         }
 
-        public string Añadir_Persona(Persona persona)
+        public string Añadir(Persona persona)
         {
             try
             {
@@ -43,60 +39,32 @@ namespace Logica
                 return "Error al guardar";
             }
         }
+        public List<Persona> GetAll()
+        {
+            Refresh();
+            if (personas.Count == 0) return null;
 
-        public string Añadir_Sectores(Sector_Economico SE, Sector_Social SS, Sector_Hogar SH) { 
-            try
-            {
-                if (SE == null || SH == null || SS == null)
-                {
-                    return "No se puede guardar un valor NULL";
-                }
-                else
-                {
-                    archivo.GuardarSector_Economico(SE);
-                    archivo.GuardarSector_Hogar(SH);
-                    archivo.GuardarSector_Social(SS);
-                    return "Guardado...";
-                }
-            }
-            catch (Exception)
-            {
-                return "Error al guardar";
-            }
+            return personas;
         }
 
-        void Refresh()
+
+
+        public void Refresh()
         {
             try
             {
                 personas = archivo.consultarPersona();
-                sectorE = archivo.consultarSE();
-                sectorH = archivo.consultarSH();
-                sectorS = archivo.consultarSS();
             }
             catch (Exception)
             {
 
             }
         }
+
+
         public bool Eliminar(Persona persona)
         {
             throw new NotImplementedException();
         }
-
-        public bool Buscar_Cuenta(Login login)
-        {
-            Refresh();
-            bool Verificar = false;       
-            foreach(var item  in logins)
-            {
-                if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
-                {
-                    Verificar = true;
-                }
-            }
-            return Verificar;         
-        }
-         
     }
 }

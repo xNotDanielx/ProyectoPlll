@@ -60,21 +60,23 @@ namespace Datos
             var persona = new Persona();
             string[] aux = linea.Split(';');
             persona.Nombre = aux[0];
-            persona.Sexo = aux[1];
-            persona.Edad = aux[2];
-            persona.Telefono = aux[3];
-            persona.FechaNacimiento = DateTime.Parse(aux[4]);
-            persona.Correo = aux[5];
+            persona.Documento = aux[1];
+            persona.Sexo = aux[2];
+            persona.Edad = aux[3];
+            persona.Telefono = aux[4];
+            persona.FechaNacimiento = DateTime.Parse(aux[5]);
+            persona.Correo = aux[6];
+            persona.Estrato = int.Parse(aux[7]);
+            persona.Sectores_Completados = bool.Parse(aux[8]);
             return persona;
         }
         public Login MapeadorLogin(string linea)
         {
             var login = new Login();
             string[] aux = linea.Split(';');
-            login.Tipo_Documento = aux[0];
-            login.Numero_Documento = aux[1];
-            login.Contraseña = aux[2];
-            login.Correo = aux[3];
+            login.Numero_Documento = aux[0];
+            login.Contraseña = aux[1];
+            login.Tipo_Documento = aux[2];
             return login;
         }
 
@@ -99,21 +101,22 @@ namespace Datos
         {
             var options = new Sector_Hogar();
             string[] aux = linea.Split(';');
-            options.Rural = int.Parse(aux[0]);
-            options.Urbana = int.Parse(aux[1]);
-            options.Propietario = int.Parse(aux[2]);
-            options.Servicio_Agua = int.Parse(aux[3]);
-            options.No_servicio_Agua = int.Parse(aux[4]);
-            options.Servicio_Luz = int.Parse(aux[5]);
-            options.No_servicio_Luz = int.Parse(aux[6]);
-            options.Sericio_Gas = int.Parse(aux[7]);
-            options.No_sericio_Gas = int.Parse(aux[8]);
-            options.Saneamiento = int.Parse(aux[9]);
-            options.No_Saneamiento = int.Parse(aux[10]);
-            options.Ingreso_Alto = int.Parse(aux[11]);
-            options.Ingreso_Medio = int.Parse(aux[12]);
-            options.Ingreso_Bajo = int.Parse(aux[13]);
-            options.Estrato = int.Parse(aux[14]);
+            options.Zona = aux[0];
+            options.Propietario = int.Parse(aux[1]);
+            options.Servicio_Agua = int.Parse(aux[2]);
+            options.Servicio_Luz = int.Parse(aux[3]);
+            options.Servicio_Gas = int.Parse(aux[4]);
+            options.Saneamiento = int.Parse(aux[5]);
+            options.Adicional = int.Parse(aux[6]);
+            options.Habitaciones = int.Parse(aux[7]);
+            options.Baños = int.Parse(aux[8]);
+            options.Tipo_Vivienda = aux[9];
+            options.Ingreso = aux[10];
+            options.Internet = int.Parse(aux[11]);
+            options.Cable = int.Parse(aux[12]);
+            options.Telefono = int.Parse(aux[13]);
+            options.Vehiculo = int.Parse(aux[14]);
+            
             return options;
         }
 
