@@ -29,7 +29,11 @@ namespace Entidades
         {
             
         }
+<<<<<<< HEAD
         public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato,string sector_completado)
+=======
+        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato)
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         {
             Rural = rural;
             Urbana = urbana;

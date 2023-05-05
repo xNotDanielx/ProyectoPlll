@@ -11,7 +11,10 @@ namespace Datos
     public class Archivo
     {
         String rutaPersona = "Personas.txt";
+<<<<<<< HEAD
         String rutaLogin = "Login.txt";
+=======
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         String Ruta_sectorE = "Resultados(Sector Economico)_Censo.txt";
         String Ruta_sectorH = "Resultados(Sector Hogar)_Censo.txt";
         String Ruta_sectorS = "Resultados(Sector Social)_Censo.txt";
@@ -24,6 +27,7 @@ namespace Datos
             return "se guardo Correctamente... ";
         }
 
+<<<<<<< HEAD
         public String Guardar_Login(Login login)
         {
             StreamWriter sw = new StreamWriter(rutaLogin, true);
@@ -34,6 +38,10 @@ namespace Datos
 
         public String GuardarSector_Economico(Sector_Economico sectorE)
         {
+=======
+        public String GuardarSector_Economico(Sector_Economico sectorE)
+        {
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             StreamWriter sw = new StreamWriter(Ruta_sectorE, true);
             sw.WriteLine(sectorE.ToString());
             sw.Close();
@@ -56,7 +64,11 @@ namespace Datos
             return "se guardo Correctamente...";
         }
 
+<<<<<<< HEAD
         public Persona MapeadorPersona(string linea)
+=======
+        public Persona MapeadorPersona(String linea)
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         {
             var persona = new Persona();
             string[] aux = linea.Split(';');
@@ -68,6 +80,7 @@ namespace Datos
             return persona;
         }
 
+<<<<<<< HEAD
         public Login MapeadorLogin(string linea)
         {
             var login = new Login();
@@ -79,6 +92,8 @@ namespace Datos
             return login;
         }
 
+=======
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         public Sector_Economico Mapeador_SE(string linea)
         {
             var options = new Sector_Economico();
@@ -124,11 +139,28 @@ namespace Datos
             string[] aux = linea.Split(';');
             options.Afliado = int.Parse(aux[0]);
             options.Victima_Conflicto = int.Parse(aux[1]);
+<<<<<<< HEAD
             options.Etnia = aux[2];
             options.Acceso_Estudio = int.Parse(aux[3]);
             options.Servicio_Transporte = int.Parse(aux[4]);
             options.Estado_Civil = aux[5];
             options.NivelEducacion = aux[6];
+=======
+            options.Ninguno = int.Parse(aux[2]);
+            options.Arhuaco = int.Parse(aux[3]);
+            options.Kogui = int.Parse(aux[4]);
+            options.Kankuamo = int.Parse(aux[5]);
+            options.Wiwa = int.Parse(aux[6]);
+            options.Yucpa = int.Parse(aux[7]);
+            options.Chimila = int.Parse(aux[8]);
+            options.Acceso_Estudio = int.Parse(aux[9]);
+            options.Servicio_Transporte = int.Parse(aux[10]);
+            options.Estado_Civil = int.Parse(aux[11]);
+            options.Sin_Educacion = int.Parse(aux[12]);
+            options.Educacio_Primaria = int.Parse(aux[13]);
+            options.Educacio_Tecnica = int.Parse(aux[14]);
+            options.Educacion_universitaria = int.Parse(aux[15]);
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
             return options;
         }
 
@@ -153,6 +185,7 @@ namespace Datos
 
         }
 
+<<<<<<< HEAD
         public List<Login> consultarCuenta()
         {
             var lista = new List<Login>();
@@ -174,6 +207,8 @@ namespace Datos
 
         }
 
+=======
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
         public List<Sector_Economico> consultarSE()
         {
             var lista = new List<Sector_Economico>();

@@ -11,7 +11,11 @@ using System.Xml.Linq;
 
 namespace Logica
 {
+<<<<<<< HEAD
     public class ServicioPersona 
+=======
+    public class ServicioPersona
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
     {
         Archivo archivo = new Archivo();
         List<Persona> personas;
@@ -84,6 +88,22 @@ namespace Logica
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
+=======
+        public bool Buscar_Cuenta(Persona persona)
+        {
+            Refresh();
+            bool Verificar = false;       
+            foreach(var item  in personas)
+            {
+                if (item.Numero_Documento.Equals(persona.Numero_Documento) & item.Contraseña.Equals(persona.Contraseña))
+                {
+                    Verificar = true;
+                }
+            }
+            return Verificar;         
+        }
+>>>>>>> 29767ac7c29f43332e1128ecc0f20913c0ac4cf2
 
         public List<Persona> Obtener_Cuentas()
         {
