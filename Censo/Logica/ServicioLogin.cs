@@ -13,6 +13,11 @@ namespace Logica
         Archivo archivo = new Archivo();
         List<Login> logins;
 
+        public ServicioLogin()
+        {
+            Refresh();
+        }
+
         void Refresh()
         {
             try
@@ -23,6 +28,14 @@ namespace Logica
             {
 
             }
+        }
+
+        public List<Login> GetAll()
+        {
+            Refresh();
+            if (logins.Count == 0) return null;
+
+            return logins;
         }
 
         public string Añadir_Cuentas(Login login)
@@ -44,15 +57,19 @@ namespace Logica
                 return "Error al guardar";
             }
         }
-        public bool Buscar_Cuenta(Login login)
+        public bool Buscar_Cuenta(string doc, string contra)
         {
             Refresh();
             bool Verificar = false;
-            foreach (var item in logins)
+            foreach (var item in GetAll())
             {
-                if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
+                if (item.Numero_Documento.Equals(doc) & item.Contraseña.Equals(contra))
                 {
                     Verificar = true;
+                }
+                else
+                {
+                    Verificar = false;
                 }
             }
             return Verificar;

@@ -11,7 +11,6 @@ namespace Entidades
         public String Numero_Documento { get; set; }
         public String Contraseña { get; set; }
         public String Tipo_Documento { get; set; }
-        public String Correo { get; set; }
 
         public Login() { }
 
@@ -20,12 +19,11 @@ namespace Entidades
             Numero_Documento = numero_Documento;
             Contraseña = contraseña;
             Tipo_Documento = tipo_Documento;
-            Correo = correo;
         }
 
         public override string ToString()
         {
-            return $"{Numero_Documento};{Contraseña};{Tipo_Documento};{Correo}";
+            return $"{Numero_Documento};{Contraseña};{Tipo_Documento}";
         }
     }
 }

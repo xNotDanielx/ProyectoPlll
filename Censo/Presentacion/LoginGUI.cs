@@ -90,11 +90,13 @@ namespace Presentacion
             Console.SetCursorPosition(40, 6); Console.WriteLine("Digite su Fecha de nacimiento AÑO: ");
             Console.SetCursorPosition(75, 6); año = int.Parse(Console.ReadLine());
             persona.FechaNacimiento = new DateTime(año, mes, dia);
-            serviciopersonas.Añadir_Persona(persona);
+            serviciopersonas.Añadir(persona);
 
         }
         public void Inciar_Sesion()
-        {         
+        {
+            string doc;
+            string contra;
             var menu = new MenuPrincipal();
             string Documento_Verificar;
             string Contraseña_Verificar;
@@ -106,14 +108,14 @@ namespace Presentacion
             Console.SetCursorPosition(45, 12); Console.WriteLine("|______________________________________________|");
             Console.SetCursorPosition(45, 13); Console.WriteLine("| CONTRASEÑA:                                  |");
             Console.SetCursorPosition(45, 14); Console.WriteLine("|______________________________________________|");
-            Console.SetCursorPosition(67, 11); login.Numero_Documento = Console.ReadLine();
-            Console.SetCursorPosition(58, 13); login.Contraseña = Console.ReadLine();      
-            if (serviciopersonas.Buscar_Cuenta(login) == true)
+            Console.SetCursorPosition(67, 11); doc = Console.ReadLine();          
+            Console.SetCursorPosition(58, 13); contra = Console.ReadLine();      
+            if (servicioLogin.Buscar_Cuenta(doc, contra) == true)
             {
                 Console.Clear();
                  Console.SetCursorPosition(45, 11); Console.WriteLine("Iniciando Sesion... ");
                  Thread.Sleep(2000);
-                 menu.VerMenuPrincipal();
+                 menu.VerMenuPrincipal(login);
             }
             else
             {
@@ -229,6 +231,7 @@ namespace Presentacion
                         {
                             login.Tipo_Documento = "TI";
                             login.Numero_Documento = Documento_verificar;
+                            persona.Documento = Documento_verificar;
                             Verificado_documento = "Verificado";
                         }                  
                 }

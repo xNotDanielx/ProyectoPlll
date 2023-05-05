@@ -8,48 +8,46 @@ namespace Entidades
 {
     public class Sector_Hogar
     {
-        public int Rural { get; set; }
-        public int Urbana { get; set; }
+        public string Zona { get; set; }
         public int Propietario { get; set; }
         public int Servicio_Agua { get; set; }
-        public int No_servicio_Agua { get; set; }
         public int Servicio_Luz { get; set; }
-        public int No_servicio_Luz { get; set; }
-        public int Sericio_Gas { get; set; }
-        public int No_sericio_Gas { get; set; }
+        public int Servicio_Gas { get; set; }
         public int Saneamiento { get; set; }
-        public int No_Saneamiento { get; set; }
-        public int Ingreso_Alto { get; set; }
-        public int Ingreso_Medio { get; set; }
-        public int Ingreso_Bajo { get; set; }
-        public int Estrato { get; set; }
-        public string Sector_Completado { get; set; }
+        public int Adicional { get; set; }
+        public int Habitaciones { get; set; }
+        public int Baños { get; set; }
+        public string Tipo_Vivienda { get; set; }
+        public string Ingreso { get; set; }
+        public int Internet { get; set; }
+        public int Cable { get; set; }
+        public int Telefono { get; set; }
+        public int Vehiculo { get; set; }
         public Sector_Hogar()
         {
             
         }
-        public Sector_Hogar(int rural, int urbana, int propietario, int servicio_Agua, int no_servicio_Agua, int servicio_Luz, int no_servicio_Luz, int sericio_Gas, int no_sericio_Gas, int saneamiento, int no_Saneamiento, int ingreso_Alto, int ingreso_Medio, int ingreso_Bajo, int estrato, string sector_Completado)
+        public Sector_Hogar(string zona, int propietario, int servicio_Agua, int servicio_Luz, int servicio_Gas, int saneamiento, int adicional, int habitaciones, int baños, string tipoVivienda, string ingreso, int internet, int cable, int telefono, int vehiculo,int estrato, string sector_Completado)
         {
-            Rural = rural;
-            Urbana = urbana;
-            this.Propietario = propietario;
+            Zona = zona;
+            Propietario = propietario;
             Servicio_Agua = servicio_Agua;
-            No_servicio_Agua = no_servicio_Agua;
             Servicio_Luz = servicio_Luz;
-            No_servicio_Luz = no_servicio_Luz;
-            Sericio_Gas = sericio_Gas;
-            No_sericio_Gas = no_sericio_Gas;
+            Servicio_Gas = servicio_Gas;
             Saneamiento = saneamiento;
-            No_Saneamiento = no_Saneamiento;
-            Ingreso_Alto = ingreso_Alto;
-            Ingreso_Medio = ingreso_Medio;
-            Ingreso_Bajo = ingreso_Bajo;
-            Estrato = estrato;
-            Sector_Completado = sector_Completado;  
+            Adicional = adicional;
+            Habitaciones = habitaciones;
+            Baños = baños;
+            Tipo_Vivienda = tipoVivienda;
+            Ingreso = ingreso;
+            Internet = internet;
+            Cable = cable;
+            Telefono = telefono;
+            Vehiculo = vehiculo;  
         }
         public override string ToString()
         {
-            return $"{Rural};{Urbana};{Propietario};{Servicio_Agua};{No_servicio_Agua};{No_servicio_Luz};{Sericio_Gas};{No_sericio_Gas};{Saneamiento};{No_Saneamiento};{Ingreso_Alto};{Ingreso_Medio};{Ingreso_Bajo};{Estrato};{Sector_Completado}";
+            return $"{Zona};{Propietario};{Servicio_Agua};{Servicio_Luz};{Servicio_Gas};{Saneamiento};{Adicional};{Habitaciones};{Baños};{Tipo_Vivienda};{Ingreso};{Internet};{Cable};{Telefono};{Vehiculo}";
         }
     }
 }

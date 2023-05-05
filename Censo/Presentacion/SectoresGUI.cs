@@ -10,14 +10,13 @@ namespace Presentacion
 {
     public class SectoresGUI
     {
-        Persona persona = new Persona();
         Sector_Economico SE = new Sector_Economico();
         Sector_Social SS = new Sector_Social();
         Sector_Hogar SH = new Sector_Hogar();
-        ServicioPersona logica = new ServicioPersona();
-        public bool Completado = false;
-        public int Sector = 0;
-        public Sector_Economico VerMenuSectorEconomico()
+        ServicioSE logicaSE = new ServicioSE();
+        ServicioSH logicaSH = new ServicioSH();
+        ServicioSS logicaSS = new ServicioSS();
+        public  void VerMenuSectorEconomico()
         {
             Console.SetCursorPosition(40, 6); Console.WriteLine("SECTOR ECONOMICO");
             Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
@@ -141,13 +140,11 @@ namespace Presentacion
             {
                 SE.Desempleado = 0;
             }
-            SE.Sector_Completado = "Si";
-            return SE;
-            VerMenuSectorSocial();
+            VerMenuSectorSocial(SE);
         }
 
         int opcion = 0;
-        public Sector_Social VerMenuSectorSocial()
+        public void VerMenuSectorSocial(Sector_Economico SE)
         {
             Console.Clear();
             Console.SetCursorPosition(40, 9); Console.WriteLine("SECTOR SOCIAL");
@@ -296,33 +293,198 @@ namespace Presentacion
             {
                 SS.Etnia = "Otro";
             }
-
             else if (opcion < 1 && opcion > 6)
             {
                 SS.Etnia = "Otro";
             }
-            VerMenuSectorHogar();
-            return SS;
+            VerMenuSectorHogar(SE, SS);
         }
-        public Sector_Hogar VerMenuSectorHogar()
+        public void VerMenuSectorHogar(Sector_Economico SE, Sector_Social SS)
         {
-
+            Console.Clear();
             Console.SetCursorPosition(40, 9); Console.WriteLine("CENSO SECTOR HOGAR");
-            //AQUI METERAS LAS PREGUMTAS DEL CENSO
-            return SH;
+            Console.SetCursorPosition(27, 7); Console.WriteLine("Favor NO salir de la app durante la encuesta");
+            Thread.Sleep(4000);
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Vive en una zona urbana o rural?");
+            Console.SetCursorPosition(40, 7); Console.WriteLine("1-Urbana");
+            Console.SetCursorPosition(40, 8); Console.WriteLine("2-Rural");
+            opcion = int.Parse(Console.ReadKey().ToString());
+            if (opcion == 1)
+            {
+                SH.Zona = "Urbana";                   
+            }
+            else if (opcion == 2)
+            {
+                SH.Zona = "Rural";
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Es propietario/a de la vivienda en la que reside actualmente?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Propietario = 1;
+            }
+            else
+            {
+                SH.Propietario = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuenta con servicio de Agua?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Servicio_Agua = 1;
+            }
+            else
+            {
+                SH.Servicio_Agua = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuenta con servicio de Luz?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Servicio_Luz = 1;
+            }
+            else
+            {
+                SH.Servicio_Luz = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuenta con servicio de Gas?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Servicio_Gas = 1;
+            }
+            else
+            {
+                SH.Servicio_Gas = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tienes acceso a saneamiento adecuado en tu hogar (por ejemplo, inodoro, sistema de alcantarillado)?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Saneamiento = 1;
+            }
+            else
+            {
+                SH.Saneamiento = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tienes propiedades adicionales, como segundas viviendas o terrenos?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Adicional = 1;
+            }
+            else
+            {
+                SH.Adicional = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuántas habitaciones tiene tu vivienda?");
+            Console.SetCursorPosition(40, 7); Console.WriteLine("1");
+            Console.SetCursorPosition(40, 8); Console.WriteLine("2");
+            Console.SetCursorPosition(40, 9); Console.WriteLine("3");
+            Console.SetCursorPosition(40, 10); Console.WriteLine("4");
+            Console.SetCursorPosition(40, 11); Console.WriteLine("5");
+            Console.SetCursorPosition(40, 12); Console.WriteLine("6 o más");
+            SH.Habitaciones = int.Parse(Console.ReadKey().ToString());
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cuántos baños completos tiene tu vivienda?");
+            Console.SetCursorPosition(40, 7); Console.WriteLine("1");
+            Console.SetCursorPosition(40, 8); Console.WriteLine("2");
+            Console.SetCursorPosition(40, 9); Console.WriteLine("3");
+            Console.SetCursorPosition(40, 10); Console.WriteLine("4 o más");
+            SH.Baños = int.Parse(Console.ReadKey().ToString());
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tu vivienda es de propiedad o alquilada?");
+            Console.SetCursorPosition(40, 7); Console.WriteLine("1-Propia");
+            Console.SetCursorPosition(40, 8); Console.WriteLine("2-Alquilada");
+            opcion = int.Parse(Console.ReadKey().ToString());
+            if (opcion == 1)
+            {
+                SH.Tipo_Vivienda = "Urbana";
+            }
+            else if (opcion == 2)
+            {
+                SH.Tipo_Vivienda = "Rural";
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tu vivienda es de propiedad o alquilada?");
+            Console.SetCursorPosition(40, 7); Console.WriteLine("1-Bajo");
+            Console.SetCursorPosition(40, 8); Console.WriteLine("2-Medio");
+            Console.SetCursorPosition(40, 9); Console.WriteLine("3-Alto");
+            opcion = int.Parse(Console.ReadKey().ToString());
+            if (opcion == 1)
+            {
+                SH.Ingreso = "Bajo";
+            }
+            else if (opcion == 2)
+            {
+                SH.Tipo_Vivienda = "Medio";
+            }
+            else if (opcion == 3)
+            {
+                SH.Tipo_Vivienda = "Alto";
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿El hogar cuenta con acceso a internet?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Internet = 1;
+            }
+            else
+            {
+                SH.Internet = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿El hogar cuenta con acceso a televisión por cable o satelital?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Cable = 1;
+            }
+            else
+            {
+                SH.Cable = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿El hogar cuenta con teléfono fijo?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Telefono = 1;
+            }
+            else
+            {
+                SH.Telefono = 0;
+            }
+            Console.Clear();
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿El hogar cuenta con vehículo propio?");
+            Respuesta();
+            if (Respuesta() == true)
+            {
+                SH.Vehiculo = 1;
+            }
+            else
+            {
+                SH.Vehiculo = 0;
+            }
+            logicaSE.Añadir(SE);
+            logicaSS.Añadir(SS);
+            logicaSH.Añadir(SH);
+            Sectores_Completados();
         }
         public void Sectores_Completados()
-        {
-            Sector_Economico sector_Economico = new Sector_Economico();
-            Sector_Social sector_Social = new Sector_Social();
-            Sector_Hogar sector_Hogar = new Sector_Hogar();
-            sector_Economico = VerMenuSectorEconomico();
-            sector_Social = VerMenuSectorSocial();
-            sector_Hogar = VerMenuSectorHogar();
-            logica.Añadir_Sectores(sector_Economico, sector_Social, sector_Hogar);
+        {           
             Console.SetCursorPosition(40, 9); Console.WriteLine("FELICIDADES!!!");
             Console.SetCursorPosition(40, 10); Console.WriteLine("SECTORES COMPLETADOS");
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             
         }
 
