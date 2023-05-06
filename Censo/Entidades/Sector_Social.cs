@@ -15,6 +15,7 @@ namespace Entidades
         public int Servicio_Transporte { get; set; }
         public string Estado_Civil { get; set; }
         public string NivelEducacion { get; set; }
+
         public Sector_Social()
         {
             

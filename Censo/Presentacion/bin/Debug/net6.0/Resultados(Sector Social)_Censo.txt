@@ -1,1 +1,1 @@
-0;0;Universitaria;1;1;Soltero;
+0;1;Chimila;1;1;Soltero;Secundaria

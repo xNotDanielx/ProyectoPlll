@@ -125,7 +125,7 @@ namespace Presentacion
             else
             {
                 SE.Desempleado = 0;
-            }
+            }            
             VerMenuSectorSocial(SE);
         }
 
@@ -253,32 +253,32 @@ namespace Presentacion
             opcion = int.Parse(Console.ReadKey().KeyChar.ToString());
             if (opcion == 1)
             {
-                SS.Etnia = "No tiene";
+                SS.NivelEducacion = "No tiene";
             }
             else if (opcion == 2)
             {
-                SS.Etnia = "Primaria";
+                SS.NivelEducacion = "Primaria";
             }
             else if (opcion == 3)
             {
-                SS.Etnia = "Secundaria";
+                SS.NivelEducacion = "Secundaria";
             }
             else if (opcion == 4)
             {
-                SS.Etnia = "Tecnica";
+                SS.NivelEducacion = "Tecnica";
             }
             else if (opcion == 5)
             {
-                SS.Etnia = "Universitaria";
+                SS.NivelEducacion = "Universitaria";
             }
             else if (opcion == 6)
             {
-                SS.Etnia = "Otro";
+                SS.NivelEducacion = "Otro";
             }
             else if (opcion < 1 && opcion > 6)
             {
-                SS.Etnia = "Otro";
-            }
+                SS.NivelEducacion = "Otro";
+            }            
             VerMenuSectorHogar(SE, SS);
         }
         
@@ -386,15 +386,15 @@ namespace Presentacion
             opcion = int.Parse(Console.ReadKey().KeyChar.ToString());
             if (opcion == 1)
             {
-                SH.Tipo_Vivienda = "Urbana";
+                SH.Tipo_Vivienda = "Propia";
             }
             else if (opcion == 2)
             {
-                SH.Tipo_Vivienda = "Rural";
+                SH.Tipo_Vivienda = "Alquilada";
             }
             Console.Clear();
             opcion = 0;
-            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Tu vivienda es de propiedad o alquilada?");
+            Console.SetCursorPosition(40, 6); Console.WriteLine("¿Cual es su nivel de ingresos?");
             Console.SetCursorPosition(40, 7); Console.WriteLine("1-Bajo");
             Console.SetCursorPosition(40, 8); Console.WriteLine("2-Medio");
             Console.SetCursorPosition(40, 9); Console.WriteLine("3-Alto");
@@ -405,11 +405,11 @@ namespace Presentacion
             }
             else if (opcion == 2)
             {
-                SH.Tipo_Vivienda = "Medio";
+                SH.Ingreso = "Medio";
             }
             else if (opcion == 3)
             {
-                SH.Tipo_Vivienda = "Alto";
+                SH.Ingreso = "Alto";
             }
             Console.Clear();
             Console.SetCursorPosition(40, 6); Console.WriteLine("¿El hogar cuenta con acceso a internet?");
@@ -458,6 +458,7 @@ namespace Presentacion
         }
         public void Sectores_Completados()
         {
+            Console.Clear();
             Console.SetCursorPosition(40, 9); Console.WriteLine("FELICIDADES!!!");
             Console.SetCursorPosition(40, 10); Console.WriteLine("SECTORES COMPLETADOS");
             Thread.Sleep(3000);
