@@ -12,12 +12,13 @@ namespace Presentacion
     {
         Login loguin = new Login();
         ServicioPersona persona = new ServicioPersona();
-        public void MostrarInformacion(Login login)
+        public void MostrarInformacion(Persona login)
         {
             foreach (var item in persona.GetAll())
             {
-                if (login.Numero_Documento == item.Documento)
+                if (login.Documento == item.Documento)
                 {
+                    Console.Clear();
                     Console.SetCursorPosition(34, 3); Console.WriteLine("____________________________________________________");
                     Console.SetCursorPosition(34, 4); Console.WriteLine("|Nombre: " + item.Nombre);
                     Console.SetCursorPosition(34, 5); Console.WriteLine("|Documento: " + item.Documento);
@@ -27,6 +28,7 @@ namespace Presentacion
                     Console.SetCursorPosition(34, 9); Console.WriteLine("|fecha: " + item.FechaNacimiento);
                     Console.SetCursorPosition(34, 10);Console.WriteLine("|Correo: " + item.Correo);
                     Console.SetCursorPosition(34, 10);Console.WriteLine("|___________________________________________________");
+                    Console.ReadLine();
                 }
             }
         }

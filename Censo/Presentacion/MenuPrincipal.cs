@@ -14,7 +14,7 @@ namespace Presentacion
         LoginGUI loginGUI = new LoginGUI();
         presentacionGUI mostrar = new presentacionGUI();
         SectoresGUI sector = new SectoresGUI();
-        public void VerMenuPrincipal(Login login)
+        public void VerMenuPrincipal(Persona login)
         {
             int op;
             do
@@ -39,9 +39,6 @@ namespace Presentacion
                         loginGUI.Munu_Login();
                         break;
                     case 1:
-                        //TIENES QUE HACER QUE LOS RESULTADOS DEL CENSO SE GUARDEN EN ARCHIVOS TODO CON NUMEROS
-                        //EMPLEADO=1 (SI DIJO QUE SI = 1), NO EMPLEADO=0(SI DIJO QUE NO = 0), CON CARRO = 1, SIN CARRO= 0.
-                        //AL FINAL TODO SE SUMA Y SE SCA EL RESULTADO DEL CENSO EN GENERAL
                         mostrar.MostrarInformacion(login);
                         break;
                     case 2:
