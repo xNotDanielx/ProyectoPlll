@@ -15,8 +15,18 @@ namespace Entidades
         public String Etnia { get; set; }
         public int Acceso_Estudio { get; set; }
         public int Servicio_Transporte { get; set; }
+<<<<<<< HEAD:Censo/Entidades/Entidades/Sector_Social.cs
         public String Estado_Civil { get; set; }
         public String NivelEducacion { get; set; }
+=======
+        public string Estado_Civil { get; set; }
+        public string NivelEducacion { get; set; }
+
+        public Sector_Social()
+        {
+            
+        }
+>>>>>>> 4ca7a5d1e750d50551e5c218e949183b724a6077:Censo/Entidades/Sector_Social.cs
 
         public Sector_Social(int idsector,int afliado, int victima_Conflicto, string etnia, int acceso_Estudio, int servicio_Transporte, string estado_Civil, string nivel)
         {
