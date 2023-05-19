@@ -1,0 +1,2 @@
+1;Julian Alexander ;Santos Montero;Masculino;20;3052944612;29/08/2002;Sin Correo;Cra10#12b59;Obrero;Hogar;Sin Completar
+1;Victor Daniel;Torres Solano;Masculino;18;3123104826;10/09/2004;Sin Correo;Cra31#31-60;San Francisco;Hogar;Sin Completar

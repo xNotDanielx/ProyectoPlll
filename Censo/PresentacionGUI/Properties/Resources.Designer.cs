@@ -59,5 +59,25 @@ namespace PresentacionGUI.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
+        internal static byte[] fondo_lineas_mapa_topografico_negro_1017_13987 {
+            get {
+                object obj = ResourceManager.GetObject("fondo_lineas_mapa_topografico_negro_1017_13987", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap InicioSenso {
+            get {
+                object obj = ResourceManager.GetObject("InicioSenso", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

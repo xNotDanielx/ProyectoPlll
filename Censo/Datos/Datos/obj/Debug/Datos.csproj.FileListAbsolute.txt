@@ -1,0 +1,9 @@
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\bin\Debug\Datos.dll
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\bin\Debug\Datos.pdb
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\obj\Debug\Datos.dll
+C:\Users\Angel Barrueto\Videos\Censo\Datos\Datos\obj\Debug\Datos.pdb

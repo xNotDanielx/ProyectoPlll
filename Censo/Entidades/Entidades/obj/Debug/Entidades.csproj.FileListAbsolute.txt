@@ -1,0 +1,6 @@
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.pdb
