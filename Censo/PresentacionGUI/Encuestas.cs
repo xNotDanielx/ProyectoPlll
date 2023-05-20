@@ -53,14 +53,14 @@ namespace PresentacionGUI
                 Iniciar_Info();
             }
         }
-        public void Info_Persona(string NdUsuario, int InfoUsuario)
+        public void Info_Persona(string NdUsuario, string InfoUsuario)
         {
             login.Numero_Documento = NdUsuario;
-            persona.Num_Cuenta = InfoUsuario;
+            persona.Documento = InfoUsuario;
         }
         private void Iniciar_Info()
         {
-            Console.WriteLine("NC: " + persona.Num_Cuenta);
+            Console.WriteLine("NC: " + persona.Documento);
             Console.WriteLine("ID: " + login.Numero_Documento);
             Panel_Encuesta.Visible = true;
             PanelHoraFecha.Visible = true;

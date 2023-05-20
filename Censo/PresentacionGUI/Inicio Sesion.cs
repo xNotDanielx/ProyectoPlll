@@ -35,6 +35,8 @@ namespace PresentacionGUI
         {
             this.Close();
         }
+        string NC_persona;
+        String ND_Persona;
         public void Btn_Login_Click(object sender, EventArgs e)
         {
             
@@ -49,8 +51,6 @@ namespace PresentacionGUI
                 }
                 else
                 {
-                    int NC_persona = 0;
-                    String ND_Persona;
                     Picture_Error1.Visible = false;
                     Picture_Error2.Visible = false;
                     Picture_Error3.Visible = false;
@@ -59,22 +59,7 @@ namespace PresentacionGUI
                     login.Contraseña = Txt_Contraseña.Text.ToString();
                     if (sl.Buscar_Cuenta(login) == true)
                     {
-                        List<Login> loginI = sl.Obtener_Informacion(login);
-                        foreach (Login a in loginI)
-                        {
-                            NC_persona = a.Cuentas_Registradas;                      
-                        }
-                        ND_Persona = login.Numero_Documento;
-                        Opc_CC.Checked = false;
-                        Opc_CE.Checked = false;
-                        login.Numero_Documento = "";
-                        login.Contraseña = "";
-                        Txt_NDocumento.Text = "";
-                        Txt_Contraseña.Text = "";
-                        Console.WriteLine(NC_persona);
-                        Encuestas ec = new Encuestas();
-                        ec.Info_Persona(ND_Persona, NC_persona);
-                        ec.Show();
+                        buscarCuenta();
                     }
                     else
                     {
@@ -96,22 +81,7 @@ namespace PresentacionGUI
                 }
                 else
                 {
-                    Picture_Error1.Visible = false;
-                    Picture_Error2.Visible = false;
-                    Picture_Error3.Visible = false;
-                    Picture_Error4.Visible = false;
-                    login.Numero_Documento = Txt_NDocumento.Text.ToString();
-                    login.Contraseña = Txt_Contraseña.Text.ToString();
-                    if (sl.Buscar_Cuenta(login) == true)
-                    {
-                    }
-                    else
-                    {
-                        Picture_Error1.Visible = false;
-                        Picture_Error2.Visible = false;
-                        Picture_Error3.Visible = true;
-                        Picture_Error4.Visible = true;
-                    }
+                    buscarCuenta();
                 }
             }
             else
@@ -122,5 +92,51 @@ namespace PresentacionGUI
                 Picture_Error4.Visible = false;
             }
         }
+
+        private void Txt_NDocumento_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+        
+        public void buscarCuenta()
+        {
+            
+            Picture_Error1.Visible = false;
+            Picture_Error2.Visible = false;
+            Picture_Error3.Visible = false;
+            Picture_Error4.Visible = false;
+            login.Numero_Documento = Txt_NDocumento.Text.ToString();
+            login.Contraseña = Txt_Contraseña.Text.ToString();
+            if (sl.Buscar_Cuenta(login) == true)
+            {
+                List<Login> loginI = sl.Obtener_Informacion(login);
+                foreach (Login a in loginI)
+                {
+                    NC_persona = a.Numero_Documento;
+                }
+                ND_Persona = login.Numero_Documento;
+                Opc_CC.Checked = false;
+                Opc_CE.Checked = false;
+                login.Numero_Documento = "";
+                login.Contraseña = "";
+                Txt_NDocumento.Text = "";
+                Txt_Contraseña.Text = "";
+                Encuestas ec = new Encuestas();
+                ec.Info_Persona(ND_Persona, NC_persona);
+                ec.Show();
+            }
+            else
+            {
+                Picture_Error1.Visible = false;
+                Picture_Error2.Visible = false;
+                Picture_Error3.Visible = true;
+                Picture_Error4.Visible = true;
+            }
+        }
     }
+    
 }
+

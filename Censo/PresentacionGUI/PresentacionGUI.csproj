@@ -144,27 +144,5 @@
       <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fondo-lineas-mapa-topografico-negro_1017-13987.webp" />
-    <None Include="Resources\InicioSenso.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gifiniciosesion.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %2811%29 copia.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %289%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %288%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad copia.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %287%29.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

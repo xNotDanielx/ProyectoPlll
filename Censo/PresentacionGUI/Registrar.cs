@@ -69,23 +69,21 @@ namespace PresentacionGUI
             Txt_Barrio.Text = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Txt_Barrio.Text);
             Txt_Barrio.SelectionStart = Txt_Barrio.Text.Length;
         }
+        bool TDocumento = false;
+        bool NDocumento = false;
+        bool Contraseña = false;
+        bool Nombres = false;
+        bool Apellidos = false;
+        bool Fecha_Nacimiento = false;
+        bool Sexo = false;
+        bool Telefono = false;
+        bool Direccion = false;
+        bool Barrio = false;
+        bool Tipo_Vivienda = false;
+        bool Correo = false;
 
-
-        public void Btn_Registrarse_Click(object sender, EventArgs e)
+        public void GuardarDocumento()
         {
-            bool TDocumento = false;
-            bool NDocumento = false;
-            bool Contraseña = false;
-            bool Nombres = false;
-            bool Apellidos = false;
-            bool Fecha_Nacimiento = false;
-            bool Sexo = false;
-            bool Telefono = false;
-            bool Direccion = false;
-            bool Barrio = false;
-            bool Tipo_Vivienda = false;
-            bool Correo = false;
-            //Tipo de documento y Numero de documento
             try
             {
                 if (Opc_CC.Checked)
@@ -102,6 +100,7 @@ namespace PresentacionGUI
                     {
                         Error_NDocumento.Visible = false;
                         login.Numero_Documento = Txt_Ndocumento.Text.ToString();
+                        persona.Documento = Txt_Ndocumento.Text;
                         TDocumento = true;
                         NDocumento = true;
                     }
@@ -120,6 +119,7 @@ namespace PresentacionGUI
                     {
                         Error_NDocumento.Visible = false;
                         login.Numero_Documento = Txt_Ndocumento.Text.ToString();
+                        persona.Documento = Txt_Ndocumento.Text;
                         TDocumento = true;
                         NDocumento = true;
                     }
@@ -135,9 +135,9 @@ namespace PresentacionGUI
             {
 
             }
-
-
-            //Contraseña
+        }
+        public void GuardarContraseña()
+        {
             try
             {
                 if (Txt_Contraseña.Text.Length <= 7)
@@ -164,8 +164,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-            //Nombre
+        public void GuardarNombres()
+        {
             try
             {
                 if (Txt_Nombres.Text.Length <= 4)
@@ -184,8 +186,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-            //Apellido
+        public void GuardarApellidos()
+        {
             try
             {
                 if (Txt_Nombres.Text.Length <= 4)
@@ -204,8 +208,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-            //Fecha Nacimiento
+        public void GuardarFechaNacimiento()
+        {
             try
             {
                 int Edad_Verifficar = DateTime.Today.Year - F_Nacimiento.Value.Year;
@@ -234,8 +240,9 @@ namespace PresentacionGUI
             {
 
             }
-
-            //Sexo
+        }
+        public void GuardarSexo()
+        {
             try
             {
                 if (Opc_M.Checked)
@@ -260,9 +267,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-
-            //Edad
+        public void GuardarEdad()
+        {
             try
             {
                 int edad = DateTime.Today.Year - F_Nacimiento.Value.Year;
@@ -276,9 +284,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-
-            //Telefono
+        public void GuardarTelefono()
+        {
             try
             {
                 if ((Txt_Telefono.Text.Length <= 9) || (Txt_Telefono.Text.Length >= 11))
@@ -297,8 +306,10 @@ namespace PresentacionGUI
             {
 
             }
+        }
 
-            //Direccion
+        public void GuardarDireccion()
+        {
             try
             {
                 string DireccionPersona;
@@ -316,17 +327,18 @@ namespace PresentacionGUI
                 {
                     Direccion = true;
                     Error_Direccion.Visible = false;
-                    DireccionPersona = "Cra"+Txt_Cra.Text+"#"+ Txt_Cra2.Text;
+                    DireccionPersona = "Cra" + Txt_Cra.Text + "#" + Txt_Cra2.Text;
                     persona.Direccion = DireccionPersona.ToString();
                 }
-
-
             }
             catch
             {
 
             }
-            //Barrio
+        }
+
+        public void GuardarBarrio()
+        {
             try
             {
                 if (Txt_Barrio.Text.Length <= 3)
@@ -345,7 +357,10 @@ namespace PresentacionGUI
             {
 
             }
-            //Tipo de Vivinda
+        }
+
+        public void GuardarTipoVivienda()
+        {
             try
             {
                 if (Opc_Hogar.Checked)
@@ -370,16 +385,19 @@ namespace PresentacionGUI
             {
 
             }
-            //Correo
+        }
+
+        public void GuardarCorreo()
+        {
             try
             {
-                if(Txt_Correo.Text.Contains(""))
+                if (Txt_Correo.Text.Contains(""))
                 {
                     Correo = true;
                     Error_Correo.Visible = false;
                     persona.Correo = "Sin Correo";
                 }
-                else if(Txt_Correo.Text.Contains("@hotmail.com") || Txt_Correo.Text.Contains("@outlook.com") || Txt_Correo.Text.Contains("@gmail.com"))
+                else if (Txt_Correo.Text.Contains("@hotmail.com") || Txt_Correo.Text.Contains("@outlook.com") || Txt_Correo.Text.Contains("@gmail.com"))
                 {
                     Correo = true;
                     Error_Correo.Visible = false;
@@ -394,10 +412,13 @@ namespace PresentacionGUI
             catch
             {
             }
+        }
 
+        public void Verificacion()
+        {
             if (TDocumento == true && NDocumento == true && Contraseña == true && Nombres == true && Apellidos == true && Fecha_Nacimiento == true && Sexo == true && Telefono == true && Direccion == true && Barrio == true && Tipo_Vivienda == true && Correo == true)
             {
-                    if (login.Cuentas_Registradas == 0)
+                if (login.Cuentas_Registradas == 0)
                 {
                     Picture_Registrado.Visible = true;
                     picture_Regist.Visible = true;
@@ -406,17 +427,17 @@ namespace PresentacionGUI
                     Error_Cdupli.Visible = false;
                     picture_Cdupli.Visible = false;
                     persona.Sectores_Completados = "Sin Completar";
-                    login.Cuentas_Registradas = login.Cuentas_Registradas + 1;
-                    persona.Num_Cuenta = persona.Num_Cuenta + 1;
+                    login.Cuentas_Registradas += 1;
+
                     sl.Añadir(login);
                     sp.Añadir(persona);
                     Thread.Sleep(1000);
                     this.Close();
-                    
+
                 }
                 else
                 {
-                   if (sl.Buscar_Persona(login)==true)
+                    if (sl.Buscar_Persona(login) == true)
                     {
                         Error_Cdupli.Visible = true;
                         picture_Cdupli.Visible = true;
@@ -429,7 +450,7 @@ namespace PresentacionGUI
                         Picture_Error1.Visible = false;
                         Picture_Error2.Visible = false;
                         login.Cuentas_Registradas = login.Cuentas_Registradas + 1;
-                        persona.Num_Cuenta = persona.Num_Cuenta + 1;
+                        persona.Documento = persona.Documento + 1;
                         persona.Sectores_Completados = "Sin Completar";
                         sl.Añadir(login);
                         sp.Añadir(persona);
@@ -442,7 +463,111 @@ namespace PresentacionGUI
                 Picture_Error1.Visible = true;
                 Picture_Error2.Visible = true;
             }
+        }
+        public void Btn_Registrarse_Click(object sender, EventArgs e)
+        {
+            //Tipo de documento y Numero de documento
+            GuardarDocumento();
+
+            //Contraseña
+            GuardarContraseña();
+
+            //Nombre
+            GuardarNombres();
+
+            //Apellido
+            GuardarApellidos();
+
+            //Fecha Nacimiento
+            GuardarFechaNacimiento();
+
+            //Sexo
+            GuardarSexo();
+
+            //Edad
+            GuardarEdad();
+
+            //Telefono
+            GuardarTelefono();
+
+            //Direccion
+            GuardarDireccion();
+
+            //Barrio
+            GuardarBarrio();
+
+            //Tipo de Vivienda
+            GuardarTipoVivienda();
+
+            //Correo
+            GuardarCorreo();
+
+            Verificacion();
            
+        }
+        public void MostrarMensajeAyuda(PictureBox pic, String mensaje)
+        {
+            var mensajeAyuda = new ToolTip();
+            mensajeAyuda.SetToolTip(pic, mensaje);
+        }
+        private void Error_NDocumento_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_NDocumento, "Escriba correctamente su documento");
+        }
+
+        private void Error_Contraseña_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Contraseña, "Escriba correctamente la contraseña");
+        }
+
+        private void Error_ConfContraseña_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_ConfContraseña, "Las contraseñas no coinciden");
+        }
+
+        private void Error_Nombres_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Nombres, "No puede dejar este campo vacío");
+        }
+
+        private void Error_Apellidos_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Apellidos, "No puede dejar este campo vacío");
+        }
+
+        private void Error_FechaNacimiento_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_FechaNacimiento, "No puede ser menor de edad");
+        }
+
+        private void Error_Sexo_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Sexo, "Tiene que seleccionar uno");
+        }
+
+        private void Error_Telefono_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Telefono, "Escriba correctamente el numero de telefono");
+        }
+
+        private void Error_Direccion_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Direccion, "Escriba correctamente la direccion");
+        }
+
+        private void Error_Barrio_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Barrio, "Escriba correcttamente el barrio");
+        }
+
+        private void Error_Tipo_Vivienda_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_Tipo_Vivienda, "Tiene que seleccionar uno");
+        }
+
+        private void Error_TipoD_MouseHover(object sender, EventArgs e)
+        {
+            MostrarMensajeAyuda(Error_TipoD, "Tiene que seleccionar uno");
         }
     }
 

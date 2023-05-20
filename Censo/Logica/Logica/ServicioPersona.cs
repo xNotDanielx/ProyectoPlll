@@ -51,9 +51,17 @@ namespace Logica
         }
         public List<Persona> GetAll()
         {
-            if (personas.Count == 0) return null;
-            Refresh();
-            return personas;
+            try
+            {
+                if (personas.Count == 0) return null;
+                Refresh();
+                return personas;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public bool Buscar_Persona(Persona persona)
@@ -64,8 +72,8 @@ namespace Logica
             {
                 foreach (var item in GetAll())
                 {
-                    Console.WriteLine("culo"+item.Num_Cuenta);
-                    if (item.Num_Cuenta.Equals(persona.Num_Cuenta))
+                    Console.WriteLine("culo"+item.Documento);
+                    if (item.Documento.Equals(persona.Documento))
                     {                      
                         Verificar = true;
                     }
@@ -86,7 +94,7 @@ namespace Logica
                 List<Persona> ListaPorNombre = new List<Persona>();
                 foreach (var item in GetAll())
                 {
-                    if (item.Num_Cuenta.Equals(persona.Num_Cuenta))
+                    if (item.Documento.Equals(persona.Documento))
                     {
                         ListaPorNombre.Add(item);
                     }

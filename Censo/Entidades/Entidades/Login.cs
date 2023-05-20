@@ -24,7 +24,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            return $"{Numero_Documento};{Contraseña};{Tipo_Documento};{Cuentas_Registradas}";
+            return $"{Numero_Documento};{Contraseña};{Tipo_Documento};";
         }
     }
 }
