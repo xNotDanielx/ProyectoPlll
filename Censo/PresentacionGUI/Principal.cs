@@ -14,12 +14,14 @@ namespace PresentacionGUI
     {
         Form_InicioSesion fi = new Form_InicioSesion();
         Form_Registrar fr = new Form_Registrar();
+        Formulario_Encuestas fe = new Formulario_Encuestas();
         public Principal()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Normal;
             Btn_VentanaMin.Visible = false;
             Box_Login.Visible = false;
+            fe.Show();
         }
 
         public void Btn_Cerrar_Click(object sender, EventArgs e)

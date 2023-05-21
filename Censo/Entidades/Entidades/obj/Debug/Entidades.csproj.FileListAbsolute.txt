@@ -4,3 +4,9 @@ C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.csp
 C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\Angel Barrueto\Videos\Censo\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.pdb

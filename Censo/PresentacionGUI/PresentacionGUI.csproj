@@ -58,11 +58,17 @@
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Encuestas.cs">
+    <Compile Include="Encuestas_Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Encuestas.Designer.cs">
-      <DependentUpon>Encuestas.cs</DependentUpon>
+    <Compile Include="Encuestas_Perfil.Designer.cs">
+      <DependentUpon>Encuestas_Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Encuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Encuestas.Designer.cs">
+      <DependentUpon>Formulario_Encuestas.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -96,8 +102,11 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Encuestas.resx">
-      <DependentUpon>Encuestas.cs</DependentUpon>
+    <EmbeddedResource Include="Encuestas_Perfil.resx">
+      <DependentUpon>Encuestas_Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Encuestas.resx">
+      <DependentUpon>Formulario_Encuestas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio Sesion.resx">
       <DependentUpon>Inicio Sesion.cs</DependentUpon>
@@ -144,27 +153,6 @@
       <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fondo-lineas-mapa-topografico-negro_1017-13987.webp" />
-    <None Include="Resources\InicioSenso.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gifiniciosesion.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %2811%29 copia.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %289%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %288%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sad copia.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com %287%29.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

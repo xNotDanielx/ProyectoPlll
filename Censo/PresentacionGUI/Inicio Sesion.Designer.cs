@@ -52,11 +52,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(464, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 18);
+            this.label2.Size = new System.Drawing.Size(180, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Numero de documento";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -64,17 +64,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(464, 274);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 18);
+            this.label3.Size = new System.Drawing.Size(95, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña";
             // 
             // Btn_Login
             // 
-            this.Btn_Login.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Login.ForeColor = System.Drawing.Color.Black;
             this.Btn_Login.Location = new System.Drawing.Point(642, 406);
             this.Btn_Login.Name = "Btn_Login";
@@ -86,23 +86,24 @@
             // 
             // Txt_NDocumento
             // 
-            this.Txt_NDocumento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Txt_NDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Txt_NDocumento.Location = new System.Drawing.Point(467, 230);
             this.Txt_NDocumento.Name = "Txt_NDocumento";
-            this.Txt_NDocumento.Size = new System.Drawing.Size(295, 26);
+            this.Txt_NDocumento.Size = new System.Drawing.Size(295, 24);
             this.Txt_NDocumento.TabIndex = 7;
+            this.Txt_NDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_NDocumento_KeyPress);
             // 
             // Txt_Contraseña
             // 
-            this.Txt_Contraseña.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Txt_Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Txt_Contraseña.Location = new System.Drawing.Point(467, 295);
             this.Txt_Contraseña.Name = "Txt_Contraseña";
-            this.Txt_Contraseña.Size = new System.Drawing.Size(295, 26);
+            this.Txt_Contraseña.Size = new System.Drawing.Size(295, 24);
             this.Txt_Contraseña.TabIndex = 10;
             // 
             // Btn_Cancelar
             // 
-            this.Btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Cancelar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Cancelar.Location = new System.Drawing.Point(418, 406);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
@@ -116,7 +117,7 @@
             // 
             this.Group_TipoD.Controls.Add(this.Opc_CE);
             this.Group_TipoD.Controls.Add(this.Opc_CC);
-            this.Group_TipoD.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Group_TipoD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Group_TipoD.ForeColor = System.Drawing.Color.Black;
             this.Group_TipoD.Location = new System.Drawing.Point(418, 133);
             this.Group_TipoD.Name = "Group_TipoD";
@@ -141,7 +142,7 @@
             this.Opc_CC.AutoSize = true;
             this.Opc_CC.Location = new System.Drawing.Point(15, 25);
             this.Opc_CC.Name = "Opc_CC";
-            this.Opc_CC.Size = new System.Drawing.Size(169, 22);
+            this.Opc_CC.Size = new System.Drawing.Size(162, 22);
             this.Opc_CC.TabIndex = 0;
             this.Opc_CC.TabStop = true;
             this.Opc_CC.Text = "Cedula Ciudadana";

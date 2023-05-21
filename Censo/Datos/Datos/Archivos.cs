@@ -59,7 +59,7 @@ namespace Datos
         {
             var persona = new Persona();
             string[] aux = linea.Split(';');
-            persona.Num_Cuenta = int.Parse(aux[0]);
+            persona.Documento = aux[0];
             persona.Nombre = aux[1];
             persona.Apellido = aux[2];
             persona.Sexo = aux[3];
@@ -80,7 +80,6 @@ namespace Datos
             login.Numero_Documento = aux[0];
             login.Contraseña = aux[1];
             login.Tipo_Documento = aux[2];
-            login.Cuentas_Registradas = int.Parse(aux[3]);
             return login;
         }
 

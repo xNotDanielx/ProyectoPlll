@@ -9,7 +9,7 @@ namespace Entidades
     public class Persona
     {
         public Persona() { }
-        public int Num_Cuenta { get; set; }
+        public string Documento { get; set; }
         public String Nombre { get; set; }
         public String Apellido { get; set; }
         public String Sexo { get; set; }
@@ -22,9 +22,9 @@ namespace Entidades
         public String Tipo_Vivienda { get; set; }
         public String Sectores_Completados { get; set; }
 
-        public Persona(int num_cuenta,string nombre,string apellido, string documento, string sexo,string edad, string telefono, DateTime fechaNacimiento, string correo, string direccion, string barrio, string tipo_Vivienda, string sectores_completados)
+        public Persona(string documento,string nombre,string apellido, string sexo,string edad, string telefono, DateTime fechaNacimiento, string correo, string direccion, string barrio, string tipo_Vivienda, string sectores_completados)
         {
-            Num_Cuenta = num_cuenta;
+            Documento = documento;
             Nombre = nombre;
             Apellido = apellido;
             Sexo = sexo;
@@ -39,7 +39,7 @@ namespace Entidades
         }
         public override string ToString()
         {
-            return $"{Num_Cuenta};{Nombre};{Apellido};{Sexo};{Edad};{Telefono};{FechaNacimiento.ToShortDateString()};{Correo};{Direccion};{Barrio};{Tipo_Vivienda};{Sectores_Completados}";
+            return $"{Documento};{Nombre};{Apellido};{Sexo};{Edad};{Telefono};{FechaNacimiento.ToShortDateString()};{Correo};{Direccion};{Barrio};{Tipo_Vivienda};{Sectores_Completados}";
         }
     }
 }
