@@ -153,9 +153,6 @@
       <Name>Logica</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
->>>>>>> b3a83252e07fffa2a79a7afdde7f2eca712c284e
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

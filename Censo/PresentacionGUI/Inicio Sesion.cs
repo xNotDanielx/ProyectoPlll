@@ -124,11 +124,7 @@ namespace PresentacionGUI
                 login.Contraseña = "";
                 Txt_NDocumento.Text = "";
                 Txt_Contraseña.Text = "";
-<<<<<<< HEAD
                 Encuestas_Perfil ec = new Encuestas_Perfil();
-=======
-                Encuestas ec = new Encuestas();
->>>>>>> b3a83252e07fffa2a79a7afdde7f2eca712c284e
                 ec.Info_Persona(ND_Persona, NC_persona);
                 ec.Show();
             }
