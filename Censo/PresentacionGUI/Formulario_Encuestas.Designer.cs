@@ -736,11 +736,8 @@
             // 
             this.Panel_SS.BackColor = System.Drawing.Color.White;
             this.Panel_SS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-<<<<<<< HEAD
             this.Panel_SS.Controls.Add(this.panel_Finalizado);
             this.Panel_SS.Controls.Add(this.Panel_Mensaje);
-=======
->>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
             this.Panel_SS.Controls.Add(this.panel63);
             this.Panel_SS.Controls.Add(this.panel61);
             this.Panel_SS.Controls.Add(this.panel62);
@@ -3567,7 +3564,6 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Panel panel92;
         private System.Windows.Forms.Label label48;
-<<<<<<< HEAD
         private System.Windows.Forms.Panel Panel_Mensaje;
         private System.Windows.Forms.Button Finalizar_No;
         private System.Windows.Forms.Button Finalizar_Si;
@@ -3577,7 +3573,5 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_Salir;
-=======
->>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
     }
 }

@@ -72,7 +72,6 @@ C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Encuestas_Perfil.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
-<<<<<<< HEAD
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
@@ -98,5 +97,3 @@ C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.exe
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
-=======
->>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
