@@ -91,7 +91,25 @@ namespace PresentacionGUI
                 Pregunta15SH();
                 Verificar_SectorH();
             }
+<<<<<<< HEAD
             
+=======
+            else if((SE_Completado == true)&& (SH_Completado == true) && (SS_Completado == false))
+            {
+                Pregunta1SS();
+                Pregunta2SS();
+                Pregunta3SS();
+                Pregunta4SS();
+                Pregunta5SS();
+                Pregunta6SS();
+                Pregunta7SS();
+                Verificar_SectorS();
+            }
+            /*else
+            {
+                Verificar_Sectores();
+            }*/
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
         }
         //Preguntas del Sector Economico
         public void Pregunta1SE()
@@ -596,12 +614,20 @@ namespace PresentacionGUI
                 if(txt_Habitaciones.Text != "")
                 {
                     txtHabitaciones.ForeColor = Color.Black;
+<<<<<<< HEAD
                     Pregunta12 = true;                                     
+=======
+                    // txt_Habitaciones.Text =                    
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
                 }
                 else
                 {
                     txtHabitaciones.ForeColor = Color.Red;
+<<<<<<< HEAD
                     // txt_Habitaciones.Text =  
+=======
+                    Pregunta12 = true;
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
                 }
             }
 
@@ -616,6 +642,7 @@ namespace PresentacionGUI
             {
                 if (txt_Baños.Text != "")
                 {
+<<<<<<< HEAD
                     txtBaño.ForeColor = Color.Black;
                     Pregunta13 = true;                                      
                 }
@@ -623,6 +650,15 @@ namespace PresentacionGUI
                 {
                     txtBaño.ForeColor = Color.Red;
                     // txt_Baños.Text = 
+=======
+                    txt_Baños.ForeColor = Color.Black;
+                    // txt_Baños.Text =                    
+                }
+                else
+                {
+                    txt_Baños.ForeColor = Color.Red;
+                    Pregunta13 = true;
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
                 }
             }
 
@@ -1069,6 +1105,10 @@ namespace PresentacionGUI
                 Btn_Siguiente.Visible = false;
                 Btn_Finalizar.Visible = true;             
                 SectorSi_SectorH.Visible = true;
+<<<<<<< HEAD
+=======
+                Panel_SH.Visible = false;
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
                 Panel_SS.Visible = true;
                 SE_Completado = true;
                 SH_Completado = true;
@@ -1080,7 +1120,21 @@ namespace PresentacionGUI
         {
             if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true))
             {
+<<<<<<< HEAD
                 Panel_Mensaje.Visible = true;                                                                     
+=======
+                SectorSi_SectorS.Visible = true;
+                Panel_SS.Visible = false;
+                // Panel_Finalizado.Visible = true;
+                SS_Completado = true;
+                Sectores_Finalizado.Visible = true;
+                PreguntasFalse();
+                SE_Completado = false;
+                SH_Completado = false;
+                SS_Completado = false;
+                
+
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
             }
         }
         private void Finalizar_Si_Click(object sender, EventArgs e)
@@ -1374,6 +1428,7 @@ namespace PresentacionGUI
         {
             No(Si_Pregunta4SS, No_Pregunta4SS);
         }
+<<<<<<< HEAD
 
         private void Btn_Finalizar_Click(object sender, EventArgs e)
         {
@@ -1399,5 +1454,7 @@ namespace PresentacionGUI
         {
             Cerrar();
         }
+=======
+>>>>>>> fa657df1bed15b6a27ed61e708131cc864f0c69d
     }
 } 
