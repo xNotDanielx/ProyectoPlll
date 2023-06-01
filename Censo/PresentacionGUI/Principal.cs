@@ -21,7 +21,6 @@ namespace PresentacionGUI
             this.WindowState = FormWindowState.Normal;
             Btn_VentanaMin.Visible = false;
             Box_Login.Visible = false;
-            fe.Show();
         }
 
         public void Btn_Cerrar_Click(object sender, EventArgs e)

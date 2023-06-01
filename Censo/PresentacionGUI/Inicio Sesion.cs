@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PresentacionGUI
 {
@@ -135,6 +136,12 @@ namespace PresentacionGUI
                 Picture_Error3.Visible = true;
                 Picture_Error4.Visible = true;
             }
+        }
+
+        private void Txt_Contraseña_TextChanged(object sender, EventArgs e)
+        {
+            Txt_Contraseña.UseSystemPasswordChar = true;
+            Txt_Contraseña.PasswordChar = '*';
         }
     }
     

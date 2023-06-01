@@ -82,6 +82,7 @@ namespace PresentacionGUI
                 Txt_Direccion.Text = PersonaInfo.Direccion;
                 Txt_Barrio.Text = PersonaInfo.Barrio;
                 Txt_Correo.Text = PersonaInfo.Correo;
+                Txt_Edad.Text = PersonaInfo.Edad;
                 if (PersonaInfo.Sexo == "Masculino")
                 {
                     Perfil_Masculino.Visible = true;
@@ -123,10 +124,16 @@ namespace PresentacionGUI
             lbl_Hora.Text = DateTime.Now.ToString("hh:mm");
             lbl_Fecha.Text = DateTime.Now.ToString("ddd M MMM yy");
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Click(object sender, EventArgs e)
         {
+            Formulario_Encuestas forme = new Formulario_Encuestas();
+            forme.Show();
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Formulario_Encuestas forme = new Formulario_Encuestas();
+            forme.Show();
         }
     }
 }

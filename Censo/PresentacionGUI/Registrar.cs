@@ -431,9 +431,6 @@ namespace PresentacionGUI
 
                     sl.Añadir(login);
                     sp.Añadir(persona);
-                    Thread.Sleep(1000);
-                    this.Close();
-
                 }
                 else
                 {

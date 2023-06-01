@@ -17,14 +17,10 @@ namespace PresentacionGUI
             InitializeComponent();
         }
 
-        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        private void Btn_Salir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void Btn_Login_Click(object sender, EventArgs e)
-        {
-            
+            this.Dispose();
         }
     }
 }

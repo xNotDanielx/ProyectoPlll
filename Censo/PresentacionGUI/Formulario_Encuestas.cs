@@ -28,10 +28,14 @@ namespace PresentacionGUI
         {
             InitializeComponent();
         }
-
-        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        public void Cerrar()
         {
             this.Close();
+            this.Dispose();
+        }
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            Cerrar();
         }
         bool Pregunta1 = false;
         bool Pregunta2 = false;
@@ -68,7 +72,7 @@ namespace PresentacionGUI
                 Verificar_SectorE();
                 
             }
-             else if ((SE_Completado == true) && (SH_Completado == false) && (SS_Completado == false))
+             else if ((SE_Completado == true))
             {
                 Pregunta1SH();
                 Pregunta2SH();
@@ -86,27 +90,8 @@ namespace PresentacionGUI
                 Pregunta14SH();
                 Pregunta15SH();
                 Verificar_SectorH();
-
-
             }
-            /*else if((SE_Completado == true)&& (SH_Completado == true) && (SS_Completado == false))
-            {
-                Pregunta1SS();
-                Pregunta2SS();
-                Pregunta3SS();
-                Pregunta4SS();
-                Pregunta5SS();
-                Pregunta6SS();
-                Pregunta7SS();
-                Pregunta8SS();
-                Pregunta9SS();
-                Pregunta10SS();
-                Verificar_SectorSS();
-            }
-            else
-            {
-                Verificar_Sectores();
-            }*/
+            
         }
         //Preguntas del Sector Economico
         public void Pregunta1SE()
@@ -608,15 +593,15 @@ namespace PresentacionGUI
         {
             try
             {
-                if(txt_Habitaciones.Text=="")
+                if(txt_Habitaciones.Text != "")
                 {
-                    txtHabitaciones.ForeColor = Color.Red;
-                    Pregunta12 = true;
+                    txtHabitaciones.ForeColor = Color.Black;
+                    Pregunta12 = true;                                     
                 }
                 else
                 {
-                    txtHabitaciones.ForeColor = Color.Black;
-                    // txt_Habitaciones.Text =
+                    txtHabitaciones.ForeColor = Color.Red;
+                    // txt_Habitaciones.Text =  
                 }
             }
 
@@ -629,15 +614,15 @@ namespace PresentacionGUI
         {
             try
             {
-                if (txt_Baños.Text == "")
+                if (txt_Baños.Text != "")
                 {
-                    txt_Baños.ForeColor = Color.Red;
-                    Pregunta13 = true;
+                    txtBaño.ForeColor = Color.Black;
+                    Pregunta13 = true;                                      
                 }
                 else
                 {
-                    txt_Baños.ForeColor = Color.Black;
-                    // txt_Baños.Text =
+                    txtBaño.ForeColor = Color.Red;
+                    // txt_Baños.Text = 
                 }
             }
 
@@ -714,375 +699,705 @@ namespace PresentacionGUI
         //Preguntas del Sector Social
         public void Pregunta1SS()
         {
+            try
+            {
+                if (Si_Pregunta1SS.Checked)
+                {
+                    Pregunta1 = true;
+                }
+                else if (No_Pregunta1SS.Checked)
+                {
+                    Pregunta1 = true;
+                }
+                else
+                {
+                    Si_Pregunta1SS.BackColor = Color.Red;
+                    No_Pregunta1SS.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
+
+            }
+
         }
         public void Pregunta2SS()
         {
+            try
+            {
+                if (Si_Pregunta2SS.Checked)
+                {
+                    Pregunta2 = true;
+                }
+                else if (No_Pregunta2SS.Checked)
+                {
+                    Pregunta2 = true;
+                }
+                else
+                {
+                    Si_Pregunta2SS.BackColor = Color.Red;
+                    No_Pregunta2SS.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
         }
         public void Pregunta3SS()
         {
+            try
+            {
+                if (Si_Pregunta3SS.Checked)
+                {
+                    Pregunta3 = true;
+                }
+                else if (No_Pregunta3SS.Checked)
+                {
+                    Pregunta3 = true;
+                }
+                else
+                {
+                    Si_Pregunta3SS.BackColor = Color.Red;
+                    No_Pregunta3SS.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
         }
         public void Pregunta4SS()
         {
+            try
+            {
+                if (Si_Pregunta4SS.Checked)
+                {
+                    Pregunta4 = true;
+                }
+                else if (No_Pregunta4SS.Checked)
+                {
+                    Pregunta4 = true;
+                }
+                else
+                {
+                    Si_Pregunta4SS.BackColor = Color.Red;
+                    No_Pregunta4SS.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
+
+            }
         }
         public void Pregunta5SS()
         {
+            try
+            {
+                if (Opc_Arhuaco.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Kogui.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Kankuamo.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Wiwa.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Yucpa.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Chimila.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else if (Opc_Ninguno.Checked)
+                {
+                    Opc_Arhuaco.ForeColor = Color.Black;
+                    Opc_Kogui.ForeColor = Color.Black;
+                    Opc_Kankuamo.ForeColor = Color.Black;
+                    Opc_Wiwa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Yucpa.ForeColor = Color.Black;
+                    Opc_Ninguno.ForeColor = Color.Black;
+                    Pregunta5 = true;
+                }
+                else
+                {
+                    Opc_Arhuaco.ForeColor = Color.Red;
+                    Opc_Kogui.ForeColor = Color.Red;
+                    Opc_Kankuamo.ForeColor = Color.Red;
+                    Opc_Wiwa.ForeColor = Color.Red;
+                    Opc_Yucpa.ForeColor = Color.Red;
+                    Opc_Yucpa.ForeColor = Color.Red;
+                    Opc_Ninguno.ForeColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
         }
         public void Pregunta6SS()
         {
+            try
+            {
+                if (Opc_Soltero.Checked)
+                {
+                    Opc_Soltero.ForeColor = Color.Black;
+                    Opc_Casado.ForeColor = Color.Black;
+                    Opc_Viudo.ForeColor = Color.Black;
+                    Opc_Divorciado.ForeColor = Color.Black;
+                    Opc_OtroCivil.ForeColor = Color.Black;
+                    Pregunta6 = true;
+                }
+                else if (Opc_Casado.Checked)
+                {
+                    Opc_Soltero.ForeColor = Color.Black;
+                    Opc_Casado.ForeColor = Color.Black;
+                    Opc_Viudo.ForeColor = Color.Black;
+                    Opc_Divorciado.ForeColor = Color.Black;
+                    Opc_OtroCivil.ForeColor = Color.Black;
+                    Pregunta6 = true;
+                }
+                else if (Opc_Viudo.Checked)
+                {
+                    Opc_Soltero.ForeColor = Color.Black;
+                    Opc_Casado.ForeColor = Color.Black;
+                    Opc_Viudo.ForeColor = Color.Black;
+                    Opc_Divorciado.ForeColor = Color.Black;
+                    Opc_OtroCivil.ForeColor = Color.Black;
+                    Pregunta6 = true;
+                }
+                else if (Opc_Divorciado.Checked)
+                {
+                    Opc_Soltero.ForeColor = Color.Black;
+                    Opc_Casado.ForeColor = Color.Black;
+                    Opc_Viudo.ForeColor = Color.Black;
+                    Opc_Divorciado.ForeColor = Color.Black;
+                    Opc_OtroCivil.ForeColor = Color.Black;
+                    Pregunta6 = true;
+                }
+                else if (Opc_OtroCivil.Checked)
+                {
+                    Opc_Soltero.ForeColor = Color.Black;
+                    Opc_Casado.ForeColor = Color.Black;
+                    Opc_Viudo.ForeColor = Color.Black;
+                    Opc_Divorciado.ForeColor = Color.Black;
+                    Opc_OtroCivil.ForeColor = Color.Black;
+                    Pregunta6 = true;
+                }                
+                else
+                {
+                    Opc_Soltero.ForeColor = Color.Red;
+                    Opc_Casado.ForeColor = Color.Red;
+                    Opc_Viudo.ForeColor = Color.Red;
+                    Opc_Divorciado.ForeColor = Color.Red;
+                    Opc_OtroCivil.ForeColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
         }
         public void Pregunta7SS()
         {
+            try
+            {
+                if (Opc_SinEstudio.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else if (Opc_Primaria.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else if (Opc_Secundaria.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else if (Opc_Tecnica.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else if (Opc_Universitaria.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else if (Opc_OtroEducacion.Checked)
+                {
+                    Opc_SinEstudio.ForeColor = Color.Black;
+                    Opc_Primaria.ForeColor = Color.Black;
+                    Opc_Secundaria.ForeColor = Color.Black;
+                    Opc_Tecnica.ForeColor = Color.Black;
+                    Opc_Universitaria.ForeColor = Color.Black;
+                    Opc_OtroEducacion.ForeColor = Color.Black;
+                    Pregunta7 = true;
+                }
+                else
+                {
+                    Opc_SinEstudio.ForeColor = Color.Red;
+                    Opc_Primaria.ForeColor = Color.Red;
+                    Opc_Secundaria.ForeColor = Color.Red;
+                    Opc_Tecnica.ForeColor = Color.Red;
+                    Opc_Universitaria.ForeColor = Color.Red;
+                    Opc_OtroEducacion.ForeColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
         }
-        public void Pregunta8SS()
+        public void PreguntasFalse()
         {
-
-        }
-        public void Pregunta9SS()
-        {
-
-        }
-        public void Pregunta10SS()
-        {
-
+            Pregunta1 = false;
+            Pregunta2 = false;
+            Pregunta3 = false;
+            Pregunta4 = false;
+            Pregunta5 = false;
+            Pregunta6 = false;
+            Pregunta7 = false;
+            Pregunta8 = false;
+            Pregunta9 = false;
+            Pregunta10 = false;
+            Pregunta11 = false;
+            Pregunta12 = false;
+            Pregunta13 = false;
+            Pregunta14 = false;
+            Pregunta15 = false;
         }
         public void Verificar_SectorE()
         {
-            if((Pregunta1==true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true))
+            if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true))
             {
+                Btn_Finalizar.Visible = false;
+                Btn_Siguiente.Visible = true;
                 SectorSi_SectorE.Visible = true;
                 Panel_SH.Visible = true;
                 Btn_Volver.Visible = true;
                 SE_Completado = true;
-                Pregunta1 = false;
-                Pregunta2 = false;
-                Pregunta3 = false;
-                Pregunta4 = false;
-                Pregunta5 = false;
-                Pregunta6 = false;
-                Pregunta7 = false;
-                Pregunta8 = false;
-                Pregunta9 = false;
-                Pregunta10 = false;
-                Pregunta11 = false;
-                Pregunta12= false;
-                Pregunta13= false;
-                Pregunta14 = false;
-                Pregunta15 = false;
+                PreguntasFalse();
                 SH_Completado = false;
                 SS_Completado = false;
-
             }
         }
         public void Verificar_SectorH()
         {
             if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true) && (Pregunta11 == true) && (Pregunta12 == true) && (Pregunta13 == true) && (Pregunta14 == true) && (Pregunta15 == true))
             {
+                Btn_Siguiente.Visible = false;
+                Btn_Finalizar.Visible = true;             
                 SectorSi_SectorH.Visible = true;
-                Panel_SH.Visible = false;
-                //Panel_SS.Visible = true;
-                Pregunta1 = false;
-                Pregunta2 = false;
-                Pregunta3 = false;
-                Pregunta4 = false;
-                Pregunta5 = false;
-                Pregunta6 = false;
-                Pregunta7 = false;
-                Pregunta8 = false;
-                Pregunta9 = false;
-                Pregunta10 = false;
-                Pregunta11 = false;
-                Pregunta12 = false;
-                Pregunta13 = false;
-                Pregunta14 = false;
-                Pregunta15 = false;
+                Panel_SS.Visible = true;
+                SE_Completado = true;
+                SH_Completado = true;
+                PreguntasFalse();
                 SS_Completado = false;
             }
         }
         public void Verificar_SectorS()
         {
-            if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true))
+            if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true))
             {
-                SectorSi_SectorS.Visible = true;
-               // Panel_SS.Visible = false;
-               // Panel_Finalizado.Visible = true;
-                Sectores_Finalizado.Visible = true;
-                Pregunta1 = false;
-                Pregunta2 = false;
-                Pregunta3 = false;
-                Pregunta4 = false;
-                Pregunta5 = false;
-                Pregunta6 = false;
-                Pregunta7 = false;
-                Pregunta8 = false;
-                Pregunta9 = false;
-                Pregunta10 = false;
-                Pregunta11 = false;
-                Pregunta12 = false;
-                Pregunta13 = false;
-                Pregunta14 = false;
-                Pregunta15 = false;
-                SE_Completado = false;
-                SH_Completado = false;
-                SS_Completado = false;
-                
-
+                Panel_Mensaje.Visible = true;                                                                     
             }
+        }
+        private void Finalizar_Si_Click(object sender, EventArgs e)
+        {
+            //persona.SectoresCompletados = true;   cambiar a base de datos
+            panel_Finalizado.Visible = true;
+            Panel_Mensaje.Visible = false;
+            SectorSi_SectorS.Visible = true;
+            Sectores_Finalizado.Visible = true;
+            SE_Completado = true;
+            SH_Completado = true;
+            SS_Completado = true;
+            Btn_Volver.Visible = false;
+            Btn_Siguiente.Visible = false;
+            Btn_Cancelar.Visible = false;
+            Btn_Finalizar.Visible = false;
+            Btn_Salir.Visible = true;
+        }
+
+        private void Finalizar_No_Click(object sender, EventArgs e)
+        {
+            Panel_Mensaje.Visible = false;
         }
 
         //Color de Botones SI/NO
 
+        public void Si(RadioButton botonSi, RadioButton botonNo)
+        {
+            botonSi.BackColor = Color.Green;
+            botonNo.BackColor = Color.LightGray;
+        }
+
+        public void No(RadioButton botonSi, RadioButton botonNo)
+        {
+            botonSi.BackColor = Color.LightGray;
+            botonNo.BackColor = Color.Red;
+        }
+
         private void Si_Pregunta1SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta1SE.BackColor = Color.Green;
-            No_Pregunta1SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta1SE, No_Pregunta1SE);
         }
 
         private void No_Pregunta1SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta1SE.BackColor = Color.LightGray;
-            No_Pregunta1SE.BackColor = Color.Green;
+            No(Si_Pregunta1SE, No_Pregunta1SE);
         }
         private void Si_Pregunta2SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta2SE.BackColor = Color.Green;
-            No_Pregunta2SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta2SE, No_Pregunta2SE);
         }
         private void No_Pregunta2SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta2SE.BackColor = Color.LightGray;
-            No_Pregunta2SE.BackColor = Color.Green;
+            No(Si_Pregunta2SE, No_Pregunta2SE);
         }
 
         private void Si_Pregunta3SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta3SE.BackColor = Color.Green;
-            No_Pregunta3SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta3SE, No_Pregunta3SE);
         }
 
         private void No_Pregunta3SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta3SE.BackColor = Color.LightGray;
-            No_Pregunta3SE.BackColor = Color.Green;
+            No(Si_Pregunta3SE, No_Pregunta3SE);
         }
 
         private void Si_Pregunta4SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta4SE.BackColor = Color.Green;
-            No_Pregunta4SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta4SE, No_Pregunta4SE);
         }
 
         private void No_Pregunta4SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta4SE.BackColor = Color.LightGray;
-            No_Pregunta4SE.BackColor = Color.Green;
+            No(Si_Pregunta4SE, No_Pregunta4SE);
         }
 
         private void Si_Pregunta5SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta5SE.BackColor = Color.Green;
-            No_Pregunta5SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta5SE, No_Pregunta5SE);
         }
 
         private void No_Pregunta5SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta5SE.BackColor = Color.LightGray;
-            No_Pregunta5SE.BackColor = Color.Green;
+            No(Si_Pregunta5SE, No_Pregunta5SE);
         }
 
         private void Si_Pregunta6SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta6SE.BackColor = Color.Green;
-            No_Pregunta6SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta6SE, No_Pregunta6SE);
         }
 
         private void No_Pregunta6SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta6SE.BackColor = Color.LightGray;
-            No_Pregunta6SE.BackColor = Color.Green;
+            No(Si_Pregunta6SE, No_Pregunta6SE);
         }
 
         private void Si_Pregunta7SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta7SE.BackColor = Color.Green;
-            No_Pregunta7SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta7SE, No_Pregunta7SE);
         }
 
         private void No_Pregunta7SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta7SE.BackColor = Color.LightGray;
-            No_Pregunta7SE.BackColor = Color.Green;
+            No(Si_Pregunta7SE, No_Pregunta7SE);
         }
 
         private void Si_Pregunta8SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta8SE.BackColor = Color.Green;
-            No_Pregunta8SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta8SE, No_Pregunta8SE);
         }
 
         private void No_Pregunta8SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta8SE.BackColor = Color.LightGray;
-            No_Pregunta8SE.BackColor = Color.Green;
+            No(Si_Pregunta8SE, No_Pregunta8SE);
         }
 
         private void Si_Pregunta9SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta9SE.BackColor = Color.Green;
-            No_Pregunta9SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta9SE, No_Pregunta9SE);
         }
         private void No_Pregunta9SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta9SE.BackColor = Color.LightGray;
-            No_Pregunta9SE.BackColor = Color.Green;
+            No(Si_Pregunta9SE, No_Pregunta9SE);
         }
       
         private void Si_Pregunta10SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta10SE.BackColor = Color.Green;
-            No_Pregunta10SE.BackColor = Color.LightGray;
+            Si(Si_Pregunta10SE, No_Pregunta10SE);
         }
 
         private void No_Pregunta10SE_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta10SE.BackColor = Color.LightGray;
-            No_Pregunta10SE.BackColor = Color.Green;
+            No(Si_Pregunta10SE, No_Pregunta10SE);
         }
 
         private void Btn_Volver_Click_1(object sender, EventArgs e)
         {
-            if(Panel_SH.Visible == true)
+            if((Panel_SH.Visible == true)&&(Panel_SS.Visible == false))
             {
+                Btn_Volver.Visible = false;
+                SectorSi_SectorE.Visible = false;
                 Panel_SH.Visible = false;
-                Panel_SE.Visible = true;
                 SE_Completado = false;  //Para que repita la verificacion del Sector y actualize
-            }  
+            } 
+            else if ((Panel_SH.Visible == true) && (Panel_SS.Visible == true))
+            {
+                SectorSi_SectorH.Visible = false;
+                Btn_Finalizar.Visible = false;
+                Btn_Siguiente.Visible = true;
+                Panel_SS.Visible = false;                          
+                SH_Completado = false;  //Para que repita la verificacion del Sector y actualize
+            }                
         }
         private void Si_Pregunta1SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta1SH.BackColor = Color.Green;
-            No_Pregunta1SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta1SH, No_Pregunta1SH);
         }
         private void No_Pregunta1SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta1SH.BackColor = Color.LightGray;
-            No_Pregunta1SH.BackColor = Color.Green;
+            No(Si_Pregunta1SH, No_Pregunta1SH);
         }
 
         private void Si_Pregunta2SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta2SH.BackColor = Color.Green;
-            No_Pregunta2SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta2SH, No_Pregunta2SH);
         }
 
         private void No_Pregunta2SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta2SH.BackColor = Color.LightGray;
-            No_Pregunta2SH.BackColor = Color.Green;
+            No(Si_Pregunta2SH, No_Pregunta2SH);
         }
 
         private void Si_Pregunta3SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta3SH.BackColor = Color.Green;
-            No_Pregunta3SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta3SH, No_Pregunta3SH);
 
         }
 
         private void No_Pregunta3SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta3SH.BackColor = Color.LightGray;
-            No_Pregunta3SH.BackColor = Color.Green;
+            No(Si_Pregunta3SH, No_Pregunta3SH);
         }
 
         private void Si_Pregunta4SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta4SH.BackColor = Color.Green;
-            No_Pregunta4SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta4SH, No_Pregunta4SH);
         }
 
         private void No_Pregunta4SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta4SH.BackColor = Color.LightGray;
-            No_Pregunta4SH.BackColor = Color.Green;
+            No(Si_Pregunta4SH, No_Pregunta4SH);
         }
 
         private void Si_Pregunta5SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta5SH.BackColor = Color.Green;
-            No_Pregunta5SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta5SH, No_Pregunta5SH);
         }
 
         private void No_Pregunta5SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta5SH.BackColor = Color.LightGray;
-            No_Pregunta5SH.BackColor = Color.Green;
+            No(Si_Pregunta5SH, No_Pregunta5SH);
         }
 
         private void Si_Pregunta6SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta6SH.BackColor = Color.Green;
-            No_Pregunta6SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta6SH, No_Pregunta6SH);
         }
 
         private void No_Pregunta6SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta6SH.BackColor = Color.LightGray;
-            No_Pregunta6SH.BackColor = Color.Green;
+            No(Si_Pregunta6SH, No_Pregunta6SH);
         }
 
         private void Si_Pregunta7SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta7SH.BackColor = Color.Green;
-            No_Pregunta7SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta7SH, No_Pregunta7SH);
 
         }
 
         private void No_Pregunta7SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta7SH.BackColor = Color.LightGray;
-            No_Pregunta7SH.BackColor = Color.Green;
+            No(Si_Pregunta7SH, No_Pregunta7SH);
         }
 
         private void Si_Pregunta8SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta8SH.BackColor = Color.Green;
-            No_Pregunta8SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta8SH, No_Pregunta8SH);
         }
 
         private void No_Pregunta8SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta8SH.BackColor = Color.LightGray;
-            No_Pregunta8SH.BackColor = Color.Green;
+            No(Si_Pregunta8SH, No_Pregunta8SH);
         }
 
         private void Si_Pregunta9SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta9SH.BackColor = Color.Green;
-            No_Pregunta9SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta9SH, No_Pregunta9SH);
         }
 
         private void No_Pregunta9SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta9SH.BackColor = Color.LightGray;
-            No_Pregunta9SH.BackColor = Color.Green;
+            No(Si_Pregunta9SH, No_Pregunta9SH);
         }
 
         private void Si_Pregunta10SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta10SH.BackColor = Color.Green;
-            No_Pregunta10SH.BackColor = Color.LightGray;
+            Si(Si_Pregunta10SH, No_Pregunta10SH);
         }
 
         private void No_Pregunta10SH_CheckedChanged(object sender, EventArgs e)
         {
-            Si_Pregunta10SH.BackColor = Color.LightGray;
-            No_Pregunta10SH.BackColor = Color.Green;
+            No(Si_Pregunta10SH, No_Pregunta10SH);
         }
 
-        
+        private void Si_Pregunta1SS_CheckedChanged(object sender, EventArgs e)
+        {
+            Si(Si_Pregunta1SS, No_Pregunta1SS);
+        }
+
+        private void No_Pregunta1SS_CheckedChanged(object sender, EventArgs e)
+        {
+            No(Si_Pregunta1SS, No_Pregunta1SS);
+        }
+
+        private void Si_Pregunta2SS_CheckedChanged(object sender, EventArgs e)
+        {
+            Si(Si_Pregunta2SS, No_Pregunta2SS);
+        }
+
+        private void No_Pregunta2SS_CheckedChanged(object sender, EventArgs e)
+        {
+            No(Si_Pregunta2SS, No_Pregunta2SS);
+        }
+
+        private void Si_Pregunta3SS_CheckedChanged(object sender, EventArgs e)
+        {
+            Si(Si_Pregunta3SS, No_Pregunta3SS);
+        }
+
+        private void No_Pregunta3SS_CheckedChanged(object sender, EventArgs e)
+        {
+            No(Si_Pregunta3SS, No_Pregunta3SS);
+        }
+
+        private void Si_Pregunta4SS_CheckedChanged(object sender, EventArgs e)
+        {
+            Si(Si_Pregunta4SS, No_Pregunta4SS);
+        }
+
+        private void No_Pregunta4SS_CheckedChanged(object sender, EventArgs e)
+        {
+            No(Si_Pregunta4SS, No_Pregunta4SS);
+        }
+
+        private void Btn_Finalizar_Click(object sender, EventArgs e)
+        {
+            if ((SH_Completado == true))
+            {
+                Pregunta1SS();
+                Pregunta2SS();
+                Pregunta3SS();
+                Pregunta4SS();
+                Pregunta5SS();
+                Pregunta6SS();
+                Pregunta7SS();
+                Verificar_SectorS();
+            }
+            /*else
+            {
+                Verificar_Sectores();
+            }*/
+            Panel_Mensaje.Visible = true;
+        }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            Cerrar();
+        }
     }
 } 

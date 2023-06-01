@@ -35,7 +35,6 @@
             this.Panel_Encuesta = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.PanelHoraFecha = new System.Windows.Forms.Panel();
             this.lbl_Fecha = new System.Windows.Forms.Label();
             this.lbl_Hora = new System.Windows.Forms.Label();
@@ -67,6 +66,9 @@
             this.Perfil_Masculino = new System.Windows.Forms.PictureBox();
             this.Perfil_Femenino = new System.Windows.Forms.PictureBox();
             this.timerhorafecha = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.Txt_Edad = new System.Windows.Forms.Label();
+            this.panel13 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Encuesta.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,12 +78,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_Completado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.Panel_Info.SuspendLayout();
+            this.Panel_Foto.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).BeginInit();
+            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -106,7 +110,6 @@
             this.Panel_Encuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_Encuesta.BackgroundImage")));
             this.Panel_Encuesta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel_Encuesta.Controls.Add(this.panel1);
-            this.Panel_Encuesta.Controls.Add(this.button1);
             this.Panel_Encuesta.Controls.Add(this.PanelHoraFecha);
             this.Panel_Encuesta.Controls.Add(this.Panel_Status);
             this.Panel_Encuesta.Controls.Add(this.Logo);
@@ -127,26 +130,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(419, 230);
             this.panel1.TabIndex = 6;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Sitka Small", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(133, 85);
+            this.label2.Location = new System.Drawing.Point(139, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 103);
             this.label2.TabIndex = 0;
             this.label2.Text = "INICIAR ENCUESTA";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(-13, -13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // PanelHoraFecha
             // 
@@ -282,6 +277,7 @@
             // Panel_Foto
             // 
             this.Panel_Foto.BackColor = System.Drawing.Color.Transparent;
+            this.Panel_Foto.Controls.Add(this.panel13);
             this.Panel_Foto.Location = new System.Drawing.Point(28, 244);
             this.Panel_Foto.Name = "Panel_Foto";
             this.Panel_Foto.Size = new System.Drawing.Size(192, 72);
@@ -502,7 +498,43 @@
             this.timerhorafecha.Enabled = true;
             this.timerhorafecha.Tick += new System.EventHandler(this.timerhorafecha_Tick);
             // 
-            // Encuestas
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 35);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Edad :";
+            // 
+            // Txt_Edad
+            // 
+            this.Txt_Edad.AutoSize = true;
+            this.Txt_Edad.BackColor = System.Drawing.Color.Transparent;
+            this.Txt_Edad.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Edad.ForeColor = System.Drawing.Color.White;
+            this.Txt_Edad.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Txt_Edad.Location = new System.Drawing.Point(105, 1);
+            this.Txt_Edad.Name = "Txt_Edad";
+            this.Txt_Edad.Size = new System.Drawing.Size(83, 35);
+            this.Txt_Edad.TabIndex = 25;
+            this.Txt_Edad.Text = "Edad";
+            this.Txt_Edad.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Controls.Add(this.label3);
+            this.panel13.Controls.Add(this.Txt_Edad);
+            this.panel13.Location = new System.Drawing.Point(21, 13);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(171, 36);
+            this.panel13.TabIndex = 26;
+            // 
+            // Encuestas_Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -511,7 +543,7 @@
             this.Controls.Add(this.Panel_Encuesta);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Encuestas";
+            this.Name = "Encuestas_Perfil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -525,6 +557,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_Completado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.Panel_Info.ResumeLayout(false);
+            this.Panel_Foto.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -535,6 +568,8 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).EndInit();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -576,7 +611,9 @@
         private System.Windows.Forms.PictureBox picture_Completado;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Txt_Edad;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel13;
     }
 }

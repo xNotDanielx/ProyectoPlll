@@ -35,7 +35,6 @@ C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\P
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.SuggestedBindingRedirects.cache
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Administrador.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Ayuda.resources
-C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Encuestas.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Form_InicioSesion.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Principal.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
@@ -71,3 +70,30 @@ C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.exe
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
 C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (6)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Encuestas_Perfil.resources
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Logica.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Datos.dll
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Logica.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\bin\Debug\Datos.pdb
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Administrador.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Ayuda.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Encuestas_Perfil.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Form_InicioSesion.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Principal.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Que_Es_Censo.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Form_Registrar.resources
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.GenerateResource.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.exe
+C:\Users\Angel Barrueto\Downloads\ProyectoPlll-main (7)\ProyectoPlll-main\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.pdb

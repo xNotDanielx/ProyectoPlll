@@ -100,6 +100,7 @@
             this.Txt_Contraseña.Name = "Txt_Contraseña";
             this.Txt_Contraseña.Size = new System.Drawing.Size(295, 24);
             this.Txt_Contraseña.TabIndex = 10;
+            this.Txt_Contraseña.TextChanged += new System.EventHandler(this.Txt_Contraseña_TextChanged);
             // 
             // Btn_Cancelar
             // 
