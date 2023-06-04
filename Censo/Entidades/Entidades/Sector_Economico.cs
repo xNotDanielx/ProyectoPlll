@@ -9,7 +9,7 @@ namespace Entidades
     public class Sector_Economico
     {
         public Sector_Economico() { }
-        public int IDSector { get; set; }
+        public string Documento { get; set; }
         public int Empleado { get; set; }
         public int Propietario_Negocio { get; set; }
         public int Trabajador_Privado { get; set; }
@@ -22,9 +22,8 @@ namespace Entidades
         public int Desempleado { get; set; }
         public String Estrato { get; set; }
 
-        public Sector_Economico(int idsector,int empleado, int propietario_Negocio, int trabajador_Privado, int contratista_Independiente, int pensionado, int subsidiado, int accionistas, int trabajador_Publico, int ingreso_Actividades, int desempleado, string estrato)
+        public Sector_Economico(int empleado, int propietario_Negocio, int trabajador_Privado, int contratista_Independiente, int pensionado, int subsidiado, int accionistas, int trabajador_Publico, int ingreso_Actividades, int desempleado, string estrato)
         {
-            IDSector = idsector;
             Empleado = empleado;
             Propietario_Negocio = propietario_Negocio;
             Trabajador_Privado = trabajador_Privado;
@@ -40,7 +39,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            return $"{IDSector};{Empleado};{Propietario_Negocio};{Trabajador_Privado};{Contratista_Independiente};{Pensionado};{Subsidiado};{Accionistas};{Trabajador_Publico};{Ingreso_Actividades};{Desempleado};{Estrato}";
+            return $"{Empleado};{Propietario_Negocio};{Trabajador_Privado};{Contratista_Independiente};{Pensionado};{Subsidiado};{Accionistas};{Trabajador_Publico};{Ingreso_Actividades};{Desempleado};{Estrato}";
         }
     }
 }

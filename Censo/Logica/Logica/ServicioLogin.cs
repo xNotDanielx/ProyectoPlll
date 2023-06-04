@@ -8,105 +8,79 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ServicioLogin
+    public class ServicioLogin : ICrud<Login>
     {
-        Archivo archivo = new Archivo();
-        List<Login> logins;
+        Datos.RepositorioLogin repositorioLogin;
 
-        public ServicioLogin()
+        public ServicioLogin(string conexion)
         {
-            Refresh();
+            repositorioLogin = new RepositorioLogin(conexion);
+        }
+        public void Insertar(Login PersonaLog)
+        {
+            repositorioLogin.Insert(PersonaLog);
         }
 
-        void Refresh()
+        public void Delete(Login PersonaLog)
         {
-            try
-            {
-                logins = archivo.consultarCuenta();
-            }
-            catch (Exception)
-            {
-
-            }
+            repositorioLogin.Delete(PersonaLog);
         }
+
+        public void Update(Login PersonaLog)
+        {
+            repositorioLogin.Update(PersonaLog);
+        }
+
         public List<Login> GetAll()
         {
-            Refresh();
-            if (logins.Count == 0)
-            {
-                return null;
-            }                       
-            return logins;
+            return repositorioLogin.GetAll();
         }
 
-
-        public string Añadir(Login login)
-        {
-            try
-            {
-                if (login == null)
-                {
-                    return "No se puede guardar una persona con valor NULL";
-                }
-                else
-                {
-                    archivo.Guardar_Login(login);
-                    return "Guardado...";
-                }
-            }
-            catch (Exception)
-            {
-                return "Error al guardar";
-            }
-        }
         public bool Buscar_Cuenta(Login login)
         {
-            Refresh();
             bool Verificar = false;
             foreach (var item in GetAll())
             {
                 if (item.Numero_Documento.Equals(login.Numero_Documento) & item.Contraseña.Equals(login.Contraseña))
                 {
-                     Verificar = true;
+                    Verificar = true;
                 }
             }
             return Verificar;
         }
 
-        public List<Login> Obtener_Informacion(Login login)
+        public List<Login> Obtener_Informacion(Login log)
         {
             try
             {
-                Refresh();
                 List<Login> ListaPorND = new List<Login>();
-                if(logins == null)
+                if (GetAll() == null)
                 {
                     return null;
                 }
                 else
                 {
-                    foreach (var item in logins)
+                    foreach (var item in GetAll())
                     {
-                        if (item.Numero_Documento.Equals(login.Numero_Documento))
+                        if (item.Numero_Documento.Equals(log.Numero_Documento))
                         {
                             ListaPorND.Add(item);
                         }
                     }
                 }
-               
-               return ListaPorND;
+                return ListaPorND;
             }
             catch (Exception)
             {
                 return null;
             }
+
         }
 
         public bool Buscar_Persona(Login login)
         {
-            Refresh();
             bool Verificar = false;
-            foreach (var item in logins)
+            foreach (var item in GetAll())
             {
                 if (item.Numero_Documento.Equals(login.Numero_Documento))
                 {
@@ -115,6 +89,6 @@ namespace Logica
             }
             return Verificar;
         }
-            
     }
 }
+

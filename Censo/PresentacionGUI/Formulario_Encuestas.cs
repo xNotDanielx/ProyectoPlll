@@ -11,6 +11,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Datos;
 
 namespace PresentacionGUI
 {
@@ -20,13 +21,16 @@ namespace PresentacionGUI
         Sector_Social SS = new Sector_Social();
         Sector_Hogar SH = new Sector_Hogar();
         Persona persona = new Persona();
-        ServicioSE logicaSE = new ServicioSE();
-        ServicioSH logicaSH = new ServicioSH();
-        ServicioSS logicaSS = new ServicioSS();
+        Entidades.Login login = new Entidades.Login();
+        Logica.ServicioPersona logicaP = new Logica.ServicioPersona(configConnnection.ConnectionString);
+        ServicioSE logicaSE = new ServicioSE(configConnnection.ConnectionString);
+        ServicioSH logicaSH = new ServicioSH(configConnnection.ConnectionString);
+        ServicioSS logicaSS = new ServicioSS(configConnnection.ConnectionString);
+        Form_Registrar registrar = new Form_Registrar();
 
         public Formulario_Encuestas()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
         public void Cerrar()
         {
@@ -55,9 +59,10 @@ namespace PresentacionGUI
         bool SE_Completado = false;
         bool SH_Completado = false;
         bool SS_Completado = false;
+
         private void Btn_Siguiente_Click(object sender, EventArgs e)
         {
-            if ((SE_Completado == false)&& (SH_Completado == false) && (SS_Completado == false))
+            if ((SE_Completado == false) && (SH_Completado == false))
              {
                 Pregunta1SE();
                 Pregunta2SE();
@@ -69,8 +74,8 @@ namespace PresentacionGUI
                 Pregunta8SE();
                 Pregunta9SE();
                 Pregunta10SE();
+                Pregunta11SE();
                 Verificar_SectorE();
-                
             }
              else if ((SE_Completado == true))
             {
@@ -88,9 +93,9 @@ namespace PresentacionGUI
                 Pregunta12SH();
                 Pregunta13SH();
                 Pregunta14SH();
-                Pregunta15SH();
-                Verificar_SectorH();
-            }
+                Pregunta15SH();                
+                Verificar_SectorH();                
+             }                                    
             
         }
         //Preguntas del Sector Economico
@@ -100,10 +105,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta1SE.Checked)
                 {
+                    SE.Empleado = 1;                    
                     Pregunta1 = true;
                 }
                 else if(No_Pregunta1SE.Checked)
                 {
+                    SE.Empleado = 0;
                     Pregunta1 = true;
                 }
                 else
@@ -116,7 +123,6 @@ namespace PresentacionGUI
             {
 
             }
-            
         }
         public void Pregunta2SE()
         {
@@ -124,10 +130,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta2SE.Checked)
                 {
+                    SE.Propietario_Negocio = 1;
                     Pregunta2 = true;
                 }
                 else if (No_Pregunta2SE.Checked)
                 {
+                    SE.Propietario_Negocio = 0;
                     Pregunta2 = true;
                 }
                 else
@@ -140,7 +148,6 @@ namespace PresentacionGUI
             {
 
             }
-
         }
         public void Pregunta3SE()
         {
@@ -148,10 +155,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta3SE.Checked)
                 {
+                    SE.Trabajador_Privado = 1;
                     Pregunta3 = true;
                 }
                 else if (No_Pregunta3SE.Checked)
                 {
+                    SE.Trabajador_Privado = 0;
                     Pregunta3 = true;
                 }
                 else
@@ -171,10 +180,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta4SE.Checked)
                 {
+                    SE.Contratista_Independiente = 1;
                     Pregunta4 = true;
                 }
                 else if (No_Pregunta4SE.Checked)
                 {
+                    SE.Contratista_Independiente = 0;
                     Pregunta4 = true;
                 }
                 else
@@ -194,10 +205,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta5SE.Checked)
                 {
+                    SE.Pensionado = 1;
                     Pregunta5 = true;
                 }
                 else if (No_Pregunta5SE.Checked)
                 {
+                    SE.Pensionado = 0;
                     Pregunta5 = true;
                 }
                 else
@@ -217,10 +230,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta6SE.Checked)
                 {
+                    SE.Subsidiado = 1;
                     Pregunta6 = true;
                 }
                 else if (No_Pregunta6SE.Checked)
                 {
+                    SE.Subsidiado = 0;
                     Pregunta6 = true;
                 }
                 else
@@ -241,10 +256,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta7SE.Checked)
                 {
+                    SE.Accionistas = 1;
                     Pregunta7 = true;
                 }
                 else if (No_Pregunta7SE.Checked)
                 {
+                    SE.Accionistas = 0;
                     Pregunta7 = true;
                 }
                 else
@@ -265,10 +282,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta8SE.Checked)
                 {
+                    SE.Trabajador_Publico = 1;
                     Pregunta8 = true;
                 }
                 else if (No_Pregunta8SE.Checked)
                 {
+                    SE.Trabajador_Publico = 0;
                     Pregunta8 = true;
                 }
                 else
@@ -289,10 +308,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta9SE.Checked)
                 {
+                    SE.Ingreso_Actividades = 1;
                     Pregunta9 = true;
                 }
                 else if (No_Pregunta9SE.Checked)
                 {
+                    SE.Ingreso_Actividades = 0;
                     Pregunta9 = true;
                 }
                 else
@@ -313,16 +334,104 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta10SE.Checked)
                 {
+                    SE.Desempleado = 1;
                     Pregunta10 = true;
                 }
                 else if (No_Pregunta10SE.Checked)
                 {
+                    SE.Desempleado = 0;
                     Pregunta10 = true;
                 }
                 else
                 {
                     Si_Pregunta10SE.BackColor = Color.Red;
                     No_Pregunta10SE.BackColor = Color.Red;
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        public void Pregunta11SE()
+        {
+            try
+            {
+                if (Opc_Estrato1.Checked)
+                {
+                    SE.Estrato = "1";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else if (Opc_Estrato2.Checked)
+                {
+                    SE.Estrato = "2";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else if (Opc_Estrato3.Checked)
+                {
+                    SE.Estrato = "3";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else if (Opc_Estrato4.Checked)
+                {
+                    SE.Estrato = "4";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else if (Opc_Estrato5.Checked)
+                {
+                    SE.Estrato = "5";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else if (Opc_Estrato6.Checked)
+                {
+                    SE.Estrato = "6";
+                    Opc_Estrato1.ForeColor = Color.Black;
+                    Opc_Estrato2.ForeColor = Color.Black;
+                    Opc_Estrato3.ForeColor = Color.Black;
+                    Opc_Estrato4.ForeColor = Color.Black;
+                    Opc_Estrato5.ForeColor = Color.Black;
+                    Opc_Estrato6.ForeColor = Color.Black;
+                    Pregunta11 = true;
+                }
+                else
+                {
+                    Opc_Estrato1.ForeColor = Color.Red;
+                    Opc_Estrato2.ForeColor = Color.Red;
+                    Opc_Estrato3.ForeColor = Color.Red;
+                    Opc_Estrato4.ForeColor = Color.Red;
+                    Opc_Estrato5.ForeColor = Color.Red;
+                    Opc_Estrato6.ForeColor = Color.Red;
                 }
             }
             catch
@@ -337,10 +446,12 @@ namespace PresentacionGUI
             {
                 if(Si_Pregunta1SH.Checked)
                 {
+                    SH.Propietario = 1;                    
                     Pregunta1 = true;
                 }
-                else if (No_Pregunta1SH.Checked)
+                else if(No_Pregunta1SH.Checked)
                 {
+                    SH.Propietario = 0;
                     Pregunta1 = true;
                 }
                 else
@@ -361,11 +472,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta2SH.Checked)
                 {
+                    SH.Servicio_Agua = 1;
                     Pregunta2 = true;
+                    Console.WriteLine("2");
                 }
                 else if (No_Pregunta2SH.Checked)
                 {
+                    SH.Servicio_Agua = 0;
                     Pregunta2 = true;
+                    Console.WriteLine("2");
                 }
                 else
                 {
@@ -384,11 +499,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta3SH.Checked)
                 {
+                    SH.Servicio_Luz = 1;
                     Pregunta3 = true;
+                    Console.WriteLine("3");
                 }
                 else if (No_Pregunta3SH.Checked)
                 {
+                    SH.Servicio_Luz = 0;
                     Pregunta3 = true;
+                    Console.WriteLine("3");
                 }
                 else
                 {
@@ -407,11 +526,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta4SH.Checked)
                 {
+                    SH.Servicio_Gas = 1;
                     Pregunta4 = true;
+                    Console.WriteLine("4");
                 }
-                else if (No_Pregunta4SH.Checked)
+                else if(No_Pregunta4SH.Checked)
                 {
+                    SH.Servicio_Gas = 0;
                     Pregunta4 = true;
+                    Console.WriteLine("4");
                 }
                 else
                 {
@@ -430,11 +553,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta5SH.Checked)
                 {
+                    SH.Saneamiento = 1;
                     Pregunta5 = true;
+                    Console.WriteLine("5");
                 }
                 else if (No_Pregunta5SH.Checked)
                 {
+                    SH.Saneamiento = 0;
                     Pregunta5 = true;
+                    Console.WriteLine("5");
                 }
                 else
                 {
@@ -453,11 +580,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta6SH.Checked)
                 {
+                    SH.Adicional = 1;
                     Pregunta6 = true;
+                    Console.WriteLine("6");
                 }
                 else if (No_Pregunta6SH.Checked)
                 {
+                    SH.Adicional = 0;
                     Pregunta6 = true;
+                    Console.WriteLine("6");
                 }
                 else
                 {
@@ -476,11 +607,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta7SH.Checked)
                 {
+                    SH.Internet = 1;
                     Pregunta7 = true;
+                    Console.WriteLine("7");
                 }
                 else if (No_Pregunta7SH.Checked)
                 {
+                    SH.Internet = 0;
                     Pregunta7 = true;
+                    Console.WriteLine("7");
                 }
                 else
                 {
@@ -499,11 +634,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta8SH.Checked)
                 {
+                    SH.Cable = 1;
                     Pregunta8 = true;
+                    Console.WriteLine("8");
                 }
                 else if (No_Pregunta8SH.Checked)
                 {
+                    SH.Cable = 0;
                     Pregunta8 = true;
+                    Console.WriteLine("8");
                 }
                 else
                 {
@@ -522,11 +661,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta9SH.Checked)
                 {
+                    SH.Telefono = 1;
                     Pregunta9 = true;
+                    Console.WriteLine("9");
                 }
                 else if (No_Pregunta9SH.Checked)
                 {
+                    SH.Telefono = 0;
                     Pregunta9 = true;
+                    Console.WriteLine("9");
                 }
                 else
                 {
@@ -545,11 +688,15 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta10SH.Checked)
                 {
+                    SH.Vehiculo = 1;
                     Pregunta10 = true;
+                    Console.WriteLine("10");
                 }
                 else if (No_Pregunta10SH.Checked)
                 {
+                    SH.Vehiculo = 0;
                     Pregunta10 = true;
+                    Console.WriteLine("10");
                 }
                 else
                 {
@@ -568,15 +715,19 @@ namespace PresentacionGUI
             {
                 if (Opc_Urbano.Checked)
                 {
+                    SH.Zona = "Urbana";
                     Opc_Urbano.ForeColor = Color.Black;
                     Opc_Urbano.ForeColor = Color.Black;
                     Pregunta11 = true;
+                    Console.WriteLine("11");
                 }
                 else if (Opc_Rural.Checked)
                 {
+                    SH.Zona = "Rural";
                     Opc_Urbano.ForeColor = Color.Black;
                     Opc_Rural.ForeColor = Color.Black;
                     Pregunta11 = true;
+                    Console.WriteLine("11");
                 }
                 else
                 {
@@ -595,13 +746,14 @@ namespace PresentacionGUI
             {
                 if(txt_Habitaciones.Text != "")
                 {
+                    SH.Habitaciones = txt_Habitaciones.Text;
                     txtHabitaciones.ForeColor = Color.Black;
-                    Pregunta12 = true;                                     
+                    Pregunta12 = true;
+                    Console.WriteLine("12");
                 }
                 else
                 {
                     txtHabitaciones.ForeColor = Color.Red;
-                    // txt_Habitaciones.Text =  
                 }
             }
 
@@ -616,13 +768,14 @@ namespace PresentacionGUI
             {
                 if (txt_Baños.Text != "")
                 {
+                    SH.Baños = txt_Baños.Text;
                     txtBaño.ForeColor = Color.Black;
-                    Pregunta13 = true;                                      
+                    Pregunta13 = true;
+                    Console.WriteLine("13");
                 }
                 else
                 {
                     txtBaño.ForeColor = Color.Red;
-                    // txt_Baños.Text = 
                 }
             }
 
@@ -637,15 +790,19 @@ namespace PresentacionGUI
             {
                 if (Opc_Propia.Checked)
                 {
+                    SH.Tipo_Vivienda = "Propia";
                     Opc_Propia.ForeColor = Color.Black;
                     Opc_Alquilada.ForeColor = Color.Black;
                     Pregunta14 = true;
+                    Console.WriteLine("14");
                 }
                 else if (Opc_Alquilada.Checked)
                 {
+                    SH.Tipo_Vivienda = "Alquilada";
                     Opc_Propia.ForeColor = Color.Black;
                     Opc_Alquilada.ForeColor = Color.Black;
                     Pregunta14 = true;
+                    Console.WriteLine("14");
                 }
                 else
                 {
@@ -664,24 +821,30 @@ namespace PresentacionGUI
             {
                 if (Opc_Bajo.Checked)
                 {
+                    SH.Ingreso = "Bajo";
                     Opc_Bajo.ForeColor = Color.Black;
                     Opc_Medio.ForeColor = Color.Black;
                     Opc_Alto.ForeColor = Color.Black;
                     Pregunta15 = true;
+                    Console.WriteLine("15");
                 }
                 else if (Opc_Medio.Checked)
                 {
+                    SH.Ingreso = "Medio";
                     Opc_Bajo.ForeColor = Color.Black;
                     Opc_Medio.ForeColor = Color.Black;
                     Opc_Alto.ForeColor = Color.Black;
                     Pregunta15 = true;
+                    Console.WriteLine("15");
                 }
                 else if(Opc_Alto.Checked)
                 {
+                    SH.Ingreso = "Alto";
                     Opc_Bajo.ForeColor = Color.Black;
                     Opc_Medio.ForeColor = Color.Black;
                     Opc_Alto.ForeColor = Color.Black;
                     Pregunta15 = true;
+                    Console.WriteLine("15");
                 }
                 else
                 {
@@ -703,10 +866,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta1SS.Checked)
                 {
+                    SS.Afliado = 1;                    
                     Pregunta1 = true;
                 }
                 else if (No_Pregunta1SS.Checked)
                 {
+                    SS.Afliado = 0;
                     Pregunta1 = true;
                 }
                 else
@@ -727,10 +892,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta2SS.Checked)
                 {
+                    SS.Victima_Conflicto = 1;
                     Pregunta2 = true;
                 }
                 else if (No_Pregunta2SS.Checked)
                 {
+                    SS.Victima_Conflicto= 0;
                     Pregunta2 = true;
                 }
                 else
@@ -750,10 +917,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta3SS.Checked)
                 {
+                    SS.Acceso_Estudio = 1;
                     Pregunta3 = true;
                 }
                 else if (No_Pregunta3SS.Checked)
                 {
+                    SS.Acceso_Estudio = 0;
                     Pregunta3 = true;
                 }
                 else
@@ -773,10 +942,12 @@ namespace PresentacionGUI
             {
                 if (Si_Pregunta4SS.Checked)
                 {
+                    SS.Servicio_Transporte = 1;
                     Pregunta4 = true;
                 }
                 else if (No_Pregunta4SS.Checked)
                 {
+                    SS.Servicio_Transporte = 0;
                     Pregunta4 = true;
                 }
                 else
@@ -796,6 +967,7 @@ namespace PresentacionGUI
             {
                 if (Opc_Arhuaco.Checked)
                 {
+                    SS.Etnia = "Arhuaco";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -807,6 +979,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Kogui.Checked)
                 {
+                    SS.Etnia = "Kogui";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -818,6 +991,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Kankuamo.Checked)
                 {
+                    SS.Etnia = "Kankuamo";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -829,6 +1003,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Wiwa.Checked)
                 {
+                    SS.Etnia = "Wiwa";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -840,6 +1015,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Yucpa.Checked)
                 {
+                    SS.Etnia = "Yucpa";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -851,6 +1027,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Chimila.Checked)
                 {
+                    SS.Etnia = "Chimila";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -862,6 +1039,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Ninguno.Checked)
                 {
+                    SS.Etnia = "Ninguno";
                     Opc_Arhuaco.ForeColor = Color.Black;
                     Opc_Kogui.ForeColor = Color.Black;
                     Opc_Kankuamo.ForeColor = Color.Black;
@@ -893,6 +1071,7 @@ namespace PresentacionGUI
             {
                 if (Opc_Soltero.Checked)
                 {
+                    SS.Estado_Civil = "Soltero";
                     Opc_Soltero.ForeColor = Color.Black;
                     Opc_Casado.ForeColor = Color.Black;
                     Opc_Viudo.ForeColor = Color.Black;
@@ -902,6 +1081,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Casado.Checked)
                 {
+                    SS.Estado_Civil = "Casado";
                     Opc_Soltero.ForeColor = Color.Black;
                     Opc_Casado.ForeColor = Color.Black;
                     Opc_Viudo.ForeColor = Color.Black;
@@ -911,6 +1091,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Viudo.Checked)
                 {
+                    SS.Estado_Civil = "Viudo";
                     Opc_Soltero.ForeColor = Color.Black;
                     Opc_Casado.ForeColor = Color.Black;
                     Opc_Viudo.ForeColor = Color.Black;
@@ -920,6 +1101,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Divorciado.Checked)
                 {
+                    SS.Estado_Civil = "Divorciado";
                     Opc_Soltero.ForeColor = Color.Black;
                     Opc_Casado.ForeColor = Color.Black;
                     Opc_Viudo.ForeColor = Color.Black;
@@ -929,6 +1111,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_OtroCivil.Checked)
                 {
+                    SS.Estado_Civil = "Otro";
                     Opc_Soltero.ForeColor = Color.Black;
                     Opc_Casado.ForeColor = Color.Black;
                     Opc_Viudo.ForeColor = Color.Black;
@@ -956,6 +1139,7 @@ namespace PresentacionGUI
             {
                 if (Opc_SinEstudio.Checked)
                 {
+                    SS.NivelEducacion = "Sin Estudio";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -966,6 +1150,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Primaria.Checked)
                 {
+                    SS.NivelEducacion = "Primaria";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -976,6 +1161,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Secundaria.Checked)
                 {
+                    SS.NivelEducacion = "Secundaria";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -986,6 +1172,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Tecnica.Checked)
                 {
+                    SS.NivelEducacion = "Tecnica";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -996,6 +1183,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_Universitaria.Checked)
                 {
+                    SS.NivelEducacion = "Universitaria";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -1006,6 +1194,7 @@ namespace PresentacionGUI
                 }
                 else if (Opc_OtroEducacion.Checked)
                 {
+                    SS.NivelEducacion = "Otro";
                     Opc_SinEstudio.ForeColor = Color.Black;
                     Opc_Primaria.ForeColor = Color.Black;
                     Opc_Secundaria.ForeColor = Color.Black;
@@ -1049,7 +1238,7 @@ namespace PresentacionGUI
         }
         public void Verificar_SectorE()
         {
-            if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true))
+            if ((Pregunta1 == true) && (Pregunta2 == true) && (Pregunta3 == true) && (Pregunta4 == true) && (Pregunta5 == true) && (Pregunta6 == true) && (Pregunta7 == true) && (Pregunta8 == true) && (Pregunta9 == true) && (Pregunta10 == true) && (Pregunta11 == true))
             {
                 Btn_Finalizar.Visible = false;
                 Btn_Siguiente.Visible = true;
@@ -1059,7 +1248,7 @@ namespace PresentacionGUI
                 SE_Completado = true;
                 PreguntasFalse();
                 SH_Completado = false;
-                SS_Completado = false;
+                SS_Completado = false;                                
             }
         }
         public void Verificar_SectorH()
@@ -1073,7 +1262,7 @@ namespace PresentacionGUI
                 SE_Completado = true;
                 SH_Completado = true;
                 PreguntasFalse();
-                SS_Completado = false;
+                SS_Completado = false;                                
             }
         }
         public void Verificar_SectorS()
@@ -1082,10 +1271,21 @@ namespace PresentacionGUI
             {
                 Panel_Mensaje.Visible = true;                                                                     
             }
+                        
         }
+
+        string DocSectores;
+        public string Doc()
+        {
+            foreach (var item in logicaSE.GetAll())
+            {
+                DocSectores = registrar.GuardarDoc(item);
+            }
+            return DocSectores;
+        }
+
         private void Finalizar_Si_Click(object sender, EventArgs e)
         {
-            //persona.SectoresCompletados = true;   cambiar a base de datos
             panel_Finalizado.Visible = true;
             Panel_Mensaje.Visible = false;
             SectorSi_SectorS.Visible = true;
@@ -1098,6 +1298,14 @@ namespace PresentacionGUI
             Btn_Cancelar.Visible = false;
             Btn_Finalizar.Visible = false;
             Btn_Salir.Visible = true;
+            SE.Documento = Doc();
+            SH.Documento = Doc();
+            SS.Documento = Doc();
+            logicaSE.Update(SE);
+            logicaSH.Update(SH);
+            logicaSS.Update(SS);            
+            persona.Sectores_Completados = "Completado";
+            logicaP.updateSectorComplete(persona.Sectores_Completados, Doc());
         }
 
         private void Finalizar_No_Click(object sender, EventArgs e)

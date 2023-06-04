@@ -20,3 +20,14 @@ C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Log
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.dll
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.pdb
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Logica.dll
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Logica.pdb
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Datos.dll
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Entidades.dll
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Datos.pdb
+C:\Users\victo\Documents\Censo\Logica\Logica\bin\Debug\Entidades.pdb
+C:\Users\victo\Documents\Censo\Logica\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\victo\Documents\Censo\Logica\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\victo\Documents\Censo\Logica\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\victo\Documents\Censo\Logica\Logica\obj\Debug\Logica.dll
+C:\Users\victo\Documents\Censo\Logica\Logica\obj\Debug\Logica.pdb

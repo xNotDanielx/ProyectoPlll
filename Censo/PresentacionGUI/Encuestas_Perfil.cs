@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using System.Timers;
 using System.Drawing.Imaging;
 using Entidades;
 using Logica;
 using System.Reflection;
+using Datos;
 
 namespace PresentacionGUI
 {
@@ -22,8 +22,8 @@ namespace PresentacionGUI
         int Contador = 0;
         Login login = new Login();
         Persona persona = new Persona();
-        ServicioLogin sl = new ServicioLogin();
-        ServicioPersona sp = new ServicioPersona();
+        Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
+        Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);
         int i;
         public Encuestas_Perfil()
         {
@@ -58,23 +58,19 @@ namespace PresentacionGUI
             login.Numero_Documento = NdUsuario;
             persona.Documento = InfoUsuario;
         }
-        private void Iniciar_Info()
+        public void Iniciar_Info()
         {
-            Console.WriteLine("NC: " + persona.Documento);
-            Console.WriteLine("ID: " + login.Numero_Documento);
             Panel_Encuesta.Visible = true;
             PanelHoraFecha.Visible = true;
             Panel_Info.Visible = true;
             Panel_Status.Visible = true;
             Logo.Visible = true;
-            List<Login> loginI = sl.Obtener_Informacion(login);
-            List<Persona> personaI = sp.Obtener_Informacion(persona);
-            foreach (Login LoginInfo in loginI)
+            foreach (Login Log in sl.Obtener_Informacion(login))
             {
-                Txt_NumeroD.Text = LoginInfo.Numero_Documento;
+                Txt_NumeroD.Text = Log.Numero_Documento;
             }
 
-            foreach (Persona PersonaInfo in personaI)
+            foreach (Persona PersonaInfo in sp.Obtener_Informacion(persona))
             {
 
                 Txt_Nombre_Apellido.Text = PersonaInfo.Nombre + " " + PersonaInfo.Apellido;
@@ -126,14 +122,22 @@ namespace PresentacionGUI
         }
         private void panel1_Click(object sender, EventArgs e)
         {
-            Formulario_Encuestas forme = new Formulario_Encuestas();
-            forme.Show();
+                Formulario_Encuestas forme = new Formulario_Encuestas();
+                forme.Show();
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Formulario_Encuestas forme = new Formulario_Encuestas();
-            forme.Show();
+            if (persona.Sectores_Completados == "Sin Completar")
+            {
+                Formulario_Encuestas forme = new Formulario_Encuestas();
+                forme.Show();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

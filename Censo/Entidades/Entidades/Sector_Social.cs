@@ -9,7 +9,7 @@ namespace Entidades
     public class Sector_Social
     {
         public Sector_Social() { }
-        public int IDSector { get; set; }
+        public string Documento { get; set; }
         public int Afliado { get; set; }
         public int Victima_Conflicto { get; set; }
         public string Etnia { get; set; }
@@ -20,7 +20,6 @@ namespace Entidades
 
         public Sector_Social(int idsector,int afliado, int victima_Conflicto, string etnia, int acceso_Estudio, int servicio_Transporte, string estado_Civil, string nivel)
         {
-            IDSector = idsector;
             Afliado = afliado;
             Victima_Conflicto = victima_Conflicto;
             Etnia = etnia;
@@ -32,7 +31,7 @@ namespace Entidades
 
         public override string ToString()
         {
-            return $"{IDSector};{Afliado};{Victima_Conflicto};{Etnia};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{NivelEducacion}";
+            return $"{Afliado};{Victima_Conflicto};{Etnia};{Acceso_Estudio};{Servicio_Transporte};{Estado_Civil};{NivelEducacion}";
         }
 
     }

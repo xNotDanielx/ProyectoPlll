@@ -8,80 +8,57 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ServicioPersona : ICenso<Persona>
+    public class ServicioPersona : ICrud<Persona>
     {
+        Datos.RepositorioPersona repositorioPersona;
         List<Persona> personas;
-        Archivo archivo = new Archivo();
 
-        public ServicioPersona()
+        public ServicioPersona(string conexion)
         {
-            Refresh();
+            repositorioPersona = new Datos.RepositorioPersona(conexion);
+        }     
+
+        public void Insertar(Persona Persona)
+        {
+            repositorioPersona.Insert(Persona);
         }
 
-        public string Añadir(Persona persona)
+        public void Delete(Persona Persona)
         {
-            try
-            {
-                if (persona == null)
-                {
-                    return "No se puede guardar una persona con valor NULL";
-                }
-                else
-                {
-                    archivo.Guardar_Persona(persona);
-                    return "Guardado...";
-                }
-            }
-            catch (Exception)
-            {
-                return "Error al guardar";
-            }
+            repositorioPersona.Delete(Persona);
         }
 
-        public void Refresh()
+        public void Update(Persona Persona)
         {
-            try
-            {
-                personas = archivo.consultarPersona();
-            }
-            catch (Exception)
-            {
-
-            }
+            repositorioPersona.Update(Persona);
         }
+
         public List<Persona> GetAll()
         {
-            try
-            {
-                if (personas.Count == 0) return null;
-                Refresh();
-                return personas;
-            }
-            catch (Exception)
-            {
+            return repositorioPersona.GetAll();
+        }
 
-                throw;
-            }
+        public void updateSectorComplete(String Sector, String Doc)
+        {
+            repositorioPersona.UpdateSectorComplete(Sector, Doc);
         }
 
         public bool Buscar_Persona(Persona persona)
         {
-            Refresh();
             bool Verificar = false;
             if (GetAll() != null)
             {
                 foreach (var item in GetAll())
                 {
-                    Console.WriteLine("culo"+item.Documento);
                     if (item.Documento.Equals(persona.Documento))
-                    {                      
+                    {
                         Verificar = true;
                     }
                 }
             }
             else
             {
-               Verificar = false;
+                Verificar = false;
             }
             return Verificar;
         }
@@ -90,28 +67,22 @@ namespace Logica
         {
             try
             {
-                Refresh();
-                List<Persona> ListaPorNombre = new List<Persona>();
+                List<Persona> ListaPorND = new List<Persona>();
                 foreach (var item in GetAll())
                 {
                     if (item.Documento.Equals(persona.Documento))
                     {
-                        ListaPorNombre.Add(item);
+                        ListaPorND.Add(item);
                     }
                 }
 
-                return ListaPorNombre;
+                return ListaPorND;
             }
             catch (Exception)
             {
                 return null;
             }
 
-        }
-
-        public bool Eliminar(Persona persona)
-        {
-            throw new NotImplementedException();
         }
     }
 }

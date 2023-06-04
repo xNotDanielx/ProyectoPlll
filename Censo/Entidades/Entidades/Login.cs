@@ -9,13 +9,15 @@ namespace Entidades
     public class Login
     {
         public Login() { }      
+        public bool Admin { get; set; }
         public String Numero_Documento { get; set; }
         public String Contraseña { get; set; }
         public String Tipo_Documento { get; set; }
         public int Cuentas_Registradas { get; set; }
 
-        public Login(string numero_Documento, string contraseña, string tipo_Documento,int cuentas_registradas)
+        public Login(bool admin,string numero_Documento, string contraseña, string tipo_Documento,int cuentas_registradas)
         {
+            Admin = admin;
             Numero_Documento = numero_Documento;
             Contraseña = contraseña;
             Tipo_Documento = tipo_Documento;

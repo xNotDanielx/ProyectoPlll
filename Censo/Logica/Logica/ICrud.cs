@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public interface ICenso<T>
+    public interface ICrud<T>
     {
-        void Refresh();
-        String Añadir(T Entidad);
+        void Insertar(T Entidad);
+        void Delete(T Entidad);
+        void Update(T Entidad);
         List<T> GetAll();
-        List<T> Obtener_Informacion(T Entidad);
     }
 }

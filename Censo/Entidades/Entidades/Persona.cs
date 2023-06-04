@@ -20,7 +20,7 @@ namespace Entidades
         public String Direccion { get; set; }
         public String Barrio { get; set; }
         public String Tipo_Vivienda { get; set; }
-        public String Sectores_Completados { get; set; }
+        public string Sectores_Completados { get; set; }
 
         public Persona(string documento,string nombre,string apellido, string sexo,string edad, string telefono, DateTime fechaNacimiento, string correo, string direccion, string barrio, string tipo_Vivienda, string sectores_completados)
         {

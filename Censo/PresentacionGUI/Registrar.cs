@@ -1,4 +1,5 @@
-﻿using Entidades;
+﻿using Datos;
+using Entidades;
 using Logica;
 using System;
 using System.Collections.Generic;
@@ -13,8 +14,14 @@ namespace PresentacionGUI
     {
         Login login = new Login();
         Persona persona = new Persona();
-        ServicioLogin sl = new ServicioLogin();
-        ServicioPersona sp = new ServicioPersona();
+        Sector_Economico SE =new Sector_Economico();
+        Sector_Hogar SH =new Sector_Hogar();
+        Sector_Social SS =new Sector_Social();
+        Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
+        Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);        
+        Logica.ServicioSE SSE = new Logica.ServicioSE(configConnnection.ConnectionString);
+        Logica.ServicioSH SSH = new Logica.ServicioSH(configConnnection.ConnectionString);
+        Logica.ServicioSS SSS = new Logica.ServicioSS(configConnnection.ConnectionString);
         public Form_Registrar()
         {
             InitializeComponent();
@@ -99,7 +106,7 @@ namespace PresentacionGUI
                     else
                     {
                         Error_NDocumento.Visible = false;
-                        login.Numero_Documento = Txt_Ndocumento.Text.ToString();
+                        login.Numero_Documento = Txt_Ndocumento.Text;
                         persona.Documento = Txt_Ndocumento.Text;
                         TDocumento = true;
                         NDocumento = true;
@@ -118,7 +125,7 @@ namespace PresentacionGUI
                     else
                     {
                         Error_NDocumento.Visible = false;
-                        login.Numero_Documento = Txt_Ndocumento.Text.ToString();
+                        login.Numero_Documento = Txt_Ndocumento.Text;
                         persona.Documento = Txt_Ndocumento.Text;
                         TDocumento = true;
                         NDocumento = true;
@@ -151,7 +158,7 @@ namespace PresentacionGUI
                     Contraseña = true;
                     Error_ConfContraseña.Visible = false;
                     Error_Contraseña.Visible = false;
-                    login.Contraseña = Txt_Contraseña.Text.ToString();
+                    login.Contraseña = Txt_Contraseña.Text;
                 }
                 else
                 {
@@ -178,7 +185,7 @@ namespace PresentacionGUI
                 else
                 {
                     Error_Nombres.Visible = false;
-                    persona.Nombre = Txt_Nombres.Text.ToString();
+                    persona.Nombre = Txt_Nombres.Text;
                     Nombres = true;
                 }
             }
@@ -201,7 +208,7 @@ namespace PresentacionGUI
                 {
                     Apellidos = true;
                     Error_Apellidos.Visible = false;
-                    persona.Apellido = Txt_Apellidos.Text.ToString();
+                    persona.Apellido = Txt_Apellidos.Text;
                 }
             }
             catch
@@ -299,7 +306,7 @@ namespace PresentacionGUI
                 {
                     Telefono = true;
                     Error_Telefono.Visible = false;
-                    persona.Telefono = Txt_Telefono.Text.ToString();
+                    persona.Telefono = Txt_Telefono.Text;
                 }
             }
             catch
@@ -328,7 +335,7 @@ namespace PresentacionGUI
                     Direccion = true;
                     Error_Direccion.Visible = false;
                     DireccionPersona = "Cra" + Txt_Cra.Text + "#" + Txt_Cra2.Text;
-                    persona.Direccion = DireccionPersona.ToString();
+                    persona.Direccion = DireccionPersona;
                 }
             }
             catch
@@ -350,7 +357,7 @@ namespace PresentacionGUI
                 {
                     Barrio = true;
                     Error_Barrio.Visible = false;
-                    persona.Barrio = Txt_Barrio.Text.ToString();
+                    persona.Barrio = Txt_Barrio.Text;
                 }
             }
             catch
@@ -401,7 +408,7 @@ namespace PresentacionGUI
                 {
                     Correo = true;
                     Error_Correo.Visible = false;
-                    persona.Correo = Txt_Correo.Text.ToString();
+                    persona.Correo = Txt_Correo.Text;
                 }
                 else
                 {
@@ -412,6 +419,20 @@ namespace PresentacionGUI
             catch
             {
             }
+        }
+
+        string Doc;
+        public string GuardarDoc(Sector_Economico SEDoc)
+        {
+            foreach (var item in sp.GetAll())
+            {
+                if(item.Documento == SEDoc.Documento)
+                {
+                    Doc = item.Documento;
+                    break;
+                }
+            }
+            return Doc;
         }
 
         public void Verificacion()
@@ -428,9 +449,47 @@ namespace PresentacionGUI
                     picture_Cdupli.Visible = false;
                     persona.Sectores_Completados = "Sin Completar";
                     login.Cuentas_Registradas += 1;
-
-                    sl.Añadir(login);
-                    sp.Añadir(persona);
+                    SE.Documento = login.Numero_Documento;
+                    SE.Empleado = 0;
+                    SE.Propietario_Negocio = 0;
+                    SE.Trabajador_Privado = 0;
+                    SE.Contratista_Independiente = 0;
+                    SE.Pensionado = 0;
+                    SE.Subsidiado = 0;
+                    SE.Accionistas = 0;
+                    SE.Trabajador_Publico = 0;
+                    SE.Ingreso_Actividades = 0;
+                    SE.Desempleado = 0;
+                    SE.Estrato = "";
+                    SSE.Insertar(SE);
+                    SH.Documento = login.Numero_Documento;
+                    SH.Zona = "";
+                    SH.Propietario = 0;
+                    SH.Servicio_Agua = 0;
+                    SH.Servicio_Luz = 0;
+                    SH.Servicio_Gas = 0;
+                    SH.Saneamiento = 0;
+                    SH.Adicional = 0;
+                    SH.Habitaciones = "";
+                    SH.Baños = "";
+                    SH.Tipo_Vivienda = "";
+                    SH.Ingreso = "";
+                    SH.Internet = 0;
+                    SH.Cable = 0;
+                    SH.Telefono = 0;
+                    SH.Vehiculo = 0;
+                    SSH.Insertar(SH);
+                    SS.Documento = login.Numero_Documento;
+                    SS.Afliado = 0;
+                    SS.Victima_Conflicto = 0;
+                    SS.Etnia = "";
+                    SS.Acceso_Estudio = 0;
+                    SS.Servicio_Transporte = 0;
+                    SS.Estado_Civil = "";
+                    SS.NivelEducacion = "";
+                    SSS.Insertar(SS);
+                    sl.Insertar(login);
+                    sp.Insertar(persona);
                 }
                 else
                 {
@@ -447,10 +506,9 @@ namespace PresentacionGUI
                         Picture_Error1.Visible = false;
                         Picture_Error2.Visible = false;
                         login.Cuentas_Registradas = login.Cuentas_Registradas + 1;
-                        persona.Documento = persona.Documento + 1;
                         persona.Sectores_Completados = "Sin Completar";
-                        sl.Añadir(login);
-                        sp.Añadir(persona);
+                        sl.Insertar(login);
+                        sp.Insertar(persona);
                         Console.WriteLine("");
                     }
                 }

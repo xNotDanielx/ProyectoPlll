@@ -8,75 +8,37 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ServicioSH : ICenso<Sector_Hogar>
+    public class ServicioSH : ICrud<Sector_Hogar>
     {
-        Archivo archivo = new Archivo();
+        Datos.RepositorioSH repositorioSH;
         List<Sector_Hogar> sectorH;
-        public ServicioSH()
+        public ServicioSH(string conexion)
         {
-            Refresh();
+            repositorioSH = new Datos.RepositorioSH(conexion);
         }
 
-        public string Añadir(Sector_Hogar Sector)
+        public void Delete(Sector_Hogar SH)
         {
-            try
-            {
-                if (Sector == null)
-                {
-                    return "No se puede guardar un valor NULL";
-                }
-                else
-                {
-                    archivo.GuardarSector_Hogar(Sector);
-                    return "Guardado...";
-                }
-            }
-            catch (Exception)
-            {
-                return "Error al guardar";
-            }
+            repositorioSH.Delete(SH);
         }
 
         public List<Sector_Hogar> GetAll()
         {
-            Refresh();
-            if (sectorH.Count == 0) return null;
-
-            return sectorH;
+            return repositorioSH.GetAll();
         }
 
-        public void Refresh()
+        public void Insertar(Sector_Hogar SH)
         {
-            try
-            {
-                sectorH = archivo.consultarSH();
-            }
-            catch (Exception)
-            {
-
-            }
+            repositorioSH.Insert(SH);
         }
 
-        public List<Sector_Hogar> Obtener_Informacion(Sector_Hogar sh)
+        public void Update(Sector_Hogar SH)
         {
-            try
-            {
-                Refresh();
-                List<Sector_Hogar> ListaSectorH = new List<Sector_Hogar>();
-                foreach (var item in GetAll())
-                {
-                    if (item.IDSector.Equals(sh.IDSector))
-                    {
-                        ListaSectorH.Add(item);
-                    }
-                }
-
-                return ListaSectorH;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            repositorioSH.Update(SH);
+        }
+        public void insertarDoc(String Doc)
+        {
+            repositorioSH.InsertDoc(Doc);
         }
     }
 }

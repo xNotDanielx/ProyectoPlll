@@ -1,4 +1,5 @@
-﻿using Entidades;
+﻿using Datos;
+using Entidades;
 using Logica;
 using System;
 using System.Collections.Generic;
@@ -12,17 +13,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PresentacionGUI
 {
     public partial class Form_InicioSesion : Form
     {
+        Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
+        Logica.ServicioPersona sp= new Logica.ServicioPersona(configConnnection.ConnectionString);
         Encuestas_Perfil enc = new Encuestas_Perfil();
         Login login = new Login();
         Persona persona = new Persona();
-        ServicioLogin sl = new ServicioLogin();
-        ServicioPersona sp = new ServicioPersona();
         public Form_InicioSesion()
         {
             InitializeComponent();
@@ -56,8 +56,8 @@ namespace PresentacionGUI
                     Picture_Error2.Visible = false;
                     Picture_Error3.Visible = false;
                     Picture_Error4.Visible = false;
-                    login.Numero_Documento = Txt_NDocumento.Text.ToString();
-                    login.Contraseña = Txt_Contraseña.Text.ToString();
+                    login.Numero_Documento = Txt_NDocumento.Text;
+                    login.Contraseña = Txt_Contraseña.Text;
                     if (sl.Buscar_Cuenta(login) == true)
                     {
                         buscarCuenta();
@@ -113,10 +113,9 @@ namespace PresentacionGUI
             login.Contraseña = Txt_Contraseña.Text.ToString();
             if (sl.Buscar_Cuenta(login) == true)
             {
-                List<Login> loginI = sl.Obtener_Informacion(login);
-                foreach (Login a in loginI)
+                foreach (Login personlaLog in sl.Obtener_Informacion(login))
                 {
-                    NC_persona = a.Numero_Documento;
+                    NC_persona = personlaLog.Numero_Documento;
                 }
                 ND_Persona = login.Numero_Documento;
                 Opc_CC.Checked = false;

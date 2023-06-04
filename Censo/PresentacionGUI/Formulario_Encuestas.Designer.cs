@@ -57,6 +57,13 @@
             this.Panel_SE = new System.Windows.Forms.Panel();
             this.Panel_SH = new System.Windows.Forms.Panel();
             this.Panel_SS = new System.Windows.Forms.Panel();
+            this.panel_Finalizado = new System.Windows.Forms.Panel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Panel_Mensaje = new System.Windows.Forms.Panel();
+            this.Finalizar_No = new System.Windows.Forms.Button();
+            this.Finalizar_Si = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
             this.panel63 = new System.Windows.Forms.Panel();
             this.Opc_OtroCivil = new System.Windows.Forms.RadioButton();
             this.Opc_Divorciado = new System.Windows.Forms.RadioButton();
@@ -185,6 +192,13 @@
             this.label27 = new System.Windows.Forms.Label();
             this.panel53 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
+            this.Opc_Estrato6 = new System.Windows.Forms.RadioButton();
+            this.Opc_Estrato5 = new System.Windows.Forms.RadioButton();
+            this.Opc_Estrato3 = new System.Windows.Forms.RadioButton();
+            this.Opc_Estrato4 = new System.Windows.Forms.RadioButton();
+            this.Opc_Estrato2 = new System.Windows.Forms.RadioButton();
+            this.Opc_Estrato1 = new System.Windows.Forms.RadioButton();
+            this.Lbl_Estrato = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
@@ -241,18 +255,11 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel29 = new System.Windows.Forms.Panel();
+            this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Volver = new System.Windows.Forms.Button();
-            this.Btn_Siguiente = new System.Windows.Forms.Button();
-            this.Panel_Mensaje = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.Finalizar_Si = new System.Windows.Forms.Button();
-            this.Finalizar_No = new System.Windows.Forms.Button();
             this.Btn_Finalizar = new System.Windows.Forms.Button();
-            this.panel_Finalizado = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.Btn_Salir = new System.Windows.Forms.Button();
+            this.Btn_Siguiente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorE)).BeginInit();
@@ -267,6 +274,9 @@
             this.Panel_SE.SuspendLayout();
             this.Panel_SH.SuspendLayout();
             this.Panel_SS.SuspendLayout();
+            this.panel_Finalizado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Panel_Mensaje.SuspendLayout();
             this.panel63.SuspendLayout();
             this.panel61.SuspendLayout();
             this.panel62.SuspendLayout();
@@ -330,9 +340,6 @@
             this.panel14.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel29.SuspendLayout();
-            this.Panel_Mensaje.SuspendLayout();
-            this.panel_Finalizado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // check_SectorE
@@ -655,6 +662,13 @@
             this.Panel_SE.BackColor = System.Drawing.Color.White;
             this.Panel_SE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Panel_SE.Controls.Add(this.Panel_SH);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato6);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato5);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato3);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato4);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato2);
+            this.Panel_SE.Controls.Add(this.Opc_Estrato1);
+            this.Panel_SE.Controls.Add(this.Lbl_Estrato);
             this.Panel_SE.Controls.Add(this.label16);
             this.Panel_SE.Controls.Add(this.label15);
             this.Panel_SE.Controls.Add(this.panel28);
@@ -762,6 +776,81 @@
             this.Panel_SS.Size = new System.Drawing.Size(879, 408);
             this.Panel_SS.TabIndex = 62;
             this.Panel_SS.Visible = false;
+            // 
+            // panel_Finalizado
+            // 
+            this.panel_Finalizado.Controls.Add(this.label36);
+            this.panel_Finalizado.Controls.Add(this.pictureBox1);
+            this.panel_Finalizado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Finalizado.Location = new System.Drawing.Point(0, 0);
+            this.panel_Finalizado.Name = "panel_Finalizado";
+            this.panel_Finalizado.Size = new System.Drawing.Size(877, 406);
+            this.panel_Finalizado.TabIndex = 55;
+            this.panel_Finalizado.Visible = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(229, 332);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(463, 39);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "CENSO FINALIZADO CORRECTAMENTE";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(237, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(423, 286);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Panel_Mensaje
+            // 
+            this.Panel_Mensaje.BackColor = System.Drawing.Color.White;
+            this.Panel_Mensaje.Controls.Add(this.Finalizar_No);
+            this.Panel_Mensaje.Controls.Add(this.Finalizar_Si);
+            this.Panel_Mensaje.Controls.Add(this.label30);
+            this.Panel_Mensaje.Location = new System.Drawing.Point(260, 157);
+            this.Panel_Mensaje.Name = "Panel_Mensaje";
+            this.Panel_Mensaje.Size = new System.Drawing.Size(418, 204);
+            this.Panel_Mensaje.TabIndex = 54;
+            this.Panel_Mensaje.Visible = false;
+            // 
+            // Finalizar_No
+            // 
+            this.Finalizar_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Finalizar_No.Location = new System.Drawing.Point(254, 123);
+            this.Finalizar_No.Name = "Finalizar_No";
+            this.Finalizar_No.Size = new System.Drawing.Size(104, 60);
+            this.Finalizar_No.TabIndex = 2;
+            this.Finalizar_No.Text = "NO";
+            this.Finalizar_No.UseVisualStyleBackColor = true;
+            this.Finalizar_No.Click += new System.EventHandler(this.Finalizar_No_Click);
+            // 
+            // Finalizar_Si
+            // 
+            this.Finalizar_Si.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Finalizar_Si.Location = new System.Drawing.Point(52, 123);
+            this.Finalizar_Si.Name = "Finalizar_Si";
+            this.Finalizar_Si.Size = new System.Drawing.Size(104, 60);
+            this.Finalizar_Si.TabIndex = 1;
+            this.Finalizar_Si.Text = "SI";
+            this.Finalizar_Si.UseVisualStyleBackColor = true;
+            this.Finalizar_Si.Click += new System.EventHandler(this.Finalizar_Si_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(31, 52);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(354, 18);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "Esta seguro que desea finalizar el formulario?";
             // 
             // panel63
             // 
@@ -2390,6 +2479,82 @@
             this.label28.TabIndex = 2;
             this.label28.Text = "¿Vive en una zona urbana o rural?";
             // 
+            // Opc_Estrato6
+            // 
+            this.Opc_Estrato6.AutoSize = true;
+            this.Opc_Estrato6.Location = new System.Drawing.Point(364, 6);
+            this.Opc_Estrato6.Name = "Opc_Estrato6";
+            this.Opc_Estrato6.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato6.TabIndex = 57;
+            this.Opc_Estrato6.TabStop = true;
+            this.Opc_Estrato6.Text = "6";
+            this.Opc_Estrato6.UseVisualStyleBackColor = true;
+            // 
+            // Opc_Estrato5
+            // 
+            this.Opc_Estrato5.AutoSize = true;
+            this.Opc_Estrato5.Location = new System.Drawing.Point(314, 6);
+            this.Opc_Estrato5.Name = "Opc_Estrato5";
+            this.Opc_Estrato5.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato5.TabIndex = 56;
+            this.Opc_Estrato5.TabStop = true;
+            this.Opc_Estrato5.Text = "5";
+            this.Opc_Estrato5.UseVisualStyleBackColor = true;
+            // 
+            // Opc_Estrato3
+            // 
+            this.Opc_Estrato3.AutoSize = true;
+            this.Opc_Estrato3.Location = new System.Drawing.Point(212, 6);
+            this.Opc_Estrato3.Name = "Opc_Estrato3";
+            this.Opc_Estrato3.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato3.TabIndex = 55;
+            this.Opc_Estrato3.TabStop = true;
+            this.Opc_Estrato3.Text = "3";
+            this.Opc_Estrato3.UseVisualStyleBackColor = true;
+            // 
+            // Opc_Estrato4
+            // 
+            this.Opc_Estrato4.AutoSize = true;
+            this.Opc_Estrato4.Location = new System.Drawing.Point(263, 6);
+            this.Opc_Estrato4.Name = "Opc_Estrato4";
+            this.Opc_Estrato4.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato4.TabIndex = 54;
+            this.Opc_Estrato4.TabStop = true;
+            this.Opc_Estrato4.Text = "4";
+            this.Opc_Estrato4.UseVisualStyleBackColor = true;
+            // 
+            // Opc_Estrato2
+            // 
+            this.Opc_Estrato2.AutoSize = true;
+            this.Opc_Estrato2.Location = new System.Drawing.Point(160, 6);
+            this.Opc_Estrato2.Name = "Opc_Estrato2";
+            this.Opc_Estrato2.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato2.TabIndex = 53;
+            this.Opc_Estrato2.TabStop = true;
+            this.Opc_Estrato2.Text = "2";
+            this.Opc_Estrato2.UseVisualStyleBackColor = true;
+            // 
+            // Opc_Estrato1
+            // 
+            this.Opc_Estrato1.AutoSize = true;
+            this.Opc_Estrato1.Location = new System.Drawing.Point(106, 6);
+            this.Opc_Estrato1.Name = "Opc_Estrato1";
+            this.Opc_Estrato1.Size = new System.Drawing.Size(31, 17);
+            this.Opc_Estrato1.TabIndex = 52;
+            this.Opc_Estrato1.TabStop = true;
+            this.Opc_Estrato1.Text = "1";
+            this.Opc_Estrato1.UseVisualStyleBackColor = true;
+            // 
+            // Lbl_Estrato
+            // 
+            this.Lbl_Estrato.AutoSize = true;
+            this.Lbl_Estrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Estrato.Location = new System.Drawing.Point(14, 6);
+            this.Lbl_Estrato.Name = "Lbl_Estrato";
+            this.Lbl_Estrato.Size = new System.Drawing.Size(63, 18);
+            this.Lbl_Estrato.TabIndex = 51;
+            this.Lbl_Estrato.Text = "Estrato";
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -2807,7 +2972,7 @@
             this.No_Pregunta1SE.ForeColor = System.Drawing.Color.Transparent;
             this.No_Pregunta1SE.Location = new System.Drawing.Point(110, 0);
             this.No_Pregunta1SE.Name = "No_Pregunta1SE";
-            this.No_Pregunta1SE.Size = new System.Drawing.Size(103, 37);
+            this.No_Pregunta1SE.Size = new System.Drawing.Size(103, 38);
             this.No_Pregunta1SE.TabIndex = 6;
             this.No_Pregunta1SE.TabStop = true;
             this.No_Pregunta1SE.UseVisualStyleBackColor = false;
@@ -2849,9 +3014,9 @@
             this.No_Pregunta2SE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.No_Pregunta2SE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.No_Pregunta2SE.ForeColor = System.Drawing.Color.Transparent;
-            this.No_Pregunta2SE.Location = new System.Drawing.Point(110, 0);
+            this.No_Pregunta2SE.Location = new System.Drawing.Point(110, -22);
             this.No_Pregunta2SE.Name = "No_Pregunta2SE";
-            this.No_Pregunta2SE.Size = new System.Drawing.Size(103, 37);
+            this.No_Pregunta2SE.Size = new System.Drawing.Size(103, 62);
             this.No_Pregunta2SE.TabIndex = 6;
             this.No_Pregunta2SE.TabStop = true;
             this.No_Pregunta2SE.UseVisualStyleBackColor = false;
@@ -2867,9 +3032,9 @@
             this.Si_Pregunta2SE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Si_Pregunta2SE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Si_Pregunta2SE.ForeColor = System.Drawing.Color.Transparent;
-            this.Si_Pregunta2SE.Location = new System.Drawing.Point(0, 0);
+            this.Si_Pregunta2SE.Location = new System.Drawing.Point(0, -8);
             this.Si_Pregunta2SE.Name = "Si_Pregunta2SE";
-            this.Si_Pregunta2SE.Size = new System.Drawing.Size(107, 37);
+            this.Si_Pregunta2SE.Size = new System.Drawing.Size(107, 48);
             this.Si_Pregunta2SE.TabIndex = 5;
             this.Si_Pregunta2SE.TabStop = true;
             this.Si_Pregunta2SE.UseVisualStyleBackColor = false;
@@ -2881,7 +3046,7 @@
             this.panel17.Controls.Add(this.label12);
             this.panel17.Location = new System.Drawing.Point(-2, 369);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(664, 38);
+            this.panel17.Size = new System.Drawing.Size(664, 40);
             this.panel17.TabIndex = 37;
             // 
             // label12
@@ -2936,9 +3101,9 @@
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label4);
-            this.panel9.Location = new System.Drawing.Point(-2, 141);
+            this.panel9.Location = new System.Drawing.Point(-2, 142);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(664, 38);
+            this.panel9.Size = new System.Drawing.Size(664, 37);
             this.panel9.TabIndex = 31;
             // 
             // label4
@@ -2976,7 +3141,7 @@
             this.panel8.Controls.Add(this.label3);
             this.panel8.Location = new System.Drawing.Point(-2, 103);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(664, 39);
+            this.panel8.Size = new System.Drawing.Size(664, 40);
             this.panel8.TabIndex = 30;
             // 
             // label3
@@ -3031,9 +3196,9 @@
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.label9);
-            this.panel14.Location = new System.Drawing.Point(-2, 179);
+            this.panel14.Location = new System.Drawing.Point(-2, 177);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(664, 38);
+            this.panel14.Size = new System.Drawing.Size(664, 40);
             this.panel14.TabIndex = 32;
             // 
             // label9
@@ -3052,7 +3217,7 @@
             this.panel6.Controls.Add(this.label1);
             this.panel6.Location = new System.Drawing.Point(-2, 27);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(664, 38);
+            this.panel6.Size = new System.Drawing.Size(664, 39);
             this.panel6.TabIndex = 28;
             // 
             // label1
@@ -3078,6 +3243,18 @@
             this.panel29.Size = new System.Drawing.Size(883, 73);
             this.panel29.TabIndex = 6;
             // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Salir.Location = new System.Drawing.Point(367, 11);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(149, 53);
+            this.Btn_Salir.TabIndex = 60;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = true;
+            this.Btn_Salir.Visible = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            // 
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -3101,61 +3278,6 @@
             this.Btn_Volver.Visible = false;
             this.Btn_Volver.Click += new System.EventHandler(this.Btn_Volver_Click_1);
             // 
-            // Btn_Siguiente
-            // 
-            this.Btn_Siguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Siguiente.Location = new System.Drawing.Point(715, 11);
-            this.Btn_Siguiente.Name = "Btn_Siguiente";
-            this.Btn_Siguiente.Size = new System.Drawing.Size(150, 53);
-            this.Btn_Siguiente.TabIndex = 56;
-            this.Btn_Siguiente.Text = "Siguiente";
-            this.Btn_Siguiente.UseVisualStyleBackColor = true;
-            this.Btn_Siguiente.Click += new System.EventHandler(this.Btn_Siguiente_Click);
-            // 
-            // Panel_Mensaje
-            // 
-            this.Panel_Mensaje.BackColor = System.Drawing.Color.White;
-            this.Panel_Mensaje.Controls.Add(this.Finalizar_No);
-            this.Panel_Mensaje.Controls.Add(this.Finalizar_Si);
-            this.Panel_Mensaje.Controls.Add(this.label30);
-            this.Panel_Mensaje.Location = new System.Drawing.Point(260, 157);
-            this.Panel_Mensaje.Name = "Panel_Mensaje";
-            this.Panel_Mensaje.Size = new System.Drawing.Size(418, 204);
-            this.Panel_Mensaje.TabIndex = 54;
-            this.Panel_Mensaje.Visible = false;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(31, 52);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(354, 18);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "Esta seguro que desea finalizar el formulario?";
-            // 
-            // Finalizar_Si
-            // 
-            this.Finalizar_Si.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Finalizar_Si.Location = new System.Drawing.Point(52, 123);
-            this.Finalizar_Si.Name = "Finalizar_Si";
-            this.Finalizar_Si.Size = new System.Drawing.Size(104, 60);
-            this.Finalizar_Si.TabIndex = 1;
-            this.Finalizar_Si.Text = "SI";
-            this.Finalizar_Si.UseVisualStyleBackColor = true;
-            this.Finalizar_Si.Click += new System.EventHandler(this.Finalizar_Si_Click);
-            // 
-            // Finalizar_No
-            // 
-            this.Finalizar_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Finalizar_No.Location = new System.Drawing.Point(254, 123);
-            this.Finalizar_No.Name = "Finalizar_No";
-            this.Finalizar_No.Size = new System.Drawing.Size(104, 60);
-            this.Finalizar_No.TabIndex = 2;
-            this.Finalizar_No.Text = "NO";
-            this.Finalizar_No.UseVisualStyleBackColor = true;
-            this.Finalizar_No.Click += new System.EventHandler(this.Finalizar_No_Click);
-            // 
             // Btn_Finalizar
             // 
             this.Btn_Finalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
@@ -3168,48 +3290,16 @@
             this.Btn_Finalizar.Visible = false;
             this.Btn_Finalizar.Click += new System.EventHandler(this.Btn_Finalizar_Click);
             // 
-            // panel_Finalizado
+            // Btn_Siguiente
             // 
-            this.panel_Finalizado.Controls.Add(this.label36);
-            this.panel_Finalizado.Controls.Add(this.pictureBox1);
-            this.panel_Finalizado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Finalizado.Location = new System.Drawing.Point(0, 0);
-            this.panel_Finalizado.Name = "panel_Finalizado";
-            this.panel_Finalizado.Size = new System.Drawing.Size(877, 406);
-            this.panel_Finalizado.TabIndex = 55;
-            this.panel_Finalizado.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(237, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 286);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(229, 332);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(463, 39);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "CENSO FINALIZADO CORRECTAMENTE";
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Btn_Salir.Location = new System.Drawing.Point(367, 11);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(149, 53);
-            this.Btn_Salir.TabIndex = 60;
-            this.Btn_Salir.Text = "Salir";
-            this.Btn_Salir.UseVisualStyleBackColor = true;
-            this.Btn_Salir.Visible = false;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            this.Btn_Siguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Siguiente.Location = new System.Drawing.Point(715, 11);
+            this.Btn_Siguiente.Name = "Btn_Siguiente";
+            this.Btn_Siguiente.Size = new System.Drawing.Size(150, 53);
+            this.Btn_Siguiente.TabIndex = 56;
+            this.Btn_Siguiente.Text = "Siguiente";
+            this.Btn_Siguiente.UseVisualStyleBackColor = true;
+            this.Btn_Siguiente.Click += new System.EventHandler(this.Btn_Siguiente_Click);
             // 
             // Formulario_Encuestas
             // 
@@ -3243,6 +3333,11 @@
             this.Panel_SH.PerformLayout();
             this.Panel_SS.ResumeLayout(false);
             this.Panel_SS.PerformLayout();
+            this.panel_Finalizado.ResumeLayout(false);
+            this.panel_Finalizado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Panel_Mensaje.ResumeLayout(false);
+            this.Panel_Mensaje.PerformLayout();
             this.panel63.ResumeLayout(false);
             this.panel61.ResumeLayout(false);
             this.panel61.PerformLayout();
@@ -3338,11 +3433,6 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel29.ResumeLayout(false);
-            this.Panel_Mensaje.ResumeLayout(false);
-            this.Panel_Mensaje.PerformLayout();
-            this.panel_Finalizado.ResumeLayout(false);
-            this.panel_Finalizado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3573,5 +3663,12 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_Salir;
+        private System.Windows.Forms.RadioButton Opc_Estrato6;
+        private System.Windows.Forms.RadioButton Opc_Estrato5;
+        private System.Windows.Forms.RadioButton Opc_Estrato3;
+        private System.Windows.Forms.RadioButton Opc_Estrato4;
+        private System.Windows.Forms.RadioButton Opc_Estrato2;
+        private System.Windows.Forms.RadioButton Opc_Estrato1;
+        private System.Windows.Forms.Label Lbl_Estrato;
     }
 }

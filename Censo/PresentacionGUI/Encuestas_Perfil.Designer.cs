@@ -46,6 +46,9 @@
             this.Logo = new System.Windows.Forms.PictureBox();
             this.Panel_Info = new System.Windows.Forms.Panel();
             this.Panel_Foto = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Txt_Edad = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.Txt_Correo = new System.Windows.Forms.Label();
@@ -66,9 +69,7 @@
             this.Perfil_Masculino = new System.Windows.Forms.PictureBox();
             this.Perfil_Femenino = new System.Windows.Forms.PictureBox();
             this.timerhorafecha = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.Txt_Edad = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.loguinTableAdapter1 = new PresentacionGUI.DbCensoDataSetTableAdapters.LoguinTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Encuesta.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -79,13 +80,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.Panel_Info.SuspendLayout();
             this.Panel_Foto.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).BeginInit();
-            this.panel13.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -208,11 +209,11 @@
             this.Txt_Estado_Censo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Estado_Censo.AutoSize = true;
             this.Txt_Estado_Censo.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Estado_Censo.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Estado_Censo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Estado_Censo.ForeColor = System.Drawing.Color.White;
             this.Txt_Estado_Censo.Location = new System.Drawing.Point(60, 34);
             this.Txt_Estado_Censo.Name = "Txt_Estado_Censo";
-            this.Txt_Estado_Censo.Size = new System.Drawing.Size(165, 23);
+            this.Txt_Estado_Censo.Size = new System.Drawing.Size(170, 24);
             this.Txt_Estado_Censo.TabIndex = 23;
             this.Txt_Estado_Censo.Text = "Estado de Censo";
             // 
@@ -232,11 +233,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 23);
+            this.label1.Size = new System.Drawing.Size(170, 24);
             this.label1.TabIndex = 21;
             this.label1.Text = "Estado de Censo";
             // 
@@ -283,6 +284,42 @@
             this.Panel_Foto.Size = new System.Drawing.Size(192, 72);
             this.Panel_Foto.TabIndex = 24;
             // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.Black;
+            this.panel13.Controls.Add(this.label3);
+            this.panel13.Controls.Add(this.Txt_Edad);
+            this.panel13.Location = new System.Drawing.Point(21, 13);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(171, 36);
+            this.panel13.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 35);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Edad :";
+            // 
+            // Txt_Edad
+            // 
+            this.Txt_Edad.AutoSize = true;
+            this.Txt_Edad.BackColor = System.Drawing.Color.Transparent;
+            this.Txt_Edad.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Edad.ForeColor = System.Drawing.Color.White;
+            this.Txt_Edad.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.Txt_Edad.Location = new System.Drawing.Point(105, 1);
+            this.Txt_Edad.Name = "Txt_Edad";
+            this.Txt_Edad.Size = new System.Drawing.Size(83, 35);
+            this.Txt_Edad.TabIndex = 25;
+            this.Txt_Edad.Text = "Edad";
+            this.Txt_Edad.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Black;
@@ -307,11 +344,11 @@
             this.Txt_Correo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Correo.AutoSize = true;
             this.Txt_Correo.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Correo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Correo.ForeColor = System.Drawing.Color.White;
             this.Txt_Correo.Location = new System.Drawing.Point(2, 14);
             this.Txt_Correo.Name = "Txt_Correo";
-            this.Txt_Correo.Size = new System.Drawing.Size(60, 18);
+            this.Txt_Correo.Size = new System.Drawing.Size(61, 18);
             this.Txt_Correo.TabIndex = 21;
             this.Txt_Correo.Text = "Correo";
             // 
@@ -350,7 +387,7 @@
             this.Txt_Direccion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Direccion.AutoSize = true;
             this.Txt_Direccion.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Direccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Direccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Direccion.ForeColor = System.Drawing.Color.White;
             this.Txt_Direccion.Location = new System.Drawing.Point(3, 0);
             this.Txt_Direccion.Name = "Txt_Direccion";
@@ -363,11 +400,11 @@
             this.Txt_Barrio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Barrio.AutoSize = true;
             this.Txt_Barrio.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Barrio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Barrio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Barrio.ForeColor = System.Drawing.Color.White;
             this.Txt_Barrio.Location = new System.Drawing.Point(3, 20);
             this.Txt_Barrio.Name = "Txt_Barrio";
-            this.Txt_Barrio.Size = new System.Drawing.Size(51, 18);
+            this.Txt_Barrio.Size = new System.Drawing.Size(54, 18);
             this.Txt_Barrio.TabIndex = 22;
             this.Txt_Barrio.Text = "Barrio";
             // 
@@ -396,11 +433,11 @@
             // 
             this.Txt_Nombre_Apellido.AutoSize = true;
             this.Txt_Nombre_Apellido.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Nombre_Apellido.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Nombre_Apellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Nombre_Apellido.ForeColor = System.Drawing.Color.White;
             this.Txt_Nombre_Apellido.Location = new System.Drawing.Point(3, 4);
             this.Txt_Nombre_Apellido.Name = "Txt_Nombre_Apellido";
-            this.Txt_Nombre_Apellido.Size = new System.Drawing.Size(74, 18);
+            this.Txt_Nombre_Apellido.Size = new System.Drawing.Size(77, 18);
             this.Txt_Nombre_Apellido.TabIndex = 18;
             this.Txt_Nombre_Apellido.Text = "Nombres";
             this.Txt_Nombre_Apellido.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -409,11 +446,11 @@
             // 
             this.Txt_NumeroD.AutoSize = true;
             this.Txt_NumeroD.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_NumeroD.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_NumeroD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_NumeroD.ForeColor = System.Drawing.Color.White;
             this.Txt_NumeroD.Location = new System.Drawing.Point(3, 22);
             this.Txt_NumeroD.Name = "Txt_NumeroD";
-            this.Txt_NumeroD.Size = new System.Drawing.Size(156, 16);
+            this.Txt_NumeroD.Size = new System.Drawing.Size(163, 16);
             this.Txt_NumeroD.TabIndex = 20;
             this.Txt_NumeroD.Text = "Numero de documento";
             this.Txt_NumeroD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -449,11 +486,11 @@
             this.Txt_Telefono.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Telefono.AutoSize = true;
             this.Txt_Telefono.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Telefono.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Telefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Telefono.ForeColor = System.Drawing.Color.White;
             this.Txt_Telefono.Location = new System.Drawing.Point(2, 15);
             this.Txt_Telefono.Name = "Txt_Telefono";
-            this.Txt_Telefono.Size = new System.Drawing.Size(71, 18);
+            this.Txt_Telefono.Size = new System.Drawing.Size(74, 18);
             this.Txt_Telefono.TabIndex = 20;
             this.Txt_Telefono.Text = "Telefono";
             // 
@@ -498,41 +535,9 @@
             this.timerhorafecha.Enabled = true;
             this.timerhorafecha.Tick += new System.EventHandler(this.timerhorafecha_Tick);
             // 
-            // label3
+            // loguinTableAdapter1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 35);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Edad :";
-            // 
-            // Txt_Edad
-            // 
-            this.Txt_Edad.AutoSize = true;
-            this.Txt_Edad.BackColor = System.Drawing.Color.Transparent;
-            this.Txt_Edad.Font = new System.Drawing.Font("Yu Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Edad.ForeColor = System.Drawing.Color.White;
-            this.Txt_Edad.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Txt_Edad.Location = new System.Drawing.Point(105, 1);
-            this.Txt_Edad.Name = "Txt_Edad";
-            this.Txt_Edad.Size = new System.Drawing.Size(83, 35);
-            this.Txt_Edad.TabIndex = 25;
-            this.Txt_Edad.Text = "Edad";
-            this.Txt_Edad.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Black;
-            this.panel13.Controls.Add(this.label3);
-            this.panel13.Controls.Add(this.Txt_Edad);
-            this.panel13.Location = new System.Drawing.Point(21, 13);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(171, 36);
-            this.panel13.TabIndex = 26;
+            this.loguinTableAdapter1.ClearBeforeFill = true;
             // 
             // Encuestas_Perfil
             // 
@@ -558,6 +563,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.Panel_Info.ResumeLayout(false);
             this.Panel_Foto.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -568,8 +575,6 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).EndInit();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,5 +620,6 @@
         private System.Windows.Forms.Label Txt_Edad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel13;
+        private DbCensoDataSetTableAdapters.LoguinTableAdapter loguinTableAdapter1;
     }
 }

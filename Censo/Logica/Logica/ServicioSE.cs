@@ -8,76 +8,40 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class ServicioSE : ICenso<Sector_Economico>
+    public class ServicioSE : ICrud<Sector_Economico>
     {
+        Datos.RepositorioSE repositorioSE;
         List<Sector_Economico> sectorE;
-        Archivo archivo = new Archivo();
 
-        public ServicioSE()
+        public ServicioSE(string conexion)
         {
-            Refresh();
+            repositorioSE = new Datos.RepositorioSE(conexion);
         }
 
-        public string Añadir(Sector_Economico Sector)
+        public void Delete(Sector_Economico SE)
         {
-            try
-            {
-                if (Sector == null)
-                {
-                    return "No se puede guardar un valor NULL";
-                }
-                else
-                {
-                    archivo.GuardarSector_Economico(Sector);
-                    return "Guardado...";
-                }
-            }
-            catch (Exception)
-            {
-                return "Error al guardar";
-            }
+            repositorioSE.Delete(SE);
         }
 
         public List<Sector_Economico> GetAll()
         {
-            Refresh();
-            if (sectorE.Count == 0) return null;
-
-            return sectorE;
+            return repositorioSE.GetAll();
         }
 
-        public void Refresh()
+        public void Insertar(Sector_Economico SE)
         {
-            try
-            {
-                sectorE = archivo.consultarSE();
-            }
-            catch (Exception)
-            {
-
-            }
+            repositorioSE.Insert(SE);
         }
 
-        public List<Sector_Economico> Obtener_Informacion(Sector_Economico se)
+        public void Update(Sector_Economico SE)
         {
-            try
-            {
-                Refresh();
-                List<Sector_Economico> ListaSectorE = new List<Sector_Economico>();
-                foreach (var item in GetAll())
-                {
-                    if (item.IDSector.Equals(se.IDSector))
-                    {
-                        ListaSectorE.Add(item);
-                    }
-                }
-
-                return ListaSectorE;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            repositorioSE.Update(SE);
         }
+
+        public void insertarDoc(String Doc)
+        {
+            repositorioSE.InsertDoc(Doc);
+        }
+
     }
 }
