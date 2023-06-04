@@ -86,7 +86,7 @@ namespace Datos
                 Comando.CommandText = "Update Persona SET Nombre = @Nombre, " +
                     "Apellido = @Apellido,Sexo = @Sexo,Edad = @Edad, Telefono = @Telefono" +
                     "FechaNacimiento = @FechaNacimiento, Correo = @Correo,Direccion = @Direccion" +
-                    "Barrio = @Barrio,Tipo_Vivienda = @Tipo_Vivienda,Sectores_Completados = @Sectores_Completados" +
+                    "Barrio = @Barrio,Tipo_Vivienda = @Tipo_Vivienda,Sectores_Completados = @Sectores_Completados " +
                     "WHERE Documento = @Documento;";
                 Comando.Parameters.Add("Contraseña", SqlDbType.VarChar).Value = persona.Nombre;
                 Comando.Parameters.Add("Apellido", SqlDbType.VarChar).Value = persona.Apellido;

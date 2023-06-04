@@ -504,12 +504,12 @@
             // Txt_ContraAdmin
             // 
             this.Txt_ContraAdmin.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Txt_ContraAdmin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Txt_ContraAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_ContraAdmin.Location = new System.Drawing.Point(285, 310);
-            this.Txt_ContraAdmin.Multiline = true;
             this.Txt_ContraAdmin.Name = "Txt_ContraAdmin";
-            this.Txt_ContraAdmin.Size = new System.Drawing.Size(295, 41);
+            this.Txt_ContraAdmin.Size = new System.Drawing.Size(295, 29);
             this.Txt_ContraAdmin.TabIndex = 65;
+            this.Txt_ContraAdmin.TextChanged += new System.EventHandler(this.Txt_ContraAdmin_TextChanged);
             // 
             // Picture_Error1
             // 
@@ -529,13 +529,13 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(282, 224);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 18);
+            this.label2.Size = new System.Drawing.Size(160, 18);
             this.label2.TabIndex = 61;
-            this.label2.Text = "Usuario";
+            this.label2.Text = "Numero Documento";
             // 
             // Picture_Error2
             // 
@@ -558,11 +558,11 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(282, 289);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 18);
+            this.label3.Size = new System.Drawing.Size(95, 18);
             this.label3.TabIndex = 62;
             this.label3.Text = "Contraseña";
             // 
@@ -570,7 +570,7 @@
             // 
             this.Btn_Cancelar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btn_Cancelar.BackColor = System.Drawing.Color.LightGray;
-            this.Btn_Cancelar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Cancelar.ForeColor = System.Drawing.Color.Black;
             this.Btn_Cancelar.Location = new System.Drawing.Point(236, 421);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
@@ -584,7 +584,7 @@
             // 
             this.Btn_Login_Admin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btn_Login_Admin.BackColor = System.Drawing.Color.LightGray;
-            this.Btn_Login_Admin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Btn_Login_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Btn_Login_Admin.ForeColor = System.Drawing.Color.Black;
             this.Btn_Login_Admin.Location = new System.Drawing.Point(460, 421);
             this.Btn_Login_Admin.Name = "Btn_Login_Admin";
@@ -597,11 +597,10 @@
             // Txt_Admin
             // 
             this.Txt_Admin.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Txt_Admin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Txt_Admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Admin.Location = new System.Drawing.Point(285, 245);
-            this.Txt_Admin.Multiline = true;
             this.Txt_Admin.Name = "Txt_Admin";
-            this.Txt_Admin.Size = new System.Drawing.Size(295, 41);
+            this.Txt_Admin.Size = new System.Drawing.Size(295, 29);
             this.Txt_Admin.TabIndex = 64;
             // 
             // Principal

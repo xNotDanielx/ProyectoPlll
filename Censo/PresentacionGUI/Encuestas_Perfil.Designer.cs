@@ -69,7 +69,7 @@
             this.Perfil_Masculino = new System.Windows.Forms.PictureBox();
             this.Perfil_Femenino = new System.Windows.Forms.PictureBox();
             this.timerhorafecha = new System.Windows.Forms.Timer(this.components);
-            this.loguinTableAdapter1 = new PresentacionGUI.DbCensoDataSetTableAdapters.LoguinTableAdapter();
+            this.Btn_Cerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Encuesta.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,6 +87,7 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -109,7 +110,6 @@
             // 
             this.Panel_Encuesta.BackColor = System.Drawing.Color.Indigo;
             this.Panel_Encuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_Encuesta.BackgroundImage")));
-            this.Panel_Encuesta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Panel_Encuesta.Controls.Add(this.panel1);
             this.Panel_Encuesta.Controls.Add(this.PanelHoraFecha);
             this.Panel_Encuesta.Controls.Add(this.Panel_Status);
@@ -125,7 +125,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(388, 244);
             this.panel1.Name = "panel1";
@@ -147,6 +147,7 @@
             // PanelHoraFecha
             // 
             this.PanelHoraFecha.BackColor = System.Drawing.Color.Transparent;
+            this.PanelHoraFecha.Controls.Add(this.Btn_Cerrar);
             this.PanelHoraFecha.Controls.Add(this.lbl_Fecha);
             this.PanelHoraFecha.Controls.Add(this.lbl_Hora);
             this.PanelHoraFecha.Location = new System.Drawing.Point(579, 4);
@@ -356,7 +357,6 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.panel12.Location = new System.Drawing.Point(9, 478);
             this.panel12.Name = "panel12";
@@ -535,9 +535,19 @@
             this.timerhorafecha.Enabled = true;
             this.timerhorafecha.Tick += new System.EventHandler(this.timerhorafecha_Tick);
             // 
-            // loguinTableAdapter1
+            // Btn_Cerrar
             // 
-            this.loguinTableAdapter1.ClearBeforeFill = true;
+            this.Btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Cerrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
+            this.Btn_Cerrar.Location = new System.Drawing.Point(261, 0);
+            this.Btn_Cerrar.Name = "Btn_Cerrar";
+            this.Btn_Cerrar.Size = new System.Drawing.Size(49, 44);
+            this.Btn_Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Btn_Cerrar.TabIndex = 7;
+            this.Btn_Cerrar.TabStop = false;
+            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
             // 
             // Encuestas_Perfil
             // 
@@ -575,6 +585,7 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,6 +631,6 @@
         private System.Windows.Forms.Label Txt_Edad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel13;
-        private DbCensoDataSetTableAdapters.LoguinTableAdapter loguinTableAdapter1;
+        private System.Windows.Forms.PictureBox Btn_Cerrar;
     }
 }

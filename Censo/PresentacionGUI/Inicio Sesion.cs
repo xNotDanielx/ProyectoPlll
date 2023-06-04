@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static PresentacionGUI.DbCensoDataSet1;
 
 namespace PresentacionGUI
 {
@@ -20,7 +21,7 @@ namespace PresentacionGUI
     {
         Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
         Logica.ServicioPersona sp= new Logica.ServicioPersona(configConnnection.ConnectionString);
-        Encuestas_Perfil enc = new Encuestas_Perfil();
+        Encuestas_Perfil ec = new Encuestas_Perfil();
         Login login = new Login();
         Persona persona = new Persona();
         public Form_InicioSesion()
@@ -113,9 +114,9 @@ namespace PresentacionGUI
             login.Contraseña = Txt_Contraseña.Text.ToString();
             if (sl.Buscar_Cuenta(login) == true)
             {
-                foreach (Login personlaLog in sl.Obtener_Informacion(login))
+                foreach (Login personaLog in sl.Obtener_Informacion(login))
                 {
-                    NC_persona = personlaLog.Numero_Documento;
+                    NC_persona = personaLog.Numero_Documento;
                 }
                 ND_Persona = login.Numero_Documento;
                 Opc_CC.Checked = false;
@@ -123,10 +124,11 @@ namespace PresentacionGUI
                 login.Numero_Documento = "";
                 login.Contraseña = "";
                 Txt_NDocumento.Text = "";
-                Txt_Contraseña.Text = "";
+                Txt_Contraseña.Text = "";                
                 Encuestas_Perfil ec = new Encuestas_Perfil();
                 ec.Info_Persona(ND_Persona, NC_persona);
                 ec.Show();
+                
             }
             else
             {

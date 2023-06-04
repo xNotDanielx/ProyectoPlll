@@ -1279,7 +1279,7 @@ namespace PresentacionGUI
         {
             foreach (var item in logicaSE.GetAll())
             {
-                DocSectores = registrar.GuardarDoc(item);
+                DocSectores = registrar.GuardarDocSE(item);
             }
             return DocSectores;
         }

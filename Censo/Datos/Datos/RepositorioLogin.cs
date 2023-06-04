@@ -51,8 +51,9 @@ namespace Datos
         {
             using (var Comando = sqlcon.CreateCommand())
             {
-                Comando.CommandText = "Insert Into Loguin (Numero_Documento,Contraseña,Tipo_Documento,Cuentas_Registradas)" +
-                " values (@Numero_Documento,@Contraseña,@Tipo_Documento,@Cuentas_Registradas);";
+                Comando.CommandText = "Insert Into Loguin (Admin,Numero_Documento,Contraseña,Tipo_Documento,Cuentas_Registradas)" +
+                " values (@Admin,@Numero_Documento,@Contraseña,@Tipo_Documento,@Cuentas_Registradas);";
+                Comando.Parameters.Add("Admin", SqlDbType.Bit).Value = "0";
                 Comando.Parameters.Add("Numero_Documento", SqlDbType.VarChar).Value = personaLog.Numero_Documento;
                 Comando.Parameters.Add("Contraseña", SqlDbType.VarChar).Value = personaLog.Contraseña;
                 Comando.Parameters.Add("Tipo_Documento", SqlDbType.VarChar).Value = personaLog.Tipo_Documento;
@@ -67,10 +68,11 @@ namespace Datos
         {
             using(var Comando = sqlcon.CreateCommand())
             {
-                Comando.CommandText = "Update Loguin SET Contraseña = @Contraseña, " +
+                Comando.CommandText = "Update Loguin SET Admin = @Admin, Contraseña = @Contraseña, " +
                     "Tipo_Documento = @Tipo_Documento," +
-                    "Cuentas_Registradas = @Cuentas_Registradas," +
+                    "Cuentas_Registradas = @Cuentas_Registradas " +
                     "WHERE Numero_Documento = @Numero_Documento;";
+                Comando.Parameters.Add("Admin", SqlDbType.Bit).Value = PersonaLog.Admin;
                 Comando.Parameters.Add("Contraseña", SqlDbType.VarChar).Value = PersonaLog.Contraseña;
                 Comando.Parameters.Add("Tipo_Documento", SqlDbType.VarChar).Value = PersonaLog.Tipo_Documento;
                 Comando.Parameters.Add("Cuentas_Registradas", SqlDbType.Int).Value = PersonaLog.Cuentas_Registradas;

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Datos;
+using Entidades;
+using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +15,12 @@ namespace PresentacionGUI
 {
     public partial class Principal : Form
     {
+        ServicioLogin sl = new ServicioLogin(configConnnection.ConnectionString);
         Form_InicioSesion fi = new Form_InicioSesion();
         Form_Registrar fr = new Form_Registrar();
         Formulario_Encuestas fe = new Formulario_Encuestas();
+        Frm_ListaCuentas lc = new Frm_ListaCuentas();
+        Admin admin = new Admin();
         public Principal()
         {
             InitializeComponent();
@@ -59,6 +65,7 @@ namespace PresentacionGUI
 
         public void Abrir_Forms(object formhija)
         {
+            
             if (this.Panel_Contenedor.Controls.Count > 0)
                 this.Panel_Contenedor.Controls.RemoveAt(0);
             Form fh = formhija as Form;
@@ -98,14 +105,47 @@ namespace PresentacionGUI
 
         private void Btn_Login_Admin_Click(object sender, EventArgs e)
         {
-            String Usuario = "Admin";
-            String Contraseña = "Admin";            
-            if (Txt_Admin.Text == Usuario && Txt_ContraAdmin.Text == Contraseña)
+            bool Ver_Admin=false;
+            var login = new Login();
+            login.Numero_Documento = Txt_Admin.Text; 
+            login.Contraseña = Txt_ContraAdmin.Text;
+            if (sl.Buscar_Cuenta(login) == true)
             {
-                Txt_Admin.Text = "";
-                Txt_ContraAdmin.Text = "";
-                Abrir_Forms(new Administrador());
-                
+                foreach (Login personaLog in sl.Obtener_Informacion(login))
+                {
+                    Ver_Admin = personaLog.Admin;
+                }
+                if (Ver_Admin == true)
+                {
+                    Picture_Error1.Visible = false;
+                    Picture_Error2.Visible = false;
+                    Picture_Error3.Visible = false;
+                    Picture_Error4.Visible = false;
+                    Txt_Admin.Text = "";
+                    Txt_ContraAdmin.Text = "";
+                    Abrir_Forms(new Admin());
+                }
+                else
+                {
+                    Picture_Error1.Visible = false;
+                    Picture_Error2.Visible = false;
+                    Picture_Error3.Visible = true;
+                    Picture_Error4.Visible = true;
+                }
+            }
+            else if(Txt_Admin.Text=="" || Txt_ContraAdmin.Text =="")
+            {
+                Picture_Error1.Visible = true;
+                Picture_Error2.Visible = true;
+                Picture_Error3.Visible = false;
+                Picture_Error4.Visible = false;
+            }
+            else
+            {
+                Picture_Error1.Visible = false;
+                Picture_Error2.Visible = false;
+                Picture_Error3.Visible = true;
+                Picture_Error4.Visible = true;
             }
         }
         private void Btn_Administrador_Click(object sender, EventArgs e)
@@ -119,6 +159,12 @@ namespace PresentacionGUI
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             panel_Login_Admin.Visible = false;
-        }        
+        }
+
+        private void Txt_ContraAdmin_TextChanged(object sender, EventArgs e)
+        {
+            Txt_ContraAdmin.UseSystemPasswordChar = true;
+            Txt_ContraAdmin.PasswordChar = '*';
+        }
     }
 }

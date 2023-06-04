@@ -14,6 +14,7 @@ using Entidades;
 using Logica;
 using System.Reflection;
 using Datos;
+using Microsoft.Win32;
 
 namespace PresentacionGUI
 {
@@ -24,6 +25,8 @@ namespace PresentacionGUI
         Persona persona = new Persona();
         Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
         Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);
+        Formulario_Encuestas forme = new Formulario_Encuestas();
+        Form_Registrar Registrar = new Form_Registrar();
         int i;
         public Encuestas_Perfil()
         {
@@ -122,22 +125,42 @@ namespace PresentacionGUI
         }
         private void panel1_Click(object sender, EventArgs e)
         {
-                Formulario_Encuestas forme = new Formulario_Encuestas();
-                forme.Show();
-            
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
             if (persona.Sectores_Completados == "Sin Completar")
             {
                 Formulario_Encuestas forme = new Formulario_Encuestas();
                 forme.Show();
             }
+            else if (persona.Sectores_Completados == "Completado")
+            {
+                return;
+            }
+        }
+
+        Persona DocPersona;
+        public Persona guardarDoc()
+        {
+            foreach (var item in sp.GetAll())
+            {
+                DocPersona = Registrar.GuardarDocPersona(item);
+            }         
+            return DocPersona;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            if (guardarDoc().Sectores_Completados == "Sin Completar")
+            {
+                forme.Show();                
+            }
             else
             {
                 return;
             }
+        }
+
+        private void Btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

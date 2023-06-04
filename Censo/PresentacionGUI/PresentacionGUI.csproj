@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrador.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administrador.Designer.cs">
-      <DependentUpon>Administrador.cs</DependentUpon>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Ayuda.cs">
       <SubType>Form</SubType>
@@ -60,10 +60,10 @@
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfigConnection.cs" />
-    <Compile Include="DbCensoDataSet.Designer.cs">
+    <Compile Include="DbCensoDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DbCensoDataSet.xsd</DependentUpon>
+      <DependentUpon>DbCensoDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Encuestas_Perfil.cs">
       <SubType>Form</SubType>
@@ -76,6 +76,12 @@
     </Compile>
     <Compile Include="Formulario_Encuestas.Designer.cs">
       <DependentUpon>Formulario_Encuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ListaCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ListaCuentas.Designer.cs">
+      <DependentUpon>Frm_ListaCuentas.cs</DependentUpon>
     </Compile>
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
@@ -103,8 +109,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Administrador.resx">
-      <DependentUpon>Administrador.cs</DependentUpon>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario_Encuestas.resx">
       <DependentUpon>Formulario_Encuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListaCuentas.resx">
+      <DependentUpon>Frm_ListaCuentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio Sesion.resx">
       <DependentUpon>Inicio Sesion.cs</DependentUpon>
@@ -137,16 +146,16 @@
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DbCensoDataSet.xsc">
-      <DependentUpon>DbCensoDataSet.xsd</DependentUpon>
+    <None Include="DbCensoDataSet1.xsc">
+      <DependentUpon>DbCensoDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DbCensoDataSet.xsd">
+    <None Include="DbCensoDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DbCensoDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DbCensoDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DbCensoDataSet.xss">
-      <DependentUpon>DbCensoDataSet.xsd</DependentUpon>
+    <None Include="DbCensoDataSet1.xss">
+      <DependentUpon>DbCensoDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

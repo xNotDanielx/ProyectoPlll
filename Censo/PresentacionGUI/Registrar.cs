@@ -422,7 +422,7 @@ namespace PresentacionGUI
         }
 
         string Doc;
-        public string GuardarDoc(Sector_Economico SEDoc)
+        public string GuardarDocSE(Sector_Economico SEDoc)
         {
             foreach (var item in sp.GetAll())
             {
@@ -433,6 +433,20 @@ namespace PresentacionGUI
                 }
             }
             return Doc;
+        }
+
+        Persona Docp;
+        public Persona GuardarDocPersona(Persona PersonaDoc)
+        {
+            foreach (var item in sp.GetAll())
+            {
+                if (item.Documento == PersonaDoc.Documento)
+                {
+                    Docp = item;
+                    break;
+                }
+            }
+            return Docp;
         }
 
         public void Verificacion()

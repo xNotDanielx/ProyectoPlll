@@ -147,7 +147,7 @@
             this.Lbl_Numero.AutoSize = true;
             this.Lbl_Numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.Lbl_Numero.ForeColor = System.Drawing.Color.Black;
-            this.Lbl_Numero.Location = new System.Drawing.Point(398, 85);
+            this.Lbl_Numero.Location = new System.Drawing.Point(398, 79);
             this.Lbl_Numero.Name = "Lbl_Numero";
             this.Lbl_Numero.Size = new System.Drawing.Size(180, 18);
             this.Lbl_Numero.TabIndex = 13;
@@ -157,7 +157,7 @@
             // 
             this.Txt_Ndocumento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Ndocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Txt_Ndocumento.Location = new System.Drawing.Point(401, 106);
+            this.Txt_Ndocumento.Location = new System.Drawing.Point(401, 100);
             this.Txt_Ndocumento.Name = "Txt_Ndocumento";
             this.Txt_Ndocumento.Size = new System.Drawing.Size(211, 24);
             this.Txt_Ndocumento.TabIndex = 14;
@@ -167,7 +167,7 @@
             // 
             this.Txt_Contraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Txt_Contraseña.Location = new System.Drawing.Point(401, 162);
+            this.Txt_Contraseña.Location = new System.Drawing.Point(401, 153);
             this.Txt_Contraseña.Name = "Txt_Contraseña";
             this.Txt_Contraseña.Size = new System.Drawing.Size(211, 24);
             this.Txt_Contraseña.TabIndex = 16;
@@ -178,7 +178,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(398, 138);
+            this.label3.Location = new System.Drawing.Point(398, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 18);
             this.label3.TabIndex = 15;
@@ -188,7 +188,7 @@
             // 
             this.Txt_ConfContraseña.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_ConfContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Txt_ConfContraseña.Location = new System.Drawing.Point(401, 219);
+            this.Txt_ConfContraseña.Location = new System.Drawing.Point(401, 208);
             this.Txt_ConfContraseña.Name = "Txt_ConfContraseña";
             this.Txt_ConfContraseña.Size = new System.Drawing.Size(211, 24);
             this.Txt_ConfContraseña.TabIndex = 18;
@@ -199,7 +199,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(398, 200);
+            this.label4.Location = new System.Drawing.Point(398, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(175, 18);
             this.label4.TabIndex = 17;
@@ -235,7 +235,7 @@
             // 
             this.Txt_Nombres.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Nombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Txt_Nombres.Location = new System.Drawing.Point(401, 276);
+            this.Txt_Nombres.Location = new System.Drawing.Point(401, 267);
             this.Txt_Nombres.Name = "Txt_Nombres";
             this.Txt_Nombres.Size = new System.Drawing.Size(211, 24);
             this.Txt_Nombres.TabIndex = 22;
@@ -248,7 +248,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(398, 257);
+            this.label5.Location = new System.Drawing.Point(398, 246);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 18);
             this.label5.TabIndex = 21;
@@ -258,7 +258,7 @@
             // 
             this.Txt_Apellidos.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Txt_Apellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Txt_Apellidos.Location = new System.Drawing.Point(401, 329);
+            this.Txt_Apellidos.Location = new System.Drawing.Point(401, 320);
             this.Txt_Apellidos.Name = "Txt_Apellidos";
             this.Txt_Apellidos.Size = new System.Drawing.Size(211, 24);
             this.Txt_Apellidos.TabIndex = 24;
@@ -271,7 +271,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(398, 310);
+            this.label6.Location = new System.Drawing.Point(398, 297);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 18);
             this.label6.TabIndex = 23;
@@ -377,7 +377,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(400, 358);
+            this.label7.Location = new System.Drawing.Point(398, 347);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(167, 18);
             this.label7.TabIndex = 37;
@@ -409,7 +409,7 @@
             this.F_Nacimiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.F_Nacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.F_Nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.F_Nacimiento.Location = new System.Drawing.Point(401, 376);
+            this.F_Nacimiento.Location = new System.Drawing.Point(401, 368);
             this.F_Nacimiento.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
             this.F_Nacimiento.MinDate = new System.DateTime(1879, 1, 1, 0, 0, 0, 0);
             this.F_Nacimiento.Name = "F_Nacimiento";
@@ -452,7 +452,7 @@
             this.Error_NDocumento.BackColor = System.Drawing.SystemColors.Control;
             this.Error_NDocumento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_NDocumento.BackgroundImage")));
             this.Error_NDocumento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_NDocumento.Location = new System.Drawing.Point(366, 104);
+            this.Error_NDocumento.Location = new System.Drawing.Point(366, 96);
             this.Error_NDocumento.Name = "Error_NDocumento";
             this.Error_NDocumento.Size = new System.Drawing.Size(29, 28);
             this.Error_NDocumento.TabIndex = 46;
@@ -465,7 +465,7 @@
             this.Error_Contraseña.BackColor = System.Drawing.SystemColors.Control;
             this.Error_Contraseña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_Contraseña.BackgroundImage")));
             this.Error_Contraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_Contraseña.Location = new System.Drawing.Point(366, 160);
+            this.Error_Contraseña.Location = new System.Drawing.Point(366, 149);
             this.Error_Contraseña.Name = "Error_Contraseña";
             this.Error_Contraseña.Size = new System.Drawing.Size(29, 28);
             this.Error_Contraseña.TabIndex = 47;
@@ -479,7 +479,7 @@
             this.Error_ConfContraseña.BackColor = System.Drawing.SystemColors.Control;
             this.Error_ConfContraseña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_ConfContraseña.BackgroundImage")));
             this.Error_ConfContraseña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_ConfContraseña.Location = new System.Drawing.Point(366, 217);
+            this.Error_ConfContraseña.Location = new System.Drawing.Point(365, 204);
             this.Error_ConfContraseña.Name = "Error_ConfContraseña";
             this.Error_ConfContraseña.Size = new System.Drawing.Size(29, 28);
             this.Error_ConfContraseña.TabIndex = 48;
@@ -493,7 +493,7 @@
             this.Error_Nombres.BackColor = System.Drawing.SystemColors.Control;
             this.Error_Nombres.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_Nombres.BackgroundImage")));
             this.Error_Nombres.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_Nombres.Location = new System.Drawing.Point(366, 274);
+            this.Error_Nombres.Location = new System.Drawing.Point(365, 263);
             this.Error_Nombres.Name = "Error_Nombres";
             this.Error_Nombres.Size = new System.Drawing.Size(29, 28);
             this.Error_Nombres.TabIndex = 50;
@@ -507,7 +507,7 @@
             this.Error_Apellidos.BackColor = System.Drawing.SystemColors.Control;
             this.Error_Apellidos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_Apellidos.BackgroundImage")));
             this.Error_Apellidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_Apellidos.Location = new System.Drawing.Point(366, 327);
+            this.Error_Apellidos.Location = new System.Drawing.Point(365, 316);
             this.Error_Apellidos.Name = "Error_Apellidos";
             this.Error_Apellidos.Size = new System.Drawing.Size(29, 28);
             this.Error_Apellidos.TabIndex = 51;
@@ -576,7 +576,7 @@
             this.Error_FechaNacimiento.BackColor = System.Drawing.SystemColors.Control;
             this.Error_FechaNacimiento.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Error_FechaNacimiento.BackgroundImage")));
             this.Error_FechaNacimiento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Error_FechaNacimiento.Location = new System.Drawing.Point(363, 372);
+            this.Error_FechaNacimiento.Location = new System.Drawing.Point(365, 362);
             this.Error_FechaNacimiento.Name = "Error_FechaNacimiento";
             this.Error_FechaNacimiento.Size = new System.Drawing.Size(27, 30);
             this.Error_FechaNacimiento.TabIndex = 58;
