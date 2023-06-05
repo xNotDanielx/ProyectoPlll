@@ -42,3 +42,14 @@ C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Logic
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.dll
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Logica.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Logica.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Datos.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Entidades.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Datos.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\bin\Debug\Entidades.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.csproj.CopyComplete
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Logica\Logica\obj\Debug\Logica.pdb

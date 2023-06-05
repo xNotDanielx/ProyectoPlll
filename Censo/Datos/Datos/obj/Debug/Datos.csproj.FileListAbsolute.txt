@@ -34,3 +34,12 @@ C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Datos
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.dll
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\bin\Debug\Datos.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\bin\Debug\Datos.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\bin\Debug\Entidades.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\bin\Debug\Entidades.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\Datos\Datos\obj\Debug\Datos.pdb

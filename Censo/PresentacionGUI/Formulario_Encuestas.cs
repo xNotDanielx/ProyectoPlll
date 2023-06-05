@@ -35,7 +35,6 @@ namespace PresentacionGUI
         public void Cerrar()
         {
             this.Close();
-            this.Dispose();
         }
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {

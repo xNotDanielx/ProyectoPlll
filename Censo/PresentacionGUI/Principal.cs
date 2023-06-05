@@ -170,5 +170,10 @@ namespace PresentacionGUI
             Txt_ContraAdmin.UseSystemPasswordChar = true;
             Txt_ContraAdmin.PasswordChar = '*';
         }
+
+        private void Btn_Ayuda_Click(object sender, EventArgs e)
+        {
+            Abrir_Forms(new Frm_Ayuda());
+        }
     }
 }

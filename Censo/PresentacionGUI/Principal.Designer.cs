@@ -380,6 +380,7 @@
             this.Btn_Ayuda.TabIndex = 5;
             this.Btn_Ayuda.Text = "Ayuda";
             this.Btn_Ayuda.UseVisualStyleBackColor = false;
+            this.Btn_Ayuda.Click += new System.EventHandler(this.Btn_Ayuda_Click);
             // 
             // panel2
             // 

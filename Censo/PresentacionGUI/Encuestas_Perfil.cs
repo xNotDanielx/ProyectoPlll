@@ -24,14 +24,18 @@ namespace PresentacionGUI
         Login login = new Login();
         Persona persona = new Persona();
         Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
-        Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);
-        Formulario_Encuestas forme = new Formulario_Encuestas();
+        Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);        
         Form_Registrar Registrar = new Form_Registrar();
         int i;
         public Encuestas_Perfil()
         {
             InitializeComponent();
             InitializeTimer();            
+        }
+
+        public void Cerrar()
+        {
+            this.Close();
         }
 
         private void InitializeTimer()
@@ -85,12 +89,12 @@ namespace PresentacionGUI
                 if (PersonaInfo.Sexo == "Masculino")
                 {
                     Perfil_Masculino.Visible = true;
-                    Perfil_Femenino.Dispose();
+                    Perfil_Femenino.Visible = false;
                 }
                 else
                 {
                     Perfil_Femenino.Visible = true;
-                    Perfil_Masculino.Dispose();
+                    Perfil_Masculino.Visible = false;
                 }
                 if (PersonaInfo.Sectores_Completados == "Sin Completar")
                 {
@@ -125,15 +129,6 @@ namespace PresentacionGUI
         }
         private void panel1_Click(object sender, EventArgs e)
         {
-            if (persona.Sectores_Completados == "Sin Completar")
-            {
-                Formulario_Encuestas forme = new Formulario_Encuestas();
-                forme.Show();
-            }
-            else if (persona.Sectores_Completados == "Completado")
-            {
-                return;
-            }
         }
 
         Persona DocPersona;
@@ -156,6 +151,7 @@ namespace PresentacionGUI
                 }
                 else
                 {
+                    Formulario_Encuestas forme = new Formulario_Encuestas();
                     forme.Show();
                 }
             }                        
@@ -163,17 +159,11 @@ namespace PresentacionGUI
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            foreach (Persona persona in sp.Obtener_Informacion(persona))
-            {
-                if (persona.Sectores_Completados == "Completado")
-                {
-                    label2.Text = "Encuesta Completada";
-                }
-                else
-                {
-                    forme.Show();
-                }
-            }
+        }
+
+        private void Btn_Cerrar_Click(object sender, EventArgs e)
+        {
+            Cerrar();
         }
     }
 }

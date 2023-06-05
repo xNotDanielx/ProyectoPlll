@@ -153,3 +153,32 @@ C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Prese
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.exe
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
 C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Graficas.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.AssemblyReference.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.SuggestedBindingRedirects.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Admin.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Ayuda.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Encuestas_Perfil.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Formulario_Encuestas.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.frm_FiltroPersonas.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Graficas.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_ListaCuentas.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Form_InicioSesion.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Principal.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Properties.Resources.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Que_Es_Censo.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Form_Registrar.resources
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.GenerateResource.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CoreCompileInputs.cache
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.exe
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe.config
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.exe
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\PresentacionGUI.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Entidades.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Logica.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Datos.dll
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Entidades.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Logica.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Datos.pdb
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
+D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Ayuda.resources
