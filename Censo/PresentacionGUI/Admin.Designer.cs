@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.Panel_Encuesta = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,10 +49,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.Lbl_CuentasRegistradas = new System.Windows.Forms.Label();
             this.Panel_Encuesta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -64,6 +65,7 @@
             this.Panel_Encuesta.BackColor = System.Drawing.Color.Indigo;
             this.Panel_Encuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_Encuesta.BackgroundImage")));
             this.Panel_Encuesta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Panel_Encuesta.Controls.Add(this.Lbl_CuentasRegistradas);
             this.Panel_Encuesta.Controls.Add(this.label4);
             this.Panel_Encuesta.Controls.Add(this.label3);
             this.Panel_Encuesta.Controls.Add(this.label2);
@@ -78,6 +80,54 @@
             this.Panel_Encuesta.Size = new System.Drawing.Size(889, 587);
             this.Panel_Encuesta.TabIndex = 2;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(657, 446);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Filtros";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(337, 471);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Resultados";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(321, 446);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Ver gráficas de";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(32, 446);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Actualizar Cuentas";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -89,6 +139,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -249,53 +300,18 @@
             this.Logo.TabStop = false;
             this.Logo.Visible = false;
             // 
-            // label1
+            // Lbl_CuentasRegistradas
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(32, 446);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Actualizar Cuentas";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(321, 446);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 25);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Ver gráficas de";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(337, 471);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 25);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Resultados";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(657, 446);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Filtros";
+            this.Lbl_CuentasRegistradas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Lbl_CuentasRegistradas.AutoSize = true;
+            this.Lbl_CuentasRegistradas.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_CuentasRegistradas.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_CuentasRegistradas.ForeColor = System.Drawing.Color.White;
+            this.Lbl_CuentasRegistradas.Location = new System.Drawing.Point(282, 195);
+            this.Lbl_CuentasRegistradas.Name = "Lbl_CuentasRegistradas";
+            this.Lbl_CuentasRegistradas.Size = new System.Drawing.Size(281, 31);
+            this.Lbl_CuentasRegistradas.TabIndex = 62;
+            this.Lbl_CuentasRegistradas.Text = "Cuentas Registradas: ";
             // 
             // Admin
             // 
@@ -343,5 +359,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lbl_CuentasRegistradas;
     }
 }

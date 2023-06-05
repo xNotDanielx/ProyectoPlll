@@ -33,6 +33,10 @@ namespace PresentacionGUI
         {
             Application.Exit();
         }
+        public void cerrarAnterior()
+        {
+            this.Hide();
+        }
 
         public void Btn_VentanaMax_Click(object sender, EventArgs e)
         {

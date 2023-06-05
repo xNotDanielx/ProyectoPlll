@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,11 @@ namespace Logica
         public List<Persona> GetAll()
         {
             return repositorioPersona.GetAll();
+        }
+
+        public DataTable GetBy(String Columna, String Doc)
+        {
+            return repositorioPersona.GetBy(Columna, Doc);
         }
 
         public void updateSectorComplete(String Sector, String Doc)
@@ -83,6 +89,34 @@ namespace Logica
                 return null;
             }
 
+        }
+
+        int Count = 0;
+        public int Cuentas_Registradas()
+        {
+            foreach (var item in GetAll())
+            {
+                Count ++;
+            }
+            return Count;
+        }
+
+        public int ContarHombres()
+        {
+            foreach (var item in GetAll())
+            {
+                Count++;
+            }
+            return Count;
+        }
+
+        public int ContarMujeres()
+        {
+            foreach (var item in GetAll())
+            {
+                Count++;
+            }
+            return Count;
         }
     }
 }

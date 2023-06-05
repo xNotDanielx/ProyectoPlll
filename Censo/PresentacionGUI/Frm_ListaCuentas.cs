@@ -89,7 +89,6 @@ namespace PresentacionGUI
             PersonaLog.Numero_Documento = Txt_Documento.Text;
             PersonaLog.Contraseña = Txt_Contraseña.Text;
             PersonaLog.Tipo_Documento = Txt_TipoDocumento.Text;
-            PersonaLog.Cuentas_Registradas = int.Parse(Txt_CuentasRegistradas.Text);
             sl.Update(PersonaLog);
         }
 
@@ -118,6 +117,11 @@ namespace PresentacionGUI
                 Left = Left + (e.X - posx);
                 Top = Top + (e.Y - posy);
             }
+        }
+
+        private void Txt_FiltroId_KeyUp(object sender, KeyEventArgs e)
+        {
+            loguinDataGridView.DataSource = sl.GetBy("Numero_Documento", Txt_FiltroId.Text);
         }
     }
 }

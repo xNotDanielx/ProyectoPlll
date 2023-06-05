@@ -124,3 +124,4 @@ C:\Users\victo\Documents\Censo\PresentacionGUI\bin\Debug\Datos.pdb
 C:\Users\victo\Documents\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Admin.resources
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_ListaCuentas.resources
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.frm_FiltroPersonas.resources

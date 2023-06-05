@@ -50,26 +50,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Txt_Edad = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.Txt_Correo = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.Txt_Direccion = new System.Windows.Forms.Label();
             this.Txt_Barrio = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Txt_Nombre_Apellido = new System.Windows.Forms.Label();
             this.Txt_NumeroD = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.Txt_Telefono = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Perfil_Masculino = new System.Windows.Forms.PictureBox();
             this.Perfil_Femenino = new System.Windows.Forms.PictureBox();
             this.timerhorafecha = new System.Windows.Forms.Timer(this.components);
-            this.Btn_Cerrar = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Encuesta.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,7 +86,6 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -108,8 +106,7 @@
             // 
             // Panel_Encuesta
             // 
-            this.Panel_Encuesta.BackColor = System.Drawing.Color.Indigo;
-            this.Panel_Encuesta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Panel_Encuesta.BackgroundImage")));
+            this.Panel_Encuesta.BackColor = System.Drawing.Color.Black;
             this.Panel_Encuesta.Controls.Add(this.panel1);
             this.Panel_Encuesta.Controls.Add(this.PanelHoraFecha);
             this.Panel_Encuesta.Controls.Add(this.Panel_Status);
@@ -132,6 +129,7 @@
             this.panel1.Size = new System.Drawing.Size(419, 230);
             this.panel1.TabIndex = 6;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -147,7 +145,6 @@
             // PanelHoraFecha
             // 
             this.PanelHoraFecha.BackColor = System.Drawing.Color.Transparent;
-            this.PanelHoraFecha.Controls.Add(this.Btn_Cerrar);
             this.PanelHoraFecha.Controls.Add(this.lbl_Fecha);
             this.PanelHoraFecha.Controls.Add(this.lbl_Hora);
             this.PanelHoraFecha.Location = new System.Drawing.Point(579, 4);
@@ -332,14 +329,6 @@
             this.panel10.Size = new System.Drawing.Size(172, 45);
             this.panel10.TabIndex = 7;
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.Location = new System.Drawing.Point(1, 41);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(168, 4);
-            this.panel11.TabIndex = 4;
-            // 
             // Txt_Correo
             // 
             this.Txt_Correo.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -373,14 +362,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(172, 45);
             this.panel7.TabIndex = 7;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(1, 41);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(168, 4);
-            this.panel8.TabIndex = 4;
             // 
             // Txt_Direccion
             // 
@@ -455,14 +436,6 @@
             this.Txt_NumeroD.Text = "Numero de documento";
             this.Txt_NumeroD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(0, 41);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(205, 4);
-            this.panel3.TabIndex = 4;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
@@ -472,14 +445,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(172, 45);
             this.panel6.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(1, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(168, 4);
-            this.panel2.TabIndex = 4;
             // 
             // Txt_Telefono
             // 
@@ -535,19 +500,37 @@
             this.timerhorafecha.Enabled = true;
             this.timerhorafecha.Tick += new System.EventHandler(this.timerhorafecha_Tick);
             // 
-            // Btn_Cerrar
+            // panel3
             // 
-            this.Btn_Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_Cerrar.BackColor = System.Drawing.Color.Transparent;
-            this.Btn_Cerrar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Btn_Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Btn_Cerrar.Image")));
-            this.Btn_Cerrar.Location = new System.Drawing.Point(261, 0);
-            this.Btn_Cerrar.Name = "Btn_Cerrar";
-            this.Btn_Cerrar.Size = new System.Drawing.Size(49, 44);
-            this.Btn_Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Btn_Cerrar.TabIndex = 7;
-            this.Btn_Cerrar.TabStop = false;
-            this.Btn_Cerrar.Click += new System.EventHandler(this.Btn_Cerrar_Click);
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(0, 41);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(205, 4);
+            this.panel3.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(1, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(168, 4);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.White;
+            this.panel11.Location = new System.Drawing.Point(1, 41);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(168, 4);
+            this.panel11.TabIndex = 4;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(1, 41);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(168, 4);
+            this.panel8.TabIndex = 4;
             // 
             // Encuestas_Perfil
             // 
@@ -585,7 +568,6 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Masculino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perfil_Femenino)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Btn_Cerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -607,21 +589,16 @@
         private System.Windows.Forms.Label Txt_Nombre_Apellido;
         private System.Windows.Forms.Panel Panel_Foto;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel Panel_Status;
         private System.Windows.Forms.Panel PanelHoraFecha;
         private System.Windows.Forms.Label lbl_Fecha;
         private System.Windows.Forms.Label lbl_Hora;
-        private System.Windows.Forms.Timer timerhorafecha;
         private System.Windows.Forms.PictureBox picture_SinCompletar;
         private System.Windows.Forms.Label Txt_Estado_Censo;
         private System.Windows.Forms.PictureBox picture_Completado;
@@ -631,6 +608,10 @@
         private System.Windows.Forms.Label Txt_Edad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.PictureBox Btn_Cerrar;
+        private System.Windows.Forms.Timer timerhorafecha;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }

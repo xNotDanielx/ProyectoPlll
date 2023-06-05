@@ -453,7 +453,7 @@ namespace PresentacionGUI
         {
             if (TDocumento == true && NDocumento == true && Contraseña == true && Nombres == true && Apellidos == true && Fecha_Nacimiento == true && Sexo == true && Telefono == true && Direccion == true && Barrio == true && Tipo_Vivienda == true && Correo == true)
             {
-                if (login.Cuentas_Registradas == 0)
+                if (login.Numero_Documento == null)
                 {
                     Picture_Registrado.Visible = true;
                     picture_Regist.Visible = true;
@@ -462,43 +462,42 @@ namespace PresentacionGUI
                     Error_Cdupli.Visible = false;
                     picture_Cdupli.Visible = false;
                     persona.Sectores_Completados = "Sin Completar";
-                    login.Cuentas_Registradas += 1;
                     SE.Documento = login.Numero_Documento;
-                    SE.Empleado = 0;
-                    SE.Propietario_Negocio = 0;
-                    SE.Trabajador_Privado = 0;
-                    SE.Contratista_Independiente = 0;
-                    SE.Pensionado = 0;
-                    SE.Subsidiado = 0;
-                    SE.Accionistas = 0;
-                    SE.Trabajador_Publico = 0;
-                    SE.Ingreso_Actividades = 0;
-                    SE.Desempleado = 0;
+                    SE.Empleado = 2;
+                    SE.Propietario_Negocio = 2;
+                    SE.Trabajador_Privado = 2;
+                    SE.Contratista_Independiente = 2;
+                    SE.Pensionado = 2;
+                    SE.Subsidiado = 2;
+                    SE.Accionistas = 2;
+                    SE.Trabajador_Publico = 2;
+                    SE.Ingreso_Actividades = 2;
+                    SE.Desempleado = 2;
                     SE.Estrato = "";
                     SSE.Insertar(SE);
                     SH.Documento = login.Numero_Documento;
                     SH.Zona = "";
-                    SH.Propietario = 0;
-                    SH.Servicio_Agua = 0;
-                    SH.Servicio_Luz = 0;
-                    SH.Servicio_Gas = 0;
-                    SH.Saneamiento = 0;
-                    SH.Adicional = 0;
+                    SH.Propietario = 2;
+                    SH.Servicio_Agua = 2;
+                    SH.Servicio_Luz = 2;
+                    SH.Servicio_Gas = 2;
+                    SH.Saneamiento = 2;
+                    SH.Adicional = 2;
                     SH.Habitaciones = "";
                     SH.Baños = "";
                     SH.Tipo_Vivienda = "";
                     SH.Ingreso = "";
-                    SH.Internet = 0;
-                    SH.Cable = 0;
-                    SH.Telefono = 0;
-                    SH.Vehiculo = 0;
+                    SH.Internet = 2;
+                    SH.Cable =2;
+                    SH.Telefono = 2;
+                    SH.Vehiculo = 2;
                     SSH.Insertar(SH);
                     SS.Documento = login.Numero_Documento;
-                    SS.Afliado = 0;
-                    SS.Victima_Conflicto = 0;
+                    SS.Afliado = 2;
+                    SS.Victima_Conflicto = 2;
                     SS.Etnia = "";
-                    SS.Acceso_Estudio = 0;
-                    SS.Servicio_Transporte = 0;
+                    SS.Acceso_Estudio = 2;
+                    SS.Servicio_Transporte = 2;
                     SS.Estado_Civil = "";
                     SS.NivelEducacion = "";
                     SSS.Insertar(SS);
@@ -519,7 +518,6 @@ namespace PresentacionGUI
                         picture_Regist.Visible = true;
                         Picture_Error1.Visible = false;
                         Picture_Error2.Visible = false;
-                        login.Cuentas_Registradas = login.Cuentas_Registradas + 1;
                         persona.Sectores_Completados = "Sin Completar";
                         sl.Insertar(login);
                         sp.Insertar(persona);

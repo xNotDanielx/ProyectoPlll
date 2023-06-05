@@ -30,6 +30,21 @@ namespace Datos
             return Personas;
         }
 
+        public DataTable GetBy(String Columna, String DocumentoBuscar)
+        {
+            Open();
+            SqlCommand comando = sqlcon.CreateCommand();
+            comando.CommandType = CommandType.Text;
+            comando.CommandText = "select * from persona where " +  Columna + " like ('" + DocumentoBuscar +"%')";
+            comando.ExecuteNonQuery();
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(comando);
+            dataAdapter.Fill(dt);
+            Close();
+            return dt;
+        }
+
         private Persona Mapeador_Persona(SqlDataReader dataReader)
         {
 

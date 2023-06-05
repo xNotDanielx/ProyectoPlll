@@ -31,7 +31,7 @@ namespace PresentacionGUI
         public Encuestas_Perfil()
         {
             InitializeComponent();
-            InitializeTimer();
+            InitializeTimer();            
         }
 
         private void InitializeTimer()
@@ -51,7 +51,7 @@ namespace PresentacionGUI
             }
             else
             {
-                pictureBox1.Dispose();
+                pictureBox1.Visible = false;
                 Timer_Intro.Stop();
                 Iniciar_Info();
             }
@@ -92,7 +92,7 @@ namespace PresentacionGUI
                     Perfil_Femenino.Visible = true;
                     Perfil_Masculino.Dispose();
                 }
-                if(PersonaInfo.Sectores_Completados == "Sin Completar")
+                if (PersonaInfo.Sectores_Completados == "Sin Completar")
                 {
                     picture_Completado.Visible = false;
                     picture_SinCompletar.Visible = true;
@@ -148,19 +148,32 @@ namespace PresentacionGUI
 
         private void label2_Click(object sender, EventArgs e)
         {
-            if (guardarDoc().Sectores_Completados == "Sin Completar")
+            foreach (Persona persona in sp.Obtener_Informacion(persona))
             {
-                forme.Show();                
-            }
-            else
-            {
-                return;
-            }
+                if (persona.Sectores_Completados == "Completado")
+                {
+                    label2.Text = "Encuesta Completada";
+                }
+                else
+                {
+                    forme.Show();
+                }
+            }                        
         }
 
-        private void Btn_Cerrar_Click(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+            foreach (Persona persona in sp.Obtener_Informacion(persona))
+            {
+                if (persona.Sectores_Completados == "Completado")
+                {
+                    label2.Text = "Encuesta Completada";
+                }
+                else
+                {
+                    forme.Show();
+                }
+            }
         }
     }
 }

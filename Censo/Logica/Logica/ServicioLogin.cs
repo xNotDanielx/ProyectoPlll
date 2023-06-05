@@ -2,6 +2,7 @@
 using Entidades;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +32,12 @@ namespace Logica
             repositorioLogin.Update(PersonaLog);
         }
 
-        public List<Login> GetAll()
+        public DataTable GetBy(String Columna, String Doc)
+        {
+            return repositorioLogin.GetBy(Columna, Doc);
+        }
+
+            public List<Login> GetAll()
         {
             return repositorioLogin.GetAll();
         }
