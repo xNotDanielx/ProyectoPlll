@@ -22,8 +22,6 @@ namespace PresentacionGUI
 
         private void frm_FiltroPersonas_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'dbCensoDataSet1.Persona' Puede moverla o quitarla según sea necesario.
-            this.personaTableAdapter.Fill(this.dbCensoDataSet1.Persona);
 
         }
 
@@ -56,14 +54,6 @@ namespace PresentacionGUI
         private void GetBySectores_Click(object sender, EventArgs e)
         {
             personaDataGridView.DataSource = Persona.GetBy("Sectores_Completados", "Completado");
-        }
-
-        private void personaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.personaBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dbCensoDataSet1);
-
         }
     }
 }

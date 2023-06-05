@@ -120,7 +120,7 @@ namespace Datos
             using (var Comando = sqlcon.CreateCommand())
             {
                 Comando.CommandText = "Delete FROM Sector_Economico WHERE Documento = @Documento;";
-                Comando.Parameters.Add("Numero_Documento", SqlDbType.VarChar).Value = SE.Documento;
+                Comando.Parameters.Add("Documento", SqlDbType.VarChar).Value = SE.Documento;
                 Open();
                 Comando.ExecuteNonQuery();
                 Close();
