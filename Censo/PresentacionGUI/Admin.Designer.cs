@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             this.Panel_Encuesta = new System.Windows.Forms.Panel();
+            this.Lbl_CuentasRegistradas = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.Lbl_CuentasRegistradas = new System.Windows.Forms.Label();
             this.Panel_Encuesta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,6 +79,19 @@
             this.Panel_Encuesta.Name = "Panel_Encuesta";
             this.Panel_Encuesta.Size = new System.Drawing.Size(889, 587);
             this.Panel_Encuesta.TabIndex = 2;
+            // 
+            // Lbl_CuentasRegistradas
+            // 
+            this.Lbl_CuentasRegistradas.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Lbl_CuentasRegistradas.AutoSize = true;
+            this.Lbl_CuentasRegistradas.BackColor = System.Drawing.Color.Transparent;
+            this.Lbl_CuentasRegistradas.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_CuentasRegistradas.ForeColor = System.Drawing.Color.White;
+            this.Lbl_CuentasRegistradas.Location = new System.Drawing.Point(282, 195);
+            this.Lbl_CuentasRegistradas.Name = "Lbl_CuentasRegistradas";
+            this.Lbl_CuentasRegistradas.Size = new System.Drawing.Size(281, 31);
+            this.Lbl_CuentasRegistradas.TabIndex = 62;
+            this.Lbl_CuentasRegistradas.Text = "Cuentas Registradas: ";
             // 
             // label4
             // 
@@ -152,6 +165,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -299,19 +313,6 @@
             this.Logo.TabIndex = 1;
             this.Logo.TabStop = false;
             this.Logo.Visible = false;
-            // 
-            // Lbl_CuentasRegistradas
-            // 
-            this.Lbl_CuentasRegistradas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Lbl_CuentasRegistradas.AutoSize = true;
-            this.Lbl_CuentasRegistradas.BackColor = System.Drawing.Color.Transparent;
-            this.Lbl_CuentasRegistradas.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_CuentasRegistradas.ForeColor = System.Drawing.Color.White;
-            this.Lbl_CuentasRegistradas.Location = new System.Drawing.Point(282, 195);
-            this.Lbl_CuentasRegistradas.Name = "Lbl_CuentasRegistradas";
-            this.Lbl_CuentasRegistradas.Size = new System.Drawing.Size(281, 31);
-            this.Lbl_CuentasRegistradas.TabIndex = 62;
-            this.Lbl_CuentasRegistradas.Text = "Cuentas Registradas: ";
             // 
             // Admin
             // 

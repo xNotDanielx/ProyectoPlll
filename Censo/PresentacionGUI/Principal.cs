@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace PresentacionGUI
 {
     public partial class Principal : Form
-    {
+    {        
         ServicioLogin sl = new ServicioLogin(configConnnection.ConnectionString);
         Form_InicioSesion fi = new Form_InicioSesion();
         Form_Registrar fr = new Form_Registrar();

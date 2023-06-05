@@ -95,6 +95,31 @@ namespace Logica
             }
             return Verificar;
         }
+        int Count = 0;
+        public int ContarCC()
+        {
+            foreach (var item in GetAll())
+            {
+                if (item.Tipo_Documento == "CC")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+
+        }
+        public int ContarCE()
+        {
+            foreach (var item in GetAll())
+            {
+                if (item.Tipo_Documento == "CE")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+
+        }
     }
 }
 

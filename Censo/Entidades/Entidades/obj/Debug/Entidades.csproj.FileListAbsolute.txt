@@ -10,3 +10,9 @@ C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Deb
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.dll
 C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\bin\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.dll
+C:\Users\Angel Barrueto\Documents\Proyecto\ProyectoPlll\ProyectoPlll\Censo\Entidades\Entidades\obj\Debug\Entidades.pdb

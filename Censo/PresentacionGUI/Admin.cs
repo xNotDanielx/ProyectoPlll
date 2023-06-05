@@ -14,6 +14,7 @@ namespace PresentacionGUI
 {
     public partial class Admin : Form
     {
+        
         ServicioPersona persona = new ServicioPersona(configConnnection.ConnectionString);
         public Admin()
         {
@@ -38,6 +39,10 @@ namespace PresentacionGUI
             listaP.Show();
         }
 
-
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Frm_Graficas fg = new Frm_Graficas();
+            fg.Show();
+        }
     }
 }

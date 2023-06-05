@@ -17,7 +17,7 @@ namespace Logica
         public ServicioPersona(string conexion)
         {
             repositorioPersona = new Datos.RepositorioPersona(conexion);
-        }     
+        }
 
         public void Insertar(Persona Persona)
         {
@@ -94,29 +94,88 @@ namespace Logica
         int Count = 0;
         public int Cuentas_Registradas()
         {
+            Count = 0;
             foreach (var item in GetAll())
             {
-                Count ++;
+                Count++;
             }
             return Count;
         }
 
         public int ContarHombres()
         {
+            Count = 0;
             foreach (var item in GetAll())
             {
-                Count++;
+                if (item.Sexo == "Masculino")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }
+        public int ContarMujeres()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                if (item.Sexo == "Femenino")
+                {
+                    Count++;
+                }
             }
             return Count;
         }
 
-        public int ContarMujeres()
+        public int ContarHogar()
         {
+            Count = 0;
             foreach (var item in GetAll())
             {
-                Count++;
+                if (item.Tipo_Vivienda == "Hogar")
+                {
+                    Count++;
+                }
             }
             return Count;
         }
+
+        public int ContarApartamento()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                if (item.Tipo_Vivienda == "Apartamento")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }
+        public int ContarMayorEdad()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {                
+                if (int.Parse(item.Edad) >= 18 )
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }
+        public int ContarMenorEdad()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                if (int.Parse(item.Edad) <= 18)
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }      
+
     }
 }

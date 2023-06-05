@@ -29,92 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formulario_Encuestas));
-            this.check_SectorE = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.SectorSi_SectorE = new System.Windows.Forms.PictureBox();
-            this.SectorNo_SectorE = new System.Windows.Forms.PictureBox();
-            this.Sectores_Finalizado = new System.Windows.Forms.PictureBox();
-            this.SectorSi_SectorS = new System.Windows.Forms.PictureBox();
-            this.SectorSi_SectorH = new System.Windows.Forms.PictureBox();
-            this.Check_Nofinalizado = new System.Windows.Forms.PictureBox();
-            this.checkNo_SectS = new System.Windows.Forms.PictureBox();
-            this.SectorNo_SectorH = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.Check_Fin = new System.Windows.Forms.CheckBox();
-            this.check_SectorS = new System.Windows.Forms.CheckBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.check_SectorH = new System.Windows.Forms.CheckBox();
             this.Panel_SE = new System.Windows.Forms.Panel();
             this.Panel_SH = new System.Windows.Forms.Panel();
-            this.Panel_SS = new System.Windows.Forms.Panel();
-            this.panel_Finalizado = new System.Windows.Forms.Panel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Panel_Mensaje = new System.Windows.Forms.Panel();
-            this.Finalizar_No = new System.Windows.Forms.Button();
-            this.Finalizar_Si = new System.Windows.Forms.Button();
-            this.label30 = new System.Windows.Forms.Label();
-            this.panel63 = new System.Windows.Forms.Panel();
-            this.Opc_OtroCivil = new System.Windows.Forms.RadioButton();
-            this.Opc_Divorciado = new System.Windows.Forms.RadioButton();
-            this.Opc_Viudo = new System.Windows.Forms.RadioButton();
-            this.Opc_Soltero = new System.Windows.Forms.RadioButton();
-            this.Opc_Casado = new System.Windows.Forms.RadioButton();
-            this.panel61 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel62 = new System.Windows.Forms.Panel();
-            this.Opc_OtroEducacion = new System.Windows.Forms.RadioButton();
-            this.Opc_Universitaria = new System.Windows.Forms.RadioButton();
-            this.Opc_Tecnica = new System.Windows.Forms.RadioButton();
-            this.Opc_Secundaria = new System.Windows.Forms.RadioButton();
-            this.Opc_Primaria = new System.Windows.Forms.RadioButton();
-            this.Opc_SinEstudio = new System.Windows.Forms.RadioButton();
-            this.panel64 = new System.Windows.Forms.Panel();
-            this.Opc_Ninguno = new System.Windows.Forms.RadioButton();
-            this.Opc_Chimila = new System.Windows.Forms.RadioButton();
-            this.Opc_Yucpa = new System.Windows.Forms.RadioButton();
-            this.Opc_Wiwa = new System.Windows.Forms.RadioButton();
-            this.Opc_Kankuamo = new System.Windows.Forms.RadioButton();
-            this.Opc_Arhuaco = new System.Windows.Forms.RadioButton();
-            this.Opc_Kogui = new System.Windows.Forms.RadioButton();
-            this.panel66 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel68 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.panel70 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.panel79 = new System.Windows.Forms.Panel();
-            this.No_Pregunta4SS = new System.Windows.Forms.RadioButton();
-            this.Si_Pregunta4SS = new System.Windows.Forms.RadioButton();
-            this.panel81 = new System.Windows.Forms.Panel();
-            this.No_Pregunta3SS = new System.Windows.Forms.RadioButton();
-            this.Si_Pregunta3SS = new System.Windows.Forms.RadioButton();
-            this.panel83 = new System.Windows.Forms.Panel();
-            this.No_Pregunta2SS = new System.Windows.Forms.RadioButton();
-            this.Si_Pregunta2SS = new System.Windows.Forms.RadioButton();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel84 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.panel86 = new System.Windows.Forms.Panel();
-            this.panel87 = new System.Windows.Forms.Panel();
-            this.Si_Pregunta1SS = new System.Windows.Forms.RadioButton();
-            this.No_Pregunta1SS = new System.Windows.Forms.RadioButton();
-            this.panel91 = new System.Windows.Forms.Panel();
-            this.label47 = new System.Windows.Forms.Label();
-            this.panel92 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
             this.panel60 = new System.Windows.Forms.Panel();
             this.Opc_Alto = new System.Windows.Forms.RadioButton();
             this.Opc_Bajo = new System.Windows.Forms.RadioButton();
@@ -260,37 +176,92 @@
             this.Btn_Volver = new System.Windows.Forms.Button();
             this.Btn_Finalizar = new System.Windows.Forms.Button();
             this.Btn_Siguiente = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sectores_Finalizado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorH)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Check_Nofinalizado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkNo_SectS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorH)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SectorSi_SectorE = new System.Windows.Forms.PictureBox();
+            this.SectorNo_SectorE = new System.Windows.Forms.PictureBox();
+            this.Sectores_Finalizado = new System.Windows.Forms.PictureBox();
+            this.SectorSi_SectorS = new System.Windows.Forms.PictureBox();
+            this.SectorSi_SectorH = new System.Windows.Forms.PictureBox();
+            this.Check_Nofinalizado = new System.Windows.Forms.PictureBox();
+            this.checkNo_SectS = new System.Windows.Forms.PictureBox();
+            this.SectorNo_SectorH = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.Check_Fin = new System.Windows.Forms.CheckBox();
+            this.check_SectorS = new System.Windows.Forms.CheckBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.check_SectorH = new System.Windows.Forms.CheckBox();
+            this.check_SectorE = new System.Windows.Forms.CheckBox();
+            this.panel92 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.panel91 = new System.Windows.Forms.Panel();
+            this.label47 = new System.Windows.Forms.Label();
+            this.panel87 = new System.Windows.Forms.Panel();
+            this.No_Pregunta1SS = new System.Windows.Forms.RadioButton();
+            this.Si_Pregunta1SS = new System.Windows.Forms.RadioButton();
+            this.panel86 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel84 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.panel83 = new System.Windows.Forms.Panel();
+            this.Si_Pregunta2SS = new System.Windows.Forms.RadioButton();
+            this.No_Pregunta2SS = new System.Windows.Forms.RadioButton();
+            this.panel81 = new System.Windows.Forms.Panel();
+            this.Si_Pregunta3SS = new System.Windows.Forms.RadioButton();
+            this.No_Pregunta3SS = new System.Windows.Forms.RadioButton();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.Si_Pregunta4SS = new System.Windows.Forms.RadioButton();
+            this.No_Pregunta4SS = new System.Windows.Forms.RadioButton();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel70 = new System.Windows.Forms.Panel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.panel68 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.panel66 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel64 = new System.Windows.Forms.Panel();
+            this.Opc_Kogui = new System.Windows.Forms.RadioButton();
+            this.Opc_Arhuaco = new System.Windows.Forms.RadioButton();
+            this.Opc_Kankuamo = new System.Windows.Forms.RadioButton();
+            this.Opc_Wiwa = new System.Windows.Forms.RadioButton();
+            this.Opc_Yucpa = new System.Windows.Forms.RadioButton();
+            this.Opc_Chimila = new System.Windows.Forms.RadioButton();
+            this.Opc_Ninguno = new System.Windows.Forms.RadioButton();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.Opc_SinEstudio = new System.Windows.Forms.RadioButton();
+            this.Opc_Primaria = new System.Windows.Forms.RadioButton();
+            this.Opc_Secundaria = new System.Windows.Forms.RadioButton();
+            this.Opc_Tecnica = new System.Windows.Forms.RadioButton();
+            this.Opc_Universitaria = new System.Windows.Forms.RadioButton();
+            this.Opc_OtroEducacion = new System.Windows.Forms.RadioButton();
+            this.panel61 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.panel63 = new System.Windows.Forms.Panel();
+            this.Opc_Casado = new System.Windows.Forms.RadioButton();
+            this.Opc_Soltero = new System.Windows.Forms.RadioButton();
+            this.Opc_Viudo = new System.Windows.Forms.RadioButton();
+            this.Opc_Divorciado = new System.Windows.Forms.RadioButton();
+            this.Opc_OtroCivil = new System.Windows.Forms.RadioButton();
+            this.Panel_SS = new System.Windows.Forms.Panel();
+            this.label30 = new System.Windows.Forms.Label();
+            this.Finalizar_Si = new System.Windows.Forms.Button();
+            this.Finalizar_No = new System.Windows.Forms.Button();
+            this.Panel_Mensaje = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.panel_Finalizado = new System.Windows.Forms.Panel();
             this.Panel_SE.SuspendLayout();
             this.Panel_SH.SuspendLayout();
-            this.Panel_SS.SuspendLayout();
-            this.panel_Finalizado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.Panel_Mensaje.SuspendLayout();
-            this.panel63.SuspendLayout();
-            this.panel61.SuspendLayout();
-            this.panel62.SuspendLayout();
-            this.panel64.SuspendLayout();
-            this.panel66.SuspendLayout();
-            this.panel68.SuspendLayout();
-            this.panel70.SuspendLayout();
-            this.panel74.SuspendLayout();
-            this.panel79.SuspendLayout();
-            this.panel81.SuspendLayout();
-            this.panel83.SuspendLayout();
-            this.panel87.SuspendLayout();
-            this.panel91.SuspendLayout();
-            this.panel92.SuspendLayout();
             this.panel60.SuspendLayout();
             this.panel59.SuspendLayout();
             this.panel58.SuspendLayout();
@@ -340,322 +311,36 @@
             this.panel14.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel29.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sectores_Finalizado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Check_Nofinalizado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkNo_SectS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorH)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel92.SuspendLayout();
+            this.panel91.SuspendLayout();
+            this.panel87.SuspendLayout();
+            this.panel83.SuspendLayout();
+            this.panel81.SuspendLayout();
+            this.panel79.SuspendLayout();
+            this.panel74.SuspendLayout();
+            this.panel70.SuspendLayout();
+            this.panel68.SuspendLayout();
+            this.panel66.SuspendLayout();
+            this.panel64.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.panel61.SuspendLayout();
+            this.panel63.SuspendLayout();
+            this.Panel_SS.SuspendLayout();
+            this.Panel_Mensaje.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_Finalizado.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // check_SectorE
-            // 
-            this.check_SectorE.Appearance = System.Windows.Forms.Appearance.Button;
-            this.check_SectorE.AutoSize = true;
-            this.check_SectorE.BackColor = System.Drawing.Color.Transparent;
-            this.check_SectorE.FlatAppearance.BorderSize = 0;
-            this.check_SectorE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.check_SectorE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_SectorE.Location = new System.Drawing.Point(52, 21);
-            this.check_SectorE.Name = "check_SectorE";
-            this.check_SectorE.Size = new System.Drawing.Size(6, 6);
-            this.check_SectorE.TabIndex = 0;
-            this.check_SectorE.UseVisualStyleBackColor = false;
-            this.check_SectorE.Visible = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.SectorSi_SectorE);
-            this.panel1.Controls.Add(this.SectorNo_SectorE);
-            this.panel1.Controls.Add(this.Sectores_Finalizado);
-            this.panel1.Controls.Add(this.SectorSi_SectorS);
-            this.panel1.Controls.Add(this.SectorSi_SectorH);
-            this.panel1.Controls.Add(this.Check_Nofinalizado);
-            this.panel1.Controls.Add(this.checkNo_SectS);
-            this.panel1.Controls.Add(this.SectorNo_SectorH);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.Check_Fin);
-            this.panel1.Controls.Add(this.check_SectorS);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.check_SectorH);
-            this.panel1.Controls.Add(this.check_SectorE);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 100);
-            this.panel1.TabIndex = 4;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(788, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(85, 18);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Finalizado";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(653, 42);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 24);
-            this.label13.TabIndex = 15;
-            this.label13.Text = "Sector Social";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(380, 41);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 24);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Sector Hogar";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(80, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(182, 24);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Sector Economico";
-            // 
-            // SectorSi_SectorE
-            // 
-            this.SectorSi_SectorE.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorE.Image")));
-            this.SectorSi_SectorE.Location = new System.Drawing.Point(31, 33);
-            this.SectorSi_SectorE.Name = "SectorSi_SectorE";
-            this.SectorSi_SectorE.Size = new System.Drawing.Size(44, 42);
-            this.SectorSi_SectorE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SectorSi_SectorE.TabIndex = 11;
-            this.SectorSi_SectorE.TabStop = false;
-            this.SectorSi_SectorE.Visible = false;
-            // 
-            // SectorNo_SectorE
-            // 
-            this.SectorNo_SectorE.BackColor = System.Drawing.Color.Transparent;
-            this.SectorNo_SectorE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SectorNo_SectorE.Image = ((System.Drawing.Image)(resources.GetObject("SectorNo_SectorE.Image")));
-            this.SectorNo_SectorE.Location = new System.Drawing.Point(31, 33);
-            this.SectorNo_SectorE.Name = "SectorNo_SectorE";
-            this.SectorNo_SectorE.Size = new System.Drawing.Size(44, 42);
-            this.SectorNo_SectorE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SectorNo_SectorE.TabIndex = 12;
-            this.SectorNo_SectorE.TabStop = false;
-            // 
-            // Sectores_Finalizado
-            // 
-            this.Sectores_Finalizado.Image = ((System.Drawing.Image)(resources.GetObject("Sectores_Finalizado.Image")));
-            this.Sectores_Finalizado.Location = new System.Drawing.Point(796, 30);
-            this.Sectores_Finalizado.Name = "Sectores_Finalizado";
-            this.Sectores_Finalizado.Size = new System.Drawing.Size(63, 61);
-            this.Sectores_Finalizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Sectores_Finalizado.TabIndex = 7;
-            this.Sectores_Finalizado.TabStop = false;
-            this.Sectores_Finalizado.Visible = false;
-            // 
-            // SectorSi_SectorS
-            // 
-            this.SectorSi_SectorS.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorS.Image")));
-            this.SectorSi_SectorS.Location = new System.Drawing.Point(604, 34);
-            this.SectorSi_SectorS.Name = "SectorSi_SectorS";
-            this.SectorSi_SectorS.Size = new System.Drawing.Size(43, 42);
-            this.SectorSi_SectorS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SectorSi_SectorS.TabIndex = 8;
-            this.SectorSi_SectorS.TabStop = false;
-            this.SectorSi_SectorS.Visible = false;
-            // 
-            // SectorSi_SectorH
-            // 
-            this.SectorSi_SectorH.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorH.Image")));
-            this.SectorSi_SectorH.Location = new System.Drawing.Point(335, 34);
-            this.SectorSi_SectorH.Name = "SectorSi_SectorH";
-            this.SectorSi_SectorH.Size = new System.Drawing.Size(44, 42);
-            this.SectorSi_SectorH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SectorSi_SectorH.TabIndex = 9;
-            this.SectorSi_SectorH.TabStop = false;
-            this.SectorSi_SectorH.Visible = false;
-            // 
-            // Check_Nofinalizado
-            // 
-            this.Check_Nofinalizado.BackColor = System.Drawing.Color.Transparent;
-            this.Check_Nofinalizado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Check_Nofinalizado.Image = ((System.Drawing.Image)(resources.GetObject("Check_Nofinalizado.Image")));
-            this.Check_Nofinalizado.Location = new System.Drawing.Point(796, 30);
-            this.Check_Nofinalizado.Name = "Check_Nofinalizado";
-            this.Check_Nofinalizado.Size = new System.Drawing.Size(63, 61);
-            this.Check_Nofinalizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Check_Nofinalizado.TabIndex = 7;
-            this.Check_Nofinalizado.TabStop = false;
-            // 
-            // checkNo_SectS
-            // 
-            this.checkNo_SectS.BackColor = System.Drawing.Color.Transparent;
-            this.checkNo_SectS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.checkNo_SectS.Image = ((System.Drawing.Image)(resources.GetObject("checkNo_SectS.Image")));
-            this.checkNo_SectS.Location = new System.Drawing.Point(604, 34);
-            this.checkNo_SectS.Name = "checkNo_SectS";
-            this.checkNo_SectS.Size = new System.Drawing.Size(43, 42);
-            this.checkNo_SectS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.checkNo_SectS.TabIndex = 7;
-            this.checkNo_SectS.TabStop = false;
-            // 
-            // SectorNo_SectorH
-            // 
-            this.SectorNo_SectorH.BackColor = System.Drawing.Color.Transparent;
-            this.SectorNo_SectorH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SectorNo_SectorH.Image = ((System.Drawing.Image)(resources.GetObject("SectorNo_SectorH.Image")));
-            this.SectorNo_SectorH.Location = new System.Drawing.Point(335, 34);
-            this.SectorNo_SectorH.Name = "SectorNo_SectorH";
-            this.SectorNo_SectorH.Size = new System.Drawing.Size(44, 42);
-            this.SectorNo_SectorH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SectorNo_SectorH.TabIndex = 10;
-            this.SectorNo_SectorH.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.checkBox5);
-            this.panel4.Controls.Add(this.checkBox6);
-            this.panel4.Location = new System.Drawing.Point(503, 54);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(95, 3);
-            this.panel4.TabIndex = 9;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(-4, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(123, 3);
-            this.panel5.TabIndex = 8;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.FlatAppearance.BorderSize = 0;
-            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox5.Location = new System.Drawing.Point(115, -13);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(101, 28);
-            this.checkBox5.TabIndex = 7;
-            this.checkBox5.Text = "checkBox5";
-            this.checkBox5.UseVisualStyleBackColor = false;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.FlatAppearance.BorderSize = 0;
-            this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox6.Location = new System.Drawing.Point(-94, -13);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(101, 28);
-            this.checkBox6.TabIndex = 6;
-            this.checkBox6.Text = "checkBox6";
-            this.checkBox6.UseVisualStyleBackColor = false;
-            // 
-            // Check_Fin
-            // 
-            this.Check_Fin.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Check_Fin.AutoSize = true;
-            this.Check_Fin.BackColor = System.Drawing.Color.Transparent;
-            this.Check_Fin.FlatAppearance.BorderSize = 0;
-            this.Check_Fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Check_Fin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.Check_Fin.Location = new System.Drawing.Point(865, 52);
-            this.Check_Fin.Name = "Check_Fin";
-            this.Check_Fin.Size = new System.Drawing.Size(6, 6);
-            this.Check_Fin.TabIndex = 7;
-            this.Check_Fin.UseVisualStyleBackColor = false;
-            this.Check_Fin.Visible = false;
-            // 
-            // check_SectorS
-            // 
-            this.check_SectorS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.check_SectorS.AutoSize = true;
-            this.check_SectorS.BackColor = System.Drawing.Color.Transparent;
-            this.check_SectorS.FlatAppearance.BorderSize = 0;
-            this.check_SectorS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.check_SectorS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_SectorS.Location = new System.Drawing.Point(620, 21);
-            this.check_SectorS.Name = "check_SectorS";
-            this.check_SectorS.Size = new System.Drawing.Size(6, 6);
-            this.check_SectorS.TabIndex = 6;
-            this.check_SectorS.UseVisualStyleBackColor = false;
-            this.check_SectorS.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.checkBox3);
-            this.panel2.Controls.Add(this.checkBox4);
-            this.panel2.Location = new System.Drawing.Point(249, 54);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(80, 3);
-            this.panel2.TabIndex = 5;
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(-4, 3);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(123, 3);
-            this.panel3.TabIndex = 8;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.FlatAppearance.BorderSize = 0;
-            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox3.Location = new System.Drawing.Point(115, -13);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(101, 28);
-            this.checkBox3.TabIndex = 7;
-            this.checkBox3.Text = "checkBox3";
-            this.checkBox3.UseVisualStyleBackColor = false;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.FlatAppearance.BorderSize = 0;
-            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.checkBox4.Location = new System.Drawing.Point(-94, -13);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(101, 28);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "checkBox4";
-            this.checkBox4.UseVisualStyleBackColor = false;
-            // 
-            // check_SectorH
-            // 
-            this.check_SectorH.Appearance = System.Windows.Forms.Appearance.Button;
-            this.check_SectorH.AutoSize = true;
-            this.check_SectorH.BackColor = System.Drawing.Color.Transparent;
-            this.check_SectorH.FlatAppearance.BorderSize = 0;
-            this.check_SectorH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.check_SectorH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_SectorH.Location = new System.Drawing.Point(350, 21);
-            this.check_SectorH.Name = "check_SectorH";
-            this.check_SectorH.Size = new System.Drawing.Size(6, 6);
-            this.check_SectorH.TabIndex = 1;
-            this.check_SectorH.UseVisualStyleBackColor = false;
-            this.check_SectorH.Visible = false;
             // 
             // Panel_SE
             // 
@@ -745,806 +430,6 @@
             this.Panel_SH.Size = new System.Drawing.Size(881, 410);
             this.Panel_SH.TabIndex = 51;
             this.Panel_SH.Visible = false;
-            // 
-            // Panel_SS
-            // 
-            this.Panel_SS.BackColor = System.Drawing.Color.White;
-            this.Panel_SS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Panel_SS.Controls.Add(this.panel_Finalizado);
-            this.Panel_SS.Controls.Add(this.Panel_Mensaje);
-            this.Panel_SS.Controls.Add(this.panel63);
-            this.Panel_SS.Controls.Add(this.panel61);
-            this.Panel_SS.Controls.Add(this.panel62);
-            this.Panel_SS.Controls.Add(this.panel64);
-            this.Panel_SS.Controls.Add(this.panel66);
-            this.Panel_SS.Controls.Add(this.panel68);
-            this.Panel_SS.Controls.Add(this.panel70);
-            this.Panel_SS.Controls.Add(this.panel74);
-            this.Panel_SS.Controls.Add(this.panel79);
-            this.Panel_SS.Controls.Add(this.panel81);
-            this.Panel_SS.Controls.Add(this.panel83);
-            this.Panel_SS.Controls.Add(this.label42);
-            this.Panel_SS.Controls.Add(this.panel84);
-            this.Panel_SS.Controls.Add(this.label43);
-            this.Panel_SS.Controls.Add(this.panel86);
-            this.Panel_SS.Controls.Add(this.panel87);
-            this.Panel_SS.Controls.Add(this.panel91);
-            this.Panel_SS.Controls.Add(this.panel92);
-            this.Panel_SS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel_SS.Location = new System.Drawing.Point(0, 0);
-            this.Panel_SS.Name = "Panel_SS";
-            this.Panel_SS.Size = new System.Drawing.Size(879, 408);
-            this.Panel_SS.TabIndex = 62;
-            this.Panel_SS.Visible = false;
-            // 
-            // panel_Finalizado
-            // 
-            this.panel_Finalizado.Controls.Add(this.label36);
-            this.panel_Finalizado.Controls.Add(this.pictureBox1);
-            this.panel_Finalizado.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Finalizado.Location = new System.Drawing.Point(0, 0);
-            this.panel_Finalizado.Name = "panel_Finalizado";
-            this.panel_Finalizado.Size = new System.Drawing.Size(877, 406);
-            this.panel_Finalizado.TabIndex = 55;
-            this.panel_Finalizado.Visible = false;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(229, 332);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(463, 39);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "CENSO FINALIZADO CORRECTAMENTE";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(237, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 286);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Panel_Mensaje
-            // 
-            this.Panel_Mensaje.BackColor = System.Drawing.Color.White;
-            this.Panel_Mensaje.Controls.Add(this.Finalizar_No);
-            this.Panel_Mensaje.Controls.Add(this.Finalizar_Si);
-            this.Panel_Mensaje.Controls.Add(this.label30);
-            this.Panel_Mensaje.Location = new System.Drawing.Point(260, 157);
-            this.Panel_Mensaje.Name = "Panel_Mensaje";
-            this.Panel_Mensaje.Size = new System.Drawing.Size(418, 204);
-            this.Panel_Mensaje.TabIndex = 54;
-            this.Panel_Mensaje.Visible = false;
-            // 
-            // Finalizar_No
-            // 
-            this.Finalizar_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Finalizar_No.Location = new System.Drawing.Point(254, 123);
-            this.Finalizar_No.Name = "Finalizar_No";
-            this.Finalizar_No.Size = new System.Drawing.Size(104, 60);
-            this.Finalizar_No.TabIndex = 2;
-            this.Finalizar_No.Text = "NO";
-            this.Finalizar_No.UseVisualStyleBackColor = true;
-            this.Finalizar_No.Click += new System.EventHandler(this.Finalizar_No_Click);
-            // 
-            // Finalizar_Si
-            // 
-            this.Finalizar_Si.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Finalizar_Si.Location = new System.Drawing.Point(52, 123);
-            this.Finalizar_Si.Name = "Finalizar_Si";
-            this.Finalizar_Si.Size = new System.Drawing.Size(104, 60);
-            this.Finalizar_Si.TabIndex = 1;
-            this.Finalizar_Si.Text = "SI";
-            this.Finalizar_Si.UseVisualStyleBackColor = true;
-            this.Finalizar_Si.Click += new System.EventHandler(this.Finalizar_Si_Click);
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(31, 52);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(354, 18);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "Esta seguro que desea finalizar el formulario?";
-            // 
-            // panel63
-            // 
-            this.panel63.Controls.Add(this.Opc_OtroCivil);
-            this.panel63.Controls.Add(this.Opc_Divorciado);
-            this.panel63.Controls.Add(this.Opc_Viudo);
-            this.panel63.Controls.Add(this.Opc_Soltero);
-            this.panel63.Controls.Add(this.Opc_Casado);
-            this.panel63.Location = new System.Drawing.Point(446, 196);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(419, 91);
-            this.panel63.TabIndex = 34;
-            // 
-            // Opc_OtroCivil
-            // 
-            this.Opc_OtroCivil.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_OtroCivil.FlatAppearance.BorderSize = 0;
-            this.Opc_OtroCivil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_OtroCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_OtroCivil.ForeColor = System.Drawing.Color.Black;
-            this.Opc_OtroCivil.Location = new System.Drawing.Point(230, 43);
-            this.Opc_OtroCivil.Name = "Opc_OtroCivil";
-            this.Opc_OtroCivil.Size = new System.Drawing.Size(107, 27);
-            this.Opc_OtroCivil.TabIndex = 10;
-            this.Opc_OtroCivil.TabStop = true;
-            this.Opc_OtroCivil.Text = "Otro";
-            this.Opc_OtroCivil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_OtroCivil.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Divorciado
-            // 
-            this.Opc_Divorciado.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Divorciado.FlatAppearance.BorderSize = 0;
-            this.Opc_Divorciado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Divorciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Divorciado.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Divorciado.Location = new System.Drawing.Point(60, 43);
-            this.Opc_Divorciado.Name = "Opc_Divorciado";
-            this.Opc_Divorciado.Size = new System.Drawing.Size(134, 27);
-            this.Opc_Divorciado.TabIndex = 9;
-            this.Opc_Divorciado.TabStop = true;
-            this.Opc_Divorciado.Text = "Divorciado/a";
-            this.Opc_Divorciado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Divorciado.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Viudo
-            // 
-            this.Opc_Viudo.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Viudo.FlatAppearance.BorderSize = 0;
-            this.Opc_Viudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Viudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Viudo.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Viudo.Location = new System.Drawing.Point(295, 2);
-            this.Opc_Viudo.Name = "Opc_Viudo";
-            this.Opc_Viudo.Size = new System.Drawing.Size(110, 27);
-            this.Opc_Viudo.TabIndex = 7;
-            this.Opc_Viudo.TabStop = true;
-            this.Opc_Viudo.Text = "Viudo/a";
-            this.Opc_Viudo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Viudo.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Soltero
-            // 
-            this.Opc_Soltero.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Soltero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Soltero.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Soltero.FlatAppearance.BorderSize = 0;
-            this.Opc_Soltero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Soltero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Soltero.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Soltero.Location = new System.Drawing.Point(13, 3);
-            this.Opc_Soltero.Name = "Opc_Soltero";
-            this.Opc_Soltero.Size = new System.Drawing.Size(99, 21);
-            this.Opc_Soltero.TabIndex = 5;
-            this.Opc_Soltero.TabStop = true;
-            this.Opc_Soltero.Text = "Soltero/a";
-            this.Opc_Soltero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Soltero.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Casado
-            // 
-            this.Opc_Casado.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Casado.FlatAppearance.BorderSize = 0;
-            this.Opc_Casado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Casado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Casado.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Casado.Location = new System.Drawing.Point(161, 2);
-            this.Opc_Casado.Name = "Opc_Casado";
-            this.Opc_Casado.Size = new System.Drawing.Size(103, 27);
-            this.Opc_Casado.TabIndex = 6;
-            this.Opc_Casado.TabStop = true;
-            this.Opc_Casado.Text = "Casado/a";
-            this.Opc_Casado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Casado.UseVisualStyleBackColor = false;
-            // 
-            // panel61
-            // 
-            this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel61.Controls.Add(this.label24);
-            this.panel61.Location = new System.Drawing.Point(446, 163);
-            this.panel61.Name = "panel61";
-            this.panel61.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel61.Size = new System.Drawing.Size(422, 25);
-            this.panel61.TabIndex = 29;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(28, 1);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(246, 18);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "¿Cuál es su estado civil actual?";
-            // 
-            // panel62
-            // 
-            this.panel62.Controls.Add(this.Opc_OtroEducacion);
-            this.panel62.Controls.Add(this.Opc_Universitaria);
-            this.panel62.Controls.Add(this.Opc_Tecnica);
-            this.panel62.Controls.Add(this.Opc_Secundaria);
-            this.panel62.Controls.Add(this.Opc_Primaria);
-            this.panel62.Controls.Add(this.Opc_SinEstudio);
-            this.panel62.Location = new System.Drawing.Point(15, 327);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(850, 68);
-            this.panel62.TabIndex = 35;
-            // 
-            // Opc_OtroEducacion
-            // 
-            this.Opc_OtroEducacion.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_OtroEducacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_OtroEducacion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_OtroEducacion.FlatAppearance.BorderSize = 0;
-            this.Opc_OtroEducacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_OtroEducacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_OtroEducacion.ForeColor = System.Drawing.Color.Black;
-            this.Opc_OtroEducacion.Location = new System.Drawing.Point(613, 33);
-            this.Opc_OtroEducacion.Name = "Opc_OtroEducacion";
-            this.Opc_OtroEducacion.Size = new System.Drawing.Size(205, 27);
-            this.Opc_OtroEducacion.TabIndex = 12;
-            this.Opc_OtroEducacion.TabStop = true;
-            this.Opc_OtroEducacion.Text = "Otro";
-            this.Opc_OtroEducacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_OtroEducacion.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Universitaria
-            // 
-            this.Opc_Universitaria.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Universitaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Universitaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Universitaria.FlatAppearance.BorderSize = 0;
-            this.Opc_Universitaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Universitaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Universitaria.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Universitaria.Location = new System.Drawing.Point(346, 33);
-            this.Opc_Universitaria.Name = "Opc_Universitaria";
-            this.Opc_Universitaria.Size = new System.Drawing.Size(205, 27);
-            this.Opc_Universitaria.TabIndex = 11;
-            this.Opc_Universitaria.TabStop = true;
-            this.Opc_Universitaria.Text = "Educación universitaria";
-            this.Opc_Universitaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Universitaria.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Tecnica
-            // 
-            this.Opc_Tecnica.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Tecnica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Tecnica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Tecnica.FlatAppearance.BorderSize = 0;
-            this.Opc_Tecnica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Tecnica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Tecnica.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Tecnica.Location = new System.Drawing.Point(33, 33);
-            this.Opc_Tecnica.Name = "Opc_Tecnica";
-            this.Opc_Tecnica.Size = new System.Drawing.Size(261, 27);
-            this.Opc_Tecnica.TabIndex = 10;
-            this.Opc_Tecnica.TabStop = true;
-            this.Opc_Tecnica.Text = "Educación técnica o vocacional";
-            this.Opc_Tecnica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Tecnica.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Secundaria
-            // 
-            this.Opc_Secundaria.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Secundaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Secundaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Secundaria.FlatAppearance.BorderSize = 0;
-            this.Opc_Secundaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Secundaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Secundaria.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Secundaria.Location = new System.Drawing.Point(613, 3);
-            this.Opc_Secundaria.Name = "Opc_Secundaria";
-            this.Opc_Secundaria.Size = new System.Drawing.Size(205, 27);
-            this.Opc_Secundaria.TabIndex = 9;
-            this.Opc_Secundaria.TabStop = true;
-            this.Opc_Secundaria.Text = "Educación secundaria";
-            this.Opc_Secundaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Secundaria.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Primaria
-            // 
-            this.Opc_Primaria.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Primaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Primaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Primaria.FlatAppearance.BorderSize = 0;
-            this.Opc_Primaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Primaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Primaria.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Primaria.Location = new System.Drawing.Point(346, 3);
-            this.Opc_Primaria.Name = "Opc_Primaria";
-            this.Opc_Primaria.Size = new System.Drawing.Size(205, 27);
-            this.Opc_Primaria.TabIndex = 8;
-            this.Opc_Primaria.TabStop = true;
-            this.Opc_Primaria.Text = "Educacion Primaria";
-            this.Opc_Primaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Primaria.UseVisualStyleBackColor = false;
-            // 
-            // Opc_SinEstudio
-            // 
-            this.Opc_SinEstudio.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_SinEstudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_SinEstudio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_SinEstudio.FlatAppearance.BorderSize = 0;
-            this.Opc_SinEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_SinEstudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_SinEstudio.ForeColor = System.Drawing.Color.Black;
-            this.Opc_SinEstudio.Location = new System.Drawing.Point(34, 3);
-            this.Opc_SinEstudio.Name = "Opc_SinEstudio";
-            this.Opc_SinEstudio.Size = new System.Drawing.Size(205, 27);
-            this.Opc_SinEstudio.TabIndex = 5;
-            this.Opc_SinEstudio.TabStop = true;
-            this.Opc_SinEstudio.Text = "Sin educación Formal";
-            this.Opc_SinEstudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_SinEstudio.UseVisualStyleBackColor = false;
-            // 
-            // panel64
-            // 
-            this.panel64.Controls.Add(this.Opc_Ninguno);
-            this.panel64.Controls.Add(this.Opc_Chimila);
-            this.panel64.Controls.Add(this.Opc_Yucpa);
-            this.panel64.Controls.Add(this.Opc_Wiwa);
-            this.panel64.Controls.Add(this.Opc_Kankuamo);
-            this.panel64.Controls.Add(this.Opc_Arhuaco);
-            this.panel64.Controls.Add(this.Opc_Kogui);
-            this.panel64.Location = new System.Drawing.Point(15, 196);
-            this.panel64.Name = "panel64";
-            this.panel64.Size = new System.Drawing.Size(419, 91);
-            this.panel64.TabIndex = 33;
-            // 
-            // Opc_Ninguno
-            // 
-            this.Opc_Ninguno.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Ninguno.FlatAppearance.BorderSize = 0;
-            this.Opc_Ninguno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Ninguno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Ninguno.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Ninguno.Location = new System.Drawing.Point(161, 56);
-            this.Opc_Ninguno.Name = "Opc_Ninguno";
-            this.Opc_Ninguno.Size = new System.Drawing.Size(92, 27);
-            this.Opc_Ninguno.TabIndex = 11;
-            this.Opc_Ninguno.TabStop = true;
-            this.Opc_Ninguno.Text = "Ninguno";
-            this.Opc_Ninguno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Ninguno.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Chimila
-            // 
-            this.Opc_Chimila.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Chimila.FlatAppearance.BorderSize = 0;
-            this.Opc_Chimila.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Chimila.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Chimila.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Chimila.Location = new System.Drawing.Point(289, 30);
-            this.Opc_Chimila.Name = "Opc_Chimila";
-            this.Opc_Chimila.Size = new System.Drawing.Size(107, 27);
-            this.Opc_Chimila.TabIndex = 10;
-            this.Opc_Chimila.TabStop = true;
-            this.Opc_Chimila.Text = "Chimila";
-            this.Opc_Chimila.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Chimila.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Yucpa
-            // 
-            this.Opc_Yucpa.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Yucpa.FlatAppearance.BorderSize = 0;
-            this.Opc_Yucpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Yucpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Yucpa.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Yucpa.Location = new System.Drawing.Point(161, 30);
-            this.Opc_Yucpa.Name = "Opc_Yucpa";
-            this.Opc_Yucpa.Size = new System.Drawing.Size(92, 27);
-            this.Opc_Yucpa.TabIndex = 9;
-            this.Opc_Yucpa.TabStop = true;
-            this.Opc_Yucpa.Text = "Yucpa";
-            this.Opc_Yucpa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Yucpa.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Wiwa
-            // 
-            this.Opc_Wiwa.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Wiwa.FlatAppearance.BorderSize = 0;
-            this.Opc_Wiwa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Wiwa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Wiwa.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Wiwa.Location = new System.Drawing.Point(13, 30);
-            this.Opc_Wiwa.Name = "Opc_Wiwa";
-            this.Opc_Wiwa.Size = new System.Drawing.Size(99, 27);
-            this.Opc_Wiwa.TabIndex = 8;
-            this.Opc_Wiwa.TabStop = true;
-            this.Opc_Wiwa.Text = "Wiwa";
-            this.Opc_Wiwa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Wiwa.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Kankuamo
-            // 
-            this.Opc_Kankuamo.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Kankuamo.FlatAppearance.BorderSize = 0;
-            this.Opc_Kankuamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Kankuamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Kankuamo.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Kankuamo.Location = new System.Drawing.Point(289, 3);
-            this.Opc_Kankuamo.Name = "Opc_Kankuamo";
-            this.Opc_Kankuamo.Size = new System.Drawing.Size(110, 27);
-            this.Opc_Kankuamo.TabIndex = 7;
-            this.Opc_Kankuamo.TabStop = true;
-            this.Opc_Kankuamo.Text = "Kankuamo";
-            this.Opc_Kankuamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Kankuamo.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Arhuaco
-            // 
-            this.Opc_Arhuaco.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Arhuaco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Opc_Arhuaco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Opc_Arhuaco.FlatAppearance.BorderSize = 0;
-            this.Opc_Arhuaco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Arhuaco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Arhuaco.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Arhuaco.Location = new System.Drawing.Point(13, 3);
-            this.Opc_Arhuaco.Name = "Opc_Arhuaco";
-            this.Opc_Arhuaco.Size = new System.Drawing.Size(99, 21);
-            this.Opc_Arhuaco.TabIndex = 5;
-            this.Opc_Arhuaco.TabStop = true;
-            this.Opc_Arhuaco.Text = "Arhuaco";
-            this.Opc_Arhuaco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Arhuaco.UseVisualStyleBackColor = false;
-            // 
-            // Opc_Kogui
-            // 
-            this.Opc_Kogui.BackColor = System.Drawing.Color.Transparent;
-            this.Opc_Kogui.FlatAppearance.BorderSize = 0;
-            this.Opc_Kogui.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Opc_Kogui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Opc_Kogui.ForeColor = System.Drawing.Color.Black;
-            this.Opc_Kogui.Location = new System.Drawing.Point(161, 2);
-            this.Opc_Kogui.Name = "Opc_Kogui";
-            this.Opc_Kogui.Size = new System.Drawing.Size(92, 27);
-            this.Opc_Kogui.TabIndex = 6;
-            this.Opc_Kogui.TabStop = true;
-            this.Opc_Kogui.Text = "Kogui";
-            this.Opc_Kogui.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Opc_Kogui.UseVisualStyleBackColor = false;
-            // 
-            // panel66
-            // 
-            this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel66.Controls.Add(this.label26);
-            this.panel66.Location = new System.Drawing.Point(-2, 123);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(694, 32);
-            this.panel66.TabIndex = 53;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(5, 8);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(439, 13);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "¿Tiene acceso a servicios de transporte público o privado en su área local?";
-            // 
-            // panel68
-            // 
-            this.panel68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel68.Controls.Add(this.label35);
-            this.panel68.Location = new System.Drawing.Point(-2, 91);
-            this.panel68.Name = "panel68";
-            this.panel68.Size = new System.Drawing.Size(694, 32);
-            this.panel68.TabIndex = 43;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(5, 8);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(575, 13);
-            this.label35.TabIndex = 4;
-            this.label35.Text = "¿Tiene acceso a servicios educativos, como escuelas, universidades o programas de" +
-    " capacitación?";
-            // 
-            // panel70
-            // 
-            this.panel70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel70.Controls.Add(this.label37);
-            this.panel70.Location = new System.Drawing.Point(-2, 60);
-            this.panel70.Name = "panel70";
-            this.panel70.Size = new System.Drawing.Size(694, 31);
-            this.panel70.TabIndex = 42;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(5, 7);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(356, 13);
-            this.label37.TabIndex = 4;
-            this.label37.Text = "¿Ha sido víctima de algún tipo de discriminación o violencia?";
-            // 
-            // panel74
-            // 
-            this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel74.Controls.Add(this.label41);
-            this.panel74.Location = new System.Drawing.Point(-2, 26);
-            this.panel74.Name = "panel74";
-            this.panel74.Size = new System.Drawing.Size(694, 34);
-            this.panel74.TabIndex = 41;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(5, 9);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(320, 13);
-            this.label41.TabIndex = 4;
-            this.label41.Text = "¿Está afiliado/a a algún programa de seguridad social?";
-            // 
-            // panel79
-            // 
-            this.panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel79.Controls.Add(this.No_Pregunta4SS);
-            this.panel79.Controls.Add(this.Si_Pregunta4SS);
-            this.panel79.Location = new System.Drawing.Point(698, 122);
-            this.panel79.Name = "panel79";
-            this.panel79.Size = new System.Drawing.Size(158, 32);
-            this.panel79.TabIndex = 42;
-            // 
-            // No_Pregunta4SS
-            // 
-            this.No_Pregunta4SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.No_Pregunta4SS.BackColor = System.Drawing.Color.LightGray;
-            this.No_Pregunta4SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.No_Pregunta4SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.No_Pregunta4SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.No_Pregunta4SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.No_Pregunta4SS.ForeColor = System.Drawing.Color.Transparent;
-            this.No_Pregunta4SS.Location = new System.Drawing.Point(78, -1);
-            this.No_Pregunta4SS.Name = "No_Pregunta4SS";
-            this.No_Pregunta4SS.Size = new System.Drawing.Size(79, 31);
-            this.No_Pregunta4SS.TabIndex = 66;
-            this.No_Pregunta4SS.TabStop = true;
-            this.No_Pregunta4SS.UseVisualStyleBackColor = false;
-            this.No_Pregunta4SS.CheckedChanged += new System.EventHandler(this.No_Pregunta4SS_CheckedChanged);
-            // 
-            // Si_Pregunta4SS
-            // 
-            this.Si_Pregunta4SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Si_Pregunta4SS.BackColor = System.Drawing.Color.LightGray;
-            this.Si_Pregunta4SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Si_Pregunta4SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Si_Pregunta4SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Si_Pregunta4SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Si_Pregunta4SS.ForeColor = System.Drawing.Color.Transparent;
-            this.Si_Pregunta4SS.Location = new System.Drawing.Point(-1, -1);
-            this.Si_Pregunta4SS.Name = "Si_Pregunta4SS";
-            this.Si_Pregunta4SS.Size = new System.Drawing.Size(79, 31);
-            this.Si_Pregunta4SS.TabIndex = 67;
-            this.Si_Pregunta4SS.TabStop = true;
-            this.Si_Pregunta4SS.UseVisualStyleBackColor = false;
-            this.Si_Pregunta4SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta4SS_CheckedChanged);
-            // 
-            // panel81
-            // 
-            this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel81.Controls.Add(this.No_Pregunta3SS);
-            this.panel81.Controls.Add(this.Si_Pregunta3SS);
-            this.panel81.Location = new System.Drawing.Point(698, 90);
-            this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(158, 32);
-            this.panel81.TabIndex = 41;
-            // 
-            // No_Pregunta3SS
-            // 
-            this.No_Pregunta3SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.No_Pregunta3SS.BackColor = System.Drawing.Color.LightGray;
-            this.No_Pregunta3SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.No_Pregunta3SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.No_Pregunta3SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.No_Pregunta3SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.No_Pregunta3SS.ForeColor = System.Drawing.Color.Transparent;
-            this.No_Pregunta3SS.Location = new System.Drawing.Point(78, -1);
-            this.No_Pregunta3SS.Name = "No_Pregunta3SS";
-            this.No_Pregunta3SS.Size = new System.Drawing.Size(79, 31);
-            this.No_Pregunta3SS.TabIndex = 68;
-            this.No_Pregunta3SS.TabStop = true;
-            this.No_Pregunta3SS.UseVisualStyleBackColor = false;
-            this.No_Pregunta3SS.CheckedChanged += new System.EventHandler(this.No_Pregunta3SS_CheckedChanged);
-            // 
-            // Si_Pregunta3SS
-            // 
-            this.Si_Pregunta3SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Si_Pregunta3SS.BackColor = System.Drawing.Color.LightGray;
-            this.Si_Pregunta3SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Si_Pregunta3SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Si_Pregunta3SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Si_Pregunta3SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Si_Pregunta3SS.ForeColor = System.Drawing.Color.Transparent;
-            this.Si_Pregunta3SS.Location = new System.Drawing.Point(-1, -1);
-            this.Si_Pregunta3SS.Name = "Si_Pregunta3SS";
-            this.Si_Pregunta3SS.Size = new System.Drawing.Size(79, 31);
-            this.Si_Pregunta3SS.TabIndex = 69;
-            this.Si_Pregunta3SS.TabStop = true;
-            this.Si_Pregunta3SS.UseVisualStyleBackColor = false;
-            this.Si_Pregunta3SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta3SS_CheckedChanged);
-            // 
-            // panel83
-            // 
-            this.panel83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel83.Controls.Add(this.No_Pregunta2SS);
-            this.panel83.Controls.Add(this.Si_Pregunta2SS);
-            this.panel83.Location = new System.Drawing.Point(698, 58);
-            this.panel83.Name = "panel83";
-            this.panel83.Size = new System.Drawing.Size(158, 32);
-            this.panel83.TabIndex = 40;
-            // 
-            // No_Pregunta2SS
-            // 
-            this.No_Pregunta2SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.No_Pregunta2SS.BackColor = System.Drawing.Color.LightGray;
-            this.No_Pregunta2SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.No_Pregunta2SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.No_Pregunta2SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.No_Pregunta2SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.No_Pregunta2SS.ForeColor = System.Drawing.Color.Transparent;
-            this.No_Pregunta2SS.Location = new System.Drawing.Point(78, 0);
-            this.No_Pregunta2SS.Name = "No_Pregunta2SS";
-            this.No_Pregunta2SS.Size = new System.Drawing.Size(79, 31);
-            this.No_Pregunta2SS.TabIndex = 70;
-            this.No_Pregunta2SS.TabStop = true;
-            this.No_Pregunta2SS.UseVisualStyleBackColor = false;
-            this.No_Pregunta2SS.CheckedChanged += new System.EventHandler(this.No_Pregunta2SS_CheckedChanged);
-            // 
-            // Si_Pregunta2SS
-            // 
-            this.Si_Pregunta2SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Si_Pregunta2SS.BackColor = System.Drawing.Color.LightGray;
-            this.Si_Pregunta2SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Si_Pregunta2SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Si_Pregunta2SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Si_Pregunta2SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Si_Pregunta2SS.ForeColor = System.Drawing.Color.Transparent;
-            this.Si_Pregunta2SS.Location = new System.Drawing.Point(-1, 0);
-            this.Si_Pregunta2SS.Name = "Si_Pregunta2SS";
-            this.Si_Pregunta2SS.Size = new System.Drawing.Size(79, 31);
-            this.Si_Pregunta2SS.TabIndex = 60;
-            this.Si_Pregunta2SS.TabStop = true;
-            this.Si_Pregunta2SS.UseVisualStyleBackColor = false;
-            this.Si_Pregunta2SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta2SS_CheckedChanged);
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(796, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(37, 24);
-            this.label42.TabIndex = 50;
-            this.label42.Text = "No";
-            // 
-            // panel84
-            // 
-            this.panel84.BackColor = System.Drawing.Color.Black;
-            this.panel84.Location = new System.Drawing.Point(-2, 404);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(882, 5);
-            this.panel84.TabIndex = 49;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(723, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(28, 24);
-            this.label43.TabIndex = 4;
-            this.label43.Text = "Si";
-            // 
-            // panel86
-            // 
-            this.panel86.BackColor = System.Drawing.Color.Black;
-            this.panel86.Location = new System.Drawing.Point(776, 0);
-            this.panel86.Name = "panel86";
-            this.panel86.Size = new System.Drawing.Size(3, 29);
-            this.panel86.TabIndex = 49;
-            // 
-            // panel87
-            // 
-            this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel87.Controls.Add(this.Si_Pregunta1SS);
-            this.panel87.Controls.Add(this.No_Pregunta1SS);
-            this.panel87.Location = new System.Drawing.Point(698, 26);
-            this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(158, 32);
-            this.panel87.TabIndex = 39;
-            // 
-            // Si_Pregunta1SS
-            // 
-            this.Si_Pregunta1SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Si_Pregunta1SS.BackColor = System.Drawing.Color.LightGray;
-            this.Si_Pregunta1SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Si_Pregunta1SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.Si_Pregunta1SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Si_Pregunta1SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Si_Pregunta1SS.ForeColor = System.Drawing.Color.Transparent;
-            this.Si_Pregunta1SS.Location = new System.Drawing.Point(-1, 0);
-            this.Si_Pregunta1SS.Name = "Si_Pregunta1SS";
-            this.Si_Pregunta1SS.Size = new System.Drawing.Size(79, 31);
-            this.Si_Pregunta1SS.TabIndex = 7;
-            this.Si_Pregunta1SS.TabStop = true;
-            this.Si_Pregunta1SS.UseVisualStyleBackColor = false;
-            this.Si_Pregunta1SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta1SS_CheckedChanged);
-            // 
-            // No_Pregunta1SS
-            // 
-            this.No_Pregunta1SS.Appearance = System.Windows.Forms.Appearance.Button;
-            this.No_Pregunta1SS.BackColor = System.Drawing.Color.LightGray;
-            this.No_Pregunta1SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.No_Pregunta1SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.No_Pregunta1SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.No_Pregunta1SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.No_Pregunta1SS.ForeColor = System.Drawing.Color.Transparent;
-            this.No_Pregunta1SS.Location = new System.Drawing.Point(78, 0);
-            this.No_Pregunta1SS.Name = "No_Pregunta1SS";
-            this.No_Pregunta1SS.Size = new System.Drawing.Size(79, 31);
-            this.No_Pregunta1SS.TabIndex = 6;
-            this.No_Pregunta1SS.TabStop = true;
-            this.No_Pregunta1SS.UseVisualStyleBackColor = false;
-            this.No_Pregunta1SS.CheckedChanged += new System.EventHandler(this.No_Pregunta1SS_CheckedChanged);
-            // 
-            // panel91
-            // 
-            this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel91.Controls.Add(this.label47);
-            this.panel91.Location = new System.Drawing.Point(15, 293);
-            this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(850, 28);
-            this.panel91.TabIndex = 32;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(233, 2);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(374, 18);
-            this.label47.TabIndex = 3;
-            this.label47.Text = "¿Cuál es su nivel educativo más alto alcanzado?";
-            // 
-            // panel92
-            // 
-            this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel92.Controls.Add(this.label48);
-            this.panel92.Location = new System.Drawing.Point(15, 163);
-            this.panel92.Name = "panel92";
-            this.panel92.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel92.Size = new System.Drawing.Size(419, 25);
-            this.panel92.TabIndex = 28;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(30, 1);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(358, 18);
-            this.label48.TabIndex = 2;
-            this.label48.Text = "¿Pertenece a alguno de estos grupos etnicos?";
             // 
             // panel60
             // 
@@ -3301,6 +2186,1121 @@
             this.Btn_Siguiente.UseVisualStyleBackColor = true;
             this.Btn_Siguiente.Click += new System.EventHandler(this.Btn_Siguiente_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.SectorSi_SectorE);
+            this.panel1.Controls.Add(this.SectorNo_SectorE);
+            this.panel1.Controls.Add(this.Sectores_Finalizado);
+            this.panel1.Controls.Add(this.SectorSi_SectorS);
+            this.panel1.Controls.Add(this.SectorSi_SectorH);
+            this.panel1.Controls.Add(this.Check_Nofinalizado);
+            this.panel1.Controls.Add(this.checkNo_SectS);
+            this.panel1.Controls.Add(this.SectorNo_SectorH);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.Check_Fin);
+            this.panel1.Controls.Add(this.check_SectorS);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.check_SectorH);
+            this.panel1.Controls.Add(this.check_SectorE);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(883, 100);
+            this.panel1.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(788, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(85, 18);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Finalizado";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(653, 42);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(133, 24);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "Sector Social";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(380, 41);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(133, 24);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Sector Hogar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(80, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(182, 24);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Sector Economico";
+            // 
+            // SectorSi_SectorE
+            // 
+            this.SectorSi_SectorE.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorE.Image")));
+            this.SectorSi_SectorE.Location = new System.Drawing.Point(31, 33);
+            this.SectorSi_SectorE.Name = "SectorSi_SectorE";
+            this.SectorSi_SectorE.Size = new System.Drawing.Size(44, 42);
+            this.SectorSi_SectorE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SectorSi_SectorE.TabIndex = 11;
+            this.SectorSi_SectorE.TabStop = false;
+            this.SectorSi_SectorE.Visible = false;
+            // 
+            // SectorNo_SectorE
+            // 
+            this.SectorNo_SectorE.BackColor = System.Drawing.Color.Transparent;
+            this.SectorNo_SectorE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SectorNo_SectorE.Image = ((System.Drawing.Image)(resources.GetObject("SectorNo_SectorE.Image")));
+            this.SectorNo_SectorE.Location = new System.Drawing.Point(31, 33);
+            this.SectorNo_SectorE.Name = "SectorNo_SectorE";
+            this.SectorNo_SectorE.Size = new System.Drawing.Size(44, 42);
+            this.SectorNo_SectorE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SectorNo_SectorE.TabIndex = 12;
+            this.SectorNo_SectorE.TabStop = false;
+            // 
+            // Sectores_Finalizado
+            // 
+            this.Sectores_Finalizado.Image = ((System.Drawing.Image)(resources.GetObject("Sectores_Finalizado.Image")));
+            this.Sectores_Finalizado.Location = new System.Drawing.Point(796, 30);
+            this.Sectores_Finalizado.Name = "Sectores_Finalizado";
+            this.Sectores_Finalizado.Size = new System.Drawing.Size(63, 61);
+            this.Sectores_Finalizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Sectores_Finalizado.TabIndex = 7;
+            this.Sectores_Finalizado.TabStop = false;
+            this.Sectores_Finalizado.Visible = false;
+            // 
+            // SectorSi_SectorS
+            // 
+            this.SectorSi_SectorS.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorS.Image")));
+            this.SectorSi_SectorS.Location = new System.Drawing.Point(604, 34);
+            this.SectorSi_SectorS.Name = "SectorSi_SectorS";
+            this.SectorSi_SectorS.Size = new System.Drawing.Size(43, 42);
+            this.SectorSi_SectorS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SectorSi_SectorS.TabIndex = 8;
+            this.SectorSi_SectorS.TabStop = false;
+            this.SectorSi_SectorS.Visible = false;
+            // 
+            // SectorSi_SectorH
+            // 
+            this.SectorSi_SectorH.Image = ((System.Drawing.Image)(resources.GetObject("SectorSi_SectorH.Image")));
+            this.SectorSi_SectorH.Location = new System.Drawing.Point(335, 34);
+            this.SectorSi_SectorH.Name = "SectorSi_SectorH";
+            this.SectorSi_SectorH.Size = new System.Drawing.Size(44, 42);
+            this.SectorSi_SectorH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SectorSi_SectorH.TabIndex = 9;
+            this.SectorSi_SectorH.TabStop = false;
+            this.SectorSi_SectorH.Visible = false;
+            // 
+            // Check_Nofinalizado
+            // 
+            this.Check_Nofinalizado.BackColor = System.Drawing.Color.Transparent;
+            this.Check_Nofinalizado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Check_Nofinalizado.Image = ((System.Drawing.Image)(resources.GetObject("Check_Nofinalizado.Image")));
+            this.Check_Nofinalizado.Location = new System.Drawing.Point(796, 30);
+            this.Check_Nofinalizado.Name = "Check_Nofinalizado";
+            this.Check_Nofinalizado.Size = new System.Drawing.Size(63, 61);
+            this.Check_Nofinalizado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Check_Nofinalizado.TabIndex = 7;
+            this.Check_Nofinalizado.TabStop = false;
+            // 
+            // checkNo_SectS
+            // 
+            this.checkNo_SectS.BackColor = System.Drawing.Color.Transparent;
+            this.checkNo_SectS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.checkNo_SectS.Image = ((System.Drawing.Image)(resources.GetObject("checkNo_SectS.Image")));
+            this.checkNo_SectS.Location = new System.Drawing.Point(604, 34);
+            this.checkNo_SectS.Name = "checkNo_SectS";
+            this.checkNo_SectS.Size = new System.Drawing.Size(43, 42);
+            this.checkNo_SectS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.checkNo_SectS.TabIndex = 7;
+            this.checkNo_SectS.TabStop = false;
+            // 
+            // SectorNo_SectorH
+            // 
+            this.SectorNo_SectorH.BackColor = System.Drawing.Color.Transparent;
+            this.SectorNo_SectorH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SectorNo_SectorH.Image = ((System.Drawing.Image)(resources.GetObject("SectorNo_SectorH.Image")));
+            this.SectorNo_SectorH.Location = new System.Drawing.Point(335, 34);
+            this.SectorNo_SectorH.Name = "SectorNo_SectorH";
+            this.SectorNo_SectorH.Size = new System.Drawing.Size(44, 42);
+            this.SectorNo_SectorH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SectorNo_SectorH.TabIndex = 10;
+            this.SectorNo_SectorH.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.checkBox5);
+            this.panel4.Controls.Add(this.checkBox6);
+            this.panel4.Location = new System.Drawing.Point(503, 54);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(95, 3);
+            this.panel4.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(-4, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(123, 3);
+            this.panel5.TabIndex = 8;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox5.FlatAppearance.BorderSize = 0;
+            this.checkBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox5.Location = new System.Drawing.Point(115, -13);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(101, 28);
+            this.checkBox5.TabIndex = 7;
+            this.checkBox5.Text = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = false;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox6.FlatAppearance.BorderSize = 0;
+            this.checkBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox6.Location = new System.Drawing.Point(-94, -13);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(101, 28);
+            this.checkBox6.TabIndex = 6;
+            this.checkBox6.Text = "checkBox6";
+            this.checkBox6.UseVisualStyleBackColor = false;
+            // 
+            // Check_Fin
+            // 
+            this.Check_Fin.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Check_Fin.AutoSize = true;
+            this.Check_Fin.BackColor = System.Drawing.Color.Transparent;
+            this.Check_Fin.FlatAppearance.BorderSize = 0;
+            this.Check_Fin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Check_Fin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.Check_Fin.Location = new System.Drawing.Point(865, 52);
+            this.Check_Fin.Name = "Check_Fin";
+            this.Check_Fin.Size = new System.Drawing.Size(6, 6);
+            this.Check_Fin.TabIndex = 7;
+            this.Check_Fin.UseVisualStyleBackColor = false;
+            this.Check_Fin.Visible = false;
+            // 
+            // check_SectorS
+            // 
+            this.check_SectorS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.check_SectorS.AutoSize = true;
+            this.check_SectorS.BackColor = System.Drawing.Color.Transparent;
+            this.check_SectorS.FlatAppearance.BorderSize = 0;
+            this.check_SectorS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.check_SectorS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_SectorS.Location = new System.Drawing.Point(620, 21);
+            this.check_SectorS.Name = "check_SectorS";
+            this.check_SectorS.Size = new System.Drawing.Size(6, 6);
+            this.check_SectorS.TabIndex = 6;
+            this.check_SectorS.UseVisualStyleBackColor = false;
+            this.check_SectorS.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.checkBox3);
+            this.panel2.Controls.Add(this.checkBox4);
+            this.panel2.Location = new System.Drawing.Point(249, 54);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(80, 3);
+            this.panel2.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(-4, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(123, 3);
+            this.panel3.TabIndex = 8;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox3.FlatAppearance.BorderSize = 0;
+            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox3.Location = new System.Drawing.Point(115, -13);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(101, 28);
+            this.checkBox3.TabIndex = 7;
+            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.UseVisualStyleBackColor = false;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox4.FlatAppearance.BorderSize = 0;
+            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.checkBox4.Location = new System.Drawing.Point(-94, -13);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(101, 28);
+            this.checkBox4.TabIndex = 6;
+            this.checkBox4.Text = "checkBox4";
+            this.checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // check_SectorH
+            // 
+            this.check_SectorH.Appearance = System.Windows.Forms.Appearance.Button;
+            this.check_SectorH.AutoSize = true;
+            this.check_SectorH.BackColor = System.Drawing.Color.Transparent;
+            this.check_SectorH.FlatAppearance.BorderSize = 0;
+            this.check_SectorH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.check_SectorH.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_SectorH.Location = new System.Drawing.Point(350, 21);
+            this.check_SectorH.Name = "check_SectorH";
+            this.check_SectorH.Size = new System.Drawing.Size(6, 6);
+            this.check_SectorH.TabIndex = 1;
+            this.check_SectorH.UseVisualStyleBackColor = false;
+            this.check_SectorH.Visible = false;
+            // 
+            // check_SectorE
+            // 
+            this.check_SectorE.Appearance = System.Windows.Forms.Appearance.Button;
+            this.check_SectorE.AutoSize = true;
+            this.check_SectorE.BackColor = System.Drawing.Color.Transparent;
+            this.check_SectorE.FlatAppearance.BorderSize = 0;
+            this.check_SectorE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.check_SectorE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_SectorE.Location = new System.Drawing.Point(52, 21);
+            this.check_SectorE.Name = "check_SectorE";
+            this.check_SectorE.Size = new System.Drawing.Size(6, 6);
+            this.check_SectorE.TabIndex = 0;
+            this.check_SectorE.UseVisualStyleBackColor = false;
+            this.check_SectorE.Visible = false;
+            // 
+            // panel92
+            // 
+            this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel92.Controls.Add(this.label48);
+            this.panel92.Location = new System.Drawing.Point(15, 163);
+            this.panel92.Name = "panel92";
+            this.panel92.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel92.Size = new System.Drawing.Size(419, 25);
+            this.panel92.TabIndex = 28;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(30, 1);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(358, 18);
+            this.label48.TabIndex = 2;
+            this.label48.Text = "¿Pertenece a alguno de estos grupos etnicos?";
+            // 
+            // panel91
+            // 
+            this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel91.Controls.Add(this.label47);
+            this.panel91.Location = new System.Drawing.Point(15, 293);
+            this.panel91.Name = "panel91";
+            this.panel91.Size = new System.Drawing.Size(850, 28);
+            this.panel91.TabIndex = 32;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(233, 2);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(374, 18);
+            this.label47.TabIndex = 3;
+            this.label47.Text = "¿Cuál es su nivel educativo más alto alcanzado?";
+            // 
+            // panel87
+            // 
+            this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel87.Controls.Add(this.Si_Pregunta1SS);
+            this.panel87.Controls.Add(this.No_Pregunta1SS);
+            this.panel87.Location = new System.Drawing.Point(698, 26);
+            this.panel87.Name = "panel87";
+            this.panel87.Size = new System.Drawing.Size(158, 32);
+            this.panel87.TabIndex = 39;
+            // 
+            // No_Pregunta1SS
+            // 
+            this.No_Pregunta1SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.No_Pregunta1SS.BackColor = System.Drawing.Color.LightGray;
+            this.No_Pregunta1SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.No_Pregunta1SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.No_Pregunta1SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.No_Pregunta1SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No_Pregunta1SS.ForeColor = System.Drawing.Color.Transparent;
+            this.No_Pregunta1SS.Location = new System.Drawing.Point(78, 0);
+            this.No_Pregunta1SS.Name = "No_Pregunta1SS";
+            this.No_Pregunta1SS.Size = new System.Drawing.Size(79, 31);
+            this.No_Pregunta1SS.TabIndex = 6;
+            this.No_Pregunta1SS.TabStop = true;
+            this.No_Pregunta1SS.UseVisualStyleBackColor = false;
+            this.No_Pregunta1SS.CheckedChanged += new System.EventHandler(this.No_Pregunta1SS_CheckedChanged);
+            // 
+            // Si_Pregunta1SS
+            // 
+            this.Si_Pregunta1SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Si_Pregunta1SS.BackColor = System.Drawing.Color.LightGray;
+            this.Si_Pregunta1SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Si_Pregunta1SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Si_Pregunta1SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Si_Pregunta1SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Si_Pregunta1SS.ForeColor = System.Drawing.Color.Transparent;
+            this.Si_Pregunta1SS.Location = new System.Drawing.Point(-1, 0);
+            this.Si_Pregunta1SS.Name = "Si_Pregunta1SS";
+            this.Si_Pregunta1SS.Size = new System.Drawing.Size(79, 31);
+            this.Si_Pregunta1SS.TabIndex = 7;
+            this.Si_Pregunta1SS.TabStop = true;
+            this.Si_Pregunta1SS.UseVisualStyleBackColor = false;
+            this.Si_Pregunta1SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta1SS_CheckedChanged);
+            // 
+            // panel86
+            // 
+            this.panel86.BackColor = System.Drawing.Color.Black;
+            this.panel86.Location = new System.Drawing.Point(776, 0);
+            this.panel86.Name = "panel86";
+            this.panel86.Size = new System.Drawing.Size(3, 29);
+            this.panel86.TabIndex = 49;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(723, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(28, 24);
+            this.label43.TabIndex = 4;
+            this.label43.Text = "Si";
+            // 
+            // panel84
+            // 
+            this.panel84.BackColor = System.Drawing.Color.Black;
+            this.panel84.Location = new System.Drawing.Point(-2, 404);
+            this.panel84.Name = "panel84";
+            this.panel84.Size = new System.Drawing.Size(882, 5);
+            this.panel84.TabIndex = 49;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(796, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(37, 24);
+            this.label42.TabIndex = 50;
+            this.label42.Text = "No";
+            // 
+            // panel83
+            // 
+            this.panel83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel83.Controls.Add(this.No_Pregunta2SS);
+            this.panel83.Controls.Add(this.Si_Pregunta2SS);
+            this.panel83.Location = new System.Drawing.Point(698, 58);
+            this.panel83.Name = "panel83";
+            this.panel83.Size = new System.Drawing.Size(158, 32);
+            this.panel83.TabIndex = 40;
+            // 
+            // Si_Pregunta2SS
+            // 
+            this.Si_Pregunta2SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Si_Pregunta2SS.BackColor = System.Drawing.Color.LightGray;
+            this.Si_Pregunta2SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Si_Pregunta2SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Si_Pregunta2SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Si_Pregunta2SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Si_Pregunta2SS.ForeColor = System.Drawing.Color.Transparent;
+            this.Si_Pregunta2SS.Location = new System.Drawing.Point(-1, 0);
+            this.Si_Pregunta2SS.Name = "Si_Pregunta2SS";
+            this.Si_Pregunta2SS.Size = new System.Drawing.Size(79, 31);
+            this.Si_Pregunta2SS.TabIndex = 60;
+            this.Si_Pregunta2SS.TabStop = true;
+            this.Si_Pregunta2SS.UseVisualStyleBackColor = false;
+            this.Si_Pregunta2SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta2SS_CheckedChanged);
+            // 
+            // No_Pregunta2SS
+            // 
+            this.No_Pregunta2SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.No_Pregunta2SS.BackColor = System.Drawing.Color.LightGray;
+            this.No_Pregunta2SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.No_Pregunta2SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.No_Pregunta2SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.No_Pregunta2SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No_Pregunta2SS.ForeColor = System.Drawing.Color.Transparent;
+            this.No_Pregunta2SS.Location = new System.Drawing.Point(78, 0);
+            this.No_Pregunta2SS.Name = "No_Pregunta2SS";
+            this.No_Pregunta2SS.Size = new System.Drawing.Size(79, 31);
+            this.No_Pregunta2SS.TabIndex = 70;
+            this.No_Pregunta2SS.TabStop = true;
+            this.No_Pregunta2SS.UseVisualStyleBackColor = false;
+            this.No_Pregunta2SS.CheckedChanged += new System.EventHandler(this.No_Pregunta2SS_CheckedChanged);
+            // 
+            // panel81
+            // 
+            this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel81.Controls.Add(this.No_Pregunta3SS);
+            this.panel81.Controls.Add(this.Si_Pregunta3SS);
+            this.panel81.Location = new System.Drawing.Point(698, 90);
+            this.panel81.Name = "panel81";
+            this.panel81.Size = new System.Drawing.Size(158, 32);
+            this.panel81.TabIndex = 41;
+            // 
+            // Si_Pregunta3SS
+            // 
+            this.Si_Pregunta3SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Si_Pregunta3SS.BackColor = System.Drawing.Color.LightGray;
+            this.Si_Pregunta3SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Si_Pregunta3SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Si_Pregunta3SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Si_Pregunta3SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Si_Pregunta3SS.ForeColor = System.Drawing.Color.Transparent;
+            this.Si_Pregunta3SS.Location = new System.Drawing.Point(-1, -1);
+            this.Si_Pregunta3SS.Name = "Si_Pregunta3SS";
+            this.Si_Pregunta3SS.Size = new System.Drawing.Size(79, 31);
+            this.Si_Pregunta3SS.TabIndex = 69;
+            this.Si_Pregunta3SS.TabStop = true;
+            this.Si_Pregunta3SS.UseVisualStyleBackColor = false;
+            this.Si_Pregunta3SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta3SS_CheckedChanged);
+            // 
+            // No_Pregunta3SS
+            // 
+            this.No_Pregunta3SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.No_Pregunta3SS.BackColor = System.Drawing.Color.LightGray;
+            this.No_Pregunta3SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.No_Pregunta3SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.No_Pregunta3SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.No_Pregunta3SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No_Pregunta3SS.ForeColor = System.Drawing.Color.Transparent;
+            this.No_Pregunta3SS.Location = new System.Drawing.Point(78, -1);
+            this.No_Pregunta3SS.Name = "No_Pregunta3SS";
+            this.No_Pregunta3SS.Size = new System.Drawing.Size(79, 31);
+            this.No_Pregunta3SS.TabIndex = 68;
+            this.No_Pregunta3SS.TabStop = true;
+            this.No_Pregunta3SS.UseVisualStyleBackColor = false;
+            this.No_Pregunta3SS.CheckedChanged += new System.EventHandler(this.No_Pregunta3SS_CheckedChanged);
+            // 
+            // panel79
+            // 
+            this.panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel79.Controls.Add(this.No_Pregunta4SS);
+            this.panel79.Controls.Add(this.Si_Pregunta4SS);
+            this.panel79.Location = new System.Drawing.Point(698, 122);
+            this.panel79.Name = "panel79";
+            this.panel79.Size = new System.Drawing.Size(158, 32);
+            this.panel79.TabIndex = 42;
+            // 
+            // Si_Pregunta4SS
+            // 
+            this.Si_Pregunta4SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Si_Pregunta4SS.BackColor = System.Drawing.Color.LightGray;
+            this.Si_Pregunta4SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Si_Pregunta4SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Si_Pregunta4SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Si_Pregunta4SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Si_Pregunta4SS.ForeColor = System.Drawing.Color.Transparent;
+            this.Si_Pregunta4SS.Location = new System.Drawing.Point(-1, -1);
+            this.Si_Pregunta4SS.Name = "Si_Pregunta4SS";
+            this.Si_Pregunta4SS.Size = new System.Drawing.Size(79, 31);
+            this.Si_Pregunta4SS.TabIndex = 67;
+            this.Si_Pregunta4SS.TabStop = true;
+            this.Si_Pregunta4SS.UseVisualStyleBackColor = false;
+            this.Si_Pregunta4SS.CheckedChanged += new System.EventHandler(this.Si_Pregunta4SS_CheckedChanged);
+            // 
+            // No_Pregunta4SS
+            // 
+            this.No_Pregunta4SS.Appearance = System.Windows.Forms.Appearance.Button;
+            this.No_Pregunta4SS.BackColor = System.Drawing.Color.LightGray;
+            this.No_Pregunta4SS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.No_Pregunta4SS.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.No_Pregunta4SS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.No_Pregunta4SS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No_Pregunta4SS.ForeColor = System.Drawing.Color.Transparent;
+            this.No_Pregunta4SS.Location = new System.Drawing.Point(78, -1);
+            this.No_Pregunta4SS.Name = "No_Pregunta4SS";
+            this.No_Pregunta4SS.Size = new System.Drawing.Size(79, 31);
+            this.No_Pregunta4SS.TabIndex = 66;
+            this.No_Pregunta4SS.TabStop = true;
+            this.No_Pregunta4SS.UseVisualStyleBackColor = false;
+            this.No_Pregunta4SS.CheckedChanged += new System.EventHandler(this.No_Pregunta4SS_CheckedChanged);
+            // 
+            // panel74
+            // 
+            this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel74.Controls.Add(this.label41);
+            this.panel74.Location = new System.Drawing.Point(-2, 26);
+            this.panel74.Name = "panel74";
+            this.panel74.Size = new System.Drawing.Size(694, 34);
+            this.panel74.TabIndex = 41;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(5, 9);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(320, 13);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "¿Está afiliado/a a algún programa de seguridad social?";
+            // 
+            // panel70
+            // 
+            this.panel70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel70.Controls.Add(this.label37);
+            this.panel70.Location = new System.Drawing.Point(-2, 60);
+            this.panel70.Name = "panel70";
+            this.panel70.Size = new System.Drawing.Size(694, 31);
+            this.panel70.TabIndex = 42;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(5, 7);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(356, 13);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "¿Ha sido víctima de algún tipo de discriminación o violencia?";
+            // 
+            // panel68
+            // 
+            this.panel68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel68.Controls.Add(this.label35);
+            this.panel68.Location = new System.Drawing.Point(-2, 91);
+            this.panel68.Name = "panel68";
+            this.panel68.Size = new System.Drawing.Size(694, 32);
+            this.panel68.TabIndex = 43;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(5, 8);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(575, 13);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "¿Tiene acceso a servicios educativos, como escuelas, universidades o programas de" +
+    " capacitación?";
+            // 
+            // panel66
+            // 
+            this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel66.Controls.Add(this.label26);
+            this.panel66.Location = new System.Drawing.Point(-2, 123);
+            this.panel66.Name = "panel66";
+            this.panel66.Size = new System.Drawing.Size(694, 32);
+            this.panel66.TabIndex = 53;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(5, 8);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(439, 13);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "¿Tiene acceso a servicios de transporte público o privado en su área local?";
+            // 
+            // panel64
+            // 
+            this.panel64.Controls.Add(this.Opc_Ninguno);
+            this.panel64.Controls.Add(this.Opc_Chimila);
+            this.panel64.Controls.Add(this.Opc_Yucpa);
+            this.panel64.Controls.Add(this.Opc_Wiwa);
+            this.panel64.Controls.Add(this.Opc_Kankuamo);
+            this.panel64.Controls.Add(this.Opc_Arhuaco);
+            this.panel64.Controls.Add(this.Opc_Kogui);
+            this.panel64.Location = new System.Drawing.Point(15, 196);
+            this.panel64.Name = "panel64";
+            this.panel64.Size = new System.Drawing.Size(419, 91);
+            this.panel64.TabIndex = 33;
+            // 
+            // Opc_Kogui
+            // 
+            this.Opc_Kogui.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Kogui.FlatAppearance.BorderSize = 0;
+            this.Opc_Kogui.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Kogui.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Kogui.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Kogui.Location = new System.Drawing.Point(161, 2);
+            this.Opc_Kogui.Name = "Opc_Kogui";
+            this.Opc_Kogui.Size = new System.Drawing.Size(92, 27);
+            this.Opc_Kogui.TabIndex = 6;
+            this.Opc_Kogui.TabStop = true;
+            this.Opc_Kogui.Text = "Kogui";
+            this.Opc_Kogui.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Kogui.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Arhuaco
+            // 
+            this.Opc_Arhuaco.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Arhuaco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Arhuaco.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Arhuaco.FlatAppearance.BorderSize = 0;
+            this.Opc_Arhuaco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Arhuaco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Arhuaco.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Arhuaco.Location = new System.Drawing.Point(13, 3);
+            this.Opc_Arhuaco.Name = "Opc_Arhuaco";
+            this.Opc_Arhuaco.Size = new System.Drawing.Size(99, 21);
+            this.Opc_Arhuaco.TabIndex = 5;
+            this.Opc_Arhuaco.TabStop = true;
+            this.Opc_Arhuaco.Text = "Arhuaco";
+            this.Opc_Arhuaco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Arhuaco.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Kankuamo
+            // 
+            this.Opc_Kankuamo.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Kankuamo.FlatAppearance.BorderSize = 0;
+            this.Opc_Kankuamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Kankuamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Kankuamo.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Kankuamo.Location = new System.Drawing.Point(289, 3);
+            this.Opc_Kankuamo.Name = "Opc_Kankuamo";
+            this.Opc_Kankuamo.Size = new System.Drawing.Size(110, 27);
+            this.Opc_Kankuamo.TabIndex = 7;
+            this.Opc_Kankuamo.TabStop = true;
+            this.Opc_Kankuamo.Text = "Kankuamo";
+            this.Opc_Kankuamo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Kankuamo.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Wiwa
+            // 
+            this.Opc_Wiwa.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Wiwa.FlatAppearance.BorderSize = 0;
+            this.Opc_Wiwa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Wiwa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Wiwa.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Wiwa.Location = new System.Drawing.Point(13, 30);
+            this.Opc_Wiwa.Name = "Opc_Wiwa";
+            this.Opc_Wiwa.Size = new System.Drawing.Size(99, 27);
+            this.Opc_Wiwa.TabIndex = 8;
+            this.Opc_Wiwa.TabStop = true;
+            this.Opc_Wiwa.Text = "Wiwa";
+            this.Opc_Wiwa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Wiwa.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Yucpa
+            // 
+            this.Opc_Yucpa.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Yucpa.FlatAppearance.BorderSize = 0;
+            this.Opc_Yucpa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Yucpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Yucpa.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Yucpa.Location = new System.Drawing.Point(161, 30);
+            this.Opc_Yucpa.Name = "Opc_Yucpa";
+            this.Opc_Yucpa.Size = new System.Drawing.Size(92, 27);
+            this.Opc_Yucpa.TabIndex = 9;
+            this.Opc_Yucpa.TabStop = true;
+            this.Opc_Yucpa.Text = "Yucpa";
+            this.Opc_Yucpa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Yucpa.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Chimila
+            // 
+            this.Opc_Chimila.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Chimila.FlatAppearance.BorderSize = 0;
+            this.Opc_Chimila.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Chimila.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Chimila.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Chimila.Location = new System.Drawing.Point(289, 30);
+            this.Opc_Chimila.Name = "Opc_Chimila";
+            this.Opc_Chimila.Size = new System.Drawing.Size(107, 27);
+            this.Opc_Chimila.TabIndex = 10;
+            this.Opc_Chimila.TabStop = true;
+            this.Opc_Chimila.Text = "Chimila";
+            this.Opc_Chimila.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Chimila.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Ninguno
+            // 
+            this.Opc_Ninguno.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Ninguno.FlatAppearance.BorderSize = 0;
+            this.Opc_Ninguno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Ninguno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Ninguno.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Ninguno.Location = new System.Drawing.Point(161, 56);
+            this.Opc_Ninguno.Name = "Opc_Ninguno";
+            this.Opc_Ninguno.Size = new System.Drawing.Size(92, 27);
+            this.Opc_Ninguno.TabIndex = 11;
+            this.Opc_Ninguno.TabStop = true;
+            this.Opc_Ninguno.Text = "Ninguno";
+            this.Opc_Ninguno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Ninguno.UseVisualStyleBackColor = false;
+            // 
+            // panel62
+            // 
+            this.panel62.Controls.Add(this.Opc_OtroEducacion);
+            this.panel62.Controls.Add(this.Opc_Universitaria);
+            this.panel62.Controls.Add(this.Opc_Tecnica);
+            this.panel62.Controls.Add(this.Opc_Secundaria);
+            this.panel62.Controls.Add(this.Opc_Primaria);
+            this.panel62.Controls.Add(this.Opc_SinEstudio);
+            this.panel62.Location = new System.Drawing.Point(15, 327);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(850, 68);
+            this.panel62.TabIndex = 35;
+            // 
+            // Opc_SinEstudio
+            // 
+            this.Opc_SinEstudio.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_SinEstudio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_SinEstudio.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_SinEstudio.FlatAppearance.BorderSize = 0;
+            this.Opc_SinEstudio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_SinEstudio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_SinEstudio.ForeColor = System.Drawing.Color.Black;
+            this.Opc_SinEstudio.Location = new System.Drawing.Point(34, 3);
+            this.Opc_SinEstudio.Name = "Opc_SinEstudio";
+            this.Opc_SinEstudio.Size = new System.Drawing.Size(205, 27);
+            this.Opc_SinEstudio.TabIndex = 5;
+            this.Opc_SinEstudio.TabStop = true;
+            this.Opc_SinEstudio.Text = "Sin educación Formal";
+            this.Opc_SinEstudio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_SinEstudio.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Primaria
+            // 
+            this.Opc_Primaria.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Primaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Primaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Primaria.FlatAppearance.BorderSize = 0;
+            this.Opc_Primaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Primaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Primaria.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Primaria.Location = new System.Drawing.Point(346, 3);
+            this.Opc_Primaria.Name = "Opc_Primaria";
+            this.Opc_Primaria.Size = new System.Drawing.Size(205, 27);
+            this.Opc_Primaria.TabIndex = 8;
+            this.Opc_Primaria.TabStop = true;
+            this.Opc_Primaria.Text = "Educacion Primaria";
+            this.Opc_Primaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Primaria.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Secundaria
+            // 
+            this.Opc_Secundaria.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Secundaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Secundaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Secundaria.FlatAppearance.BorderSize = 0;
+            this.Opc_Secundaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Secundaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Secundaria.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Secundaria.Location = new System.Drawing.Point(613, 3);
+            this.Opc_Secundaria.Name = "Opc_Secundaria";
+            this.Opc_Secundaria.Size = new System.Drawing.Size(205, 27);
+            this.Opc_Secundaria.TabIndex = 9;
+            this.Opc_Secundaria.TabStop = true;
+            this.Opc_Secundaria.Text = "Educación secundaria";
+            this.Opc_Secundaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Secundaria.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Tecnica
+            // 
+            this.Opc_Tecnica.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Tecnica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Tecnica.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Tecnica.FlatAppearance.BorderSize = 0;
+            this.Opc_Tecnica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Tecnica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Tecnica.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Tecnica.Location = new System.Drawing.Point(33, 33);
+            this.Opc_Tecnica.Name = "Opc_Tecnica";
+            this.Opc_Tecnica.Size = new System.Drawing.Size(261, 27);
+            this.Opc_Tecnica.TabIndex = 10;
+            this.Opc_Tecnica.TabStop = true;
+            this.Opc_Tecnica.Text = "Educación técnica o vocacional";
+            this.Opc_Tecnica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Tecnica.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Universitaria
+            // 
+            this.Opc_Universitaria.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Universitaria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Universitaria.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Universitaria.FlatAppearance.BorderSize = 0;
+            this.Opc_Universitaria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Universitaria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Universitaria.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Universitaria.Location = new System.Drawing.Point(346, 33);
+            this.Opc_Universitaria.Name = "Opc_Universitaria";
+            this.Opc_Universitaria.Size = new System.Drawing.Size(205, 27);
+            this.Opc_Universitaria.TabIndex = 11;
+            this.Opc_Universitaria.TabStop = true;
+            this.Opc_Universitaria.Text = "Educación universitaria";
+            this.Opc_Universitaria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Universitaria.UseVisualStyleBackColor = false;
+            // 
+            // Opc_OtroEducacion
+            // 
+            this.Opc_OtroEducacion.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_OtroEducacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_OtroEducacion.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_OtroEducacion.FlatAppearance.BorderSize = 0;
+            this.Opc_OtroEducacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_OtroEducacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_OtroEducacion.ForeColor = System.Drawing.Color.Black;
+            this.Opc_OtroEducacion.Location = new System.Drawing.Point(613, 33);
+            this.Opc_OtroEducacion.Name = "Opc_OtroEducacion";
+            this.Opc_OtroEducacion.Size = new System.Drawing.Size(205, 27);
+            this.Opc_OtroEducacion.TabIndex = 12;
+            this.Opc_OtroEducacion.TabStop = true;
+            this.Opc_OtroEducacion.Text = "Otro";
+            this.Opc_OtroEducacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_OtroEducacion.UseVisualStyleBackColor = false;
+            // 
+            // panel61
+            // 
+            this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel61.Controls.Add(this.label24);
+            this.panel61.Location = new System.Drawing.Point(446, 163);
+            this.panel61.Name = "panel61";
+            this.panel61.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel61.Size = new System.Drawing.Size(422, 25);
+            this.panel61.TabIndex = 29;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(28, 1);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(246, 18);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "¿Cuál es su estado civil actual?";
+            // 
+            // panel63
+            // 
+            this.panel63.Controls.Add(this.Opc_OtroCivil);
+            this.panel63.Controls.Add(this.Opc_Divorciado);
+            this.panel63.Controls.Add(this.Opc_Viudo);
+            this.panel63.Controls.Add(this.Opc_Soltero);
+            this.panel63.Controls.Add(this.Opc_Casado);
+            this.panel63.Location = new System.Drawing.Point(446, 196);
+            this.panel63.Name = "panel63";
+            this.panel63.Size = new System.Drawing.Size(419, 91);
+            this.panel63.TabIndex = 34;
+            // 
+            // Opc_Casado
+            // 
+            this.Opc_Casado.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Casado.FlatAppearance.BorderSize = 0;
+            this.Opc_Casado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Casado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Casado.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Casado.Location = new System.Drawing.Point(161, 2);
+            this.Opc_Casado.Name = "Opc_Casado";
+            this.Opc_Casado.Size = new System.Drawing.Size(103, 27);
+            this.Opc_Casado.TabIndex = 6;
+            this.Opc_Casado.TabStop = true;
+            this.Opc_Casado.Text = "Casado/a";
+            this.Opc_Casado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Casado.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Soltero
+            // 
+            this.Opc_Soltero.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Soltero.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Opc_Soltero.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Opc_Soltero.FlatAppearance.BorderSize = 0;
+            this.Opc_Soltero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Soltero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Soltero.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Soltero.Location = new System.Drawing.Point(13, 3);
+            this.Opc_Soltero.Name = "Opc_Soltero";
+            this.Opc_Soltero.Size = new System.Drawing.Size(99, 21);
+            this.Opc_Soltero.TabIndex = 5;
+            this.Opc_Soltero.TabStop = true;
+            this.Opc_Soltero.Text = "Soltero/a";
+            this.Opc_Soltero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Soltero.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Viudo
+            // 
+            this.Opc_Viudo.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Viudo.FlatAppearance.BorderSize = 0;
+            this.Opc_Viudo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Viudo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Viudo.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Viudo.Location = new System.Drawing.Point(295, 2);
+            this.Opc_Viudo.Name = "Opc_Viudo";
+            this.Opc_Viudo.Size = new System.Drawing.Size(110, 27);
+            this.Opc_Viudo.TabIndex = 7;
+            this.Opc_Viudo.TabStop = true;
+            this.Opc_Viudo.Text = "Viudo/a";
+            this.Opc_Viudo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Viudo.UseVisualStyleBackColor = false;
+            // 
+            // Opc_Divorciado
+            // 
+            this.Opc_Divorciado.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_Divorciado.FlatAppearance.BorderSize = 0;
+            this.Opc_Divorciado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_Divorciado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_Divorciado.ForeColor = System.Drawing.Color.Black;
+            this.Opc_Divorciado.Location = new System.Drawing.Point(60, 43);
+            this.Opc_Divorciado.Name = "Opc_Divorciado";
+            this.Opc_Divorciado.Size = new System.Drawing.Size(134, 27);
+            this.Opc_Divorciado.TabIndex = 9;
+            this.Opc_Divorciado.TabStop = true;
+            this.Opc_Divorciado.Text = "Divorciado/a";
+            this.Opc_Divorciado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_Divorciado.UseVisualStyleBackColor = false;
+            // 
+            // Opc_OtroCivil
+            // 
+            this.Opc_OtroCivil.BackColor = System.Drawing.Color.Transparent;
+            this.Opc_OtroCivil.FlatAppearance.BorderSize = 0;
+            this.Opc_OtroCivil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Opc_OtroCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Opc_OtroCivil.ForeColor = System.Drawing.Color.Black;
+            this.Opc_OtroCivil.Location = new System.Drawing.Point(230, 43);
+            this.Opc_OtroCivil.Name = "Opc_OtroCivil";
+            this.Opc_OtroCivil.Size = new System.Drawing.Size(107, 27);
+            this.Opc_OtroCivil.TabIndex = 10;
+            this.Opc_OtroCivil.TabStop = true;
+            this.Opc_OtroCivil.Text = "Otro";
+            this.Opc_OtroCivil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Opc_OtroCivil.UseVisualStyleBackColor = false;
+            // 
+            // Panel_SS
+            // 
+            this.Panel_SS.BackColor = System.Drawing.Color.White;
+            this.Panel_SS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel_SS.Controls.Add(this.panel_Finalizado);
+            this.Panel_SS.Controls.Add(this.Panel_Mensaje);
+            this.Panel_SS.Controls.Add(this.panel63);
+            this.Panel_SS.Controls.Add(this.panel61);
+            this.Panel_SS.Controls.Add(this.panel62);
+            this.Panel_SS.Controls.Add(this.panel64);
+            this.Panel_SS.Controls.Add(this.panel66);
+            this.Panel_SS.Controls.Add(this.panel68);
+            this.Panel_SS.Controls.Add(this.panel70);
+            this.Panel_SS.Controls.Add(this.panel74);
+            this.Panel_SS.Controls.Add(this.panel79);
+            this.Panel_SS.Controls.Add(this.panel81);
+            this.Panel_SS.Controls.Add(this.panel83);
+            this.Panel_SS.Controls.Add(this.label42);
+            this.Panel_SS.Controls.Add(this.panel84);
+            this.Panel_SS.Controls.Add(this.label43);
+            this.Panel_SS.Controls.Add(this.panel86);
+            this.Panel_SS.Controls.Add(this.panel87);
+            this.Panel_SS.Controls.Add(this.panel91);
+            this.Panel_SS.Controls.Add(this.panel92);
+            this.Panel_SS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Panel_SS.Location = new System.Drawing.Point(0, 0);
+            this.Panel_SS.Name = "Panel_SS";
+            this.Panel_SS.Size = new System.Drawing.Size(879, 408);
+            this.Panel_SS.TabIndex = 62;
+            this.Panel_SS.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(31, 52);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(354, 18);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "Esta seguro que desea finalizar el formulario?";
+            // 
+            // Finalizar_Si
+            // 
+            this.Finalizar_Si.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Finalizar_Si.Location = new System.Drawing.Point(52, 123);
+            this.Finalizar_Si.Name = "Finalizar_Si";
+            this.Finalizar_Si.Size = new System.Drawing.Size(104, 60);
+            this.Finalizar_Si.TabIndex = 1;
+            this.Finalizar_Si.Text = "SI";
+            this.Finalizar_Si.UseVisualStyleBackColor = true;
+            this.Finalizar_Si.Click += new System.EventHandler(this.Finalizar_Si_Click);
+            // 
+            // Finalizar_No
+            // 
+            this.Finalizar_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Finalizar_No.Location = new System.Drawing.Point(254, 123);
+            this.Finalizar_No.Name = "Finalizar_No";
+            this.Finalizar_No.Size = new System.Drawing.Size(104, 60);
+            this.Finalizar_No.TabIndex = 2;
+            this.Finalizar_No.Text = "NO";
+            this.Finalizar_No.UseVisualStyleBackColor = true;
+            this.Finalizar_No.Click += new System.EventHandler(this.Finalizar_No_Click);
+            // 
+            // Panel_Mensaje
+            // 
+            this.Panel_Mensaje.BackColor = System.Drawing.Color.White;
+            this.Panel_Mensaje.Controls.Add(this.Finalizar_No);
+            this.Panel_Mensaje.Controls.Add(this.Finalizar_Si);
+            this.Panel_Mensaje.Controls.Add(this.label30);
+            this.Panel_Mensaje.Location = new System.Drawing.Point(260, 157);
+            this.Panel_Mensaje.Name = "Panel_Mensaje";
+            this.Panel_Mensaje.Size = new System.Drawing.Size(418, 204);
+            this.Panel_Mensaje.TabIndex = 54;
+            this.Panel_Mensaje.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(237, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(423, 286);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(229, 332);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(463, 39);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "CENSO FINALIZADO CORRECTAMENTE";
+            // 
+            // panel_Finalizado
+            // 
+            this.panel_Finalizado.Controls.Add(this.label36);
+            this.panel_Finalizado.Controls.Add(this.pictureBox1);
+            this.panel_Finalizado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Finalizado.Location = new System.Drawing.Point(0, 0);
+            this.panel_Finalizado.Name = "panel_Finalizado";
+            this.panel_Finalizado.Size = new System.Drawing.Size(877, 406);
+            this.panel_Finalizado.TabIndex = 55;
+            this.panel_Finalizado.Visible = false;
+            // 
             // Formulario_Encuestas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3313,52 +3313,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formulario_Encuestas";
             this.Text = "Formulario_Encuestas";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Sectores_Finalizado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorH)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Check_Nofinalizado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkNo_SectS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorH)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.Panel_SE.ResumeLayout(false);
             this.Panel_SE.PerformLayout();
             this.Panel_SH.ResumeLayout(false);
             this.Panel_SH.PerformLayout();
-            this.Panel_SS.ResumeLayout(false);
-            this.Panel_SS.PerformLayout();
-            this.panel_Finalizado.ResumeLayout(false);
-            this.panel_Finalizado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.Panel_Mensaje.ResumeLayout(false);
-            this.Panel_Mensaje.PerformLayout();
-            this.panel63.ResumeLayout(false);
-            this.panel61.ResumeLayout(false);
-            this.panel61.PerformLayout();
-            this.panel62.ResumeLayout(false);
-            this.panel64.ResumeLayout(false);
-            this.panel66.ResumeLayout(false);
-            this.panel66.PerformLayout();
-            this.panel68.ResumeLayout(false);
-            this.panel68.PerformLayout();
-            this.panel70.ResumeLayout(false);
-            this.panel70.PerformLayout();
-            this.panel74.ResumeLayout(false);
-            this.panel74.PerformLayout();
-            this.panel79.ResumeLayout(false);
-            this.panel81.ResumeLayout(false);
-            this.panel83.ResumeLayout(false);
-            this.panel87.ResumeLayout(false);
-            this.panel91.ResumeLayout(false);
-            this.panel91.PerformLayout();
-            this.panel92.ResumeLayout(false);
-            this.panel92.PerformLayout();
             this.panel60.ResumeLayout(false);
             this.panel59.ResumeLayout(false);
             this.panel58.ResumeLayout(false);
@@ -3433,6 +3391,48 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel29.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sectores_Finalizado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorSi_SectorH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Check_Nofinalizado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkNo_SectS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SectorNo_SectorH)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel92.ResumeLayout(false);
+            this.panel92.PerformLayout();
+            this.panel91.ResumeLayout(false);
+            this.panel91.PerformLayout();
+            this.panel87.ResumeLayout(false);
+            this.panel83.ResumeLayout(false);
+            this.panel81.ResumeLayout(false);
+            this.panel79.ResumeLayout(false);
+            this.panel74.ResumeLayout(false);
+            this.panel74.PerformLayout();
+            this.panel70.ResumeLayout(false);
+            this.panel70.PerformLayout();
+            this.panel68.ResumeLayout(false);
+            this.panel68.PerformLayout();
+            this.panel66.ResumeLayout(false);
+            this.panel66.PerformLayout();
+            this.panel64.ResumeLayout(false);
+            this.panel62.ResumeLayout(false);
+            this.panel61.ResumeLayout(false);
+            this.panel61.PerformLayout();
+            this.panel63.ResumeLayout(false);
+            this.Panel_SS.ResumeLayout(false);
+            this.Panel_SS.PerformLayout();
+            this.Panel_Mensaje.ResumeLayout(false);
+            this.Panel_Mensaje.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_Finalizado.ResumeLayout(false);
+            this.panel_Finalizado.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3602,7 +3602,20 @@
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.Panel panel52;
         private System.Windows.Forms.Panel panel53;
+        private System.Windows.Forms.Button Btn_Finalizar;
+        private System.Windows.Forms.Button Btn_Salir;
+        private System.Windows.Forms.RadioButton Opc_Estrato6;
+        private System.Windows.Forms.RadioButton Opc_Estrato5;
+        private System.Windows.Forms.RadioButton Opc_Estrato3;
+        private System.Windows.Forms.RadioButton Opc_Estrato4;
+        private System.Windows.Forms.RadioButton Opc_Estrato2;
+        private System.Windows.Forms.RadioButton Opc_Estrato1;
+        private System.Windows.Forms.Label Lbl_Estrato;
         private System.Windows.Forms.Panel Panel_SS;
+        private System.Windows.Forms.Panel Panel_Mensaje;
+        private System.Windows.Forms.Button Finalizar_No;
+        private System.Windows.Forms.Button Finalizar_Si;
+        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel63;
         private System.Windows.Forms.RadioButton Opc_OtroCivil;
         private System.Windows.Forms.RadioButton Opc_Divorciado;
@@ -3654,21 +3667,8 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Panel panel92;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Panel Panel_Mensaje;
-        private System.Windows.Forms.Button Finalizar_No;
-        private System.Windows.Forms.Button Finalizar_Si;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Button Btn_Finalizar;
         private System.Windows.Forms.Panel panel_Finalizado;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Btn_Salir;
-        private System.Windows.Forms.RadioButton Opc_Estrato6;
-        private System.Windows.Forms.RadioButton Opc_Estrato5;
-        private System.Windows.Forms.RadioButton Opc_Estrato3;
-        private System.Windows.Forms.RadioButton Opc_Estrato4;
-        private System.Windows.Forms.RadioButton Opc_Estrato2;
-        private System.Windows.Forms.RadioButton Opc_Estrato1;
-        private System.Windows.Forms.Label Lbl_Estrato;
     }
 }

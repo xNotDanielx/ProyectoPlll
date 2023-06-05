@@ -40,5 +40,91 @@ namespace Logica
         {
             repositorioSH.InsertDoc(Doc);
         }
+        int Count = 0;
+        public int ContarRural()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                if (item.Zona == "Rural")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+        }
+        public int ContarUrbana()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                if (item.Zona == "Urbana")
+                {
+                    Count++;
+                }
+            }
+            return Count;
+
+        }
+        public int ContarAgua()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                Count = Count + item.Servicio_Agua;
+            }
+            return Count;
+
+        }
+        public int ContarLuz()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+                {
+                    Count = Count + item.Servicio_Luz;
+                }
+                return Count;
+
+        }
+        public int ContarGas()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                Count = Count + item.Servicio_Gas;
+            }
+            return Count;
+
+        }
+        public int ContarSaneamiento()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                Count = Count + item.Saneamiento;
+            }
+            return Count;
+
+        }
+        public int ContarVehiculo()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                Count = Count + item.Vehiculo;
+            }
+            return Count;
+
+        }
+        public int ContarInternet()
+        {
+            Count = 0;
+            foreach (var item in GetAll())
+            {
+                Count = Count + item.Internet;
+            }
+            return Count;
+
+        }
     }
 }

@@ -43,13 +43,14 @@ namespace Datos
             SH.Servicio_Gas = dataReader.GetInt32(5);
             SH.Saneamiento = dataReader.GetInt32(6);
             SH.Adicional = dataReader.GetInt32(7);
-            SH.Baños = dataReader.GetString(8);
-            SH.Tipo_Vivienda = dataReader.GetString(9);
-            SH.Ingreso = dataReader.GetString(10);
-            SH.Internet = dataReader.GetInt32(11);
-            SH.Cable = dataReader.GetInt32(12);
-            SH.Telefono = dataReader.GetInt32(13);
-            SH.Vehiculo = dataReader.GetInt32(14);
+            SH.Habitaciones = dataReader.GetString(8);
+            SH.Baños = dataReader.GetString(9);
+            SH.Tipo_Vivienda = dataReader.GetString(10);
+            SH.Ingreso = dataReader.GetString(11);
+            SH.Internet = dataReader.GetInt32(12);
+            SH.Cable = dataReader.GetInt32(13);
+            SH.Telefono = dataReader.GetInt32(14);
+            SH.Vehiculo = dataReader.GetInt32(15);
                  
 
 
@@ -106,7 +107,7 @@ namespace Datos
             {
                 Comando.CommandText = "Update Sector_Hogar SET Documento = @Documento,Zona = @Zona,Propietario = @Propietario," +
                     "Servicio_Agua = @Servicio_Agua,Servicio_Luz = @Servicio_Luz,Servicio_Gas = @Servicio_Gas," +
-                    "Saneamiento = @Saneamiento,Adicional = @Adicional,Baños = @Baños," +
+                    "Saneamiento = @Saneamiento,Adicional = @Adicional,Habitaciones = @Habitaciones,Baños = @Baños," +
                     "Tipo_Vivienda = @Tipo_Vivienda,Ingreso = @Ingreso, Internet = @Internet, Cable = @Cable, Telefono = @Telefono, Vehiculo = @Vehiculo " +
                     "where Documento = @Documento;";
                 Comando.Parameters.Add("Documento", SqlDbType.VarChar).Value = SH.Documento;
@@ -117,6 +118,7 @@ namespace Datos
                 Comando.Parameters.Add("Servicio_Gas", SqlDbType.Int).Value = SH.Servicio_Gas;
                 Comando.Parameters.Add("Saneamiento", SqlDbType.Int).Value = SH.Saneamiento;
                 Comando.Parameters.Add("Adicional", SqlDbType.Int).Value = SH.Adicional;
+                Comando.Parameters.Add("Habitaciones", SqlDbType.VarChar).Value = SH.Habitaciones;
                 Comando.Parameters.Add("Baños", SqlDbType.VarChar).Value = SH.Baños;
                 Comando.Parameters.Add("Tipo_Vivienda", SqlDbType.VarChar).Value = SH.Tipo_Vivienda;
                 Comando.Parameters.Add("Ingreso", SqlDbType.VarChar).Value = SH.Ingreso;
