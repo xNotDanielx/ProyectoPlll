@@ -182,3 +182,5 @@ D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debu
 D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\bin\Debug\Datos.pdb
 D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.csproj.CopyComplete
 D:\Usuarios\David\Documents\Proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Ayuda.resources
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Ayuda.resources
+C:\Users\victo\Documents\proyecto\ProyectoPlll\Censo\PresentacionGUI\obj\Debug\PresentacionGUI.Frm_Graficas.resources
