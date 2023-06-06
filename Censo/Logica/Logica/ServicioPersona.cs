@@ -44,7 +44,7 @@ namespace Logica
             return repositorioPersona.GetBy(Columna, Doc);
         }
 
-        public void updateSectorComplete(String Sector, String Doc)
+        public void updateSectorComplete(string Sector, string Doc)
         {
             repositorioPersona.UpdateSectorComplete(Sector, Doc);
         }

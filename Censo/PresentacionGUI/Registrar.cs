@@ -429,7 +429,6 @@ namespace PresentacionGUI
                 if(item.Documento == SEDoc.Documento)
                 {
                     Doc = item.Documento;
-                    break;
                 }
             }
             return Doc;
@@ -443,7 +442,6 @@ namespace PresentacionGUI
                 if (item.Documento == PersonaDoc.Documento)
                 {
                     Docp = item;
-                    break;
                 }
             }
             return Docp;

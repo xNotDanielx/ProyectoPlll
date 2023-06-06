@@ -121,7 +121,7 @@ namespace Datos
             }
         }
 
-        public void UpdateSectorComplete(string Sector, String Doc)
+        public void UpdateSectorComplete(string Sector, string Doc)
         {
             using (var Comando = sqlcon.CreateCommand())
             {

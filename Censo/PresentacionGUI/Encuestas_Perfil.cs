@@ -25,7 +25,6 @@ namespace PresentacionGUI
         Persona persona = new Persona();
         Logica.ServicioLogin sl = new Logica.ServicioLogin(configConnnection.ConnectionString);
         Logica.ServicioPersona sp = new Logica.ServicioPersona(configConnnection.ConnectionString);        
-        Form_Registrar Registrar = new Form_Registrar();
         int i;
         public Encuestas_Perfil()
         {
@@ -60,11 +59,13 @@ namespace PresentacionGUI
                 Iniciar_Info();
             }
         }
-        public void Info_Persona(string NdUsuario, string InfoUsuario)
+        public string Info_Persona(string NdUsuario, string InfoUsuario)
         {
             login.Numero_Documento = NdUsuario;
             persona.Documento = InfoUsuario;
+            return persona.Documento;
         }
+
         public void Iniciar_Info()
         {
             Panel_Encuesta.Visible = true;
@@ -131,15 +132,15 @@ namespace PresentacionGUI
         {
         }
 
-        Persona DocPersona;
-        public Persona guardarDoc()
-        {
-            foreach (var item in sp.GetAll())
-            {
-                DocPersona = Registrar.GuardarDocPersona(item);
-            }         
-            return DocPersona;
-        }
+        //Persona DocPersona;
+        //public Persona guardarDoc()
+        //{
+        //    foreach (var item in sp.GetAll())
+        //    {
+        //        DocPersona = Registrar.GuardarDocPersona(item);
+        //    }         
+        //    return DocPersona;
+        //}
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -152,6 +153,7 @@ namespace PresentacionGUI
                 else
                 {
                     Formulario_Encuestas forme = new Formulario_Encuestas();
+                    forme.Info_Persona(Info_Persona(login.Numero_Documento, persona.Documento));
                     forme.Show();
                 }
             }                        

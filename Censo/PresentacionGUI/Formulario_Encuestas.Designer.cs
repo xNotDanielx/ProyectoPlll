@@ -2337,7 +2337,6 @@
             // 
             this.SectorNo_SectorH.BackColor = System.Drawing.Color.Transparent;
             this.SectorNo_SectorH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SectorNo_SectorH.Image = ((System.Drawing.Image)(resources.GetObject("SectorNo_SectorH.Image")));
             this.SectorNo_SectorH.Location = new System.Drawing.Point(335, 34);
             this.SectorNo_SectorH.Name = "SectorNo_SectorH";
             this.SectorNo_SectorH.Size = new System.Drawing.Size(44, 42);

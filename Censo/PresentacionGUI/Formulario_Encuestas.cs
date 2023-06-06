@@ -30,7 +30,7 @@ namespace PresentacionGUI
 
         public Formulario_Encuestas()
         {
-            InitializeComponent();            
+            InitializeComponent();                
         }
         public void Cerrar()
         {
@@ -58,6 +58,11 @@ namespace PresentacionGUI
         bool SE_Completado = false;
         bool SH_Completado = false;
         bool SS_Completado = false;
+
+        public void Info_Persona(string DocPersona)
+        {
+            persona.Documento = DocPersona;
+        }
 
         private void Btn_Siguiente_Click(object sender, EventArgs e)
         {
@@ -1285,7 +1290,7 @@ namespace PresentacionGUI
 
         private void Finalizar_Si_Click(object sender, EventArgs e)
         {
-            panel_Finalizado.Visible = true;
+            
             Panel_Mensaje.Visible = false;
             SectorSi_SectorS.Visible = true;
             Sectores_Finalizado.Visible = true;
@@ -1297,14 +1302,14 @@ namespace PresentacionGUI
             Btn_Cancelar.Visible = false;
             Btn_Finalizar.Visible = false;
             Btn_Salir.Visible = true;
-            SE.Documento = Doc();
-            SH.Documento = Doc();
-            SS.Documento = Doc();
+            SE.Documento = persona.Documento;
+            SH.Documento = persona.Documento;
+            SS.Documento = persona.Documento;
             logicaSE.Update(SE);
             logicaSH.Update(SH);
             logicaSS.Update(SS);            
-            persona.Sectores_Completados = "Completado";
-            logicaP.updateSectorComplete(persona.Sectores_Completados, Doc());
+            logicaP.updateSectorComplete("Completado", persona.Documento);
+            panel_Finalizado.Visible = true;
         }
 
         private void Finalizar_No_Click(object sender, EventArgs e)

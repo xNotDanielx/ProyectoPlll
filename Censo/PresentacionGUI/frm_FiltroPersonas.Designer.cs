@@ -98,6 +98,8 @@
             // 
             // personaDataGridView
             // 
+            this.personaDataGridView.AllowUserToAddRows = false;
+            this.personaDataGridView.AllowUserToDeleteRows = false;
             this.personaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.personaDataGridView.Location = new System.Drawing.Point(12, 23);
             this.personaDataGridView.Name = "personaDataGridView";
